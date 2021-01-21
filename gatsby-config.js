@@ -1,11 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Will H/ | Portfolio`,
+    description: `Temp site for experimentation and to show some stuff`,
+    author: `@willis`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          includePaths: ["/src/scss/styles.scss"],
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

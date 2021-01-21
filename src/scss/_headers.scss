@@ -1,0 +1,56 @@
+
+// HEADERS
+
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  padding-top: 1rem;
+}
+@include media-breakpoint-up(sm){
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@include media-breakpoint-up(md){
+  h2 {
+    font-size: 3.25rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@include media-breakpoint-up(xl){
+  h2 {
+    font-size: $h2-font-size;
+  }
+  h3 {
+    font-size: $h3-font-size;
+  }
+}
+// "DISPLAY" TEXT
+.display {
+  &-1,
+  &-2,
+  &-3,
+  &-4 {
+    color: $headings-color;
+  }
+  &-4 {
+    @include media-breakpoint-down(sm) {
+      font-size: 2rem;
+    }
+  }
+  &-5 {
+    font-size: 2.5rem;
+    @include media-breakpoint-down(sm) {
+      font-size: 1.5rem;
+    }
+  }
+}
