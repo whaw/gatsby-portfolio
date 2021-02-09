@@ -3,7 +3,7 @@ import MainNav from "./MainNav"
 import Hero from "./Hero"
 
 const Header = () => (
-  <header className="px-md-3 pt-11">
+  <header>
     <MainNav />
     <Hero />
   </header>

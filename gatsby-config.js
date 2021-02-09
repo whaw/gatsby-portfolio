@@ -17,6 +17,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          includePaths: ["/src/scss/styles.scss"],
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
