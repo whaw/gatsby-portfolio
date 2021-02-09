@@ -1,7 +1,10 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+import "/src/scss/styles.scss"
+import "/src/js/scripts.js"
 
-// You can delete this file if you're not using it
+// jquery test
+const $ = require("jquery")
+export const onInitialClientRender = () => {
+  $(function () {
+    console.log("jquery gtg")
+  })
+}

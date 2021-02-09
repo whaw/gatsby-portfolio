@@ -1,0 +1,44 @@
+// HELPERS
+
+// GRID HELPERS
+.section__header {
+  padding-bottom: 40px;
+  @include media-breakpoint-up(md){
+    padding-bottom: 100px;
+  }
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+// IMAGES
+.drop-shadow {
+  filter: drop-shadow(-11px 20px 4px #aaa);
+}
+.grayscale {
+  filter: grayscale(1);
+}
+
+// BUTTONS
+P > a.btn.btn-primary {
+  margin-top: 1rem;
+}
+
+.top-btn {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+  &.show {
+    opacity: 1;
+  }
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+// MISC
+
+.joke-container {
+  color: $black;
+  background-color: $gray-100;
+}
