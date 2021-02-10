@@ -13,6 +13,5 @@ export const onRenderBody = ({ setHeadComponents }, pluginOptions) => {
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossOrigin="anonymous"
     ></script>,
-    <script src="/src/js/scripts.js" crossOrigin="anonymous" async></script>,
   ])
 }

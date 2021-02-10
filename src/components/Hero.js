@@ -1,7 +1,11 @@
 import React from "react"
+import MountainsImg from "../images/hero-mountains2.png"
+import LeftFrameImg from "../images/hero-left-frame.png"
+import RightFrameImg from "../images/hero-right-frame.png"
+import RiderImg from "../images/hero-rider.png"
 
 const Hero = () => (
-  <div className="jumbotron hero position-relative js_hero">
+  <div className="jumbotron hero position-relative js_hero mt-11">
     <div className="heading text-center position-absolute w-100">
       <h1>
         <span className="text-white">My</span> sandbox
@@ -28,10 +32,22 @@ const Hero = () => (
         </a>
       </div>
     </div>
-    {/* <img src="assets/images/hero-left-frame.png" className="position-absolute hero__left-frame img-fluid js_frame" alt="">
-    <img src="assets/images/hero-right-frame.png" className="position-absolute hero__right-frame img-fluid js_frame" alt="">
-    <img src="assets/images/hero-rider.png" className="position-absolute hero__rider img-fluid js_rider" alt="">
-    <img src="assets/images/hero-mountains2.png" className="img-fluid" alt=""> */}
+    <img
+      src={LeftFrameImg}
+      className="position-absolute hero__left-frame img-fluid js_frame"
+      alt=""
+    />
+    <img
+      src={RightFrameImg}
+      className="position-absolute hero__right-frame img-fluid js_frame"
+      alt=""
+    />
+    <img
+      src={RiderImg}
+      className="position-absolute hero__rider img-fluid js_rider"
+      alt=""
+    />
+    <img src={MountainsImg} className="img-fluid" alt="" />
     <div className="pin text-white pin-1 position-absolute js_pin">
       <div className="pin__text position-absolute d-inline text-nowrap">
         <small>Solving problems</small>
