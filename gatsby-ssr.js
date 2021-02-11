@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/ssr-apis/
  */
 
-const React = require("react")
+import React from "react"
 
 export const onRenderBody = ({ setHeadComponents }, pluginOptions) => {
   setHeadComponents([

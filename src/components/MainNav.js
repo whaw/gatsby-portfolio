@@ -1,7 +1,7 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 
-const MainNav = () => {
+const MainNav = ({ navBarClassNames }) => {
   const navLinks = [
     { label: "Skills", to: "#skills" },
     { label: "Clients", to: "#clients" },
