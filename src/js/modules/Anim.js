@@ -50,11 +50,13 @@ const Anim = {
   },
   render: function () {
     // handle animation timing in children (for now)
-    // to allow finer control should there be a need
-    // for more complex anims
+    // to leave room for more complex animations
   },
   animate: function (arr, animType = "none") {
+    // update 'animate' to be a router to needed animation style
     arr.forEach((el, i) => {
+      // break this out into staggered function and
+      // addClass function
       if (animType === "staggered") {
         setTimeout(function () {
           $(el).addClass("animate")

@@ -1,4 +1,4 @@
-import path from `path`
+const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
@@ -6,8 +6,9 @@ module.exports = {
     description: `Temp site for experimentation and to show some stuff`,
     author: `@willis`,
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: { PRESERVE_WEBPACK_CACHE: true, DEV_SSR: false },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
