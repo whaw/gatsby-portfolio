@@ -2,7 +2,7 @@ import React from "react"
 import MainNav from "./MainNav"
 import Hero from "./Hero"
 
-function Header() {
+export default function Header() {
   return (
     <header>
       <MainNav />
@@ -10,5 +10,3 @@ function Header() {
     </header>
   )
 }
-
-export default Header

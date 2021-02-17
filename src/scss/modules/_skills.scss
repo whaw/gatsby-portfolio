@@ -28,7 +28,7 @@
     &:before,
     &:after {
       content: "";
-      //background-image: url('../../assets/images/skills-dots.png');
+      background-image: url("../images/skills-dots.png");
       height: 100%;
       width: 100%;
       position: absolute;
@@ -37,7 +37,7 @@
       opacity: 0;
     }
     &:after {
-      //background-image: url('../../assets/images/skills-shadow.png');
+      background-image: url("../images/skills-shadow.png");
     }
     @include media-breakpoint-up(lg) {
       &.animate {
@@ -102,7 +102,6 @@
     &__rider,
     &__rider--color {
       opacity: 1;
-      position: absolute;
       z-index: 2;
       @include skills-shared;
       width: 50%;
@@ -110,7 +109,6 @@
     }
     &__rider--color {
       opacity: 0;
-      position: absolute;
       z-index: 3;
     }
     &__lines {

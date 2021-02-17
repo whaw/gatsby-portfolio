@@ -1,11 +1,8 @@
 import React from "react"
-import MountainsImg from "../images/hero-mountains2.png"
-import LeftFrameImg from "../images/hero-left-frame.png"
-import RightFrameImg from "../images/hero-right-frame.png"
-import RiderImg from "../images/hero-rider.png"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Hero = () => (
-  <div className="jumbotron hero position-relative js_hero mt-11">
+  <div className="jumbotron hero position-relative js_hero">
     <div className="heading text-center position-absolute w-100">
       <h1>
         <span className="text-white">My</span> sandbox
@@ -32,22 +29,33 @@ const Hero = () => (
         </a>
       </div>
     </div>
-    <img
-      src={LeftFrameImg}
-      className="position-absolute hero__left-frame img-fluid js_frame"
-      alt=""
+    <StaticImage
+      src="../images/hero-left-frame.png"
+      className="position-absolute hero__left-frame js_frame"
+      layout="FULL_WIDTH"
+      placeholder="TRACED_SVG"
+      alt="stone wall"
     />
-    <img
-      src={RightFrameImg}
-      className="position-absolute hero__right-frame img-fluid js_frame"
-      alt=""
+    <StaticImage
+      src="../images/hero-right-frame.png"
+      className="position-absolute hero__right-frame js_frame"
+      layout="FULL_WIDTH"
+      placeholder="TRACED_SVG"
+      alt="stone wall, trees, squatting man"
     />
-    <img
-      src={RiderImg}
-      className="position-absolute hero__rider img-fluid js_rider"
-      alt=""
+    <StaticImage
+      src="../images/hero-rider.png"
+      className="position-absolute hero__rider js_rider"
+      layout="FULL_WIDTH"
+      placeholder="TRACED_SVG"
+      alt="man on motorbike"
     />
-    <img src={MountainsImg} className="img-fluid" alt="" />
+    <StaticImage
+      src="../images/hero-mountains2.png"
+      layout="FULL_WIDTH"
+      placeholder="TRACED_SVG"
+      alt="mountains"
+    />
     <div className="pin text-white pin-1 position-absolute js_pin">
       <div className="pin__text position-absolute d-inline text-nowrap">
         <small>Solving problems</small>

@@ -1,16 +1,26 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-
-export default ({ image }) => (
-  <div>
-    <GatsbyImage image={image.childImageSharp.gatsbyImageData} />
-  </div>
-)
-export const query = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      gatsbyImageData(quality: 100, placeholder: TRACED_SVG, layout: FULL_WIDTH)
-    }
-  }
-`
+// import { useStaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
+// export default function Image() {
+//   const data = useStaticQuery(graphql`
+//     query {
+//       file(relativePath: { eq: "images/default.jpg" }) {
+//         childImageSharp {
+//           # Specify a fluid image and fragment
+//           # The default maxWidth is 800 pixels
+//           fluid {
+//             ...GatsbyImageSharpFluid_tracedSVG
+//           }
+//         }
+//       }
+//     }
+//   `)
+//   return (
+//     <div>
+//       <h1>Hello gatsby-image</h1>
+//       <Img
+//         fluid={data.file.childImageSharp.fluid}
+//         alt="Gatsby Docs are awesome"
+//       />
+//     </div>
+//   )
+// }

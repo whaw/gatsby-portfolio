@@ -1,15 +1,16 @@
 function updateScrollSpy() {
-  $('[data-spy="scroll"]').each( () => {
-    var $spy = $(this).scrollspy('refresh')
-  });
+  $('[data-spy="scroll"]').each(() => {
+    var $spy = $(this).scrollspy("refresh")
+  })
 }
 
-$(function() {
+$(function () {
   // reset scrollspy on page load/refresh
-  setTimeout(updateScrollSpy, 1000);
+  setTimeout(updateScrollSpy, 1000)
+  console.log("scrollspy")
 
   // adjust scrollspy nav highlighting
-  $('body').scrollspy({
-    offset: 50
-  });
+  $("body").scrollspy({
+    offset: 50,
+  })
 })

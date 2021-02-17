@@ -1,22 +1,27 @@
 import React from "react"
 import Helmet from "react-helmet"
-import PropTypes from "prop-types"
 import Header from "./Header"
+import Skills from "./Skills"
 
-const Layout = ({ children }) => (
+const Layout = () => (
   <>
     <Helmet>
       <title>Cool</title>
+      <body
+        data-spy="scroll"
+        data-target="#navbar"
+        data-offset="0"
+        id="home"
+        className="px-md-3 pt-11"
+      />
     </Helmet>
     <Header />
-    <main>{children}</main>
+    <main>
+      <Skills />
+    </main>
     <div id="skills"></div>
     <footer>&copy; {new Date().getFullYear()}</footer>
   </>
 )
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout
