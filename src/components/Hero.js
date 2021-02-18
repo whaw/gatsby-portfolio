@@ -1,8 +1,9 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import Jumbotron from "react-bootstrap/jumbotron"
 
 const Hero = () => (
-  <div className="jumbotron hero position-relative js_hero">
+  <Jumbotron className="hero position-relative js_hero">
     <div className="heading text-center position-absolute w-100">
       <h1>
         <span className="text-white">My</span> sandbox
@@ -32,27 +33,27 @@ const Hero = () => (
     <StaticImage
       src="../images/hero-left-frame.png"
       className="position-absolute hero__left-frame js_frame"
-      layout="FULL_WIDTH"
+      layout="fullWidth"
       placeholder="TRACED_SVG"
       alt="stone wall"
     />
     <StaticImage
       src="../images/hero-right-frame.png"
       className="position-absolute hero__right-frame js_frame"
-      layout="FULL_WIDTH"
+      layout="fullWidth"
       placeholder="TRACED_SVG"
-      alt="stone wall, trees, squatting man"
+      alt="stone wall, trees, man squatting"
     />
     <StaticImage
       src="../images/hero-rider.png"
       className="position-absolute hero__rider js_rider"
-      layout="FULL_WIDTH"
+      layout="fullWidth"
       placeholder="TRACED_SVG"
       alt="man on motorbike"
     />
     <StaticImage
       src="../images/hero-mountains2.png"
-      layout="FULL_WIDTH"
+      layout="fullWidth"
       placeholder="TRACED_SVG"
       alt="mountains"
     />
@@ -71,7 +72,7 @@ const Hero = () => (
         <small>Success!</small>
       </div>
     </div>
-  </div>
+  </Jumbotron>
 )
 
 export default Hero

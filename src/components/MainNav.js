@@ -4,7 +4,6 @@ import { Navbar, Nav } from "react-bootstrap"
 const MainNav = () => {
   const navLinks = [
     { label: "Skills", to: "#skills" },
-    { label: "Clients", to: "#clients" },
     { label: "About this site", to: "#about-this-site" },
     { label: "Introductions", to: "#introductions" },
     { label: "Contact", to: "#contact" },
@@ -31,11 +30,7 @@ const MainNav = () => {
           <Navbar.Collapse id="navbar-nav">
             <Nav className="ml-auto">
               {navLinks.map(link => (
-                <Nav.Link
-                  key={link.to}
-                  className="nav-item nav-link"
-                  href={link.to}
-                >
+                <Nav.Link key={link.to} className="nav-item" href={link.to}>
                   {link.label}
                 </Nav.Link>
               ))}

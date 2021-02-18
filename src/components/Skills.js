@@ -7,9 +7,7 @@ const Skills = () => (
       <div className="row">
         <div className="col text-center">
           <h2>Skills</h2>
-          <h3 className="text-secondary">
-            I love what I do, and I hope it shows.
-          </h3>
+          <h3 className="text-secondary">My DNA, what I bring.</h3>
         </div>
       </div>
     </div>
@@ -21,21 +19,21 @@ const Skills = () => (
             src="../images/skills-rider.png"
             className="position-absolute skills__rider"
             placeholder="TRACED_SVG"
-            layout="FULL_WIDTH"
+            layout="fullWidth"
             alt="person on bicycle, with arms out"
           />
           <StaticImage
             src="../images/skills-rider-color.png"
             className="position-absolute skills__rider--color mb-5 mb-lg-0"
             placeholder="TRACED_SVG"
-            layout="FULL_WIDTH"
+            layout="fullWidth"
             alt="person on bicycle, with arms out - in color"
           />
           <StaticImage
             src="../images/skills-lines.png"
             className="position-absolute skills__lines"
             placeholder="TRACED_SVG"
-            layout="FULL_WIDTH"
+            layout="fullWidth"
             alt="lines associating rider image with skills"
           />
         </div>
