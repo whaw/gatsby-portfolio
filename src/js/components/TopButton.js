@@ -1,6 +1,6 @@
 import $ from "jquery"
 
-const topButton = {
+const TopButton = {
   showButton() {
     const $header = $(".header")
     let screenTop = $(window).scrollTop()
@@ -13,4 +13,4 @@ const topButton = {
   },
 }
 
-export default topButton
+export default TopButton

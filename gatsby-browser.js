@@ -4,7 +4,7 @@ import $ from "jquery"
 
 import HeroAnim from "/src/js/modules/Hero"
 import SkillsAnim from "/src/js/modules/Skills"
-import topButton from "/src/js/components/topBtn"
+import TopButton from "/src/js/components/TopButton"
 
 export const onInitialClientRender = () => {
   $(function () {
@@ -26,9 +26,9 @@ export const onInitialClientRender = () => {
     SkillsAnim.init()
 
     // init top button
-    topButton.showButton()
+    TopButton.showButton()
     $(window).on("scroll", function () {
-      topButton.showButton()
+      TopButton.showButton()
     })
   })
 }
