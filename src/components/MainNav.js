@@ -19,11 +19,13 @@ const MainNav = () => {
       >
         <div className="container navbar__container py-2">
           <Navbar.Brand href="#home" className="js_logo">
-            <span className="logo mb-2 d-inline-block">Will H/</span>
+            <span className="logo mb-2 d-inline-block">
+              whaw <span className="small">/</span>
+            </span>
             <br className="d-none d-lg-block" />
-            Front End Developer
+            Front end developer
             <span className="d-none d-md-inline-block">
-              , User Advocate, Outdoor Enthusiast
+              , user advocate, motorcycle enthusiast
             </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />

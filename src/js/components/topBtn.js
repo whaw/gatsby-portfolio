@@ -1,25 +1,16 @@
 import $ from "jquery"
 
 const topButton = {
-  $topButton: $(".top-btn"),
-  $hero: $("header"),
-
   showButton() {
+    const $header = $(".header")
     let screenTop = $(window).scrollTop()
-    let heroHeight = this.$hero.outerHeight()
-    screenTop > heroHeight ? this.render(true) : this.render(false)
+    let headerHeight = $header.outerHeight()
+    screenTop > headerHeight ? this.render(true) : this.render(false)
   },
   render(showButton) {
-    showButton
-      ? this.$topButton.addClass("show")
-      : this.$topButton.removeClass("show")
+    const $topButton = $(".top-btn")
+    showButton ? $topButton.addClass("show") : $topButton.removeClass("show")
   },
 }
 
-$(function () {
-  topButton.showButton()
-
-  $(window).on("scroll", function () {
-    topButton.showButton()
-  })
-})
+export default topButton

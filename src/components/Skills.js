@@ -7,7 +7,7 @@ const Skills = () => (
       <div className="row">
         <div className="col text-center">
           <h2>Skills</h2>
-          <h3 className="text-secondary">My DNA, what I bring.</h3>
+          <h3 className="text-secondary">What I bring ...</h3>
         </div>
       </div>
     </div>

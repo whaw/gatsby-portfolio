@@ -12,7 +12,8 @@ import Contact from "./Contact"
 const Layout = () => (
   <>
     <Helmet>
-      <title>Cool</title>
+      <meta name="googlebot" content="noindex" />
+      <title>whaw /</title>
       <body
         data-spy="scroll"
         data-bs-target="#navbar"
@@ -20,7 +21,7 @@ const Layout = () => (
         className="px-md-3 pt-11"
       />
     </Helmet>
-    <header>
+    <header className="header">
       <MainNav />
       <Hero />
     </header>
@@ -30,6 +31,9 @@ const Layout = () => (
       <AboutSite />
       <Introductions />
       <Contact />
+      <a href="#home" className="btn btn-secondary top-btn">
+        Top
+      </a>
     </main>
     <footer className="border-top pt-2 pb-5 pl-3 text-secondary small">
       &copy; {new Date().getFullYear()}

@@ -7,9 +7,7 @@ const Contact = () => (
       <div className="row">
         <div className="col text-center">
           <h2>Contact</h2>
-          <h3 className="text-secondary">
-            Give me a shout. Always happy to chat.
-          </h3>
+          <h3 className="text-secondary">Let's do something Great</h3>
 
           <StaticImage
             src="../images/contact.gif"

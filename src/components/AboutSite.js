@@ -13,7 +13,7 @@ const AboutSite = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-6">
-          <h4>Goal</h4>
+          <h4>Objective</h4>
           <p>
             To demostrate the polish and attention to detail that I strive for
             in my work, and a sense of who I am, as cultural fit is equally
@@ -21,8 +21,8 @@ const AboutSite = () => (
           </p>
           <p>
             And moreover, to provide insight into how I ramp on new technologies
-            - the "get it working" stage (of "get it working", "get it right",
-            "get it fast").
+            - the "get it working" stage (of "get it working", "make it right",
+            "make it fast").
           </p>
           <h4>Build Stack</h4>
           <ul className="row">

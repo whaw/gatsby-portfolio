@@ -8,7 +8,7 @@ const Brands = () => (
         <div className="col text-center">
           <h2>Some Brands</h2>
           <h3 className="text-secondary">
-            I have had the privilege to work on.
+            I have had the privilege to contribute to
           </h3>
         </div>
       </div>
