@@ -16,21 +16,21 @@ const Skills = () => (
         {/* Add div to fix height auto breaking in Safari, from child being in flex container */}
         <div className="text-center col-12">
           <StaticImage
-            src="../images/skills-rider.png"
+            src="../../images/skills-rider.png"
             className="position-absolute skills__rider"
             placeholder="TRACED_SVG"
             layout="fullWidth"
             alt="person on bicycle, with arms out"
           />
           <StaticImage
-            src="../images/skills-rider-color.png"
+            src="../../images/skills-rider-color.png"
             className="skills__rider--color mb-5 mb-lg-0"
             placeholder="TRACED_SVG"
             layout="fullWidth"
             alt="person on bicycle, with arms out - in color"
           />
           <StaticImage
-            src="../images/skills-lines.png"
+            src="../../images/skills-lines.png"
             className="position-absolute skills__lines"
             placeholder="TRACED_SVG"
             layout="fullWidth"

@@ -14,7 +14,7 @@ const Brands = () => (
       </div>
     </div>
     <div className="container">
-      <div className="row align-items-center">
+      <div className="row align-items-center justify-content-between">
         <div className="col-3 col-sm-2 col-xl-1 p-4 p-md-5 p-xl-3">
           <StaticImage
             src="../images/companies/knorr.svg"
@@ -26,7 +26,7 @@ const Brands = () => (
         <div className="col-3 col-sm-2 col-xl-1 p-4 p-md-5 p-xl-3">
           <StaticImage
             src="../images/companies/apple.svg"
-            className="w-100 p-2 p-sm-3"
+            className="mx-2"
             placeholder="TRACED_SVG"
             alt="Apple"
           />
@@ -34,17 +34,9 @@ const Brands = () => (
         <div className="col-3 col-sm-2 col-xl-1 p-4 p-md-5 p-xl-3">
           <StaticImage
             src="../images/companies/canadaPost.svg"
-            className="w-100 p-1"
+            className="mx-2"
             placeholder="TRACED_SVG"
             alt="Canada Post"
-          />
-        </div>
-        <div className="col-3 col-sm-2 col-xl-1 p-4 p-md-5 p-xl-3">
-          <StaticImage
-            src="../images/companies/wave.svg"
-            className="w-100 p-1"
-            placeholder="TRACED_SVG"
-            alt="Wave Financial"
           />
         </div>
         <div className="col-3 col-sm-2 col-xl-1 p-4 p-md-5 p-xl-3">

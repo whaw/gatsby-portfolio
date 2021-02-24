@@ -1,16 +1,17 @@
-// INIT
+// GLOBALS
+
+// init
 @import "./vendors/bootstrap";
+@import "./global-variables";
 @import "./grid";
 @import "./headers";
 @import "./fonts";
 @import "./custom-helpers";
 
-// MODULES
-@import "./modules/navbar";
-@import "./modules/hero";
-@import "./modules/skills";
-@import "./modules/introductions";
+@import "./components/Hero";
+@import "./components/Introductions";
+@import "./components/MainNav";
+@import "./components/Skills";
 
-// COMPONENTS
-@import "./components/pin";
-@import "./components/progressive-image";
+// modules
+@import "./modules/pin";

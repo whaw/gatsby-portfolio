@@ -1,24 +1,33 @@
+/* boiler */
 import React from "react"
 import Helmet from "react-helmet"
 
-import Hero from "./Hero"
+/* globals */
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import "/src/scss/styles.scss"
+
+/* components */
 import MainNav from "./MainNav"
-import Skills from "./Skills"
+import Hero from "./Hero/Hero"
+import Skills from "./Skills/Skills"
 import Brands from "./Brands"
 import Introductions from "./Introductions"
 import AboutSite from "./AboutSite"
 import Contact from "./Contact"
+import TopButton from "./TopButton"
 
 const Layout = () => (
   <>
     <Helmet>
+      <title>Will H /</title>
       <meta name="googlebot" content="noindex" />
-      <title>whaw /</title>
+      {/* Structured Data is omitted for SEO, given the temp nature of the site */}
       <body
         data-spy="scroll"
         data-bs-target="#navbar"
         id="home"
-        className="px-md-3 pt-11"
+        className="px-md-3 pt-13"
       />
     </Helmet>
     <header className="header">
@@ -31,9 +40,7 @@ const Layout = () => (
       <AboutSite />
       <Introductions />
       <Contact />
-      <a href="#home" className="btn btn-secondary top-btn">
-        Top
-      </a>
+      <TopButton />
     </main>
     <footer className="border-top pt-2 pb-5 pl-3 text-secondary small">
       &copy; {new Date().getFullYear()}

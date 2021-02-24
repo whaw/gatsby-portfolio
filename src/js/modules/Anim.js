@@ -31,7 +31,7 @@ const Anim = {
     this[prop] = $.makeArray($("." + el))
   },
   bindEvents: function () {
-    window.addEventListener("scroll", e => this.inViewport(this.animContainer))
+    $(window).on("scroll load", e => this.inViewport(this.animContainer))
   },
   inViewport: function (el) {
     const element = $(el)

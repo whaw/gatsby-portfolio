@@ -1,5 +1,4 @@
 import React from "react"
-import { Navbar, Nav } from "react-bootstrap"
 
 const MainNav = () => {
   const navLinks = [
@@ -11,35 +10,42 @@ const MainNav = () => {
 
   return (
     <>
-      <Navbar
-        bg="light"
-        expand="lg"
-        id="navbar"
-        className="navbar navbar-expand-lg fixed-top navbar-light bg-white"
-      >
-        <div className="container navbar__container py-2">
-          <Navbar.Brand href="#home" className="js_logo">
-            <span className="logo mb-2 d-inline-block">
-              whaw <span className="small">/</span>
-            </span>
-            <br className="d-none d-lg-block" />
-            Front end developer
-            <span className="d-none d-md-inline-block">
-              , user advocate, motorcycle enthusiast
-            </span>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="ml-auto">
-              {navLinks.map(link => (
-                <Nav.Link key={link.to} className="nav-item" href={link.to}>
+      <nav class="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top">
+        <a className="navbar-brand" href="#home">
+          <span className="logo mb-2 d-inline-block">Will H /</span>
+          <br className="d-none d-lg-block" />
+          Front end developer
+          <span className="d-none d-md-inline-block">
+            , user advocate, outdoor enthusiast
+          </span>
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          className="collapse navbar-collapse flex-grow-0"
+          id="navbarSupportedContent"
+        >
+          <ul className="navbar-nav mr-auto">
+            {navLinks.map(link => (
+              <li className="nav-item active">
+                <a className="nav-link" key={link.to} href={link.to}>
                   {link.label}
-                </Nav.Link>
-              ))}
-            </Nav>
-          </Navbar.Collapse>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-      </Navbar>
+      </nav>
     </>
   )
 }

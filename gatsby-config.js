@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Will H/ | Portfolio`,
     description: `Temp site for experimentation and to show some stuff`,
-    author: `@willis`,
+    author: `Will H`,
   },
   flags: { PRESERVE_WEBPACK_CACHE: true, DEV_SSR: false },
   plugins: [
@@ -15,6 +15,8 @@ module.exports = {
         sassOptions: {
           includePaths: ["/src/scss/styles.scss"],
         },
+        // sassRuleModulesTest: /\.mod\.s(a|c)ss$/, // make scss component.mobules available to components
+        // additionalData: `@use "${__dirname}/src/scss/global-variables" as var;`, // make globals variables visible to component.module scss
       },
     },
     {
