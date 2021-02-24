@@ -10,7 +10,7 @@ const MainNav = () => {
 
   return (
     <>
-      <nav class="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top">
+      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top px-lg-5">
         <a className="navbar-brand" href="#home">
           <span className="logo mb-2 d-inline-block">Will H /</span>
           <br className="d-none d-lg-block" />
@@ -37,8 +37,8 @@ const MainNav = () => {
         >
           <ul className="navbar-nav mr-auto">
             {navLinks.map(link => (
-              <li className="nav-item active">
-                <a className="nav-link" key={link.to} href={link.to}>
+              <li key={link.to} className="nav-item active">
+                <a className="nav-link" href={link.to}>
                   {link.label}
                 </a>
               </li>

@@ -1,21 +1,25 @@
-import React from "react"
-// import $ from "jquery"
+import React, { useState } from "react"
+import $ from "jquery"
 
 const TopButton = () => {
-  // const $topButton = $(".top-btn")
-  // $(window).on("scroll", function () {
-  //   showButton()
-  // })
+  const [isVisible, setIsVisible] = useState(false)
+  const isVisibleClass = isVisible ? "show" : null
 
-  // function showButton() {
-  //   let screenTop = $(window).scrollTop()
-  //   let headerHeight = $(".header").outerHeight()
-  //   screenTop > headerHeight ? this.render(true) : this.render(false)
-  // }
-  // showButton ? $topButton.addClass("show") : $topButton.removeClass("show")
+  $(window).on("scroll", function () {
+    isVisibleCheck()
+  })
+
+  const isVisibleCheck = () => {
+    const screenTop = $(window).scrollTop()
+    const headerHeight = $(".header").outerHeight()
+    screenTop > headerHeight ? setIsVisible(true) : setIsVisible(false)
+  }
 
   return (
-    <a href="#home" className="btn btn-secondary top-btn">
+    <a
+      href="#home"
+      className={`btn btn-secondary top-button ${isVisibleClass}`}
+    >
       Top
     </a>
   )
