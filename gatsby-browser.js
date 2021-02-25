@@ -1,6 +1,4 @@
 import $ from "jquery"
-import HeroAnim from "/src/js/modules/Hero"
-import SkillsAnim from "/src/js/modules/Skills"
 
 export const onInitialClientRender = () => {
   $(function () {
@@ -15,9 +13,5 @@ export const onInitialClientRender = () => {
         "slow"
       )
     })
-
-    // init animations
-    HeroAnim.init()
-    SkillsAnim.init()
   })
 }

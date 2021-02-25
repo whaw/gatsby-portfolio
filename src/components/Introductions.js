@@ -16,14 +16,14 @@ const Introductions = () => (
         <div className="row">
           <div className="col-12 col-lg-4 text-center pb-8 px-5">
             <StaticImage
-              src="../../images/me.png"
+              src="../images/me.png"
               className="introductions__me"
               layout="fullWidth"
               placeholder="TRACED_SVG"
               alt="author"
             />
             <StaticImage
-              src="../../images/dog.png"
+              src="../images/dog.png"
               className="position-absolute introductions__dog"
               layout="fullWidth"
               placeholder="TRACED_SVG"

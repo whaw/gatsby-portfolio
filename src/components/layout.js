@@ -9,8 +9,8 @@ import "/src/scss/styles.scss"
 
 /* components */
 import MainNav from "./MainNav"
-import Hero from "./Hero/Hero"
-import Skills from "./Skills/Skills"
+import Hero from "./Hero"
+import Skills from "./Skills"
 import Brands from "./Brands"
 import Introductions from "./Introductions"
 import AboutSite from "./AboutSite"
@@ -20,14 +20,14 @@ import TopButton from "./TopButton"
 const Layout = () => (
   <>
     <Helmet>
-      <title>Will H /</title>
+      <title>A Working Copy</title>
       <meta name="googlebot" content="noindex" />
       {/* Structured Data is omitted for SEO, given the temp nature of the site */}
       <body
         data-spy="scroll"
         data-bs-target="#navbar"
         id="home"
-        className="px-md-3 pt-13"
+        className="px-md-3 pt-12"
       />
     </Helmet>
     <header className="header">
