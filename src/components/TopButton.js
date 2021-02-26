@@ -1,12 +1,14 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import $ from "jquery"
 
 const TopButton = () => {
   const [isVisible, setIsVisible] = useState(false)
   const isVisibleClass = isVisible ? "show" : null
 
-  $(window).on("scroll", function () {
-    isVisibleCheck()
+  useEffect(() => {
+    $(window).on("scroll", function () {
+      isVisibleCheck()
+    })
   })
 
   const isVisibleCheck = () => {

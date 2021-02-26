@@ -2,11 +2,6 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-/* globals */
-// import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.bundle.min.js"
-import "/src/scss/styles.scss"
-
 /* components */
 import MainNav from "./MainNav"
 import Hero from "./Hero"
@@ -22,7 +17,7 @@ const Layout = () => (
     <Helmet>
       <title>A Working Copy</title>
       <meta name="googlebot" content="noindex" />
-      {/* Structured Data is omitted for SEO, given the temp nature of the site */}
+      {/* Structured Data is omitted for SEO, given the temperoray nature of the site */}
       <body
         data-spy="scroll"
         data-bs-target="#navbar"

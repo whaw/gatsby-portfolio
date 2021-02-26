@@ -10,7 +10,7 @@ const MainNav = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top px-lg-5">
+      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top px-lg-5 pt-2">
         <a className="navbar-brand js_logo" href="#home">
           <span className="logo mb-2 d-inline-block">A Working Copy</span>
           <br className="d-none d-lg-block" />

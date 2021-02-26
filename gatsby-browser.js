@@ -1,4 +1,7 @@
 import $ from "jquery"
+// import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import "/src/scss/styles.scss"
 
 export const onInitialClientRender = () => {
   $(function () {

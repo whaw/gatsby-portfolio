@@ -21,7 +21,7 @@ const Skills = () => (
       </div>
       <div className="container js_skills__content">
         <div className="row skills__content border position-relative bg-light p-5 text-center text-md-left js_skills">
-          {/* Add div to fix height auto breaking in Safari, from child being in flex container */}
+          {/* Add div to fix auto height breaking layout in Safari, from child being in flex container */}
           <div className="text-center col-12">
             <StaticImage
               src="../images/skills-rider.png"

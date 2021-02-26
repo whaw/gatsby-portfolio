@@ -22,9 +22,9 @@ const Hero = () => {
       <div className="hero position-relative js_hero">
         <div className="heading text-center position-absolute w-100">
           <h1>
-            <span className="text-white">Customer</span> focused
+            <span className="text-white">Needs</span> work
           </h1>
-          <h2 className="text-white">Aiming to delight</h2>
+          <h2 className="text-white">something snappierz</h2>
           <div className="pt-3 d-none d-sm-block">
             <a href="#skills" className="btn btn-secondary" role="button">
               Tell me more
