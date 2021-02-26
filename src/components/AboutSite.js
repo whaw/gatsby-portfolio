@@ -27,15 +27,14 @@ const AboutSite = () => (
           <h4>Build Stack</h4>
           <ul className="row">
             <li className="col-6 col-md-12">
-              <strong>Bootstrap -</strong> to get up and running quickly and
-              leave the browser management to a fully dedicated team
+              <strong>Bootstrap,</strong> to get up and running quickly and
+              leave the browser management to a dedicated team
             </li>
             <li className="col-6 col-md-12">
-              <strong>JQuery, SCSS -</strong> for DOM manipulation and
-              animations
+              <strong>JQuery, SCSS,</strong> for DOM manipulation and animations
             </li>
             <li className="col-6 col-md-12">
-              <strong>Gatsby, React -</strong> for speed and performance
+              <strong>Gatsby, React, </strong> for speed and performance
             </li>
           </ul>
         </div>
@@ -51,10 +50,9 @@ const AboutSite = () => (
           </p>
           <h4>Result</h4>
           <p>
-            Site is fast and is consistent across platforms. Accessibility and
-            mobile performance reviewed and choices made based on audience
-            (recruiters on desktop, confirmed by data) and priorities of this
-            site - to move fast, deploy and iterate.
+            Site is fast and is consistent across platforms. Further
+            enhancements are in progress as this is V1 and the mandate is to
+            move fast, deploy often and iterate.
           </p>
           <p>
             <a

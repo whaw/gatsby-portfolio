@@ -30,8 +30,13 @@ const Animation = ({ animElements, animContainer }) => {
   const render = () => {
     // go through each anim element
     animElements.forEach(animElement => {
+      // find elements by selector and add to new array
       const elementArray = $(animElement.selector).toArray()
+
+      // value to delay animation
       const delay = animElement.delay
+
+      // value to delay animation in a collection of elements
       const elementDelay = animElement.elementDelay
 
       if (delay !== null) {
@@ -46,8 +51,6 @@ const Animation = ({ animElements, animContainer }) => {
   }
 
   const animate = (elementArray, elementDelay) => {
-    console.log(`elementArray ${elementArray}`)
-    console.log(`elementDelay ${elementDelay}`)
     elementArray.forEach((el, i) => {
       if (elementDelay !== null) {
         setTimeout(function () {
@@ -57,7 +60,6 @@ const Animation = ({ animElements, animContainer }) => {
         $(el).addClass("animate")
       }
     })
-    return
   }
 
   return <></>

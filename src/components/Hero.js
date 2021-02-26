@@ -18,14 +18,13 @@ const animContainer = ".js_hero"
 const Hero = () => {
   return (
     <>
+      <Animation animElements={animElements} animContainer={animContainer} />
       <div className="hero position-relative js_hero">
         <div className="heading text-center position-absolute w-100">
           <h1>
-            <span className="text-white">Experience</span> focused
+            <span className="text-white">Customer</span> focused
           </h1>
-          <h2 className="text-white">
-            Solving problems ~ exceeding expectations
-          </h2>
+          <h2 className="text-white">Aiming to delight</h2>
           <div className="pt-3 d-none d-sm-block">
             <a href="#skills" className="btn btn-secondary" role="button">
               Tell me more
@@ -84,7 +83,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <Animation animElements={animElements} animContainer={animContainer} />
     </>
   )
 }
