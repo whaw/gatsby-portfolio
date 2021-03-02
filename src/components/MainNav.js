@@ -10,7 +10,7 @@ const MainNav = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-2">
+      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-5">
         <a className="navbar-brand js_logo" href="#home">
           <span className="logo mb-2 d-inline-block">William Haw &nbsp;</span>
           <br className="d-none d-lg-block" />

@@ -3,15 +3,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import Animation from "./Animation"
 
 const animElements = [
-  { selector: ".js_hero", delay: null, elementDelay: null },
-  { selector: ".js_frame", delay: null, elementDelay: null },
-  // { selector: ".js_rider", delay: null, elementDelay: null },
-  // {
-  //   selector: ".js_pin",
-  //   delay: 4000,
-  //   elementDelay: 200,
-  // },
-  { selector: ".js_logo", delay: null, elementDelay: null },
+  { selector: ".js_truck", delay: null, elementDelay: null },
+  { selector: ".js_tree2", delay: 400, elementDelay: null },
+  { selector: ".js_tree", delay: 800, elementDelay: null },
+  { selector: ".js_rider", delay: 1000, elementDelay: null },
 ]
 const animContainer = ".js_hero"
 
@@ -19,16 +14,13 @@ const Hero = () => {
   return (
     <>
       <Animation animElements={animElements} animContainer={animContainer} />
-      <div className="hero position-relative js_hero">
-        <div className="heading text-center position-absolute w-100">
-          <h1>
-            <span className="text-white">Aiming for</span> experiences
-          </h1>
-          <h2 className="text-white">
-            that exceed expectations, surprise and delight
-            {/* Cusetomer focused. Aiming to provide solutions that deomonstrate a clear understanding of what is needed. */}
+      <div className="hero position-relative js_hero mt-13">
+        <div className="heading position-absolute text-center w-100">
+          <h1 className="mx-auto">Ready to Go</h1>
+          <h2 className="mx-auto text-secondary">
+            Focused on experiences that exceed expectations
           </h2>
-          <div className="pt-3 d-none d-sm-block">
+          {/* <div className="pt-3 d-none d-sm-block">
             <a href="#skills" className="btn btn-secondary" role="button">
               Tell me more
             </a>{" "}
@@ -41,50 +33,39 @@ const Hero = () => {
             >
               Straight to the Goods (CV)
             </a>
-          </div>
+          </div> */}
         </div>
         <StaticImage
-          src="../images/hero-left-frame.png"
-          className="position-absolute hero__left-frame js_frame"
+          src="../images/hero-truck.png"
+          className="position-absolute hero__truck js_truck"
           layout="fullWidth"
           placeholder="TRACED_SVG"
-          alt="stone wall"
+          alt="truck and tree"
         />
         <StaticImage
-          src="../images/hero-right-frame.png"
-          className="position-absolute hero__right-frame js_frame"
+          src="../images/hero-tree.png"
+          className="position-absolute hero__tree js_tree"
           layout="fullWidth"
           placeholder="TRACED_SVG"
-          alt="stone wall, trees, man squatting"
+          alt="people, trees and benches"
         />
         <StaticImage
-          src="../images/hero-rider.png"
-          className="position-absolute hero__rider js_rider"
+          src="../images/hero-tree-2.png"
+          className="position-absolute hero__tree-2 js_tree2"
           layout="fullWidth"
           placeholder="TRACED_SVG"
-          alt="man on motorbike"
+          alt="brick wall and tree"
         />
+        <h3 className="mx-auto position-absolute hashTag text-white text-center">
+          #Team
+        </h3>
         <StaticImage
-          src="../images/hero-mountains2.png"
+          src="../images/hero-main.png"
+          className="hero__main"
           layout="fullWidth"
           placeholder="TRACED_SVG"
-          alt="mountains"
+          alt="media scene"
         />
-        <div className="pin text-white pin-1 position-absolute js_pin">
-          <div className="pin__text position-absolute d-inline text-nowrap">
-            <small>Solving problems</small>
-          </div>
-        </div>
-        <div className="pin text-white pin-2 position-absolute js_pin">
-          <div className="pin__text position-absolute d-inline text-nowrap">
-            <small>Exceeding expectations</small>
-          </div>
-        </div>
-        <div className="pin text-white pin-3 position-absolute js_pin">
-          <div className="pin__text position-absolute d-inline text-nowrap">
-            <small>Success!</small>
-          </div>
-        </div>
       </div>
     </>
   )

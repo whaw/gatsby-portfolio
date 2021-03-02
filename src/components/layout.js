@@ -22,7 +22,7 @@ const Layout = () => (
         data-spy="scroll"
         data-bs-target="#navbar"
         id="home"
-        className="px-md-3 pt-12"
+        className="px-md-3"
       />
     </Helmet>
     <header className="header">
