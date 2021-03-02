@@ -1,5 +1,4 @@
 // HEADERS
-
 h2 {
   font-size: 2rem;
 }
@@ -26,6 +25,9 @@ h4 {
   }
 }
 @include media-breakpoint-up(xl) {
+  h1 {
+    font-size: $h1-font-size;
+  }
   h2 {
     font-size: $h2-font-size;
   }

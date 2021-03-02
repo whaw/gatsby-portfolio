@@ -12,7 +12,7 @@ const Animation = ({ animElements, animContainer }) => {
   })
 
   const bindEvents = () => {
-    $(window).on("resize scroll", e => isElementInViewport(animContainer))
+    $(window).on("load resize scroll", e => isElementInViewport(animContainer))
   }
 
   const isElementInViewport = el => {

@@ -5,12 +5,12 @@ import Animation from "./Animation"
 const animElements = [
   { selector: ".js_hero", delay: null, elementDelay: null },
   { selector: ".js_frame", delay: null, elementDelay: null },
-  { selector: ".js_rider", delay: null, elementDelay: null },
-  {
-    selector: ".js_pin",
-    delay: 4000,
-    elementDelay: 200,
-  },
+  // { selector: ".js_rider", delay: null, elementDelay: null },
+  // {
+  //   selector: ".js_pin",
+  //   delay: 4000,
+  //   elementDelay: 200,
+  // },
   { selector: ".js_logo", delay: null, elementDelay: null },
 ]
 const animContainer = ".js_hero"
@@ -22,9 +22,12 @@ const Hero = () => {
       <div className="hero position-relative js_hero">
         <div className="heading text-center position-absolute w-100">
           <h1>
-            <span className="text-white">Needs</span> work
+            <span className="text-white">Aiming for</span> experiences
           </h1>
-          <h2 className="text-white">something snappierz</h2>
+          <h2 className="text-white">
+            that exceed expectations, surprise and delight
+            {/* Cusetomer focused. Aiming to provide solutions that deomonstrate a clear understanding of what is needed. */}
+          </h2>
           <div className="pt-3 d-none d-sm-block">
             <a href="#skills" className="btn btn-secondary" role="button">
               Tell me more
