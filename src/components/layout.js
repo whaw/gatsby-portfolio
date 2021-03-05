@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 
 /* components */
 import MainNav from "./MainNav"
-import Hero from "./Hero"
+import Hero from "./Hero/Hero"
 import Skills from "./Skills"
 import Brands from "./Brands"
 import Introductions from "./Introductions"

@@ -2,15 +2,16 @@
   overflow: hidden;
   .heading {
     z-index: 10;
-    display: inline-block;
     h1 {
       @include media-breakpoint-up(lg) {
-        font-size: 3.5rem;
+        font-size: 3rem;
+        margin-bottom: 0.25rem;
       }
     }
     h2 {
       @include media-breakpoint-up(lg) {
         font-size: 1.5rem;
+        margin-bottom: 0;
       }
     }
   }
@@ -23,7 +24,7 @@
   &__truck,
   &__tree,
   &__tree-2 {
-    z-index: 1;
+    z-index: 3;
   }
   &__truck {
     width: 36%;
@@ -44,16 +45,22 @@
     }
   }
   &__tree {
-    width: 52%;
+    width: 49%;
     top: 60%;
-    left: 32%;
+    left: 34%;
     &.animate {
-      top: 16%;
+      top: 17%;
       transition: all 1s ease-out;
     }
   }
   &__main {
-    z-index: 2;
+    z-index: 5;
     margin-top: -60px;
+  }
+  &__tool {
+    left: 0;
+    z-index: 1;
+    top: 2%;
+    left: 2%;
   }
 }

@@ -18,14 +18,14 @@ const Introductions = () => (
             <StaticImage
               src="../images/me.png"
               className="introductions__me"
-              layout="fullWidth"
+              layout="FULL_WIDTH"
               placeholder="TRACED_SVG"
               alt="author"
             />
             <StaticImage
               src="../images/dog.png"
               className="position-absolute introductions__dog"
-              layout="fullWidth"
+              layout="FULL_WIDTH"
               placeholder="TRACED_SVG"
               alt="dog"
             />

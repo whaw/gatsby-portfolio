@@ -1,8 +1,3 @@
-@mixin skills-shared {
-  background-repeat: no-repeat;
-  background-size: 50%;
-  left: 0;
-}
 .skills {
   overflow: hidden;
   .section__header {
@@ -25,100 +20,9 @@
     }
   }
   &__content {
-    &:before,
-    &:after {
-      content: "";
-      background-image: url("../images/skills-dots.png");
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      z-index: 1;
-      @include skills-shared;
-      opacity: 0;
-    }
-    &:after {
-      background-image: url("../images/skills-shadow.png");
-    }
-    @include media-breakpoint-up(lg) {
-      &.animate {
-        &:before {
-          animation: skills-dots 1.5s ease-out 200ms;
-        }
-        &:after {
-          animation: skills-shadow 1s ease-out;
-        }
-        .skills__rider {
-          opacity: 0.8;
-        }
-        .skills__rider--color,
-        .skills__lines {
-          opacity: 1;
-          transition: opacity 1s ease-out 0.75s;
-        }
-        .skills__lines {
-          opacity: 0.5;
-        }
-      }
-      @keyframes skills-dots {
-        0% {
-          left: 30%;
-          opacity: 1;
-        }
-        30% {
-          left: 20%;
-        }
-        100% {
-          left: 32%;
-        }
-      }
-      @keyframes skills-shadow {
-        0% {
-          left: 20%;
-          opacity: 1;
-        }
-        50% {
-          left: 30%;
-        }
-        100% {
-          left: 28%;
-        }
-      }
-    }
-  }
-  @include media-breakpoint-down(md) {
-    &__rider,
-    &__lines {
-      display: none;
-    }
-    &__rider--color {
-      width: 80%;
-      min-width: 250px;
-      margin-top: -100px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
-  @include media-breakpoint-up(lg) {
-    &__rider,
-    &__rider--color {
-      opacity: 1;
-      z-index: 2;
-      @include skills-shared;
-      width: 50%;
-      left: 28%;
-    }
-    &__rider--color {
-      opacity: 0;
-      position: absolute !important; // I know :( Needed to override relative position of gatsby-image-wrapper
-      z-index: 3;
-    }
-    &__lines {
-      top: 15px;
-      left: 13px;
-      width: 94%;
-      opacity: 0;
-      z-index: 4;
-    }
+    padding-top: 55px;
+    text-align: left;
+    background: url(../images/skills-bg.png) 50px no-repeat;
   }
   .bullet:before {
     width: 8.5px;
@@ -130,9 +34,6 @@
     text-indent: -8.5px;
     overflow: hidden;
     border-radius: 8.5px;
-  }
-  .drop-shadow {
-    filter: drop-shadow(-30px 20px 4px #aaa);
   }
   &__text {
     &--em {

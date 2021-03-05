@@ -65,6 +65,8 @@ const Animation = ({ animElements, animContainer }) => {
       } else {
         $(el).addClass("animate")
       }
+      $(document).trigger(`${el.selector}_animClassAdded`)
+      console.log(`${el.selector}_animClassAdded`)
     })
   }
 
