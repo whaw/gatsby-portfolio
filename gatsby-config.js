@@ -13,8 +13,9 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         sassOptions: {
-          includePaths: ["/src/scss/styles.scss"],
+          includePaths: [`${__dirname}/src/scss/styles.scss`],
         },
+        // part of adding scss to components. opting out to not include bootstrap twice, globally, then locally to component
         // sassRuleModulesTest: /\.mod\.s(a|c)ss$/, // make scss component.mobules available to components
         // additionalData: `@use "${__dirname}/src/scss/global-variables" as var;`, // make globals variables visible to component.module scss
       },
@@ -22,16 +23,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images`,
-        name: "images",
+        path: `${__dirname}/src/data/`,
       },
     },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-styled-components`,
-    `styled-components`,
-    `babel-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`, // for staticImages, without graphql
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {

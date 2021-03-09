@@ -1,9 +1,9 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Animation from "../Animation"
-import Tool from "../Tools/Tool"
-import toolAnimElements from "../Tools/toolAnimElements"
-import heroAnimElements from "./heroAnimElements"
+import Tool from "./Tool"
+import toolAnimElements from "/src/data/toolsAnim"
+import heroAnimElements from "/src/data/heroAnim"
 
 const animContainer = ".js_hero"
 
@@ -45,44 +45,36 @@ const Hero = () => {
         </div>
 
         {/* Tool images */}
-        {toolAnimElements[0].elements.map(tool => {
+        {toolAnimElements[0].images.map(tool => {
           return (
-            <Tool
-              filename={tool.filename}
-              selector={tool.selector}
-              key={tool.filename}
-              alt={tool.filename}
-              width={tool.width}
-              top={tool.top}
-              left={tool.left}
-            />
+            <Tool selector={tool.selector} key={tool.image} alt={tool.alt} />
           )
         })}
 
         {/* Main images */}
         <StaticImage
-          src="../images/hero-truck.png"
+          src="../../images/hero-truck.png"
           className="position-absolute hero__truck js_truck"
           layout="FULL_WIDTH"
           placeholder="TRACED_SVG"
           alt="truck and tree"
         />
         <StaticImage
-          src="../images/hero-tree.png"
+          src="../../images/hero-tree.png"
           className="position-absolute hero__tree js_tree"
           layout="FULL_WIDTH"
           placeholder="TRACED_SVG"
           alt="people, trees and benches"
         />
         <StaticImage
-          src="../images/hero-tree-2.png"
+          src="../../images/hero-tree-2.png"
           className="position-absolute hero__tree-2 js_tree2"
           layout="FULL_WIDTH"
           placeholder="TRACED_SVG"
           alt="brick wall and tree"
         />
         <StaticImage
-          src="../images/hero-rider.png"
+          src="../../images/hero-rider.png"
           className="hero__rider position-absolute"
           layout="FULL_WIDTH"
           placeholder="TRACED_SVG"
@@ -92,7 +84,7 @@ const Hero = () => {
           #Team
         </h3>
         <StaticImage
-          src="../images/hero-main.png"
+          src="../../images/hero-main.png"
           className="hero__main"
           layout="FULL_WIDTH"
           placeholder="TRACED_SVG"

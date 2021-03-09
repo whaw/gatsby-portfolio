@@ -1,0 +1,37 @@
+[
+  {
+    "selector": ".js_tool",
+    "delay": 3000,
+    "elementDelay": 200,
+    "images": [
+      {
+        "selector": "hero__javascript js_javascript",
+        "image": "./images/tools/javascript.png"
+      },
+      {
+        "selector": "hero__webkit js_webkit",
+        "image": "./images/tools/webkit.png"
+      },
+      {
+        "selector": "hero__gatsby js_gatsby",
+        "image": "./images/tools/gatsby.png"
+      },
+      {
+        "selector": "hero__graphql js_graphql",
+        "image": "./images/tools/graphql.png"
+      },
+      {
+        "selector": "hero__react js_react",
+        "image": "./images/tools/react.png"
+      },
+      {
+        "selector": "hero__redux js_redux",
+        "image": "./images/tools/redux.png"
+      },
+      {
+        "selector": "hero__typescript js_typescript",
+        "image": "./images/tools/typescript.png"
+      }
+    ]
+  }
+]

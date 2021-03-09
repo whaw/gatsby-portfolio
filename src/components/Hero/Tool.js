@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import Image from "../Image"
+import Image from "./ToolImage"
 import $ from "jquery"
 
 const Tool = props => {
@@ -12,20 +12,19 @@ const Tool = props => {
   }
 
   const checkHasAnimClass = () => {
+    // how to detect class being added
+    // to write animation in tools.js
+    // trying to add trigger to animations.js
+    // add play state to parent/Hero.js ?
     console.log("added")
   }
 
   return (
-    <div
-      style={{
-        width: props.width,
-        top: `${props.top}%`,
-        left: `${props.left}%`,
-      }}
+    <Image
+      selector={props.selector}
+      alt={props.alt}
       className={`position-absolute hero__tool js_tool ${props.selector}`}
-    >
-      <Image filename={props.filename} alt={props.alt} />
-    </div>
+    />
   )
 }
 

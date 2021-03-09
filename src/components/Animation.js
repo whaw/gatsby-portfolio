@@ -28,7 +28,7 @@ const Animation = ({ animElements, animContainer }) => {
 
   const render = () => {
     // there are two types of arrays used here
-    // aray type 1: animation information (selector, delay, elementDelay)
+    // array type 1: animation information (selector, delay, elementDelay)
     // array type 2: array of elements with same selector/class
 
     // aray type 1
@@ -65,8 +65,8 @@ const Animation = ({ animElements, animContainer }) => {
       } else {
         $(el).addClass("animate")
       }
-      $(document).trigger(`${el.selector}_animClassAdded`)
-      console.log(`${el.selector}_animClassAdded`)
+      // $(document).trigger(`${el.selector}_animClassAdded`)
+      // console.log(`${el.selector}_animClassAdded`)
     })
   }
 

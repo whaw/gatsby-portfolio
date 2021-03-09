@@ -1,3 +1,22 @@
+@mixin generate-tools-animation($top, $left) {
+  @keyframes tools-animation-start {
+    0% {
+      left: 20%;
+    }
+    50% {
+      left: 30%;
+    }
+    100% {
+      top: $top;
+      left: $left;
+    }
+  }
+}
+
+%tools-shared {
+  animation: tools-animation-start 1s ease forwards;
+}
+
 .hero {
   overflow: hidden;
   .heading {
@@ -21,10 +40,14 @@
     left: 0;
     right: 0;
   }
+  // hero main anim elements
   &__truck,
   &__tree,
   &__tree-2 {
     z-index: 3;
+    &.animate {
+      transition: all 1s ease-out;
+    }
   }
   &__truck {
     width: 36%;
@@ -32,7 +55,6 @@
     left: -40%;
     &.animate {
       left: 0;
-      transition: all 1s ease-out;
     }
   }
   &__tree-2 {
@@ -41,7 +63,6 @@
     top: 17%;
     &.animate {
       right: 0;
-      transition: all 1s ease-out;
     }
   }
   &__tree {
@@ -50,17 +71,73 @@
     left: 34%;
     &.animate {
       top: 17%;
-      transition: all 1s ease-out;
     }
   }
   &__main {
     z-index: 5;
     margin-top: -60px;
   }
+  // tool anim elements
   &__tool {
     left: 0;
     z-index: 1;
-    top: 2%;
-    left: 2%;
+    top: 1.5%;
+    left: -100px;
+  }
+  &__gatsby {
+    width: 36px;
+    height: 37px;
+    &.animate {
+      @include generate-tools-animation(9%, 72%);
+      @extend %tools-shared;
+    }
+  }
+  &__graphql {
+    width: 36px;
+    height: 37px;
+    &.animate {
+      @include generate-tools-animation(6%, 72%);
+      @extend %tools-shared;
+    }
+  }
+  &__javascript {
+    width: 35px;
+    height: 35px;
+    &.animate {
+      @include generate-tools-animation(6%, 72%);
+      @extend %tools-shared;
+    }
+  }
+  &__react {
+    width: 36px;
+    height: 37px;
+    &.animate {
+      @include generate-tools-animation(6%, 72%);
+      @extend %tools-shared;
+    }
+  }
+  &__redux {
+    width: 36px;
+    height: 37px;
+    &.animate {
+      @include generate-tools-animation(6%, 72%);
+      @extend %tools-shared;
+    }
+  }
+  &__typescript {
+    width: 36px;
+    height: 37px;
+    &.animate {
+      @include generate-tools-animation(6%, 72%);
+      @extend %tools-shared;
+    }
+  }
+  &__webkit {
+    width: 36px;
+    height: 37px;
+    &.animate {
+      @include generate-tools-animation(6%, 72%);
+      @extend %tools-shared;
+    }
   }
 }

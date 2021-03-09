@@ -1,6 +1,6 @@
 // GLOBALS
 
-// init
+// boiler
 @import "./vendors/bootstrap";
 @import "./global-variables";
 @import "./grid";
@@ -8,10 +8,8 @@
 @import "./fonts";
 @import "./custom-helpers";
 
+// components
 @import "./components/Hero";
 @import "./components/Introductions";
 @import "./components/MainNav";
 @import "./components/Skills";
-
-// modules
-@import "./modules/pin";
