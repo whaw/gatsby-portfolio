@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Animation from "../Animation"
-import Tool from "./Tool"
+import Tool from "./Tools/Tool"
 import toolAnimElements from "/src/data/toolsAnim"
 import heroAnimElements from "/src/data/heroAnim"
 
@@ -23,10 +23,10 @@ const Hero = () => {
         <div className="heading js_heading position-absolute text-center w-100">
           <h1 className="mx-auto">Ready to Go</h1>
           <h2 className="mx-auto text-secondary">
-            Aiming for experiences that surprise and delight
+            Aiming for experiences that exceed expectations
           </h2>
           <span className="small">
-            ( + some tools I am currently in or plan to develop)
+            ( + some tools/skills I am focused on developing)
           </span>
           {/* <div className="pt-3 d-none d-sm-block">
             <a href="#skills" className="btn btn-secondary" role="button">
@@ -47,7 +47,14 @@ const Hero = () => {
         {/* Tool images */}
         {toolAnimElements[0].images.map(tool => {
           return (
-            <Tool selector={tool.selector} key={tool.image} alt={tool.alt} />
+            <Tool
+              selector={tool.selector}
+              name={tool.name}
+              description={tool.description}
+              status={tool.status}
+              key={tool.image}
+              alt={tool.alt}
+            />
           )
         })}
 

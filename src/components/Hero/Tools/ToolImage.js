@@ -17,8 +17,8 @@ const Image = props => (
                 selector
                 image {
                   childImageSharp {
-                    fluid {
-                      src
+                    fluid(maxWidth: 75) {
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }

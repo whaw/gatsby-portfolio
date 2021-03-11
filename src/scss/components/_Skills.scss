@@ -22,7 +22,19 @@
   &__content {
     padding-top: 55px;
     text-align: left;
-    background: url(../images/skills-bg.png) 50px no-repeat;
+    background: url(../images/skills-bg.png) no-repeat;
+    @include media-breakpoint-up(md) {
+      background-size: 70%;
+      background-position: 52px 92px;
+    }
+    @include media-breakpoint-up(lg) {
+      background-size: 80%;
+      background-position: 49px 59px;
+    }
+    @include media-breakpoint-up(xl) {
+      background-size: 82%;
+      background-position: 50px 58px;
+    }
   }
   .bullet:before {
     width: 8.5px;

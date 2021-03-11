@@ -1,7 +1,7 @@
-@mixin generate-tools-animation($top, $left) {
-  @keyframes tools-animation-start {
+@mixin generate-tools-animation($top, $left, $name) {
+  @keyframes tools-animation--#{$name} {
     0% {
-      left: 20%;
+      left: 0%;
     }
     50% {
       left: 30%;
@@ -13,8 +13,19 @@
   }
 }
 
-%tools-shared {
-  animation: tools-animation-start 1s ease forwards;
+@keyframes tools-aside-anim {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 300px;
+    height: 1px;
+  }
+  100% {
+    width: 250px;
+    height: auto;
+  }
 }
 
 .hero {
@@ -80,64 +91,71 @@
   // tool anim elements
   &__tool {
     left: 0;
-    z-index: 1;
+    z-index: 10;
     top: 1.5%;
     left: -100px;
+    &:hover {
+      z-index: 11;
+    }
+    &__aside {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 1s ease-out;
+      opacity: 0;
+      &.animate {
+        opacity: 1;
+        animation: tools-aside-anim 1s ease forwards;
+      }
+    }
   }
   &__gatsby {
-    width: 36px;
-    height: 37px;
+    width: 28px;
     &.animate {
-      @include generate-tools-animation(9%, 72%);
-      @extend %tools-shared;
+      @include generate-tools-animation(8%, 16%, gatsby);
+      animation: tools-animation--gatsby 1s ease forwards;
     }
   }
   &__graphql {
-    width: 36px;
-    height: 37px;
+    width: 27px;
     &.animate {
-      @include generate-tools-animation(6%, 72%);
-      @extend %tools-shared;
+      @include generate-tools-animation(3%, 81%, graphql);
+      animation: tools-animation--graphql 1s ease forwards;
     }
   }
   &__javascript {
     width: 35px;
-    height: 35px;
     &.animate {
-      @include generate-tools-animation(6%, 72%);
-      @extend %tools-shared;
+      @include generate-tools-animation(13%, 26%, javascript);
+      animation: tools-animation--javascript 1s ease forwards;
     }
   }
   &__react {
-    width: 36px;
-    height: 37px;
+    width: 39px;
     &.animate {
-      @include generate-tools-animation(6%, 72%);
-      @extend %tools-shared;
+      @include generate-tools-animation(11%, 79%, react);
+      animation: tools-animation--react 1s ease forwards;
     }
   }
   &__redux {
-    width: 36px;
-    height: 37px;
+    width: 30px;
     &.animate {
-      @include generate-tools-animation(6%, 72%);
-      @extend %tools-shared;
+      @include generate-tools-animation(15%, 68%, redux);
+      animation: tools-animation--redux 1s ease forwards;
     }
   }
   &__typescript {
-    width: 36px;
-    height: 37px;
+    width: 26px;
     &.animate {
-      @include generate-tools-animation(6%, 72%);
-      @extend %tools-shared;
+      @include generate-tools-animation(3%, 71%, typescript);
+      animation: tools-animation--typescript 1s ease forwards;
     }
   }
-  &__webkit {
-    width: 36px;
-    height: 37px;
+  &__webpack {
+    width: 27px;
     &.animate {
-      @include generate-tools-animation(6%, 72%);
-      @extend %tools-shared;
+      @include generate-tools-animation(2%, 27%, webkit);
+      animation: tools-animation--webkit 1s ease forwards;
     }
   }
 }
