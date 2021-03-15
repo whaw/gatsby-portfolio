@@ -2,9 +2,9 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: `Will H/ | Portfolio`,
+    title: `A Working Copy`,
     description: `Temp site for experimentation and to show some stuff`,
-    author: `Will H`,
+    author: `@whaw`,
   },
   flags: { PRESERVE_WEBPACK_CACHE: true, DEV_SSR: false },
   plugins: [
@@ -36,6 +36,7 @@ module.exports = {
     //     name: `gatsby-starter-default`,
     //     short_name: `starter`,
     //     start_url: `/`,
+
     //     background_color: `#663399`,
     //     theme_color: `#663399`,
     //     display: `minimal-ui`,

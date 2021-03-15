@@ -21,7 +21,7 @@ const Tool = props => {
         onFocus={handleOnMouseOver}
         onMouseOut={handleOnMouseOut}
         onBlur={handleOnMouseOut}
-        className={`position-absolute border-0 p-0 bg-white hero__tool js_tool hero__${cssSelector} ${props.selector}`}
+        className={`position-absolute border-0 p-0 bg-transparent hero__tool js_tool hero__${cssSelector} ${props.selector}`}
       >
         <Image selector={props.selector} alt={props.name} />
         <ToolDescription

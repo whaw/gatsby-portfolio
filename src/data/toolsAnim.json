@@ -1,7 +1,7 @@
 [
   {
     "selector": ".js_tool",
-    "delay": 1200,
+    "delay": 5000,
     "elementDelay": 200,
     "images": [
       {
@@ -15,7 +15,7 @@
         "selector": "hero__webpack js_webpack",
         "image": "./images/tools/webpack.png",
         "name": "Webpack",
-        "description": "Webpack is a tool that lets you compile JavaScript modules, also known as module bundler. Given a large number of files, it generates a single file (or a few files) that run your app. It can perform many operations: helps you bundle your resources.",
+        "description": "Webpack is a tool that lets you compile JavaScript modules, also known as module bundler. Given a large number of files, it generates a single file (or a few files) that run your app.",
         "status": "In progress"
       },
       {
@@ -29,14 +29,14 @@
         "selector": "hero__graphql js_graphql",
         "image": "./images/tools/graphql.png",
         "name": "GraphQL",
-        "description": "GraphQL is a syntax that describes how to ask for data, and is generally used to load data from a server to a client.",
+        "description": "GraphQL is a syntax that describes queries for data, and is generally used to load data from a server to a client.",
         "status": "In progress"
       },
       {
         "selector": "hero__react js_react",
         "image": "./images/tools/react.png",
         "name": "React",
-        "description": "React is used for building user interfaces specifically for single-page applications. It allows developers to create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple.",
+        "description": "React allows developers to create small to large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple.",
         "status": "In progress"
       },
       {
@@ -44,13 +44,13 @@
         "image": "./images/tools/redux.png",
         "name": "Redux",
         "description": "Redux takes away some of the hassles faced with state management in large applications.",
-        "status": "In progress"
+        "status": "On deck"
       },
       {
         "selector": "hero__typescript js_typescript",
         "image": "./images/tools/typescript.png",
         "name": "TypeScript",
-        "description": "TypeScript is a superset of the JavaScript language. It's goal is to help catch mistakes early through a type system, to make JavaScript development more efficient.",
+        "description": "TypeScript is a superset of the JavaScript. It's goal is to help catch mistakes early through a type system, to make JavaScript development more efficient.",
         "status": "On deck"
       }
     ]

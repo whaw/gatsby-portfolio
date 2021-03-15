@@ -23,10 +23,10 @@ const Hero = () => {
         <div className="heading js_heading position-absolute text-center w-100">
           <h1 className="mx-auto">Ready to Go</h1>
           <h2 className="mx-auto text-secondary">
-            Aiming for experiences that exceed expectations
+            Aiming to exceed expectations
           </h2>
-          <span className="small">
-            ( + some tools/skills I am focused on developing)
+          <span className="small js_heading hero__sub-heading">
+            ( + some tools I'm focused on developing, now or soon )
           </span>
           {/* <div className="pt-3 d-none d-sm-block">
             <a href="#skills" className="btn btn-secondary" role="button">
@@ -62,38 +62,31 @@ const Hero = () => {
         <StaticImage
           src="../../images/hero-truck.png"
           className="position-absolute hero__truck js_truck"
-          layout="FULL_WIDTH"
+          layout="fullWidth"
           placeholder="TRACED_SVG"
           alt="truck and tree"
         />
         <StaticImage
           src="../../images/hero-tree.png"
           className="position-absolute hero__tree js_tree"
-          layout="FULL_WIDTH"
+          layout="fullWidth"
           placeholder="TRACED_SVG"
-          alt="people, trees and benches"
+          alt="media, trees and benches"
         />
-        <StaticImage
-          src="../../images/hero-tree-2.png"
-          className="position-absolute hero__tree-2 js_tree2"
-          layout="FULL_WIDTH"
-          placeholder="TRACED_SVG"
-          alt="brick wall and tree"
-        />
-        <StaticImage
-          src="../../images/hero-rider.png"
-          className="hero__rider position-absolute"
-          layout="FULL_WIDTH"
-          placeholder="TRACED_SVG"
-          alt="riders on motorcycles"
-        />
-        <h3 className="mx-auto position-absolute hashTag text-white text-center">
+        <h3 className="mx-auto position-absolute hero__hashTag text-white text-center">
           #Team
         </h3>
         <StaticImage
+          src="../../images/hero-sketch3.png"
+          className="position-absolute hero__sketch js_sketch"
+          layout="fullWidth"
+          placeholder="TRACED_SVG"
+          alt="sketch of a road less traveled"
+        />
+        <StaticImage
           src="../../images/hero-main.png"
-          className="hero__main"
-          layout="FULL_WIDTH"
+          className="hero__main mt-11"
+          layout="fullWidth"
           placeholder="TRACED_SVG"
           alt="media scene"
         />

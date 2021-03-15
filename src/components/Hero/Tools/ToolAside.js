@@ -7,10 +7,12 @@ const ToolAside = props => {
         props.isOpen ? "animate p-2" : ""
       }`}
     >
-      <h6>
-        {props.name} - <span className="small">{props.status}</span>
-      </h6>
+      <h6>{props.name}</h6>
+
       <p>{props.description}</p>
+      <p>
+        <strong>Status:</strong> {props.status}
+      </p>
     </aside>
   )
 }

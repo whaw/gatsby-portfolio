@@ -1,3 +1,5 @@
+// HERO - mixins and animations
+
 @mixin generate-tools-animation($top, $left, $name) {
   @keyframes tools-animation--#{$name} {
     0% {
@@ -28,6 +30,20 @@
   }
 }
 
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+// HERO
+
 .hero {
   overflow: hidden;
   .heading {
@@ -45,7 +61,14 @@
       }
     }
   }
-  .hashTag {
+  &__sub-heading {
+    opacity: 0;
+    &.animate {
+      opacity: 1;
+      transition: opacity 2s ease;
+    }
+  }
+  &__hashTag {
     z-index: 15;
     bottom: 6%;
     left: 0;
@@ -53,35 +76,37 @@
   }
   // hero main anim elements
   &__truck,
-  &__tree,
-  &__tree-2 {
+  &__tree {
     z-index: 3;
     &.animate {
       transition: all 1s ease-out;
     }
   }
   &__truck {
-    width: 36%;
-    top: 13%;
+    width: 31.25%;
+    bottom: 41%;
     left: -40%;
     &.animate {
       left: 0;
     }
   }
-  &__tree-2 {
+  &__tree {
     width: 16%;
     right: -16%;
-    top: 17%;
+    // top: 17%;
+    bottom: 45%;
     &.animate {
       right: 0;
     }
   }
-  &__tree {
-    width: 49%;
-    top: 60%;
-    left: 34%;
+  &__sketch {
+    z-index: 1;
+    width: 80%;
+    bottom: 0%;
+    left: 8%;
     &.animate {
-      top: 17%;
+      bottom: 45%;
+      transition: all 1.5s ease;
     }
   }
   &__main {
@@ -94,8 +119,11 @@
     z-index: 10;
     top: 1.5%;
     left: -100px;
-    &:hover {
-      z-index: 11;
+    &.animate {
+      &:hover {
+        z-index: 11;
+        animation-play-state: paused;
+      }
     }
     &__aside {
       width: 0;
@@ -113,49 +141,50 @@
     width: 28px;
     &.animate {
       @include generate-tools-animation(8%, 16%, gatsby);
-      animation: tools-animation--gatsby 1s ease forwards;
+      animation: tools-animation--gatsby 1s ease forwards,
+        float 6s 500ms infinite;
     }
   }
   &__graphql {
     width: 27px;
     &.animate {
       @include generate-tools-animation(3%, 81%, graphql);
-      animation: tools-animation--graphql 1s ease forwards;
+      animation: tools-animation--graphql 1s ease forwards, float 6s infinite;
     }
   }
   &__javascript {
     width: 35px;
     &.animate {
       @include generate-tools-animation(13%, 26%, javascript);
-      animation: tools-animation--javascript 1s ease forwards;
+      animation: tools-animation--javascript 1s ease forwards, float 6s infinite;
     }
   }
   &__react {
     width: 39px;
     &.animate {
       @include generate-tools-animation(11%, 79%, react);
-      animation: tools-animation--react 1s ease forwards;
+      animation: tools-animation--react 1s ease forwards, float 6s infinite;
     }
   }
   &__redux {
     width: 30px;
     &.animate {
       @include generate-tools-animation(15%, 68%, redux);
-      animation: tools-animation--redux 1s ease forwards;
+      animation: tools-animation--redux 1s ease forwards, float 6s infinite;
     }
   }
   &__typescript {
     width: 26px;
     &.animate {
       @include generate-tools-animation(3%, 71%, typescript);
-      animation: tools-animation--typescript 1s ease forwards;
+      animation: tools-animation--typescript 1s ease forwards, float 6s infinite;
     }
   }
   &__webpack {
     width: 27px;
     &.animate {
       @include generate-tools-animation(2%, 27%, webkit);
-      animation: tools-animation--webkit 1s ease forwards;
+      animation: tools-animation--webkit 1s ease forwards, float 6s infinite;
     }
   }
 }
