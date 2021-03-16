@@ -13,7 +13,7 @@ const Skills = () => (
       </div>
       <div className="container">
         <div className="row skills__content border position-relative bg-light p-5 text-center text-md-left js_skills">
-          <div className="col-12 col-sm-6 pb-5 pb-md-0 pt-3 pt-md-5 pt-lg-0 skills-col text-center text-sm-left">
+          <div className="col-12 col-sm-6 pb-7 pb-sm-5 pb-md-3 skills__col text-center text-sm-left">
             <h4 className="bullet">hard skills</h4>
             <ul className="list-unstyled">
               <li>HTML5, CSS3, SCSS</li>
@@ -30,13 +30,13 @@ const Skills = () => (
               <li>Git</li>
               <li>and....</li>
             </ul>
-            <div className="display-4">
+            <div className="skills__closing-text">
               <small>working to be</small>
               <br />
-              <span className="skills__text--em">greater</span>
+              <span className="skills__closing-text--em">greater</span>
             </div>
           </div>
-          <div className="col-12 col-sm-6 pt-3 pt-md-5 pt-lg-0 skills-col text-center text-sm-right">
+          <div className="col-12 col-sm-6 py-5 pt-sm-0 skills__col text-center text-sm-right">
             <h4 className="bullet">soft skills</h4>
             <ul className="list-unstyled">
               <li>Critical thinking</li>
@@ -53,10 +53,10 @@ const Skills = () => (
               <li>Sense of humor</li>
               <li>and....</li>
             </ul>
-            <div className="display-4">
+            <div className="skills__closing-text">
               <small>working to be</small>
               <br />
-              <span className="skills__text--em">stronger</span>
+              <span className="skills__closing-text--em">stronger</span>
             </div>
           </div>
         </div>

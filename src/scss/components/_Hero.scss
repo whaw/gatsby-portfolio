@@ -49,12 +49,14 @@
   .heading {
     z-index: 10;
     h1 {
+      font-size: 2rem;
       @include media-breakpoint-up(lg) {
         font-size: 3rem;
         margin-bottom: 0.25rem;
       }
     }
     h2 {
+      font-size: 1rem;
       @include media-breakpoint-up(lg) {
         font-size: 1.5rem;
         margin-bottom: 0;
@@ -101,9 +103,9 @@
   }
   &__sketch {
     z-index: 1;
-    width: 80%;
+    width: 78%;
     bottom: 0%;
-    left: 8%;
+    left: 10%;
     &.animate {
       bottom: 45%;
       transition: all 1.5s ease;

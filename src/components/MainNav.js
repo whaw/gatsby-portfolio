@@ -12,9 +12,11 @@ const MainNav = () => {
     <>
       <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-5">
         <a className="navbar-brand js_logo" href="#home">
-          <span className="logo mb-2 d-inline-block">William Haw &nbsp;</span>
+          <span className="logo mb-2 d-inline-block">
+            A Working Copy &nbsp;
+          </span>
           <br className="d-none d-lg-block" />
-          Front End Developer
+          Front End Dev<span className="d-md-none">eloper</span>
           <span className="d-none d-md-inline-block">
             , User Advocate, Outdoor Enthusiast
           </span>

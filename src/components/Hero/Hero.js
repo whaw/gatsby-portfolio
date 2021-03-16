@@ -77,7 +77,7 @@ const Hero = () => {
           #Team
         </h3>
         <StaticImage
-          src="../../images/hero-sketch3.png"
+          src="../../images/hero-sketch.png"
           className="position-absolute hero__sketch js_sketch"
           layout="fullWidth"
           placeholder="TRACED_SVG"
@@ -85,7 +85,7 @@ const Hero = () => {
         />
         <StaticImage
           src="../../images/hero-main.png"
-          className="hero__main mt-11"
+          className="hero__main mt-14"
           layout="fullWidth"
           placeholder="TRACED_SVG"
           alt="media scene"
