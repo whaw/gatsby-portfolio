@@ -33,7 +33,9 @@ const Skills = () => (
             <div className="skills__closing-text">
               <small>working to be</small>
               <br />
-              <span className="skills__closing-text--em">greater</span>
+              <span className="skills__closing-text--em font-weight-bold">
+                greater
+              </span>
             </div>
           </div>
           <div className="col-12 col-sm-6 py-5 pt-sm-0 skills__col text-center text-sm-right">
@@ -56,7 +58,9 @@ const Skills = () => (
             <div className="skills__closing-text">
               <small>working to be</small>
               <br />
-              <span className="skills__closing-text--em">stronger</span>
+              <span className="skills__closing-text--em font-weight-bold">
+                stronger
+              </span>
             </div>
           </div>
         </div>

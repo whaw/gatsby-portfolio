@@ -25,7 +25,7 @@ const Hero = () => {
           <h2 className="mx-auto text-secondary">
             Aiming to exceed expectations
           </h2>
-          <span className="small js_heading hero__sub-heading">
+          <span className="small d-none d-sm-block js_heading hero__sub-heading">
             ( + some tools I'm focused on developing, now or soon )
           </span>
           {/* <div className="pt-3 d-none d-sm-block">
@@ -61,7 +61,7 @@ const Hero = () => {
         {/* Main images */}
         <StaticImage
           src="../../images/hero-truck.png"
-          className="position-absolute hero__truck js_truck"
+          className="position-absolute mt-14 hero__truck js_truck"
           layout="fullWidth"
           placeholder="TRACED_SVG"
           alt="truck and tree"
@@ -85,7 +85,7 @@ const Hero = () => {
         />
         <StaticImage
           src="../../images/hero-main.png"
-          className="hero__main mt-14"
+          className="hero__main mt-11 mt-sm-12 mt-md-14"
           layout="fullWidth"
           placeholder="TRACED_SVG"
           alt="media scene"
