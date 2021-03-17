@@ -19,14 +19,14 @@ const Hero = () => {
         animContainer={animContainer}
       />
 
-      <div className="hero position-relative js_hero mt-13">
+      <div className="hero position-relative js_hero mt-11 mt-md-13">
         <div className="heading js_heading position-absolute text-center w-100">
           <h1 className="mx-auto">Ready to Go</h1>
-          <h2 className="mx-auto text-secondary">
+          <h4 className="mx-auto text-secondary">
             Aiming to exceed expectations
-          </h2>
+          </h4>
           <span className="small d-none d-sm-block js_heading hero__sub-heading">
-            ( + some tools I'm focused on developing, now or soon )
+            ( + some tools I'm working on, now or soon )
           </span>
           {/* <div className="pt-3 d-none d-sm-block">
             <a href="#skills" className="btn btn-secondary" role="button">
@@ -77,7 +77,7 @@ const Hero = () => {
           #Team
         </h3>
         <StaticImage
-          src="../../images/hero-sketch.png"
+          src="../../images/hero-sketch22.png"
           className="position-absolute hero__sketch js_sketch"
           layout="fullWidth"
           placeholder="TRACED_SVG"

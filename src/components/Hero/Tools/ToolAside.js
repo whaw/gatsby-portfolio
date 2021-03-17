@@ -11,7 +11,7 @@ const ToolAside = props => {
 
       <p>{props.description}</p>
       <p>
-        <strong>Status:</strong> {props.status}
+        <strong>Development status:</strong> {props.status}
       </p>
     </aside>
   )

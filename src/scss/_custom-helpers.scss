@@ -12,6 +12,10 @@
   padding-bottom: 0;
 }
 
+aside {
+  border-left: 5px solid $border-color;
+}
+
 // IMAGES
 .drop-shadow {
   filter: drop-shadow(-11px 20px 4px #aaa);
@@ -34,11 +38,4 @@ P > a.btn.btn-primary {
   position: fixed;
   right: 30px;
   bottom: 30px;
-}
-
-// MISC
-
-.joke-container {
-  color: $black;
-  background-color: $gray-100;
 }

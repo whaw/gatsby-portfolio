@@ -59,7 +59,7 @@ const Introductions = () => (
                 role="button"
                 target="_blank"
               >
-                Checkout professional experience (CV)
+                To the resume
               </a>
             </p>
           </div>

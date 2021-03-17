@@ -6,7 +6,10 @@
   &-brand {
     font-size: 0.9rem;
     .logo {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 1.5rem;
+      }
       font-weight: 600;
       line-height: 1rem;
       display: inline-block;

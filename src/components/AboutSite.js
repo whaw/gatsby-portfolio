@@ -15,44 +15,42 @@ const AboutSite = () => (
         <div className="col-12 col-md-6">
           <h4>Objective</h4>
           <p>
-            To demostrate the polish and attention to detail that I strive for
-            in my work, and a sense of who I am, as cultural fit is equally
-            important to being at our best.
+            To demostrate a level of excellence that I strive for in everything
+            that I do, with a laser focus on customer, and to provide a sense of
+            who I am, as team fit is paramamount to success.
           </p>
-          <p>
-            And moreover, to provide insight into how I ramp on new technologies
-            - the "get it working" stage (of "get it working", "make it right",
-            "make it fast").
-          </p>
-          <h4>Build Stack</h4>
+          <aside className="pl-3">
+            <p>
+              Much of the work done here with JavaScript and frameworks are new
+              to me and are to server two purposes: to provide insight into how
+              I adopt new technologies, and to further my skills to becoming a
+              JavaScript specialist.
+            </p>
+          </aside>
+          <h4>Build stack</h4>
           <ul className="row">
-            <li className="col-6 col-md-12">
-              <strong>Bootstrap,</strong> to get up and running quickly and
-              leave the browser management to a dedicated team
-            </li>
-            <li className="col-6 col-md-12">
-              <strong>JQuery, SCSS,</strong> for DOM manipulation and animations
-            </li>
-            <li className="col-6 col-md-12">
-              <strong>Gatsby, React, </strong> for speed and performance
-            </li>
+            <li className="col-12 col-md-6">SCSS</li>
+            <li className="col-12 col-md-6">Bootstrap</li>
+            <li className="col-12 col-md-6">JQuery</li>
+            <li className="col-12 col-md-6">React</li>
+            <li className="col-12 col-md-6">Gatsby</li>
           </ul>
         </div>
         <div className="col-12 col-md-6">
           <h4>Approach</h4>
           <p>
-            <strong>Why the use of libraries?</strong>
+            SCSS for clean dry code.
             <br />
-            Speed of delivery and efficiencies in ongoing mangement. I have
-            years of hand coding that predates these libraries (argh haha), but
-            as times evolve, so do I, and I remain flexible and open to what is
-            best suited and most efficent for the needs of a project.
+            Bootstrap and JQuery for speed of delivery.
+            <br />
+            Gatsby and React for efficiences in site performance and ongoing
+            management.
           </p>
           <h4>Result</h4>
           <p>
-            Site is fast and is consistent across platforms. Further
-            enhancements are in progress as this is V1 and the mandate is to
-            move fast, deploy often and iterate.
+            Site is fast, efficient and is consistent across platforms. Further
+            enhancements are in progress, in my relentless pursuit to do my best
+            work.
           </p>
           <p>
             <a
@@ -63,10 +61,10 @@ const AboutSite = () => (
               target="_blank"
               rel="noreferrer"
             >
-              To the code (Github)
+              To the code
             </a>{" "}
             <a href="#contact" className="btn btn-primary" role="button">
-              Let's talk
+              Let's chat
             </a>
           </p>
         </div>

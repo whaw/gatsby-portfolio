@@ -12,7 +12,7 @@ const Skills = () => (
         </div>
       </div>
       <div className="container">
-        <div className="row skills__content border position-relative bg-light p-5 text-center text-md-left js_skills">
+        <div className="row skills__content border position-relative bg-light p-5 text-center text-md-left js_skills mx-1 mx-sm-0">
           <div className="col-12 col-sm-6 pb-7 pb-sm-5 pb-md-3 skills__col text-center text-sm-left">
             <h4 className="bullet">hard skills</h4>
             <ul className="list-unstyled">
