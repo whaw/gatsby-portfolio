@@ -5,10 +5,8 @@ import Helmet from "react-helmet"
 /* components */
 import MainNav from "./MainNav"
 import Hero from "./Hero/Hero"
-import Skills from "./Skills"
-import Brands from "./Brands"
-import Introductions from "./Introductions"
-import AboutSite from "./AboutSite"
+import About from "./About"
+import Timeline from "./Timeline/Timeline"
 import Contact from "./Contact"
 import TopButton from "./TopButton"
 
@@ -30,10 +28,8 @@ const Layout = () => (
       <Hero />
     </header>
     <main>
-      <Skills />
-      <Brands />
-      <AboutSite />
-      <Introductions />
+      <About />
+      <Timeline />
       <Contact />
       <TopButton />
     </main>

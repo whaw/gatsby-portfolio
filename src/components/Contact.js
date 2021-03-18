@@ -6,7 +6,7 @@ const Contact = () => (
     <div className="container section__header">
       <div className="row">
         <div className="col text-center">
-          <h2>Contact</h2>
+          <h2>Give me a shout</h2>
           <h3 className="text-secondary">Let's do something Great</h3>
 
           <StaticImage

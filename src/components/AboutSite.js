@@ -17,23 +17,23 @@ const AboutSite = () => (
           <p>
             To demostrate a level of excellence that I strive for in everything
             that I do, with a laser focus on customer, and to provide a sense of
-            who I am, as team fit is paramamount to success.
+            who I am, as team fit is paramount to success.
           </p>
           <aside className="pl-3">
             <p>
               Much of the work done here with JavaScript and frameworks are new
-              to me and are to server two purposes: to provide insight into how
-              I adopt new technologies, and to further my skills to becoming a
+              to me and are to serve two purposes: to provide insight into how I
+              adopt new technologies, and to further my skills to becoming a
               JavaScript specialist.
             </p>
           </aside>
           <h4>Build stack</h4>
           <ul className="row">
-            <li className="col-12 col-md-6">SCSS</li>
-            <li className="col-12 col-md-6">Bootstrap</li>
-            <li className="col-12 col-md-6">JQuery</li>
-            <li className="col-12 col-md-6">React</li>
-            <li className="col-12 col-md-6">Gatsby</li>
+            <li className="col-12 col-md-6 px-0">SCSS</li>
+            <li className="col-12 col-md-6 px-0">Bootstrap</li>
+            <li className="col-12 col-md-6 px-0">JQuery</li>
+            <li className="col-12 col-md-6 px-0">React</li>
+            <li className="col-12 col-md-6 px-0">Gatsby</li>
           </ul>
         </div>
         <div className="col-12 col-md-6">
@@ -49,7 +49,7 @@ const AboutSite = () => (
           <h4>Result</h4>
           <p>
             Site is fast, efficient and is consistent across platforms. Further
-            enhancements are in progress, in my relentless pursuit to do my best
+            enhancements are in progress, in my relentless pursuit to do great
             work.
           </p>
           <p>

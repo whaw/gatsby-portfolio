@@ -3,16 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Brands = () => (
   <section id="clients" className="clients">
-    <div className="container section__header">
-      <div className="row">
-        <div className="col text-center">
-          <h2>Some Brands</h2>
-          <h3 className="text-secondary">
-            I have had the privilege to contribute
-          </h3>
-        </div>
-      </div>
-    </div>
     <div className="container">
       <div className="row align-items-center justify-content-between">
         <div className="col-3 col-sm-2 col-xl-1 p-4 p-md-5 p-xl-3">
