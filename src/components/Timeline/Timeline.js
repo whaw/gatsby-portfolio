@@ -1,25 +1,123 @@
 // Sourced: https://codepen.io/acxix92/pen/yzOazE
-// Note: minor edits made to resolve compilation errors
+// Note: minor edits to resolve compilation errors
 
 import React, { useEffect } from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import "./Timeline.css"
 import initiateTimeline from "./Timeline-script" // (aside: cleared some compilation errors)
 
-function Timeline() {
+const Timeline = () => {
   useEffect(() => {
     initiateTimeline()
   })
   return (
-    <section id="timeline">
+    <section id="timeline" className="bg-light py-10">
       <div className="container section__header">
         <div className="row">
           <div className="col text-center">
-            <h4>Past experience</h4>
+            <h2>Experience</h2>
             <h3 className="text-secondary">At a glance</h3>
           </div>
         </div>
+
+        {/* BRANDS */}
+        <div className="row align-items-center justify-content-between px-15 mx-10 pt-5">
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/knorr.svg"
+              className="w-100"
+              placeholder="TRACED_SVG"
+              alt="Knorr"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/apple.svg"
+              className="mx-2"
+              placeholder="TRACED_SVG"
+              alt="Apple"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/canadaPost.svg"
+              className="mx-2"
+              placeholder="TRACED_SVG"
+              alt="Canada Post"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/ADDB.svg"
+              className="w-100"
+              placeholder="TRACED_SVG"
+              alt="Anderson DDB"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/marvel.svg"
+              className="w-100"
+              placeholder="TRACED_SVG"
+              alt="Marvel Comics"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/johnsonAndJohnson.svg"
+              className="w-100"
+              placeholder="TRACED_SVG"
+              alt="Johnson and Johnson"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/yorkU.png"
+              className="w-100"
+              placeholder="TRACED_SVG"
+              alt="York University"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/peller.png"
+              className="w-100"
+              placeholder="TRACED_SVG"
+              alt="Peller Estates"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/trius.png"
+              className="w-100"
+              placeholder="TRACED_SVG"
+              alt="Trius Winery"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/thirtybench.png"
+              className="w-100"
+              placeholder="TRACED_SVG"
+              alt="Thirty Bench Winery"
+            />
+          </div>
+          <div className="col-3 col-sm-2 col-xl-1">
+            <StaticImage
+              src="../../images/companies/gretzky.png"
+              className="w-100"
+              placeholder="TRACED_SVG"
+              alt="Wayne Gretzky Estates"
+            />
+          </div>
+        </div>
+        <p className="small text-center text-secondary">
+          Some brands I have had the privilege to contribute
+        </p>
       </div>
-      <div className="row">
+
+      {/* TIMELINE */}
+      <div className="row px-xl-15">
         <div className="col">
           <div className="cd-horizontal-timeline">
             <div className="timeline">
@@ -27,49 +125,23 @@ function Timeline() {
                 <div className="events">
                   <ol>
                     <li>
-                      <a href="#0" data-date="14/06/2016" className="selected">
-                        June 14
+                      <a href="#0" data-date="1/1/2004" className="selected">
+                        2004
                       </a>
                     </li>
                     <li>
-                      <a href="#0" data-date="21/06/2016">
-                        June 21
+                      <a href="#0" data-date="1/1/2006">
+                        2006
                       </a>
                     </li>
                     <li>
-                      <a href="#0" data-date="24/06/2016">
-                        June 24
+                      <a href="#0" data-date="1/1/2015">
+                        2015
                       </a>
                     </li>
                     <li>
-                      <a href="#0" data-date="30/06/2016">
-                        June 21-30
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#0" data-date="08/07/2016">
-                        {" "}
-                        July
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#0" data-date="17/07/2016">
-                        June 28
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#0" data-date="23/07/2016">
-                        June 30
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#0" data-date="26/07/2016">
-                        Aug 23
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#0" data-date="30/07/2016">
-                        Sep 25
+                      <a href="#0" data-date="1/1/2016">
+                        2016 - 2020
                       </a>
                     </li>
                   </ol>
@@ -94,7 +166,7 @@ function Timeline() {
 
             <div className="events-content">
               <ol>
-                <li className="selected" data-date="14/06/2016">
+                <li className="selected" data-date="1/1/2004">
                   <h4>TK</h4>
                   <em>June 14th, 2016</em>
                   <p>
@@ -102,8 +174,23 @@ function Timeline() {
                     Community Lighting.”
                   </p>
                 </li>
-
-                <li data-date="21/06/2016">
+                <li data-date="1/1/2006">
+                  <h4>TK</h4>
+                  <em>June 14th, 2016</em>
+                  <p>
+                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED
+                    Community Lighting.”
+                  </p>
+                </li>
+                <li data-date="1/1/2015">
+                  <h4>TK</h4>
+                  <em>June 14th, 2016</em>
+                  <p>
+                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED
+                    Community Lighting.”
+                  </p>
+                </li>
+                <li data-date="1/1/2016">
                   <h4>TK</h4>
                   <em>June 21st, 2016</em>
                   <p>
@@ -111,69 +198,16 @@ function Timeline() {
                     streetlighting.”
                   </p>
                 </li>
-
-                <li data-date="24/06/2016">
-                  <h4>TK</h4>
-                  <em>June 24th, 2016</em>
-                  <p>
-                    In response to AMA Report 2-A-16, IES Issues “IES Board
-                    Position on AMA CSAPH Report 2-A-16.
-                  </p>
-                </li>
-
-                <li data-date="30/06/2016">
-                  <h4>TK</h4>
-                  <em>June 21-30th, 2016</em>
-                  <p>
-                    Various entities in the lighting community issue responses
-                    to AMA Report 2-A-16.
-                  </p>
-                </li>
-
-                <li data-date="08/07/2016">
-                  <h4>TK</h4>
-                  <em>July, 2016</em>
-                  <p>Lighting publications report on the AMA controversy.</p>
-                </li>
-
-                <li data-date="17/07/2016">
-                  <h4>TK</h4>
-                  <em>June 28th, 2017</em>
-                  <p>
-                    IES issues Position Statement PS-09-17 (status update of
-                    dialogue with AMA).
-                  </p>
-                </li>
-
-                <li data-date="23/07/2016">
-                  <h4>TK</h4>
-                  <em>June 30th, 2017</em>
-                  <p>IALD endorses IES Position Statement PS-09-17.</p>
-                </li>
-
-                <li data-date="26/07/2016">
-                  <h4>TK</h4>
-                  <em>August 23rd, 2017</em>
-                  <p>
-                    U.S. Department of Energy’s Solid-State Lighting program
-                    issues an activity and research update in its SSL Postings
-                    newsletter.
-                  </p>
-                </li>
-
-                <li data-date="30/07/2016">
-                  <h4>TK</h4>
-                  <em>September 25, 2017</em>
-                  <p>
-                    The Washington Post publishes, “Some cities are taking
-                    another look at LED lighting after AMA warning.”
-                  </p>
-                </li>
               </ol>
             </div>
           </div>
         </div>
       </div>
+      <p className="text-center">
+        <a href="#" className="btn btn-primary border" role="button">
+          To the code
+        </a>
+      </p>
     </section>
   )
 }

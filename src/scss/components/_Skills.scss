@@ -25,7 +25,7 @@
     }
     @include media-breakpoint-up(xl) {
       background-size: 82%;
-      background-position: 50px 62px;
+      background-position: 19px 15px;
     }
   }
   .bullet:before {
@@ -44,7 +44,7 @@
     border-radius: 8.5px;
   }
   &__closing-text {
-    line-height: 2rem;
+    line-height: 2.25rem;
     font-size: 1.75rem;
     @include media-breakpoint-up(md) {
       font-size: 2rem;

@@ -1,5 +1,5 @@
 // Sourced: https://codepen.io/acxix92/pen/yzOazE
-// Note: minor edits made to resolve compilation errors
+// Note: minor edits to resolve compilation errors
 
 import $ from "jquery"
 

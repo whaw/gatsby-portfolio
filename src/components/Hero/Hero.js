@@ -19,8 +19,8 @@ const Hero = () => {
         animContainer={animContainer}
       />
 
-      <div className="hero position-relative js_hero mt-11 mt-md-13">
-        <div className="heading js_heading position-absolute text-center w-100">
+      <div className="hero position-relative js_hero mt-11">
+        <div className="heading js_heading position-absolute text-center w-100 pt-5">
           <h1 className="mx-auto">Ready to Go</h1>
           <h4 className="mx-auto text-secondary">
             Aiming to exceed expectations
@@ -84,7 +84,7 @@ const Hero = () => {
           alt="sketch of a road less traveled"
         />
         <StaticImage
-          src="../../images/hero-main.png"
+          src="../../images/hero-main2.png"
           className="hero__main mt-11 mt-sm-12 mt-md-14"
           layout="fullWidth"
           placeholder="TRACED_SVG"
