@@ -11,7 +11,7 @@ const Timeline = () => {
     initiateTimeline()
   })
   return (
-    <section id="timeline" className="bg-light py-10">
+    <section id="timeline" className="bg-light py-15">
       <div className="container section__header">
         <div className="row">
           <div className="col text-center">
@@ -21,7 +21,7 @@ const Timeline = () => {
         </div>
 
         {/* BRANDS */}
-        <div className="row align-items-center justify-content-between px-15 mx-10 pt-5">
+        <div className="row align-items-center justify-content-between px-xl-15 mx-xl-10 pt-5">
           <div className="col-3 col-sm-2 col-xl-1">
             <StaticImage
               src="../../images/companies/knorr.svg"
@@ -144,6 +144,11 @@ const Timeline = () => {
                         2016 - 2020
                       </a>
                     </li>
+                    <li>
+                      <a href="#0" data-date="1/1/2021">
+                        2021
+                      </a>
+                    </li>
                   </ol>
 
                   <span className="filling-line" aria-hidden="true"></span>
@@ -192,7 +197,15 @@ const Timeline = () => {
                 </li>
                 <li data-date="1/1/2016">
                   <h4>TK</h4>
-                  <em>June 21st, 2016</em>
+                  <em>June 21st, 2016-2020</em>
+                  <p>
+                    CNN publishes “Doctors issue warning about LED
+                    streetlighting.”
+                  </p>
+                </li>
+                <li data-date="1/1/2021">
+                  <h4>Present</h4>
+                  <em>June 21st, 2021</em>
                   <p>
                     CNN publishes “Doctors issue warning about LED
                     streetlighting.”
