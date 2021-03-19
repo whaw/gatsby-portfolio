@@ -3,14 +3,12 @@
 .hero {
   overflow: hidden;
   .heading {
-    z-index: 10;
     h1 {
-      font-size: 2rem;
-      @include media-breakpoint-up(lg) {
-        font-size: 4rem;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
       }
     }
-    h2 {
+    h4 {
       margin-bottom: 0;
       @include media-breakpoint-up(md) {
         margin-bottom: 0.5rem;

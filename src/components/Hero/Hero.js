@@ -20,11 +20,11 @@ const Hero = () => {
       />
 
       <div className="hero position-relative js_hero mt-11">
-        <div className="heading js_heading position-absolute text-center w-100 pt-5">
-          <h1 className="mx-auto">Ready to Go</h1>
-          <h4 className="mx-auto text-secondary">
+        <div className="heading js_heading position-absolute text-center w-100 pt-md-5">
+          <h1 className="h2 mx-auto">Ready to Go</h1>
+          <h3 className="mx-auto text-secondary">
             Aiming to exceed expectations
-          </h4>
+          </h3>
           <span className="small d-none d-sm-block js_heading hero__sub-heading">
             ( + some tools I'm working on, now or soon )
           </span>

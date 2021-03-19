@@ -8,13 +8,13 @@ const About = () => (
         <div className="row">
           <div className="col text-center">
             <h2>Introductions</h2>
-            <h3 className="text-secondary">All about me :)</h3>
+            <h3 className="text-secondary">What I bring</h3>
           </div>
         </div>
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-lg-5">
             <StaticImage
               src="../images/me.png"
               className="introductions__me mb-3 mr-5 mt-0"
@@ -23,7 +23,7 @@ const About = () => (
               alt="author"
               style={{ width: "25%", float: "left" }}
             />
-            <h4>William has a wide view on the web development process.</h4>
+            <h5>William has a wide view on the web development process.</h5>
             <p>
               As a young lad he left Vancouver, with a Diploma in Advanced Web
               Content Development in hand, for the bright lights of Toronto.
@@ -44,7 +44,7 @@ const About = () => (
               outdoors. He loves the outdoors. Like, loves loves the outdoors,
               and MEC.
             </p>
-            <p>
+            <p className="text-center">
               <a
                 href="assets/downloads/William-Haw-CV.pdf"
                 className="btn btn-primary border"
@@ -54,9 +54,9 @@ const About = () => (
               </a>
             </p>
           </div>
-          <div className="col-12 col-md-7 pl-lg-8">
+          <div className="col-12 col-lg-7 pl-lg-8">
             <div className="row skills__content position-relative text-center text-md-left js_skills mx-1 mx-sm-0">
-              <div className="col-12 col-sm-6 pb-7 pb-sm-5 pb-md-3 skills__col text-center text-sm-left">
+              <div className="col-12 col-sm-6 px-0 pb-7 pb-sm-5 pb-md-3 skills__col text-center text-sm-left">
                 <h4 className="bullet">hard skills</h4>
                 <ul className="list-unstyled">
                   <li>HTML5, CSS3, SCSS</li>
@@ -81,7 +81,7 @@ const About = () => (
                   </span>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 py-5 pt-sm-0 skills__col text-center text-sm-right">
+              <div className="col-12 col-sm-6 px-0 py-5 pt-sm-0 skills__col text-center text-sm-right">
                 <h4 className="bullet">soft skills</h4>
                 <ul className="list-unstyled">
                   <li>Critical thinking</li>

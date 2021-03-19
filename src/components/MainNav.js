@@ -31,7 +31,7 @@ const MainNav = () => {
         </button>
 
         <div
-          className="collapse navbar-collapse flex-grow-0"
+          className="collapse navbar-collapse flex-grow-0 pt-2 mt-2 border-top"
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mr-auto">

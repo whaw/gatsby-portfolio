@@ -11,7 +11,7 @@ const Timeline = () => {
     initiateTimeline()
   })
   return (
-    <section id="timeline" className="bg-light py-15">
+    <section id="timeline" className="bg-light py-11 py-lg-15">
       <div className="container section__header">
         <div className="row">
           <div className="col text-center">
@@ -21,8 +21,8 @@ const Timeline = () => {
         </div>
 
         {/* BRANDS */}
-        <div className="row align-items-center justify-content-between px-xl-15 mx-xl-10 pt-5">
-          <div className="col-3 col-sm-2 col-xl-1">
+        <div className="row d-none d-md-flex align-items-center justify-content-between px-xl-15 mx-xl-10 pt-9">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/knorr.svg"
               className="w-100"
@@ -30,23 +30,23 @@ const Timeline = () => {
               alt="Knorr"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/apple.svg"
-              className="mx-2"
+              className="mx-md-2"
               placeholder="TRACED_SVG"
               alt="Apple"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/canadaPost.svg"
-              className="mx-2"
+              className="mx-md-2"
               placeholder="TRACED_SVG"
               alt="Canada Post"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/ADDB.svg"
               className="w-100"
@@ -54,7 +54,7 @@ const Timeline = () => {
               alt="Anderson DDB"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/marvel.svg"
               className="w-100"
@@ -62,7 +62,7 @@ const Timeline = () => {
               alt="Marvel Comics"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/johnsonAndJohnson.svg"
               className="w-100"
@@ -70,7 +70,7 @@ const Timeline = () => {
               alt="Johnson and Johnson"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/yorkU.png"
               className="w-100"
@@ -78,7 +78,7 @@ const Timeline = () => {
               alt="York University"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/peller.png"
               className="w-100"
@@ -86,7 +86,7 @@ const Timeline = () => {
               alt="Peller Estates"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/trius.png"
               className="w-100"
@@ -94,7 +94,7 @@ const Timeline = () => {
               alt="Trius Winery"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/thirtybench.png"
               className="w-100"
@@ -102,7 +102,7 @@ const Timeline = () => {
               alt="Thirty Bench Winery"
             />
           </div>
-          <div className="col-3 col-sm-2 col-xl-1">
+          <div className="col-2 col-sm-1">
             <StaticImage
               src="../../images/companies/gretzky.png"
               className="w-100"
@@ -111,7 +111,7 @@ const Timeline = () => {
             />
           </div>
         </div>
-        <p className="small text-center text-secondary">
+        <p className="d-none d-md-block small text-center text-secondary pt-1">
           Some brands I have had the privilege to contribute
         </p>
       </div>
