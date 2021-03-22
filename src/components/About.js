@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const About = () => (
   <>
-    <section id="aboutMe" className="skills">
+    <section id="about">
       <div className="container section__header">
         <div className="row">
           <div className="col text-center">
@@ -14,16 +14,16 @@ const About = () => (
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-5">
+          <div className="col-12 col-lg-5 pb-10 pb-lg-0 pr-lg-5" id="about">
             <StaticImage
               src="../images/me.png"
-              className="introductions__me mb-3 mr-5 mt-0"
+              className="introductions__me mb-0 mr-3 mb-md-2 mr-md-4 mt-0"
               layout="FULL_WIDTH"
               placeholder="TRACED_SVG"
               alt="author"
               style={{ width: "25%", float: "left" }}
             />
-            <h5>William has a wide view on the web development process.</h5>
+            <h5>William has a wide view on the web development process.</h5>
             <p>
               As a young lad he left Vancouver, with a Diploma in Advanced Web
               Content Development in hand, for the bright lights of Toronto.
@@ -46,24 +46,24 @@ const About = () => (
             </p>
             <p className="text-center">
               <a
-                href="assets/downloads/William-Haw-CV.pdf"
-                className="btn btn-primary border"
+                href="#experience"
+                className="btn btn-primary border d-lg-none"
                 role="button"
               >
-                To the resume
+                Experience at a glance
               </a>
             </p>
           </div>
-          <div className="col-12 col-lg-7 pl-lg-8">
+          <div className="col-12 col-lg-7 pl-lg-5 pl-xl-8 skills">
             <div className="row skills__content position-relative text-center text-md-left js_skills mx-1 mx-sm-0">
               <div className="col-12 col-sm-6 px-0 pb-7 pb-sm-5 pb-md-3 skills__col text-center text-sm-left">
-                <h4 className="bullet">hard skills</h4>
+                <h4 className="bullet pb-md-2">Hard skills</h4>
                 <ul className="list-unstyled">
                   <li>HTML5, CSS3, SCSS</li>
                   <li>Bootstrap</li>
                   <li>React, Gatsby</li>
                   <li>JavaScript/JQuery</li>
-                  <li>Twig/Django</li>
+                  <li>Twig, Django</li>
                   <li>Gulp, Webpack</li>
                   <li>Responsive Design</li>
                   <li>Platform consistent</li>
@@ -74,7 +74,7 @@ const About = () => (
                   <li>and....</li>
                 </ul>
                 <div className="skills__closing-text">
-                  <small>working to be</small>
+                  <small>Working to be</small>
                   <br />
                   <span className="skills__closing-text--em font-weight-bold">
                     greater
@@ -82,7 +82,7 @@ const About = () => (
                 </div>
               </div>
               <div className="col-12 col-sm-6 px-0 py-5 pt-sm-0 skills__col text-center text-sm-right">
-                <h4 className="bullet">soft skills</h4>
+                <h4 className="bullet pb-md-2">Soft skills</h4>
                 <ul className="list-unstyled">
                   <li>Critical thinking</li>
                   <li>Taking ownership</li>
@@ -99,7 +99,7 @@ const About = () => (
                   <li>and....</li>
                 </ul>
                 <div className="skills__closing-text">
-                  <small>working to be</small>
+                  <small>Working to be</small>
                   <br />
                   <span className="skills__closing-text--em font-weight-bold">
                     stronger

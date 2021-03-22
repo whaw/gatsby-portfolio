@@ -15,17 +15,17 @@
     @include media-breakpoint-up(md) {
       background-image: url(../images/skills-bg-sm.png);
       background-repeat: no-repeat;
-      background-size: 91%;
-      background-position: 3px 15px;
-    }
-    @include media-breakpoint-up(lg) {
-      background-image: url(../images/skills-bg-sm.png);
-      background-size: 89%;
+      background-size: 90%;
       background-position: 4px 15px;
     }
+    @include media-breakpoint-up(lg) {
+      background-size: 84%;
+      background-position: 3px 15px;
+    }
     @include media-breakpoint-up(xl) {
-      background-size: 82%;
-      background-position: 19px 15px;
+      background-image: url(../images/skills-bg.png);
+      background-size: 92%;
+      background-position: 3px 15px;
     }
   }
   .bullet:before {
@@ -51,9 +51,15 @@
       font-size: 2rem;
     }
     &--em {
-      font-size: 2.25rem;
+      font-size: 2rem;
       color: $brown;
       @include media-breakpoint-up(md) {
+        font-size: 3rem;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 2.5rem;
+      }
+      @include media-breakpoint-up(xl) {
         font-size: 3rem;
       }
     }

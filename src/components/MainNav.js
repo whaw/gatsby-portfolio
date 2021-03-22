@@ -2,15 +2,14 @@ import React from "react"
 
 const MainNav = () => {
   const navLinks = [
-    { label: "Skills", to: "#skills" },
-    { label: "About this site", to: "#about-this-site" },
-    { label: "Introductions", to: "#introductions" },
+    { label: "Introduction and skills", to: "#about" },
+    { label: "Experience", to: "#experience" },
     { label: "Contact", to: "#contact" },
   ]
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-4">
+      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
         <a className="navbar-brand js_logo" href="#home">
           <span className="logo mb-2 d-block">A Working Copy</span>
           William Haw - Front End Developer
@@ -31,7 +30,7 @@ const MainNav = () => {
         </button>
 
         <div
-          className="collapse navbar-collapse flex-grow-0 pt-2 mt-2 border-top"
+          className="collapse navbar-collapse flex-grow-0 pt-2 mt-2"
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mr-auto">

@@ -33,7 +33,8 @@ Main Components
   height: 100px;
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .cd-horizontal-timeline .events-wrapper {
   position: relative;
@@ -205,7 +206,7 @@ Main Components
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background-image: url(../../images/cd-arrow.png);
+  background-image: url(../../../images/cd-arrow.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 16px 29px;
@@ -238,7 +239,7 @@ Main Components
   position: relative;
   width: 100%;
   margin: 2em 0;
-  overflow: hidden;
+  overflow: scroll;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
   transition: height 0.4s;
@@ -294,15 +295,13 @@ Main Components
 }
 .cd-horizontal-timeline .events-content li > * {
   max-width: 800px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .cd-horizontal-timeline .events-content em {
   display: block;
   font-style: italic;
   margin: 10px auto;
-}
-.cd-horizontal-timeline .events-content em::before {
-  content: "- ";
 }
 
 @-webkit-keyframes cd-enter-right {
