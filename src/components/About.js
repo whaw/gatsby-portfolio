@@ -18,7 +18,6 @@ const About = () => (
             <StaticImage
               src="../images/me.png"
               className="introductions__me mb-0 mr-3 mb-md-2 mr-md-4 mt-0"
-              layout="FULL_WIDTH"
               placeholder="TRACED_SVG"
               alt="author"
               style={{ width: "25%", float: "left" }}

@@ -35,7 +35,7 @@ const MainNav = () => {
         >
           <ul className="navbar-nav mr-auto">
             {navLinks.map(link => (
-              <li key={link.to} className="nav-item active">
+              <li key={link.to} className="nav-item">
                 <a className="nav-link" href={link.to}>
                   {link.label}
                 </a>
