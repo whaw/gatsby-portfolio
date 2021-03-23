@@ -95,7 +95,7 @@ const Brands = () => (
         </div>
       </div>
       <p className="d-none d-md-block small text-center text-secondary pt-1">
-        Some brands I have had the privilege to contribute
+        Some brands I have had the privilege to contribute to
       </p>
     </div>
   </>

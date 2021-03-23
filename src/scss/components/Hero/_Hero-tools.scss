@@ -37,57 +37,81 @@
     }
   }
   &__gatsby {
+    &__button {
+      @include media-breakpoint-up(sm) {
+        width: 14px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 25px;
+      }
+    }
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        width: 14px;
         @include generate-tools-animation(8%, 12%, gatsby);
         @include tools-animation-chain(gatsby);
       }
       @include media-breakpoint-up(lg) {
-        width: 25px;
         @include generate-tools-animation(8%, 16%, gatsby);
       }
     }
   }
   &__webpack {
+    &__button {
+      @include media-breakpoint-up(sm) {
+        width: 17px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 27px;
+      }
+    }
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        width: 17px;
         @include generate-tools-animation(6%, 24%, webpack);
         @include tools-animation-chain(webpack);
       }
       @include media-breakpoint-up(lg) {
-        width: 27px;
         @include generate-tools-animation(5%, 27%, webpack);
       }
     }
   }
   &__javascript {
+    &__button {
+      @include media-breakpoint-up(sm) {
+        width: 18px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 30px;
+      }
+    }
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        width: 18px;
         @include generate-tools-animation(16%, 17%, javascript);
         @include tools-animation-chain(javascript);
       }
       @include media-breakpoint-up(lg) {
-        width: 30px;
         @include generate-tools-animation(16%, 26%, javascript);
       }
     }
   }
   &__graphql {
+    &__button {
+      @include media-breakpoint-up(sm) {
+        width: 15px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 27px;
+      }
+    }
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        width: 15px;
         @include generate-tools-animation(6%, 88%, graphql);
         @include tools-animation-chain(graphql);
       }
       @include media-breakpoint-up(lg) {
-        width: 27px;
         @include generate-tools-animation(6%, 81%, graphql);
       }
       aside {
@@ -96,15 +120,21 @@
     }
   }
   &__react {
+    &__button {
+      @include media-breakpoint-up(sm) {
+        width: 20px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 39px;
+      }
+    }
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        width: 20px;
         @include generate-tools-animation(15%, 88%, react);
         @include tools-animation-chain(react);
       }
       @include media-breakpoint-up(lg) {
-        width: 39px;
         @include generate-tools-animation(16%, 79%, react);
       }
       aside {
@@ -113,29 +143,41 @@
     }
   }
   &__redux {
+    &__button {
+      @include media-breakpoint-up(sm) {
+        width: 17px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 30px;
+      }
+    }
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        width: 17px;
         @include generate-tools-animation(17%, 79%, redux);
         @include tools-animation-chain(redux);
       }
       @include media-breakpoint-up(lg) {
-        width: 30px;
         @include generate-tools-animation(17%, 68%, redux);
       }
     }
   }
   &__typescript {
+    &__button {
+      @include media-breakpoint-up(sm) {
+        width: 15px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 26px;
+      }
+    }
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        width: 15px;
         @include generate-tools-animation(6%, 75%, typescript);
         @include tools-animation-chain(typescript);
       }
       @include media-breakpoint-up(lg) {
-        width: 26px;
         @include generate-tools-animation(6%, 71%, typescript);
       }
     }

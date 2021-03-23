@@ -15,10 +15,10 @@ const Experience = () => (
     <Timeline />
     <p className="text-center">
       <a href="#" className="btn btn-primary border" role="button">
-        This site code
+        To Github
       </a>
       <a href="#" className="btn btn-primary border" role="button">
-        To your resume
+        To resume
       </a>
     </p>
     <Brands />

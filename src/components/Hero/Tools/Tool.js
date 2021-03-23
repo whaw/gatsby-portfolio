@@ -15,23 +15,25 @@ const Tool = props => {
   }
 
   return (
-    <>
+    <div
+      onMouseOver={handleOnMouseOver}
+      onFocus={handleOnMouseOver}
+      onMouseOut={handleOnMouseOut}
+      onBlur={handleOnMouseOut}
+      className={`position-absolute hero__tool js_tool hero__${cssSelector} ${props.selector}`}
+    >
       <button
-        onMouseOver={handleOnMouseOver}
-        onFocus={handleOnMouseOver}
-        onMouseOut={handleOnMouseOut}
-        onBlur={handleOnMouseOut}
-        className={`position-absolute border-0 p-0 bg-transparent hero__tool js_tool hero__${cssSelector} ${props.selector}`}
+        className={`border-0 p-0 bg-transparent hero__${cssSelector}__button`}
       >
         <Image selector={props.selector} alt={props.name} />
-        <ToolDescription
-          name={props.name}
-          description={props.description}
-          status={props.status}
-          isOpen={asideOpen}
-        />
       </button>
-    </>
+      <ToolDescription
+        name={props.name}
+        description={props.description}
+        status={props.status}
+        isOpen={asideOpen}
+      />
+    </div>
   )
 }
 

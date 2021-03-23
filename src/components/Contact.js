@@ -10,7 +10,7 @@ const Contact = () => (
           <h3 className="text-secondary">Let's do something Great</h3>
 
           <StaticImage
-            src="../images/contact.gif"
+            src="../images/contact.png"
             className="mt-5"
             alt="contact info"
           />
