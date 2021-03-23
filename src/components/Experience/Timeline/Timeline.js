@@ -1,13 +1,13 @@
 // Sourced: https://codepen.io/acxix92/pen/yzOazE
-// Note: minor edits to resolve compilation errors
 
 import React, { useEffect } from "react"
-import "./Timeline.css"
-import initiateTimeline from "./Timeline-script" // (aside: cleared some compilation errors)
+import "./Timeline.css" // resolved navigation bug
+import initiateTimeline from "./Timeline-script" // cleared some compilation errors
 
 const Timeline = () => {
   useEffect(() => {
-    initiateTimeline()
+    // add state to trigger update. content height doesn't adjust on resize.
+    window.addEventListener("load resize", initiateTimeline())
   })
   return (
     <>
@@ -92,7 +92,7 @@ const Timeline = () => {
                       applications development, respectively.
                     </p>
                     <p>
-                      Filled gaps developing banner ads, HTML emails, HTML and
+                      Filled gaps, developing banner ads, HTML emails, HTML and
                       CSS interfaces, and Flash.
                     </p>
                   </li>
@@ -161,8 +161,7 @@ const Timeline = () => {
                     <em>2016 - 2020</em>
                     <p>
                       Development of public facing website. Stack: Django,
-                      python, HTML, CSS, Javascript, Craft
-                      <br />
+                      python, HTML, CSS, Javascript, Craft.
                     </p>
                   </li>
                   <li data-date="1/1/2021">

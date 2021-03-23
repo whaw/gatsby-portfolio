@@ -62,7 +62,7 @@ const About = () => (
                   <li>HTML5, CSS3, SCSS</li>
                   <li>Bootstrap</li>
                   <li>React, Gatsby</li>
-                  <li>JavaScript/JQuery</li>
+                  <li>JavaScript, JQuery</li>
                   <li>Twig, Django</li>
                   <li>Gulp, Webpack</li>
                   <li>Responsive Design</li>

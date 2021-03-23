@@ -2,7 +2,7 @@ import React from "react"
 
 const MainNav = () => {
   const navLinks = [
-    { label: "Introduction and skills", to: "#about" },
+    { label: "Introductions", to: "#about" },
     { label: "Experience", to: "#experience" },
     { label: "Contact", to: "#contact" },
   ]

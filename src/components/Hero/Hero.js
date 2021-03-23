@@ -62,14 +62,12 @@ const Hero = () => {
         <StaticImage
           src="../../images/hero-truck.png"
           className="position-absolute mt-14 hero__truck js_truck"
-          layout="fullWidth"
           placeholder="TRACED_SVG"
           alt="truck and tree"
         />
         <StaticImage
           src="../../images/hero-tree.png"
           className="position-absolute hero__tree js_tree"
-          layout="fullWidth"
           placeholder="TRACED_SVG"
           alt="media, trees and benches"
         />
@@ -79,14 +77,12 @@ const Hero = () => {
         <StaticImage
           src="../../images/hero-sketch22.png"
           className="position-absolute hero__sketch js_sketch"
-          layout="fullWidth"
           placeholder="TRACED_SVG"
           alt="sketch of a road less traveled"
         />
         <StaticImage
           src="../../images/hero-main2.png"
           className="hero__main mt-11 mt-sm-12 mt-md-14"
-          layout="fullWidth"
           placeholder="TRACED_SVG"
           alt="media scene"
         />
