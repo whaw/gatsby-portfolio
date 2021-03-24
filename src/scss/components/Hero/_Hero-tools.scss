@@ -1,11 +1,8 @@
 @import "./Hero-tool-partials";
 
 %tools-aside-left {
-  @include media-breakpoint-down(md) {
-    margin-left: -230px;
-  }
   @include media-breakpoint-between(md, lg) {
-    margin-left: -75px;
+    margin-left: -230px;
   }
 }
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 const Contact = () => (
   <section id="contact" className="py-5">
@@ -9,11 +9,11 @@ const Contact = () => (
           <h2>Give me a shout</h2>
           <h3 className="text-secondary">Let's do something Great</h3>
 
-          <StaticImage
-            src="../images/contact.png"
+          {/* <StaticImage
+            src="../images/contact.gif"
             className="mt-5"
             alt="contact info"
-          />
+          /> */}
         </div>
       </div>
     </div>

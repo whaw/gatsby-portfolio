@@ -57,13 +57,11 @@
     }
   }
   &__sketch {
-    display: none;
+    bottom: -40%;
     @include media-breakpoint-up(sm) {
-      display: block;
       z-index: 1;
       width: 100%;
       opacity: 0.9;
-      bottom: -40%;
       &.animate {
         bottom: 0;
         transition: all 1.5s ease;
