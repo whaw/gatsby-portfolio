@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Image from "./ToolImage"
-import ToolDescription from "./ToolAside"
+import ToolDescription from "./ToolDescription"
 
 const Tool = props => {
   const cssSelector = props.name.toLowerCase()

@@ -1,6 +1,6 @@
 import React from "react"
 
-const ToolAside = props => {
+const ToolDescription = props => {
   return (
     <aside
       className={`hero__tool__aside border bg-white text-left small mt-2 ${
@@ -17,4 +17,4 @@ const ToolAside = props => {
   )
 }
 
-export default ToolAside
+export default ToolDescription

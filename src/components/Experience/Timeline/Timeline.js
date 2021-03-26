@@ -1,13 +1,15 @@
 // Sourced: https://codepen.io/acxix92/pen/yzOazE
 
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import "./Timeline.css" // resolved navigation bug
-import initiateTimeline from "./Timeline-script" // cleared some compilation errors
+import initiateTimeline from "./Timeline-script" // cleared some minor compilation errors. "Warnings" TBA
+import $ from "JQuery"
 
 const Timeline = () => {
+  // address: timeline does not resize with window, so end of line ends up short
+
   useEffect(() => {
-    // add state to trigger update. content height doesn't adjust on resize.
-    window.addEventListener("load resize", initiateTimeline())
+    initiateTimeline()
   })
   return (
     <>
@@ -81,7 +83,7 @@ const Timeline = () => {
                     <h4>Ecom Bcom</h4>
                     <em>2004 - 2006</em>
                     <div className="row">
-                      <div className="col-lg-8 offset-lg-2">
+                      <div className="col-lg-8 offset-lg-2 pl-0">
                         <p>
                           Oversaw all aspects of design and development of two
                           catalog websites for travel accessories and gift
@@ -95,7 +97,7 @@ const Timeline = () => {
                     <h4>Freelance + .NET classes</h4>
                     <em>2006</em>
                     <div className="row">
-                      <div className="col-lg-8 offset-lg-2">
+                      <div className="col-lg-8 offset-lg-2 pl-0">
                         <p>
                           Acted as a stop gap for development needs for Ogilvy,
                           Eloqua and N49, developing banner ads, HTML emails and
@@ -123,7 +125,7 @@ const Timeline = () => {
                           designers on the logistics of designs.
                         </p>
                       </div>
-                      <div className="col-12 col-lg-6">
+                      <div className="col-12 col-lg-6 pl-0 pl-lg-3">
                         <p>
                           Coordinating involved, but not limited to, tracking
                           all project details, adhering to timelines, liasing
@@ -192,15 +194,13 @@ const Timeline = () => {
                     <h4>Forge Media</h4>
                     <em>2015 - 2016</em>
                     <div className="row">
-                      <div className="col-lg-8 offset-lg-2">
+                      <div className="col-lg-8 offset-lg-2 pl-0">
                         <p>
                           The front end role here was devided into fullstack
                           Wordpress development (backend was new to me) and
                           supporting a fortune 500 client website - implementing
                           and debugging GEO specific content.
                         </p>
-                      </div>
-                      <div className="col-lg-8 offset-lg-2">
                         <p>
                           The later demanded organization, being detailed and
                           communication at the highest level (managing up to
@@ -216,7 +216,7 @@ const Timeline = () => {
                     <h4>Wave Financial</h4>
                     <em>2016 - 2020</em>
                     <div className="row">
-                      <div className="col-lg-8 offset-lg-2">
+                      <div className="col-lg-8 offset-lg-2 pl-0">
                         <p>
                           Initially contributed to an inhouse styles framework,
                           developing HTML/CSS and a little JavaScript, for their
@@ -239,15 +239,26 @@ const Timeline = () => {
                   <li data-date="1/1/2021">
                     <h4>Present</h4>
                     <div className="row">
-                      <div className="col-lg-8 offset-lg-2">
+                      <div className="col-12 col-lg-8 offset-lg-2 pl-0">
                         <p>
-                          Focused on becoming a JavaScript specialist, this
-                          website has been largely experimental, and is best
-                          framed with a "move fast and iterate" lense. As often
-                          is the case, speed to delivery is also a driver here.
+                          Rarely is there an opportunity like this for so much
+                          focused effort, and I am loving it, and digging deep
+                          into all things JavaScript.
                         </p>
-                        <div className="row">
-                          <div className="col-12 col-sm-6">
+
+                        <p>
+                          This site is part of my discovery into these tools and
+                          best viewed through that lense, as a working copy, as
+                          speed was also a driver here.
+                        </p>
+                        <aside>
+                          Quick side note. This is a migration in progress from
+                          a static variation of this site.
+                        </aside>
+                        <p>So stay tuned. Many enhancements are on the way!</p>
+
+                        <div className="row mx-0">
+                          <div className="col-12 col-sm-6 pl-0">
                             {/* Lists here are in conflict with component script and styles. Deferring update, as lower priority */}
                             <span className="font-weight-bold">
                               Development stack:
@@ -257,7 +268,7 @@ const Timeline = () => {
                             <br />
                             Bootstrap
                           </div>
-                          <div className="col-12 col-sm-6 pt-0 pt-sm-5">
+                          <div className="col-12 col-sm-6 pt-0 pt-sm-4 pl-0">
                             Gatsby/React
                             <br />
                             JQuery
