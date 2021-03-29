@@ -11,21 +11,43 @@
     }
   }
   &__content {
+    font-size: 0.9rem;
     text-align: left;
     @include media-breakpoint-up(md) {
-      background-image: url(../images/skills-bg-sm.png);
+      background-image: url(../images/skills-bg.png);
       background-repeat: no-repeat;
       background-size: 90%;
       background-position: 4px 15px;
     }
     @include media-breakpoint-up(lg) {
       background-size: 84%;
-      background-position: 3px 15px;
+      background-position: 3px 14px;
     }
     @include media-breakpoint-up(xl) {
       background-image: url(../images/skills-bg.png);
       background-size: 92%;
       background-position: 3px 15px;
+    }
+    .mouse-text {
+      font-size: 0.7rem;
+      width: 43%;
+      top: 49%;
+      left: 30%;
+      @include media-breakpoint-up(lg) {
+        font-size: 0.5rem;
+        width: 45%;
+        top: 35%;
+        left: 28%;
+      }
+      // update so bg image is inline, removing need for top positioning
+      @media (min-width: 1199.98px) and (max-width: 1300px) {
+        top: 46%;
+        left: 31%;
+      }
+      @media (min-width: 1300px) {
+        top: 53.5%;
+        left: 30.75%;
+      }
     }
   }
   .bullet:before {

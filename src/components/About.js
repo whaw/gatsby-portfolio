@@ -53,7 +53,7 @@ const About = () => (
               </a>
             </p>
           </div>
-          <div className="col-12 col-lg-7 pl-lg-5 pl-xl-8 skills">
+          <div className="col-12 col-lg-7 pl-lg-5 pl-xl-8 skills position-relative">
             <div className="row skills__content position-relative text-center text-md-left js_skills mx-1 mx-sm-0">
               <div className="col-12 col-sm-6 px-0 pb-7 pb-sm-5 pb-md-3 skills__col text-center text-sm-left">
                 <h4 className="bullet pb-md-2">Hard skills</h4>
@@ -104,6 +104,11 @@ const About = () => (
                     stronger
                   </span>
                 </div>
+              </div>
+              <div className="position-absolute mouse-text d-none d-md-block">
+                The intersection of form and function
+                <br />
+                Iconic design by Tinker Hatfield, Nike "Innovation Kitchen" lead
               </div>
             </div>
           </div>

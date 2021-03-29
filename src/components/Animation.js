@@ -18,10 +18,14 @@ const Animation = ({ animElements, animContainer }) => {
   const isElementInViewport = el => {
     const screenTop = $(window).scrollTop()
     const elementTop = $(el).offset().top
+    const elementBottom = $(el).offset().bottom
     const screenBottom = screenTop + $(window).innerHeight()
     const elementHeight = $(el).outerHeight()
-    const threeQuartersHeight = elementTop + elementHeight * 0.75
-    if (screenBottom > threeQuartersHeight && screenTop < elementTop) {
+    const halfHeight = elementTop + elementHeight * 0.5
+    if (
+      (screenBottom > halfHeight && screenTop < elementTop) ||
+      (screenTop > elementTop + halfHeight && screenBottom > elementBottom)
+    ) {
       render()
     }
   }

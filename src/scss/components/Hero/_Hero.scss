@@ -60,10 +60,11 @@
     bottom: -40%;
     @include media-breakpoint-up(sm) {
       z-index: 1;
-      width: 100%;
+      width: 98%;
+      left: 0.5%;
       opacity: 0.9;
       &.animate {
-        bottom: 0;
+        bottom: 2%;
         transition: all 1.5s ease;
       }
     }

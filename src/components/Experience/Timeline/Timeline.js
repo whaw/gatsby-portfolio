@@ -1,9 +1,8 @@
 // Sourced: https://codepen.io/acxix92/pen/yzOazE
 
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 import "./Timeline.css" // resolved navigation bug
 import initiateTimeline from "./Timeline-script" // cleared some minor compilation errors. "Warnings" TBA
-import $ from "JQuery"
 
 const Timeline = () => {
   // address: timeline does not resize with window, so end of line ends up short
@@ -87,8 +86,8 @@ const Timeline = () => {
                         <p>
                           Oversaw all aspects of design and development of two
                           catalog websites for travel accessories and gift
-                          baskets. This contributed to record sales by the end
-                          of his tenure.
+                          baskets, contributing to record sales by the end of
+                          his tenure.
                         </p>
                       </div>
                     </div>
@@ -131,7 +130,7 @@ const Timeline = () => {
                           all project details, adhering to timelines, liasing
                           with clients and supporting backend developers, with
                           QA, art direction and usability, for desktop, mobile
-                          and app development.
+                          and application development.
                         </p>
                         <p>
                           <span className="font-weight-bold">
@@ -196,7 +195,7 @@ const Timeline = () => {
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
                         <p>
-                          The front end role here was devided into fullstack
+                          The front end role here was divided into fullstack
                           Wordpress development (backend was new to me) and
                           supporting a fortune 500 client website - implementing
                           and debugging GEO specific content.
@@ -207,7 +206,7 @@ const Timeline = () => {
                           100+ tickets for product releases) coordinating with
                           several offsite teams, for quality assurance,
                           translations, direction from client leads and all the
-                          communication streams for tickets in flight.
+                          communication with teams for tickets in flight.
                         </p>
                       </div>
                     </div>
@@ -224,14 +223,14 @@ const Timeline = () => {
                           application framework, with Django and Python.
                         </p>
                         <p>
-                          Later migrated to Craft CMS and Bootstrap to ramp
-                          delivery pace, to meet Marketing needs. This developed
-                          knowledge in "systems thinking", querying with
-                          efficiency in mind, ie. fullstack development &mdash;
-                          in addition to A/B testing, modern SEO practices, site
-                          speed optimizations (I was more of a passenger here,
-                          but I was front row and center) and object
-                          based JavaScript.
+                          Later migrated to Craft CMS and Bootstrap to
+                          significantly increase the pace of delivery, to meet
+                          Marketing needs. This developed knowledge in "systems
+                          thinking", querying with efficiency in mind, ie.
+                          fullstack development with Craft &mdash; in addition
+                          to A/B testing, modern SEO practices, site speed
+                          optimizations (I was more of a passenger here, but I
+                          was front row and center) and object based JavaScript.
                         </p>
                       </div>
                     </div>
@@ -249,11 +248,11 @@ const Timeline = () => {
                         <p>
                           This site is part of my discovery into these tools and
                           best viewed through that lense, as a working copy, as
-                          speed was also a driver here.
+                          speed to delivery was also a driver here.
                         </p>
                         <aside>
-                          Quick side note. This is a migration in progress from
-                          a static variation of this site.
+                          Quick side note. This site is a migration in progress
+                          from a former static version of this site.
                         </aside>
                         <p>So stay tuned. Many enhancements are on the way!</p>
 
