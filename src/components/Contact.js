@@ -8,11 +8,9 @@ const Contact = () => (
           <h2>Give me a shout</h2>
           <h3 className="text-secondary pb-5">Let's do something Great</h3>
           <p>
-            Sorry spammers, no info here.
+            This site is intended as support to application submissions.
             <br />
-            <span className="small">
-              (Contact information can be found in application submissions.)
-            </span>
+            <em>Sorry spammers, no info here!</em>
           </p>
         </div>
       </div>

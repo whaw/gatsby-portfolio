@@ -98,10 +98,10 @@ const Timeline = () => {
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
                         <p>
-                          Acted as a stop gap for development needs for Ogilvy,
-                          Eloqua and N49, developing banner ads, HTML emails and
-                          microsites, during the day, and at night attended .NET
-                          application development courses.
+                          Acted as a stop gap for Ogilvy, Eloqua and N49,
+                          developing banner ads, HTML emails and microsites,
+                          during the day, and at night attended .NET application
+                          development courses.
                         </p>
                       </div>
                     </div>
@@ -112,9 +112,9 @@ const Timeline = () => {
                     <div className="row">
                       <div className="col-12 col-lg-6 pl-0">
                         <p>
-                          Acted as a front end developer + project coordinator
-                          (but this came later), provided support and training
-                          for clients and direction to third party vendors.
+                          Front end developer + project coordinator (but this
+                          came later), provided support and training for clients
+                          and supporting third party vendors.
                         </p>
                         <p>
                           Development consisted (mostly) of hand coding website
@@ -225,12 +225,12 @@ const Timeline = () => {
                         <p>
                           Later migrated to Craft CMS and Bootstrap to
                           significantly increase the pace of delivery, to meet
-                          Marketing needs. This developed knowledge in "systems
-                          thinking", querying with efficiency in mind, ie.
-                          fullstack development with Craft &mdash; in addition
-                          to A/B testing, modern SEO practices, site speed
-                          optimizations (I was more of a passenger here, but I
-                          was front row and center) and object based JavaScript.
+                          the needs of Marketing. This developed knowledge in
+                          "systems thinking" and fullstack development with
+                          Craft &mdash; in addition to A/B testing, modern SEO
+                          practices, site speed optimizations (I was a passenger
+                          here, but I was front row center) and object
+                          based JavaScript.
                         </p>
                       </div>
                     </div>
@@ -240,27 +240,23 @@ const Timeline = () => {
                     <div className="row">
                       <div className="col-12 col-lg-8 offset-lg-2 pl-0">
                         <p>
-                          Rarely is there an opportunity like this for so much
-                          focused effort, and I am loving it, and digging deep
-                          into all things JavaScript.
+                          Focused, hungry and curious about all things
+                          JavaScript, pivoting to become a specialist.
                         </p>
 
                         <p>
-                          This site is part of my discovery into these tools and
-                          best viewed through that lense, as a working copy, as
-                          speed to delivery was also a driver here.
+                          This site is part of that discovery and best viewed as
+                          "a working copy" and a first pass, as speed to
+                          delivery is also a driver here, moreover, this site is
+                          in migration from an earlier version.
                         </p>
-                        <aside>
-                          Quick side note. This site is a migration in progress
-                          from a former static version of this site.
-                        </aside>
-                        <p>So stay tuned. Many enhancements are on the way!</p>
+                        <p>Stay tuned, as many enhancements are on the way!</p>
 
                         <div className="row mx-0">
                           <div className="col-12 col-sm-6 pl-0">
                             {/* Lists here are in conflict with component script and styles. Deferring update, as lower priority */}
                             <span className="font-weight-bold">
-                              Development stack:
+                              Tools for this site:
                             </span>
                             <br />
                             SCSS

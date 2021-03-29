@@ -1,8 +1,6 @@
 @import "./Hero-tool-partials";
 
-%tools-aside-left {
-  margin-left: -230px;
-}
+$tools-aside-left: -230px;
 
 .hero {
   // tool anim elements
@@ -111,7 +109,7 @@
       }
       aside {
         @include media-breakpoint-between(sm, lg) {
-          @extend %tools-aside-left;
+          margin-left: $tools-aside-left;
         }
       }
     }
@@ -136,7 +134,7 @@
       }
       aside {
         @include media-breakpoint-between(sm, lg) {
-          @extend %tools-aside-left;
+          margin-left: $tools-aside-left;
         }
       }
     }
@@ -161,7 +159,7 @@
       }
       aside {
         @include media-breakpoint-between(sm, md) {
-          @extend %tools-aside-left;
+          margin-left: $tools-aside-left;
         }
       }
     }
@@ -187,7 +185,7 @@
     }
     aside {
       @include media-breakpoint-between(sm, md) {
-        @extend %tools-aside-left;
+        margin-left: $tools-aside-left;
       }
     }
   }

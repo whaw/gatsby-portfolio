@@ -65,11 +65,11 @@ const About = () => (
                   <li>Twig, Django</li>
                   <li>Gulp, Webpack</li>
                   <li>Responsive Design</li>
-                  <li>Platform consistent</li>
+                  <li>Platform consistency</li>
                   <li>Accurate to creative</li>
                   <li>WordPress, Craft</li>
                   <li>A/B testing</li>
-                  <li>Git</li>
+                  <li>HTML emails</li>
                   <li>and....</li>
                 </ul>
                 <div className="skills__closing-text">
@@ -86,7 +86,7 @@ const About = () => (
                   <li>Critical thinking</li>
                   <li>Taking ownership</li>
                   <li>Resourceful</li>
-                  <li>Adaptible</li>
+                  <li>Curious</li>
                   <li>Determined</li>
                   <li>Organized</li>
                   <li>Detail oriented</li>
