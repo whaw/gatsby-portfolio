@@ -1,9 +1,7 @@
 @import "./Hero-tool-partials";
 
 %tools-aside-left {
-  @include media-breakpoint-between(md, lg) {
-    margin-left: -230px;
-  }
+  margin-left: -230px;
 }
 
 .hero {
@@ -112,7 +110,9 @@
         @include generate-tools-animation(6%, 81%, graphql);
       }
       aside {
-        @extend %tools-aside-left;
+        @include media-breakpoint-between(sm, lg) {
+          @extend %tools-aside-left;
+        }
       }
     }
   }
@@ -135,7 +135,9 @@
         @include generate-tools-animation(16%, 79%, react);
       }
       aside {
-        @extend %tools-aside-left;
+        @include media-breakpoint-between(sm, lg) {
+          @extend %tools-aside-left;
+        }
       }
     }
   }
@@ -157,6 +159,11 @@
       @include media-breakpoint-up(lg) {
         @include generate-tools-animation(17%, 68%, redux);
       }
+      aside {
+        @include media-breakpoint-between(sm, md) {
+          @extend %tools-aside-left;
+        }
+      }
     }
   }
   &__typescript {
@@ -176,6 +183,11 @@
       }
       @include media-breakpoint-up(lg) {
         @include generate-tools-animation(6%, 71%, typescript);
+      }
+    }
+    aside {
+      @include media-breakpoint-between(sm, md) {
+        @extend %tools-aside-left;
       }
     }
   }

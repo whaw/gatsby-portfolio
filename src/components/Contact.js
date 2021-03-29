@@ -1,5 +1,4 @@
 import React from "react"
-// import { StaticImage } from "gatsby-plugin-image"
 
 const Contact = () => (
   <section id="contact" className="py-5">
@@ -7,13 +6,14 @@ const Contact = () => (
       <div className="row">
         <div className="col text-center">
           <h2>Give me a shout</h2>
-          <h3 className="text-secondary">Let's do something Great</h3>
-
-          {/* <StaticImage
-            src="../images/contact.gif"
-            className="mt-5"
-            alt="contact info"
-          /> */}
+          <h3 className="text-secondary pb-5">Let's do something Great</h3>
+          <p>
+            Sorry spammers, no info here.
+            <br />
+            <span className="small">
+              (Contact information can be found in application submissions.)
+            </span>
+          </p>
         </div>
       </div>
     </div>

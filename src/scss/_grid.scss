@@ -7,7 +7,7 @@ body {
 
 // adjust for nav link targeting
 section,
-.section--background {
+.section--with-background {
   padding-top: 20px;
   margin-top: 50px;
   @include media-breakpoint-up(md) {
@@ -18,13 +18,16 @@ section,
     padding-top: 110px;
     margin-top: 110px;
   }
-  &.section--background {
-    padding-bottom: 35px;
-    @include media-breakpoint-up(md) {
-      padding-bottom: 75px;
-    }
-    @include media-breakpoint-up(xl) {
-      padding-bottom: 110px;
-    }
+}
+.section--with-background {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  @include media-breakpoint-up(md) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 220px;
+    padding-bottom: 220px;
   }
 }

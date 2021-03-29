@@ -16,6 +16,8 @@ const Tool = props => {
 
   return (
     <div
+      role="button"
+      tabIndex="0"
       onMouseOver={handleOnMouseOver}
       onFocus={handleOnMouseOver}
       onMouseOut={handleOnMouseOut}

@@ -3,7 +3,7 @@ import Brands from "./Brands"
 import Timeline from "./Timeline/Timeline"
 
 const Experience = () => (
-  <section id="experience" className="bg-light section--background">
+  <section id="experience" className="bg-light section--with-background">
     <div className="container section__header">
       <div className="row">
         <div className="col text-center">
@@ -15,10 +15,7 @@ const Experience = () => (
     <Timeline />
     <p className="text-center">
       <a href="#" className="btn btn-primary border" role="button">
-        To Github
-      </a>
-      <a href="#" className="btn btn-primary border" role="button">
-        To resume
+        To this site code repo
       </a>
     </p>
     <Brands />
