@@ -23,7 +23,7 @@
   }
   &__hashTag {
     z-index: 15;
-    bottom: 6%;
+    bottom: 7.5%;
     left: 0;
     right: 0;
   }
@@ -56,8 +56,10 @@
     }
   }
   &__sketch {
-    bottom: -40%;
+    display: none;
+    bottom: -30%;
     @include media-breakpoint-up(sm) {
+      display: block;
       z-index: 1;
       width: 98%;
       left: 0.5%;

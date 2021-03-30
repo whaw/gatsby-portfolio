@@ -4,13 +4,16 @@ const Contact = () => (
   <section id="contact" className="py-5">
     <div className="container section__header">
       <div className="row">
-        <div className="col text-center">
-          <h2>Give me a shout</h2>
-          <h3 className="text-secondary pb-5">Let's do something Great</h3>
-          <p>
-            This site is intended as support to application submissions.
+        <div class="col text-center">
+          <h2>Give me a&nbsp;shout</h2>
+          <h3 class="text-secondary pb-10 pb-md-15">
+            Let's do something Great
+          </h3>
+          <p class="small text-secondary">
+            Contact information has been provided via
+            application&nbsp;submissions.
             <br />
-            <em>Sorry spammers, no info here!</em>
+            Sorry spammers!
           </p>
         </div>
       </div>

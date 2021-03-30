@@ -19,6 +19,7 @@ const Experience = () => (
         className="btn btn-primary border"
         role="button"
         target="_blank"
+        rel="noreferrer"
       >
         To this site's code
       </a>

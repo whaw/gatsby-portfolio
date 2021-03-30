@@ -8,11 +8,15 @@ import Hero from "./Hero/Hero"
 import About from "./About"
 import Experience from "./Experience/Experience"
 import Contact from "./Contact"
-import TopButton from "./TopButton"
+import TopButton from "./utilities/TopButton"
 
 const Layout = () => (
   <>
-    <Helmet>
+    <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
+    >
       <title>A Working Copy</title>
       <meta name="googlebot" content="noindex" />
       {/* Structured Data is omitted for SEO, given the temperoray nature of the site */}

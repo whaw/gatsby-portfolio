@@ -22,7 +22,7 @@ const About = () => (
               alt="author"
               style={{ width: "25%", float: "left" }}
             />
-            <h5>William has a wide view on the web development process.</h5>
+            <h5>William has a wide view on the web development process.</h5>
             <p>
               As a young lad he left Vancouver, with a Diploma in Advanced Web
               Content Development in hand, for the bright lights of Toronto.
@@ -49,7 +49,7 @@ const About = () => (
                 className="btn btn-primary border d-lg-none"
                 role="button"
               >
-                Experience at a glance
+                Experience highlights
               </a>
             </p>
           </div>
@@ -65,12 +65,12 @@ const About = () => (
                   <li>Twig, Django</li>
                   <li>Gulp, Webpack</li>
                   <li>Responsive Design</li>
-                  <li>Platform consistency</li>
+                  <li>Render consistency</li>
                   <li>Accurate to creative</li>
                   <li>WordPress, Craft</li>
                   <li>A/B testing</li>
                   <li>HTML emails</li>
-                  <li>and....</li>
+                  <li>and...</li>
                 </ul>
                 <div className="skills__closing-text">
                   <small>Working to be</small>
@@ -84,18 +84,17 @@ const About = () => (
                 <h4 className="bullet pb-2">Soft skills</h4>
                 <ul className="list-unstyled">
                   <li>Critical thinking</li>
-                  <li>Taking ownership</li>
+                  <li>Ownership</li>
                   <li>Resourceful</li>
                   <li>Curious</li>
-                  <li>Determined</li>
-                  <li>Organized</li>
-                  <li>Detail oriented</li>
-                  <li>Dependable</li>
+                  <li>Creative</li>
+                  <li>Detailed</li>
+                  <li>Self motivated</li>
                   <li>Flexible</li>
-                  <li>Supportive</li>
+                  <li>Strong team values</li>
                   <li>Empathetic</li>
                   <li>Sense of humor</li>
-                  <li>and....</li>
+                  <li>and...</li>
                 </ul>
                 <div className="skills__closing-text">
                   <small>Working to be</small>

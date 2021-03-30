@@ -74,7 +74,10 @@ const Timeline = () => {
                 </ul>
               </div>
 
-              {/* Usability issue with hidden scrollable content. Deferring to higher prority updates */}
+              {/* Todo (deferring for higher priorities)
+              - Usability issue with hidden scrollable content
+              - Bug when resizing timeline does not expand to fill space, when on 'present'
+              - Bug (unable to recreate) timeline content disappears */}
 
               <div className="events-content">
                 <ol>
@@ -121,7 +124,8 @@ const Timeline = () => {
                           interfaces (HTML, CSS and a little JavaScript), HTML
                           emails, Flash, audio and video editing, epubs,
                           estimating timelines and working closely with
-                          designers on the logistics of designs.
+                          designers, providing technical guidance and best
+                          options.
                         </p>
                       </div>
                       <div className="col-12 col-lg-6 pl-0 pl-lg-3">
@@ -143,9 +147,11 @@ const Timeline = () => {
                       </div>
                       <div className="col-12 pl-0 pt-lg-5">
                         <p className="font-weight-bold">
-                          Below are some websites developed during the later
-                          part of this period. It is not a complete list.
+                          Below is a small sampling of some direct client
+                          websites during this period. It is not a complete
+                          list.
                         </p>
+                        <p className="text-secondary">Screenshots coming!</p>
                       </div>
                     </div>
                     <div className="row">
@@ -153,7 +159,13 @@ const Timeline = () => {
                         <p>
                           HAND CODED RESPONSIVE INTERFACE + BOOTSTRAP
                           <br />
-                          The Wine Shop (ecommerce, Magento)
+                          <a
+                            href="https://www.thewineshops.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            The Wine Shop (ecommerce, Magento)
+                          </a>
                           <br />
                           skinnygrape
                         </p>
@@ -163,11 +175,29 @@ const Timeline = () => {
                           <br />
                           Marsh STARS ONE
                           <br />
-                          Pingtu
+                          <a
+                            href="https://www.pingtu.ca/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Pingtu
+                          </a>
                           <br />
-                          Ripple Digital Publishing
+                          <a
+                            href="http://www.ripplepublishing.ca/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Ripple Digital Publishing
+                          </a>
                           <br />
-                          Next Sentence
+                          <a
+                            href="https://nextsentence.ca/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Next Sentence
+                          </a>
                         </p>
                       </div>
                       <div className="col-12 col-md-6 pl-0 pl-lg-3">
@@ -223,14 +253,13 @@ const Timeline = () => {
                           application framework, with Django and Python.
                         </p>
                         <p>
-                          Later migrated to Craft CMS and Bootstrap to
-                          significantly increase the pace of delivery, to meet
-                          the needs of Marketing. This developed knowledge in
-                          "systems thinking" and fullstack development with
-                          Craft &mdash; in addition to A/B testing, modern SEO
-                          practices, site speed optimizations (I was a passenger
-                          here, but I was front row center) and object
-                          based JavaScript.
+                          Later migrated to Craft CMS and Bootstrap, to increase
+                          the pace of delivery, to meet the significant needs of
+                          Marketing. This developed knowledge in "systems
+                          thinking" and fullstack development with Craft &mdash;
+                          in addition to A/B testing, modern SEO practices, site
+                          speed optimizations (I was a passenger here, but I was
+                          front row center) and object based JavaScript.
                         </p>
                       </div>
                     </div>
@@ -241,22 +270,21 @@ const Timeline = () => {
                       <div className="col-12 col-lg-8 offset-lg-2 pl-0">
                         <p>
                           Focused, hungry and curious about all things
-                          JavaScript, pivoting to become a specialist.
+                          JavaScript, driven to become a specialist.
                         </p>
 
                         <p>
-                          This site is part of that discovery and best viewed as
-                          "a working copy" and a first pass, as speed to
-                          delivery is also a driver here, moreover, this site is
-                          in migration from an earlier version.
+                          This site is part of that discovery (first pass, get
+                          it working stage) and also in migration from an
+                          earlier version &mdash; that is "a working copy".
                         </p>
-                        <p>Stay tuned, as many enhancements are on the way!</p>
+                        <p>Stay tuned. Many enhancements are on the way!</p>
 
                         <div className="row mx-0">
                           <div className="col-12 col-sm-6 pl-0">
-                            {/* Lists here are in conflict with component script and styles. Deferring update, as lower priority */}
+                            {/* Lists here break from component code. Deferring fix... */}
                             <span className="font-weight-bold">
-                              Tools for this site:
+                              This site build:
                             </span>
                             <br />
                             SCSS

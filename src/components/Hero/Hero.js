@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Animation from "../Animation"
+import Animation from "../utilities/Animation"
 import Tool from "./Tools/Tool"
 import toolAnimElements from "/src/data/toolsAnim"
 import heroAnimElements from "/src/data/heroAnim"
