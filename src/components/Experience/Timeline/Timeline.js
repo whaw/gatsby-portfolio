@@ -147,9 +147,8 @@ const Timeline = () => {
                       </div>
                       <div className="col-12 pl-0 pt-lg-5">
                         <p className="font-weight-bold">
-                          Below is a small sampling of some direct client
-                          websites during this period. It is not a complete
-                          list.
+                          Below is a sampling of some direct client websites
+                          during this period. It is not a complete list.
                         </p>
                         <p className="text-secondary">Screenshots coming!</p>
                       </div>
@@ -159,13 +158,7 @@ const Timeline = () => {
                         <p>
                           HAND CODED RESPONSIVE INTERFACE + BOOTSTRAP
                           <br />
-                          <a
-                            href="https://www.thewineshops.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            The Wine Shop (ecommerce, Magento)
-                          </a>
+                          The Wine Shop (ecommerce, Magento)
                           <br />
                           skinnygrape
                         </p>

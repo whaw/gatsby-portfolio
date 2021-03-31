@@ -1,7 +1,7 @@
 import React from "react"
 
 const Contact = () => (
-  <section id="contact" className="py-5">
+  <section id="contact">
     <div className="container section__header">
       <div className="row">
         <div class="col text-center">
