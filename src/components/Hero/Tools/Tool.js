@@ -1,17 +1,23 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import Image from "./ToolImage"
 import ToolDescription from "./ToolDescription"
+import $ from "jquery"
 
 const Tool = props => {
   const cssSelector = props.name.toLowerCase()
   const [asideOpen, setAsideOpen] = useState(false)
+  const toolRef = useRef()
 
-  const handleOnMouseOver = e => {
-    setAsideOpen(true)
-  }
+  useEffect(() => {
+    if (toolRef && toolRef.current) {
+      const currentTool = $(toolRef.current)
+      currentTool.on("mouseover mouseout", handleOnMouseEvent)
+    }
+  })
 
-  const handleOnMouseOut = e => {
-    setAsideOpen(false)
+  const handleOnMouseEvent = e => {
+    const newState = !asideOpen
+    setAsideOpen(newState)
   }
 
   return (
@@ -19,10 +25,7 @@ const Tool = props => {
       className={`position-absolute hero__tool js_tool hero__${cssSelector} ${props.selector}`}
     >
       <button
-        onMouseOver={handleOnMouseOver}
-        onFocus={handleOnMouseOver}
-        onMouseOut={handleOnMouseOut}
-        onBlur={handleOnMouseOut}
+        ref={toolRef}
         className={`border-0 p-0 bg-transparent hero__${cssSelector}__button`}
       >
         <Image selector={props.selector} alt={props.name} />

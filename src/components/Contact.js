@@ -10,7 +10,7 @@ const Contact = () => (
             Let's do something Great
           </h3>
           <p class="small text-secondary">
-            Contact information has been provided via
+            Contact information has been provided as part of
             application&nbsp;submissions.
             <br />
             Sorry spammers!

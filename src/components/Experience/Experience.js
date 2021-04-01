@@ -21,7 +21,7 @@ const Experience = () => (
         target="_blank"
         rel="noreferrer"
       >
-        To this site's code
+        To the goods (Github)
       </a>
     </p>
     <Brands />

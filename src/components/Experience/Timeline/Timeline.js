@@ -23,20 +23,20 @@ const Timeline = () => {
                       <li>
                         <a
                           href="#0"
-                          data-date="1/1/2006"
+                          data-date="1/1/2004"
                           className="selected small"
                         >
-                          2004-06
+                          2002-04
                         </a>
                       </li>
                       <li>
-                        <a href="#0" data-date="1/1/2007" className="small">
-                          2006
+                        <a href="#0" data-date="1/1/2005" className="small">
+                          2004-2005
                         </a>
                       </li>
                       <li>
                         <a href="#0" data-date="1/1/2015" className="small">
-                          2007-15
+                          2005-15
                         </a>
                       </li>
                       <li>
@@ -81,9 +81,9 @@ const Timeline = () => {
 
               <div className="events-content">
                 <ol>
-                  <li className="selected" data-date="1/1/2006">
+                  <li className="selected" data-date="1/1/2004">
                     <h4>Ecom Bcom</h4>
-                    <em>2004 - 2006</em>
+                    <em>2002 - 2004</em>
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
                         <p>
@@ -95,9 +95,9 @@ const Timeline = () => {
                       </div>
                     </div>
                   </li>
-                  <li data-date="1/1/2007">
+                  <li data-date="1/1/2005">
                     <h4>Freelance + .NET classes</h4>
-                    <em>2006</em>
+                    <em>2004 - 2005</em>
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
                         <p>
@@ -111,7 +111,7 @@ const Timeline = () => {
                   </li>
                   <li data-date="1/1/2015">
                     <h4>Splash Interactive</h4>
-                    <em>2007 - 2015</em>
+                    <em>2005 - 2015</em>
                     <div className="row">
                       <div className="col-12 col-lg-6 pl-0">
                         <p>
@@ -272,22 +272,25 @@ const Timeline = () => {
                           earlier version &mdash; that is "a working copy".
                         </p>
                         <p>Stay tuned. Many enhancements are on the way!</p>
+                        <p className="font-weight-bold mb-1 d-block">
+                          This site build tools:
+                        </p>
 
                         <div className="row mx-0">
                           <div className="col-12 col-sm-6 pl-0">
                             {/* Lists here break from component code. Deferring fix... */}
-                            <span className="font-weight-bold">
-                              This site build:
-                            </span>
-                            <br />
-                            SCSS
+                            SCSS/BEM
                             <br />
                             Bootstrap
-                          </div>
-                          <div className="col-12 col-sm-6 pt-0 pt-sm-4 pl-0">
-                            Gatsby/React
                             <br />
+                            React/Gatsby
+                          </div>
+                          <div className="col-12 col-sm-6 pl-0">
                             JQuery
+                            <br />
+                            GraphQL
+                            <br />
+                            ESLint/Prettier
                           </div>
                         </div>
                       </div>

@@ -49,7 +49,7 @@ const About = () => (
                 className="btn btn-primary border d-lg-none"
                 role="button"
               >
-                Experience highlights
+                To Experience
               </a>
             </p>
           </div>

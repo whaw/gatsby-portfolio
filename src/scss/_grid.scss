@@ -1,3 +1,6 @@
+$section-spacing: 75px;
+$section-with-bg-spacing: $section-spacing * 2;
+
 html,
 body {
   max-width: $body-max-width;
@@ -11,16 +14,16 @@ section,
   padding-top: 20px;
   margin-top: 50px;
   @include media-breakpoint-up(md) {
-    padding-top: 75px;
-    margin-top: 75px;
+    padding-top: $section-spacing;
+    margin-top: $section-spacing;
   }
 }
 .section--with-background {
   padding-top: 70px;
   padding-bottom: 70px;
   @include media-breakpoint-up(md) {
-    margin-top: 150px;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    margin-top: $section-with-bg-spacing;
+    padding-top: $section-with-bg-spacing;
+    padding-bottom: $section-with-bg-spacing;
   }
 }
