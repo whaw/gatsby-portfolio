@@ -84,7 +84,7 @@ const About = () => (
                 <h4 className="bullet pb-2">Soft skills</h4>
                 <ul className="list-unstyled">
                   <li>Critical thinking</li>
-                  <li>Takes ownership</li>
+                  <li>Entrepeneurial</li>
                   <li>Resourceful</li>
                   <li>Curious</li>
                   <li>Creative</li>
@@ -92,8 +92,8 @@ const About = () => (
                   <li>Adaptible</li>
                   <li>Self motivated</li>
                   <li>Strong team values</li>
-                  <li>Supportive</li>
-                  <li>Empathetic</li>
+                  <li>Humble</li>
+                  <li>Fun loving</li>
                   <li>Sense of humor</li>
                   <li>and...</li>
                 </ul>

@@ -29,7 +29,7 @@ const Image = props => (
       }
     `}
     render={data => {
-      // specific to tools json
+      // This is specific to tools json
       const imageNode = data.allToolsAnimJson.edges[0].node.images.find(n => {
         return n.selector.includes(props.selector)
       })

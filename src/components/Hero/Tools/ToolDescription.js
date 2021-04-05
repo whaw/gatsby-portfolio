@@ -10,7 +10,7 @@ const ToolDescription = props => {
       <h6>{props.name}</h6>
       <p>{props.description}</p>
       <p>
-        <span className="font-weight-bold">Development status:</span>{" "}
+        <span className="font-weight-bold">Discovery status:</span>{" "}
         {props.status}
       </p>
     </aside>

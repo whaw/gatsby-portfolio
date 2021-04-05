@@ -251,8 +251,8 @@ const Timeline = () => {
                           Marketing. This developed knowledge in "systems
                           thinking" and fullstack development with Craft &mdash;
                           in addition to A/B testing, modern SEO practices, site
-                          speed optimizations (I was a passenger here, but I was
-                          front row center) and object based JavaScript.
+                          speed optimizations (although, I was a passenger here)
+                          and object based JavaScript.
                         </p>
                       </div>
                     </div>

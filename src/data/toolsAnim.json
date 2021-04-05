@@ -9,7 +9,7 @@
         "image": "./images/tools/javascript.png",
         "name": "JavaScript",
         "description": "JavaScript is one of the core technologies of the World Wide Web. It enables interactive web pages and is an essential part of web applications.",
-        "status": "In progress"
+        "status": "Ongoing"
       },
       {
         "selector": "hero__webpack js_webpack",
