@@ -5,8 +5,8 @@
  */
 
 exports.onCreateWebpackConfig = ({ actions }) => {
-  const { setWebpackConfig } = actions
-  setWebpackConfig({
+  actions.setWebpackConfig({
+    devtool: "eval-source-map",
     externals: {
       jquery: "jQuery",
     },
