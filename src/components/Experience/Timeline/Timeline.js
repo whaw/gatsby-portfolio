@@ -271,8 +271,8 @@ const Timeline = () => {
                           it working stage) and also in migration from an
                           earlier version &mdash; that is "a working copy".
                         </p>
-                        <p>Stay tuned. Many enhancements are on the way!</p>
-                        <p className="font-weight-bold mb-1 d-block">
+                        <p>Stay tuned. Enhancements on the way!</p>
+                        <p className="font-weight-bold mb-2 d-block">
                           This site build tools:
                         </p>
 
