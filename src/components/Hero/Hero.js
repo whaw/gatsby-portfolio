@@ -28,20 +28,6 @@ const Hero = () => {
           <span className="small d-none d-sm-block js_heading hero__sub-heading">
             ( + some tools I'm working on, now or soon )
           </span>
-          {/* <div className="pt-3 d-none d-sm-block">
-            <a href="#skills" className="btn btn-secondary" role="button">
-              Tell me more
-            </a>{" "}
-            &nbsp;
-            <a
-              href="assets/downloads/William-Haw-CV.pdf"
-              className="btn btn-secondary"
-              role="button"
-              target="_blank"
-            >
-              Straight to the Goods (CV)
-            </a>
-          </div> */}
         </div>
 
         {/* Tool images */}

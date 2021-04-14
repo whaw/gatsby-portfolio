@@ -6,16 +6,14 @@ const Image = props => (
   <StaticQuery
     query={graphql`
       query {
-        allToolsAnimJson {
+        allBrandImagesJson {
           edges {
             node {
-              images {
-                selector
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 75) {
-                      ...GatsbyImageSharpFluid
-                    }
+              alt
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 75) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
@@ -25,8 +23,8 @@ const Image = props => (
       }
     `}
     render={data => {
-      const imageNode = data.allToolsAnimJson.edges[0].node.images.find(n => {
-        return n.selector.includes(props.selector)
+      const imageNode = data.allBrandImagesJson.edges.find(n => {
+        return n.node.alt.includes(props.alt)
       })
 
       if (!imageNode) {
@@ -36,7 +34,7 @@ const Image = props => (
       return (
         <Img
           alt={props.alt}
-          fluid={imageNode.image.childImageSharp.fluid}
+          fluid={imageNode.node.image.childImageSharp.fluid}
           className={props.className}
         />
       )
