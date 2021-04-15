@@ -1,7 +1,7 @@
 [
   {
     "image": "./images/brands/knorr.png",
-    "className": "w-100",
+    "className": "",
     "alt": "Knorr"
   },
   {
@@ -16,12 +16,12 @@
   },
   {
     "image": "./images/brands/ADDB.png",
-    "className": "w-100",
+    "className": "",
     "alt": "Anderson DDB"
   },
   {
     "image": "./images/brands/marvel.png",
-    "className": "w-100",
+    "className": "",
     "alt": "Marvel Comics"
   },
   {
@@ -31,27 +31,27 @@
   },
   {
     "image": "./images/brands/yorkU.png",
-    "className": "w-100",
+    "className": "",
     "alt": "York University"
   },
   {
     "image": "./images/brands/peller.png",
-    "className": "w-100",
+    "className": "",
     "alt": "Peller Estates"
   },
   {
     "image": "./images/brands/trius.png",
-    "className": "w-100",
+    "className": "",
     "alt": "Trius Winery"
   },
   {
     "image": "./images/brands/thirtybench.png",
-    "className": "w-100",
+    "className": "",
     "alt": "Thirty Bench Winery"
   },
   {
     "image": "./images/brands/gretzky.png",
-    "className": "w-100",
+    "className": "",
     "alt": "Wayne Gretzky Estates"
   }
 ]

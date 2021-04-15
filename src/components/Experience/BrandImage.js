@@ -12,7 +12,7 @@ const Image = props => (
               alt
               image {
                 childImageSharp {
-                  fluid(maxWidth: 75) {
+                  fluid(maxWidth: 75, quality: 90) {
                     ...GatsbyImageSharpFluid
                   }
                 }
