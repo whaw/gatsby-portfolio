@@ -1,5 +1,5 @@
 import React from "react"
-import Brands from "./Brands"
+import Brands from "./Brands/Brands"
 import Timeline from "./Timeline/Timeline"
 
 const Experience = () => (

@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const About = () => (
+const Introductions = () => (
   <>
     <section id="about">
       <div className="container section__header">
@@ -118,4 +118,4 @@ const About = () => (
   </>
 )
 
-export default About
+export default Introductions

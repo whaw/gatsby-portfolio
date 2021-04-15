@@ -5,7 +5,7 @@ import Helmet from "react-helmet"
 /* components */
 import MainNav from "./MainNav"
 import Hero from "./Hero/Hero"
-import About from "./About"
+import Introductions from "./Introductions"
 import AboutSite from "./AboutSite"
 import Experience from "./Experience/Experience"
 import Contact from "./Contact"
@@ -33,7 +33,7 @@ const Layout = () => (
       <Hero />
     </header>
     <main>
-      <About />
+      <Introductions />
       <AboutSite />
       <Experience />
       <Contact />
