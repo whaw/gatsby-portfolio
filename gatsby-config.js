@@ -15,10 +15,6 @@ module.exports = {
         sassOptions: {
           includePaths: [`${__dirname}/src/scss/styles.scss`],
         },
-        // part of adding scss to components. opting out for now, so not to include bootstrap twice, both globally and locally
-        // consideration for changes later
-        // sassRuleModulesTest: /\.mod\.s(a|c)ss$/, // make scss component.mobules available to components
-        // additionalData: `@use "${__dirname}/src/scss/global-variables" as var;`, // make globals variables visible to component.module scss
       },
     },
     {
