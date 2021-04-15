@@ -14,7 +14,7 @@ const About = () => (
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-5 pb-10 pb-lg-0 pr-lg-5" id="about">
+          <div className="col-12 col-lg-5 pb-10 pb-lg-0 pr-lg-5">
             <StaticImage
               src="../images/me.png"
               className="introductions__me mb-0 mr-3 mb-md-2 mr-md-4 mt-0"

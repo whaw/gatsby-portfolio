@@ -3,6 +3,7 @@ import React from "react"
 const MainNav = () => {
   const navLinks = [
     { label: "Introductions", to: "#about" },
+    { label: "About this site", to: "#about-this-site" },
     { label: "Experience", to: "#experience" },
     { label: "Contact", to: "#contact" },
   ]

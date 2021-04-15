@@ -13,17 +13,6 @@ const Experience = () => (
       </div>
     </div>
     <Timeline />
-    <p className="text-center">
-      <a
-        href="https://github.com/whaw/whaw.github.io/tree/source"
-        className="btn btn-primary border"
-        role="button"
-        target="_blank"
-        rel="noreferrer"
-      >
-        To the goods (Github)
-      </a>
-    </p>
     <Brands />
   </section>
 )

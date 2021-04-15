@@ -263,36 +263,8 @@ const Timeline = () => {
                       <div className="col-12 col-lg-8 offset-lg-2 pl-0">
                         <p>
                           Focused, hungry and curious about all things
-                          JavaScript, driven to become a specialist.
+                          JavaScript, driven to become a specialist.
                         </p>
-
-                        <p>
-                          This site is part of that discovery (first pass, get
-                          it working stage) and also in migration from an
-                          earlier version &mdash; that is "a working copy".
-                        </p>
-                        <p>Stay tuned. Enhancements on the way!</p>
-                        <p className="font-weight-bold mb-2 d-block">
-                          This site build tools:
-                        </p>
-
-                        <div className="row mx-0">
-                          <div className="col-12 col-sm-6 pl-0">
-                            {/* Lists here break from component code. Deferring fix... */}
-                            SCSS/BEM
-                            <br />
-                            Bootstrap
-                            <br />
-                            React/Gatsby
-                          </div>
-                          <div className="col-12 col-sm-6 pl-0">
-                            JQuery
-                            <br />
-                            GraphQL
-                            <br />
-                            ESLint/Prettier
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </li>

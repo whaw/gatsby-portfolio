@@ -6,6 +6,7 @@ import Helmet from "react-helmet"
 import MainNav from "./MainNav"
 import Hero from "./Hero/Hero"
 import About from "./About"
+import AboutSite from "./AboutSite"
 import Experience from "./Experience/Experience"
 import Contact from "./Contact"
 import TopButton from "./utilities/TopButton"
@@ -33,6 +34,7 @@ const Layout = () => (
     </header>
     <main>
       <About />
+      <AboutSite />
       <Experience />
       <Contact />
       <TopButton />
