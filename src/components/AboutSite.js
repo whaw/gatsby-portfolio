@@ -29,7 +29,7 @@ const AboutSite = () => (
           <ul className="row">
             <li className="col-12 col-sm-6">SCSS/BEM</li>
             <li className="col-12 col-sm-6">Bootstrap</li>
-            <li className="col-12 col-sm-6">React/Gatsby</li>
+            <li className="col-12 col-sm-6">Gatsby/React</li>
             <li className="col-12 col-sm-6">JQuery</li>
             <li className="col-12 col-sm-6">GraphQL</li>
             <li className="col-12 col-sm-6">ESLint/Prettier</li>
@@ -37,7 +37,7 @@ const AboutSite = () => (
           <p>
             <a
               href="https://github.com/whaw/whaw.github.io/tree/source"
-              className="btn btn-primary border mb-2"
+              className="btn btn-primary border mb-2 mb-xl-5"
               role="button"
               target="_blank"
               rel="noreferrer"
@@ -47,7 +47,11 @@ const AboutSite = () => (
           </p>
 
           <h4>Result</h4>
-          <p>Site is fast and consistent across platforms.</p>
+          <p>
+            Site is fast and consistent across platforms, code and image
+            optimizations are automated and dynamic content abstracted for
+            dryer code.
+          </p>
           <p>Stay tuned. More on the way!</p>
         </div>
       </div>
