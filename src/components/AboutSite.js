@@ -12,7 +12,7 @@ const AboutSite = () => (
     </div>
     <div className="container">
       <div className="row">
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 pr-lg-8">
           <h4>Situation</h4>
           <p>
             Challenged and successful in the agency marketing space, pivoting
@@ -22,9 +22,10 @@ const AboutSite = () => (
             tools &mdash; that is, "a working copy".
           </p>
           <h4>Task</h4>
-          <p>Migrate static version of this site to a Gatsby, React version.</p>
-        </div>
-        <div className="col-12 col-md-6">
+          <p>
+            Migrate static version of this site to a Gatsby, React version, with
+            a focus on building JavaScript tooling and code quality.
+          </p>
           <h4>Approach</h4>
           <ul className="row">
             <li className="col-12 col-sm-6">SCSS/BEM</li>
@@ -34,23 +35,26 @@ const AboutSite = () => (
             <li className="col-12 col-sm-6">GraphQL</li>
             <li className="col-12 col-sm-6">ESLint/Prettier</li>
           </ul>
+        </div>
+        <div className="col-12 col-md-6">
+          <h4>Result</h4>
+          <p>
+            Site is fast and consistent across platforms, code and image
+            optimizations are automated and dynamic content abstracted for
+            dryer code.
+          </p>
+          <p>Increased knowledge in Gatsby, React, GraphQL and JavaScript.</p>
+
           <p>
             <a
               href="https://github.com/whaw/whaw.github.io/tree/source"
-              className="btn btn-primary border mb-2 mb-xl-5"
+              className="btn btn-primary border mt-0 mb-3"
               role="button"
               target="_blank"
               rel="noreferrer"
             >
               To the goods (Github)
             </a>
-          </p>
-
-          <h4>Result</h4>
-          <p>
-            Site is fast and consistent across platforms, code and image
-            optimizations are automated and dynamic content abstracted for
-            dryer code.
           </p>
           <p>Stay tuned. More on the way!</p>
         </div>

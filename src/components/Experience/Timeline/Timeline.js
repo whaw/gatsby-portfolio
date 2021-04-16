@@ -87,7 +87,7 @@ const Timeline = () => {
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
                         <p>
-                          Oversaw all aspects of design and development of two
+                          Oversaw all aspects of design and development for two
                           catalog websites for travel accessories and gift
                           baskets, contributing to record sales by the end of
                           his tenure.
