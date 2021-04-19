@@ -6,16 +6,17 @@ const Animation = ({ animElements, animContainer }) => {
 
   useEffect(() => {
     if (hasPlayed === false) {
-      const inView = isElementInViewport(animContainer)
-      if (!inView) bindEvents()
+      bindEvents()
     }
   })
 
   const bindEvents = () => {
-    $(window).on("load resize scroll", e => isElementInViewport(animContainer))
+    $(window).on("load resize scroll", e => {
+      if (inView(animContainer)) render()
+    })
   }
 
-  const isElementInViewport = el => {
+  const inView = el => {
     const screenTop = $(window).scrollTop()
     const elementTop = $(el).offset().top
     const elementBottom = $(el).offset().bottom
@@ -26,27 +27,19 @@ const Animation = ({ animElements, animContainer }) => {
       (screenBottom > halfHeight && screenTop < elementTop) ||
       (screenTop > elementTop + halfHeight && screenBottom > elementBottom)
     ) {
-      render()
+      return true
     }
   }
 
   const render = () => {
-    // there are two types of arrays used here
-    // array type 1: animation information (selector, delay, elementDelay)
-    // array type 2: array of elements with same selector/class
-
-    // aray type 1
+    // aray 1: animation information (selector, delay, elementDelay)
     animElements.forEach(animElement => {
-      // array type 2
+      // array 2: elements with same selector/class
       const elementArray = $(animElement.selector).toArray()
 
-      // value to delay initial animation
       const delay = animElement.delay
-
-      // value to delay animation between common elements
       const elementDelay = animElement.elementDelay
 
-      // delay initial animation
       if (delay !== null) {
         setTimeout(() => {
           animate(elementArray, elementDelay)
@@ -59,9 +52,7 @@ const Animation = ({ animElements, animContainer }) => {
   }
 
   const animate = (elementArray, elementDelay) => {
-    // iterate through collection of elements with shared class
     elementArray.forEach((el, i) => {
-      // delay between common elements
       if (elementDelay !== null) {
         setTimeout(function () {
           $(el).addClass("animate")
