@@ -18,7 +18,7 @@ const Introductions = () => (
             <StaticImage
               src="../images/me.png"
               className="introductions__me mb-0 mr-3 mb-md-2 mr-md-4 mt-0"
-              placeholder="TRACED_SVG"
+              placeholder="tracedSVG"
               alt="author"
               style={{ width: "25%", float: "left" }}
             />

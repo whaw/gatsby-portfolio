@@ -2,22 +2,27 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Animation from "../utilities/Animation"
 import Tool from "./Tools/Tool"
-import toolAnimElements from "/src/data/toolsAnim"
-import heroAnimElements from "/src/data/heroAnim"
 
+{
+  /* IS THIS THE CORRECT SETUP??? */
+}
+const toolAnimDetails = require("/src/data/toolsAnim")
+const heroAnimDetails = require("/src/data/heroAnim")
 const animContainer = ".js_hero"
+
+interface ToolProps {
+  selector: string
+  name: string
+  description: string
+  status: string
+  image: string
+}
 
 const Hero = () => {
   return (
     <>
-      <Animation
-        animElements={heroAnimElements}
-        animContainer={animContainer}
-      />
-      <Animation
-        animElements={toolAnimElements}
-        animContainer={animContainer}
-      />
+      <Animation animDetails={heroAnimDetails} animContainer={animContainer} />
+      <Animation animDetails={toolAnimDetails} animContainer={animContainer} />
 
       <div className="hero position-relative js_hero mt-11">
         <div className="heading js_heading position-absolute text-center w-100 pt-md-5">
@@ -31,7 +36,9 @@ const Hero = () => {
         </div>
 
         {/* Tool images */}
-        {toolAnimElements[0].images.map(tool => {
+
+        {/* IS THIS THE CORRECT SETUP??? */}
+        {toolAnimDetails[0].images.map((tool: ToolProps) => {
           return (
             <Tool
               selector={tool.selector}
@@ -39,7 +46,6 @@ const Hero = () => {
               description={tool.description}
               status={tool.status}
               key={tool.image}
-              alt={tool.alt}
             />
           )
         })}
@@ -48,13 +54,13 @@ const Hero = () => {
         <StaticImage
           src="../../images/hero-truck.png"
           className="position-absolute mt-14 hero__truck js_truck"
-          placeholder="TRACED_SVG"
+          placeholder="tracedSVG"
           alt="truck and tree"
         />
         <StaticImage
           src="../../images/hero-tree.png"
           className="position-absolute hero__tree js_tree"
-          placeholder="TRACED_SVG"
+          placeholder="tracedSVG"
           alt="media, trees and benches"
         />
         <h3 className="mx-auto position-absolute hero__hashTag text-white text-center">
@@ -63,13 +69,13 @@ const Hero = () => {
         <StaticImage
           src="../../images/hero-sketch.png"
           className="position-absolute hero__sketch js_sketch"
-          placeholder="TRACED_SVG"
+          placeholder="tracedSVG"
           alt="sketch of a road less traveled"
         />
         <StaticImage
           src="../../images/hero-main2.png"
           className="hero__main mt-11 mt-sm-12 mt-md-14"
-          placeholder="TRACED_SVG"
+          placeholder="tracedSVG"
           alt="media scene"
         />
       </div>

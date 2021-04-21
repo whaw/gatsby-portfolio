@@ -2,20 +2,24 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Image = props => (
+interface Props {
+  alt: string
+  src: string
+  className: string
+}
+
+const Image = (props: Props) => (
   <StaticQuery
     query={graphql`
       query {
-        allToolsAnimJson {
+        allBrandImagesJson {
           edges {
             node {
-              images {
-                selector
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 75) {
-                      ...GatsbyImageSharpFluid
-                    }
+              alt
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 75, quality: 90) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
@@ -25,8 +29,8 @@ const Image = props => (
       }
     `}
     render={data => {
-      const imageNode = data.allToolsAnimJson.edges[0].node.images.find(n => {
-        return n.selector.includes(props.selector)
+      const imageNode = data.allBrandImagesJson.edges.find((n: any) => {
+        return n.node.alt.includes(props.alt)
       })
 
       if (!imageNode) {
@@ -36,7 +40,7 @@ const Image = props => (
       return (
         <Img
           alt={props.alt}
-          fluid={imageNode.image.childImageSharp.fluid}
+          fluid={imageNode.node.image.childImageSharp.fluid}
           className={props.className}
         />
       )

@@ -3,19 +3,26 @@ import Image from "./ToolImage"
 import ToolDescription from "./ToolDescription"
 import $ from "jquery"
 
-const Tool = props => {
+interface Props {
+  selector: string
+  name: string
+  description: string
+  status: string
+}
+
+const Tool = (props: Props) => {
   const cssSelector = props.name.toLowerCase()
   const [asideOpen, setAsideOpen] = useState(false)
-  const toolRef = useRef()
+  const toolRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
-    if (toolRef && toolRef.current) {
+    if (toolRef.current !== null) {
       const currentTool = $(toolRef.current)
       currentTool.on("mouseover mouseout", handleOnMouseEvent)
     }
   })
 
-  const handleOnMouseEvent = e => {
+  const handleOnMouseEvent = () => {
     const newState = !asideOpen
     setAsideOpen(newState)
   }

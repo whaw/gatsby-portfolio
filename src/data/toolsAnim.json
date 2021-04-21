@@ -51,7 +51,7 @@
         "image": "./images/tools/typescript.png",
         "name": "TypeScript",
         "description": "TypeScript is a superset of the JavaScript. It's goal is to help catch mistakes early through a type system, to make JavaScript development more efficient.",
-        "status": "On deck"
+        "status": "In progress"
       }
     ]
   }

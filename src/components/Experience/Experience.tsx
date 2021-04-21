@@ -1,6 +1,6 @@
 import React from "react"
 import Brands from "./Brands/Brands"
-import Timeline from "./Timeline/Timeline"
+// import Timeline from "./Timeline/Timeline"
 
 const Experience = () => (
   <section id="experience" className="bg-light section--with-background">
@@ -12,7 +12,7 @@ const Experience = () => (
         </div>
       </div>
     </div>
-    <Timeline />
+    {/* <Timeline /> */}
     <Brands />
   </section>
 )

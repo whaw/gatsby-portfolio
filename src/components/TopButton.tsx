@@ -14,7 +14,9 @@ const TopButton = () => {
   const isVisibleCheck = () => {
     const screenTop = $(window).scrollTop()
     const headerHeight = $(".header").outerHeight()
-    screenTop > headerHeight ? setIsVisible(true) : setIsVisible(false)
+    if (screenTop && headerHeight) {
+      screenTop > headerHeight ? setIsVisible(true) : setIsVisible(false)
+    }
   }
 
   return (

@@ -1,6 +1,13 @@
 import React from "react"
 
-const ToolDescription = props => {
+interface Props {
+  isOpen: boolean
+  description: string
+  name: string
+  status: string
+}
+
+const ToolDescription = (props: Props) => {
   return (
     <aside
       className={`hero__tool__aside border bg-white text-left small mt-2 ${
