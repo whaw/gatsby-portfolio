@@ -43,7 +43,10 @@ const AboutSite = () => (
             optimizations are automated and dynamic content abstracted for
             dryer code.
           </p>
-          <p>Increased knowledge in Gatsby, React, GraphQL and JavaScript.</p>
+          <p>
+            Increased knowledge in Gatsby, React, GraphQL, JavaScript and
+            TypeScript.
+          </p>
 
           <p>
             <a
