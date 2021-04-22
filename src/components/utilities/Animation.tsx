@@ -54,7 +54,7 @@ const Animation = ({ animDetails, animContainer }: Props) => {
   const render = () => {
     // array 1 data structure: [selector, delay, elementDelay]
     animDetails.forEach((animElement: any) => {
-      // array 2 is made up by elements with shared selector
+      // array 2 is made up of elememts with the same selector
       const elementArray = $(animElement.selector).toArray()
 
       const delay = animElement.delay

@@ -1,5 +1,5 @@
 /* boiler */
-import React from "react"
+import React, { ReactNode } from "react"
 import Helmet from "react-helmet"
 
 /* components */
@@ -11,7 +11,11 @@ import Experience from "./Experience/Experience"
 import Contact from "./Contact"
 import TopButton from "./TopButton"
 
-const Layout = () => (
+interface Props {
+  children?: ReactNode
+}
+
+const Layout = ({ children }: Props) => (
   <>
     <Helmet
       htmlAttributes={{
@@ -20,7 +24,7 @@ const Layout = () => (
     >
       <title>A Working Copy</title>
       <meta name="googlebot" content="noindex" />
-      {/* Structured Data is omitted for SEO, given the temperoray nature of the site */}
+      {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
       <body
         data-spy="scroll"
         data-bs-target="#navbar"

@@ -3,9 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import Animation from "../utilities/Animation"
 import Tool from "./Tools/Tool"
 
-{
-  /* IS THIS THE CORRECT SETUP??? */
-}
 const toolAnimDetails = require("/src/data/toolsAnim")
 const heroAnimDetails = require("/src/data/heroAnim")
 const animContainer = ".js_hero"
@@ -36,8 +33,6 @@ const Hero = () => {
         </div>
 
         {/* Tool images */}
-
-        {/* IS THIS THE CORRECT SETUP??? */}
         {toolAnimDetails[0].images.map((tool: ToolProps) => {
           return (
             <Tool

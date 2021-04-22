@@ -5,8 +5,6 @@ import "./Timeline.css" // resolved navigation bug
 import initiateTimeline from "./Timeline-script" // cleared some minor compilation errors. "Warnings" TBA
 
 const Timeline = () => {
-  // address: timeline does not resize with window, so end of line ends up short
-
   useEffect(() => {
     initiateTimeline()
   })
