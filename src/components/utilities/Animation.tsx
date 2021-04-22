@@ -22,15 +22,12 @@ const Animation = ({ animDetails, animContainer }: Props) => {
   }
 
   const inView = (el: string) => {
+    const element = $(el)
     const screenTop = $(window).scrollTop()
     const windowHeight = $(window).innerHeight()
-    const element = $(el)
     const elementOffset = element.offset()
     const elementHeight = element.outerHeight()
-
-    {
-      /* IS THIS THE CORRECT SETUP??? */
-    }
+    /* typescript doesn't like the object methods. might not be in d.ts file */
     if (
       element !== undefined &&
       screenTop !== undefined &&
