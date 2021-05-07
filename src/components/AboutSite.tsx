@@ -28,12 +28,12 @@ const AboutSite = () => (
           </p>
           <h4>Approach</h4>
           <ul className="row">
-            <li className="col-12 col-sm-6">SCSS, BEM</li>
-            <li className="col-12 col-sm-6">Bootstrap</li>
-            <li className="col-12 col-sm-6">Gatsby, React</li>
-            <li className="col-12 col-sm-6">JQuery, Typescript</li>
-            <li className="col-12 col-sm-6">GraphQL</li>
-            <li className="col-12 col-sm-6">ESLint, Prettier</li>
+            <li className="col-12 col-sm-6 px-0">SCSS, BEM</li>
+            <li className="col-12 col-sm-6 px-0">Bootstrap</li>
+            <li className="col-12 col-sm-6 px-0">Gatsby, React</li>
+            <li className="col-12 col-sm-6 px-0">JQuery, Typescript</li>
+            <li className="col-12 col-sm-6 px-0">GraphQL</li>
+            <li className="col-12 col-sm-6 px-0">ESLint, Prettier</li>
           </ul>
         </div>
         <div className="col-12 col-md-6">
