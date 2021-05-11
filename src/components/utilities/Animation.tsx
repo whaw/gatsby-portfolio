@@ -10,8 +10,9 @@ const Animation = ({ animDetails, animContainer }: Props) => {
   const [hasPlayed, setHasPlayed] = useState(false)
 
   useEffect(() => {
-    if (hasPlayed === false) {
-      bindEvents()
+    if (hasPlayed === false) bindEvents()
+    return () => {
+      $(window).off()
     }
   })
 
@@ -27,7 +28,7 @@ const Animation = ({ animDetails, animContainer }: Props) => {
     const windowHeight = $(window).innerHeight()
     const elementOffset = element.offset()
     const elementHeight = element.outerHeight()
-    /* typescript doesn't like the object methods. might not be in d.ts file */
+    /* typescript doesn't like the object methods. might not be in d.ts file (thus the multiple ifs) */
     if (
       element !== undefined &&
       screenTop !== undefined &&
