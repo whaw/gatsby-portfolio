@@ -24,18 +24,12 @@ const Animation = ({ animDetails, animContainer }: Props) => {
 
   const inView = (el: string) => {
     const element = $(el)
-    const screenTop = $(window).scrollTop()
-    const windowHeight = $(window).innerHeight()
     const elementOffset = element.offset()
-    const elementHeight = element.outerHeight()
-    /* typescript doesn't like the object methods. might not be in d.ts file (thus the multiple ifs) */
-    if (
-      element !== undefined &&
-      screenTop !== undefined &&
-      windowHeight !== undefined &&
-      elementOffset !== undefined &&
-      elementHeight !== undefined
-    ) {
+    // Todo: check jquery d.ts file for methods
+    if (element !== undefined && elementOffset !== undefined) {
+      const screenTop = $(window).scrollTop() || 0
+      const windowHeight = $(window).innerHeight() || 0
+      const elementHeight = element.outerHeight() || 0
       const elementTop = elementOffset.top
       const elementBottom = elementTop + elementHeight
       const screenBottom = screenTop + windowHeight
@@ -50,11 +44,8 @@ const Animation = ({ animDetails, animContainer }: Props) => {
   }
 
   const render = () => {
-    // array 1 data structure: [selector, delay, elementDelay]
     animDetails.forEach((animElement: any) => {
-      // array 2 is made up of elememts with the same selector
       const elementArray = $(animElement.selector).toArray()
-
       const delay = animElement.delay
       const elementDelay = animElement.elementDelay
 
