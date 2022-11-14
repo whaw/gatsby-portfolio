@@ -1,12 +1,7 @@
 import $ from "jquery"
 import React, { useState, useEffect } from "react"
 
-interface Props {
-  animDetails: Array<any>
-  animContainer: string
-}
-
-const Animation = ({ animDetails, animContainer }: Props) => {
+const Animation = ({ animDetails, animContainer }) => {
   const [hasPlayed, setHasPlayed] = useState(false)
 
   useEffect(() => {
@@ -22,7 +17,7 @@ const Animation = ({ animDetails, animContainer }: Props) => {
     })
   }
 
-  const inView = (el: string) => {
+  const inView = (el) => {
     const element = $(el)
     const elementOffset = element.offset()
     // Todo: check jquery d.ts file for methods
@@ -44,7 +39,7 @@ const Animation = ({ animDetails, animContainer }: Props) => {
   }
 
   const render = () => {
-    animDetails.forEach((animElement: any) => {
+    animDetails.forEach((animElement) => {
       const elementArray = $(animElement.selector).toArray()
       const delay = animElement.delay
       const elementDelay = animElement.elementDelay
@@ -60,8 +55,8 @@ const Animation = ({ animDetails, animContainer }: Props) => {
     setHasPlayed(true)
   }
 
-  const animate = (elementArray: Array<any>, elementDelay: number) => {
-    elementArray.forEach((el: any, i: number) => {
+  const animate = (elementArray, elementDelay) => {
+    elementArray.forEach((el, i) => {
       if (elementDelay !== null) {
         setTimeout(function () {
           $(el).addClass("animate")

@@ -1,21 +1,14 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Animation from "../utilities/Animation"
+import Animation from "./Tools/Animation"
 import Tool from "./Tools/Tool"
 
 const toolAnimDetails = require("/src/data/toolsAnim")
 const heroAnimDetails = require("/src/data/heroAnim")
 const animContainer = ".js_hero"
 
-interface ToolProps {
-  selector: string
-  name: string
-  description: string
-  status: string
-  image: string
-}
-
 const Hero = () => {
+
   return (
     <>
       <Animation animDetails={heroAnimDetails} animContainer={animContainer} />
@@ -33,7 +26,7 @@ const Hero = () => {
         </div>
 
         {/* Tool images */}
-        {toolAnimDetails[0].images.map((tool: ToolProps) => {
+        {toolAnimDetails[0].images.map((tool) => {
           return (
             <Tool
               selector={tool.selector}
@@ -56,7 +49,7 @@ const Hero = () => {
           src="../../images/hero-tree.png"
           className="position-absolute hero__tree js_tree"
           placeholder="tracedSVG"
-          alt="media, trees and benches"
+          alt="the media, trees and benches"
         />
         <h3 className="mx-auto position-absolute hero__hashTag text-white text-center">
           #Team

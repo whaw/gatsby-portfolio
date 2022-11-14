@@ -1,41 +1,38 @@
-const path = require(`path`)
-
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
-    title: `A Working Copy`,
-    description: `A (temp) portfolio site`,
-    author: `@whaw`,
+    title: `My Gatsby Site`,
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true, DEV_SSR: false },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-sass",
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        sassOptions: {
-          includePaths: [`${__dirname}/src/scss/styles.scss`],
-        },
+        trackingId: "UA-180963166-1",
       },
     },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/src/data/`,
+        name: "images",
+        path: "./src/images/",
       },
+      __key: "images",
     },
-    `gatsby-transformer-json`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-image`,
-    `gatsby-plugin-typescript`,
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "UA-180963166-1", // Google Analytics / GA
-        ],
+        name: "images",
+        path: "./src/data/",
       },
+      __key: "data",
     },
   ],
-}
+};

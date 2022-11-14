@@ -73,7 +73,7 @@
     }
     &--em {
       font-size: 2rem;
-      color: $brown;
+      color: #000;
       @include media-breakpoint-up(md) {
         font-size: 3rem;
       }

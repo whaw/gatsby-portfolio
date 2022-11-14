@@ -1,18 +1,13 @@
 import React from "react"
-const brandImages = require("/src/data/brandImages")
 import Image from "./BrandImage"
 
-interface ImageProps {
-  alt: string
-  image: string
-  className: string
-}
+const brandImages = require("/src/data/brandImages")
 
 const Brands = () => (
   <>
     <div className="container">
       <div className="row d-none d-md-flex align-items-center justify-content-between px-xl-15 mx-xl-10 pt-9">
-        {brandImages.map((image: ImageProps) => {
+        {brandImages.map((image) => {
           return (
             <div className="col-2 col-sm-1" key={image.alt}>
               <Image

@@ -12,14 +12,14 @@ const AboutSite = () => (
     </div>
     <div className="container">
       <div className="row">
-        <div className="col-12 col-md-6 pr-lg-8">
+        <div className="col-12 col-md-6 pr-lg-10">
           <h4>Situation</h4>
           <p>
             Challenged and successful in the agency marketing space, pivoting
             from a general front end developer to a JavaScript specialist, this
             site aims to demonstrate a level of polish in delivery and an
             ability to adopt new technologies, through the discovery of new
-            tools &mdash; that is, "a working copy".
+            tools &mdash; that is, "A Working Copy".
           </p>
           <h4>Task</h4>
           <p>

@@ -2,13 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-interface Props {
-  alt: string
-  src: string
-  className: string
-}
-
-const Image = (props: Props) => (
+const Image = (props) => (
   <StaticQuery
     query={graphql`
       query {
@@ -29,7 +23,7 @@ const Image = (props: Props) => (
       }
     `}
     render={data => {
-      const imageNode = data.allBrandImagesJson.edges.find((n: any) => {
+      const imageNode = data.allBrandImagesJson.edges.find((n) => {
         return n.node.alt.includes(props.alt)
       })
 

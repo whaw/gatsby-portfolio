@@ -2,7 +2,7 @@ import React from "react"
 
 const MainNav = () => {
   const navLinks = [
-    { label: "Introductions", to: "#about" },
+    { label: "Introductions", to: "#introductions" },
     { label: "About this site", to: "#about-this-site" },
     { label: "Experience", to: "#experience" },
     { label: "Contact", to: "#contact" },
@@ -10,12 +10,12 @@ const MainNav = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
+      <nav id="main-nav" className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
         <a className="navbar-brand js_logo" href="#home">
           <span className="logo mb-2 d-block">A Working Copy</span>
-          William Haw - Front End Developer
+          William Haw &mdash; Front-End Developer
           <span className="d-none d-md-inline-block">
-            , User Advocate, Outdoor Enthusiast
+            , Outdoor Enthusiast
           </span>
         </a>
         <button
@@ -34,7 +34,7 @@ const MainNav = () => {
           className="collapse navbar-collapse flex-grow-0 pt-2 mt-2"
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav mr-auto">
+          <ul className="nav navbar-nav mr-auto">
             {navLinks.map(link => (
               <li key={link.to} className="nav-item">
                 <a className="nav-link" href={link.to}>

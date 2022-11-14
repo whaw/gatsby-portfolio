@@ -1,21 +1,14 @@
-/* boiler */
-import React, { ReactNode } from "react"
+import React from "react"
 import Helmet from "react-helmet"
-
-/* components */
 import MainNav from "./MainNav"
 import Hero from "./Hero/Hero"
 import Introductions from "./Introductions"
 import AboutSite from "./AboutSite"
 import Experience from "./Experience/Experience"
 import Contact from "./Contact"
-import TopButton from "./TopButton"
+import TopButton from "./elements/TopButton"
 
-interface Props {
-  children?: ReactNode
-}
-
-const Layout = ({ children }: Props) => (
+const Layout = () => (
   <>
     <Helmet
       htmlAttributes={{
@@ -24,10 +17,15 @@ const Layout = ({ children }: Props) => (
     >
       <title>A Working Copy</title>
       <meta name="googlebot" content="noindex" />
+      {/* move to index.tsx */}
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
       {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
       <body
         data-spy="scroll"
-        data-bs-target="#navbar"
+        data-target="#main-nav"
+        data-offset="5"
         id="home"
         className="px-md-3"
       />

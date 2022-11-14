@@ -3,17 +3,10 @@ import Image from "./ToolImage"
 import ToolDescription from "./ToolDescription"
 import $ from "jquery"
 
-interface Props {
-  selector: string
-  name: string
-  description: string
-  status: string
-}
-
-const Tool = (props: Props) => {
+const Tool = (props) => {
   const cssSelector = props.name.toLowerCase()
   const [asideOpen, setAsideOpen] = useState(false)
-  const toolRef = useRef<HTMLButtonElement>(null)
+  const toolRef = useRef(null)
 
   useEffect(() => {
     if (toolRef.current !== null) {
