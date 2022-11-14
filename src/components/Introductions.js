@@ -83,18 +83,18 @@ const Introductions = () => (
               <div className="col-12 col-sm-6 px-0 py-5 pt-sm-0 skills__col text-center text-sm-right">
                 <h4 className="bullet pb-2">Soft skills</h4>
                 <ul className="list-unstyled">
-                  <li>Critical thinking</li>
+                  <li>Problem solving</li>
+                  <li>Taking ownership</li>
                   <li>Entrepeneurial</li>
                   <li>Resourceful</li>
+                  <li>Flexible</li>
+                  <li>Adaptible</li>
+                  <li>Professional</li>
                   <li>Curious</li>
                   <li>Creative</li>
                   <li>Detailed</li>
-                  <li>Adaptible</li>
-                  <li>Self motivated</li>
                   <li>Strong team values</li>
-                  <li>Humble</li>
                   <li>Fun loving</li>
-                  <li>Sense of humor</li>
                   <li>and...</li>
                 </ul>
                 <div className="skills__closing-text">

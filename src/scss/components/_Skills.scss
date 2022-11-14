@@ -1,62 +1,76 @@
 .skills {
   overflow: hidden;
+
   &__col:nth-of-type(2) {
     border-top: $border-width solid $border-color;
+
     @include media-breakpoint-up(sm) {
       border-left: $border-width solid $border-color;
       border-top: 0;
     }
+
     @include media-breakpoint-up(md) {
       border-left: 0;
     }
   }
+
   &__content {
     font-size: 0.9rem;
     text-align: left;
+
     @include media-breakpoint-up(md) {
       background-image: url(../images/skills-bg.png);
       background-repeat: no-repeat;
       background-size: 90%;
       background-position: 4px 15px;
     }
+
     @include media-breakpoint-up(lg) {
       background-size: 84%;
       background-position: 3px 14px;
     }
+
     @include media-breakpoint-up(xl) {
       background-size: 92%;
       background-position: 3px 15px;
     }
+
     .mouse-text {
       font-size: 0.7rem;
       width: 43%;
       top: 49%;
       left: 30%;
+
       @include media-breakpoint-up(lg) {
         font-size: 0.5rem;
         width: 45%;
         top: 35%;
         left: 28%;
       }
+
       // update so bg image is inline, removing need for top positioning
       @media (min-width: 1199.98px) and (max-width: 1300px) {
         top: 46%;
         left: 31%;
       }
+
       @media (min-width: 1300px) {
         top: 53.5%;
         left: 30.75%;
       }
     }
   }
+
   .bullet:before {
     width: 5.5px;
     height: 5.5px;
+
     @include media-breakpoint-up(md) {
       width: 8.5px;
       height: 8.5px;
     }
-    background-color: #8a8a8a;
+
+    background-color: #f79604;
     display: inline-block;
     content: ".";
     margin: 0 8px 3px 0;
@@ -64,22 +78,28 @@
     overflow: hidden;
     border-radius: 8.5px;
   }
+
   &__closing-text {
     line-height: 2rem;
     font-size: 1.75rem;
+
     @include media-breakpoint-up(md) {
       line-height: 2.25rem;
       font-size: 2rem;
     }
+
     &--em {
       font-size: 2rem;
-      color: #000;
+      color: #f79604;
+
       @include media-breakpoint-up(md) {
         font-size: 3rem;
       }
+
       @include media-breakpoint-up(lg) {
         font-size: 2.5rem;
       }
+
       @include media-breakpoint-up(xl) {
         font-size: 3rem;
       }
