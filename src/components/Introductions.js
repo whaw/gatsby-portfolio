@@ -29,19 +29,19 @@ const Introductions = () => (
               There he built on his understanding of how things work with
               courses in .NET applications development (but that was a long time
               ago), project coordinating, quality assurance, frontline
-              client support and hands-on, hand coding throughout his many years
+              client support and hands-on, hand coding throughout his many years
               of experience.
             </p>
             <p>
               Driven to produce better web content for all, he has helped
               companies such as Anderson DDB, Transcontinental, Andrew Peller
               and many more meet their web objectives, while earning the
-              appreciation of happy clients and a few awards along the way.
+              appreciation of happy clients and a few awards along the way.
             </p>
             <p>
               And when he's not in digital space, he can be found in the great
               outdoors. He loves the outdoors. Like, loves loves the outdoors,
-              and MEC.
+              and MEC.
             </p>
             <p className="text-center">
               <a
@@ -108,7 +108,7 @@ const Introductions = () => (
               <div className="position-absolute mouse-text d-none d-md-block">
                 The intersection of form and function
                 <br />
-                Iconic design by Tinker Hatfield, Nike "Innovation Kitchen" lead
+                Iconic design by Tinker Hatfield, Nike "Innovation Kitchen" lead
               </div>
             </div>
           </div>

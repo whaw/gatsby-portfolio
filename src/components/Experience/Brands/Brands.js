@@ -20,7 +20,7 @@ const Brands = () => (
         })}
       </div>
       <p className="d-none d-md-block small text-center text-secondary pt-2">
-        Some brands I have had the privilege to contribute to.
+        Some brands of which I have had the privilege to contribute.
       </p>
     </div>
   </>

@@ -19,7 +19,7 @@ const AboutSite = () => (
             from a general front end developer to a JavaScript specialist, this
             site aims to demonstrate a level of polish in delivery and an
             ability to adopt new technologies, through the discovery of new
-            tools &mdash; that is, "A Working Copy".
+            tools &mdash; that is, "A Working Copy".
           </p>
           <h5>Task</h5>
           <p>
@@ -41,7 +41,7 @@ const AboutSite = () => (
           <p>
             Site is fast and consistent across platforms, code and image
             optimizations are automated and dynamic content abstracted for
-            dryer code.
+            dryer code.
           </p>
           <p>
             Increased knowledge in Gatsby, React, GraphQL, JavaScript and
