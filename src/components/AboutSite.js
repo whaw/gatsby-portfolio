@@ -13,7 +13,7 @@ const AboutSite = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10">
-          <h4>Situation</h4>
+          <h5>Situation</h5>
           <p>
             Challenged and successful in the agency marketing space, pivoting
             from a general front end developer to a JavaScript specialist, this
@@ -21,12 +21,12 @@ const AboutSite = () => (
             ability to adopt new technologies, through the discovery of new
             tools &mdash; that is, "A Working Copy".
           </p>
-          <h4>Task</h4>
+          <h5>Task</h5>
           <p>
             Migrate static version of this site to a Gatsby, React version, with
             a focus on building JavaScript tooling and code quality.
           </p>
-          <h4>Approach</h4>
+          <h5>Approach</h5>
           <ul className="row">
             <li className="col-12 col-sm-6 px-0">SCSS, BEM</li>
             <li className="col-12 col-sm-6 px-0">Bootstrap</li>
@@ -37,7 +37,7 @@ const AboutSite = () => (
           </ul>
         </div>
         <div className="col-12 col-md-6">
-          <h4>Result</h4>
+          <h5>Result</h5>
           <p>
             Site is fast and consistent across platforms, code and image
             optimizations are automated and dynamic content abstracted for

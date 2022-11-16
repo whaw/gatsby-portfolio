@@ -17,7 +17,7 @@ const Introductions = () => (
           <div className="col-12 col-lg-5 pb-10 pb-lg-0">
             <StaticImage
               src="../images/me.png"
-              className="introductions__me mb-0 mr-3 mb-md-2 mr-md-4 mt-0"
+              className="introductions__me mb-1 mr-3 mb-md-2 mr-md-4 mt-0"
               placeholder="tracedSVG"
               alt="author"
               style={{ width: "25%", float: "left" }}
@@ -56,7 +56,7 @@ const Introductions = () => (
           <div className="col-12 col-lg-7 pl-lg-5 pl-xl-8 skills position-relative">
             <div className="row skills__content position-relative text-center text-md-left js_skills mx-1 mx-sm-0">
               <div className="col-12 col-sm-6 px-0 pb-7 pb-sm-5 pb-md-3 skills__col text-center text-sm-left">
-                <h4 className="bullet pb-2">Hard skills</h4>
+                <h3 className="bullet pb-2">Hard skills</h3>
                 <ul className="list-unstyled">
                   <li>HTML5, CSS3, SCSS</li>
                   <li>Bootstrap</li>
@@ -81,7 +81,7 @@ const Introductions = () => (
                 </div>
               </div>
               <div className="col-12 col-sm-6 px-0 py-5 pt-sm-0 skills__col text-center text-sm-right">
-                <h4 className="bullet pb-2">Soft skills</h4>
+                <h3 className="bullet pb-2">Soft skills</h3>
                 <ul className="list-unstyled">
                   <li>Problem solving</li>
                   <li>Taking ownership</li>

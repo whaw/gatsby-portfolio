@@ -11,7 +11,7 @@ const Timeline = () => {
   return (
     <>
       <div className="container">
-        <div className="row px-xl-15 pt-5">
+        <div className="row px-xl-15">
           <div className="col">
             <div className="cd-horizontal-timeline">
               <div className="timeline">
@@ -85,7 +85,7 @@ const Timeline = () => {
               <div className="events-content">
                 <ol>
                   <li className="selected" data-date="1/1/2004">
-                    <h4>Ecom Bcom</h4>
+                    <h5>Ecom Bcom</h5>
                     <em>2002 - 2004</em>
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
@@ -99,7 +99,7 @@ const Timeline = () => {
                     </div>
                   </li>
                   <li data-date="1/1/2005">
-                    <h4>Freelance + .NET classes</h4>
+                    <h5>Freelance + .NET classes</h5>
                     <em>2004 - 2005</em>
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
@@ -113,7 +113,7 @@ const Timeline = () => {
                     </div>
                   </li>
                   <li data-date="1/1/2006">
-                    <h4>Splash Interactive</h4>
+                    <h5>Splash Interactive</h5>
                     <em>2005 - 2015</em>
                     <div className="row">
                       <div className="col-12 col-lg-6 pl-0">
@@ -151,7 +151,7 @@ const Timeline = () => {
                     </div>
                   </li>
                   <li data-date="1/1/2016">
-                    <h4>Forge Media</h4>
+                    <h5>Forge Media</h5>
                     <em>2015 - 2016</em>
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
@@ -173,7 +173,7 @@ const Timeline = () => {
                     </div>
                   </li>
                   <li data-date="1/1/2017">
-                    <h4>Wave Financial</h4>
+                    <h5>Wave Financial</h5>
                     <em>2016 - 2020</em>
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
@@ -196,7 +196,7 @@ const Timeline = () => {
                     </div>
                   </li>
                   <li data-date="1/1/2021">
-                    <h4>Innocean Canada</h4>
+                    <h5>Innocean Canada</h5>
                     <em>2021 - 2022</em>
                     <div className="row">
                       <div className="col-lg-8 offset-lg-2 pl-0">
@@ -214,7 +214,7 @@ const Timeline = () => {
                     </div>
                   </li>
                   <li data-date="1/1/2022">
-                    <h4>Present</h4>
+                    <h5>Present</h5>
                     <div className="row">
                       <div className="col-12 col-lg-8 offset-lg-2 pl-0">
                         <p>
