@@ -1,8 +1,8 @@
 {
-  "name": "Gatsby port site",
+  "name": "gatsby-port-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Gatsby port site",
+  "description": "",
   "keywords": [
     "gatsby"
   ],
@@ -29,5 +29,8 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
