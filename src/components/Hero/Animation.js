@@ -5,7 +5,14 @@ const Animation = ({ animDetails, animContainer }) => {
   const [hasPlayed, setHasPlayed] = useState(false)
 
   useEffect(() => {
-    if (hasPlayed === false) bindEvents()
+    if (!inView(animContainer) && hasPlayed === false) {
+      bindEvents()
+      return
+    }
+    if (hasPlayed === false && inView(animContainer)) {
+      render()
+      return
+    }
     return () => {
       $(window).off()
     }
@@ -18,27 +25,13 @@ const Animation = ({ animDetails, animContainer }) => {
   }
 
   const inView = (el) => {
-    const element = $(el)
-    const elementOffset = element.offset()
-    // Todo: check jquery d.ts file for methods
-    if (element !== undefined && elementOffset !== undefined) {
-      const screenTop = $(window).scrollTop() || 0
-      const windowHeight = $(window).innerHeight() || 0
-      const elementHeight = element.outerHeight() || 0
-      const elementTop = elementOffset.top
-      const elementBottom = elementTop + elementHeight
-      const screenBottom = screenTop + windowHeight
-      const halfHeight = elementTop + elementHeight * 0.5
-      if (
-        (screenBottom > halfHeight && screenTop < elementTop) ||
-        (screenTop > elementTop + halfHeight && screenBottom > elementBottom)
-      ) {
-        return true
-      }
-    }
+    const halfElementHeight = $(el).height() * .5
+    const scrollPos = $(window).scrollTop()
+    if (scrollPos < halfElementHeight) return true
   }
 
   const render = () => {
+    setHasPlayed(true)
     animDetails.forEach((animElement) => {
       const elementArray = $(animElement.selector).toArray()
       const delay = animElement.delay
@@ -52,7 +45,6 @@ const Animation = ({ animDetails, animContainer }) => {
         animate(elementArray, elementDelay)
       }
     })
-    setHasPlayed(true)
   }
 
   const animate = (elementArray, elementDelay) => {
