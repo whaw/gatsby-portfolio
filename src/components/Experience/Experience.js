@@ -1,5 +1,5 @@
 import React from "react"
-import Timeline2 from "../Timeline2"
+import Timeline2 from "./Timeline2"
 
 const Experience = () => (
   <section id="experience" className="bg-light section--with-background">
