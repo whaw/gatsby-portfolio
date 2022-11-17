@@ -3,5 +3,5 @@
   { "selector": ".js_truck", "delay": 2000, "elementDelay": null },
   { "selector": ".js_tree", "delay": 2000, "elementDelay": null },
   { "selector": ".js_sketch", "delay": 3000, "elementDelay": null },
-  { "selector": ".js_h1", "delay": 3250, "elementDelay": null }
+  { "selector": ".js_h1", "delay": 3500, "elementDelay": null }
 ]
