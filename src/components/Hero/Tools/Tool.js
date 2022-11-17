@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
-import Image from "./ToolImage"
+import ToolImage from "./ToolImage"
 import ToolDescription from "./ToolDescription"
 import $ from "jquery"
 
@@ -28,7 +28,7 @@ const Tool = (props) => {
         ref={toolRef}
         className={`border-0 p-0 bg-transparent hero__${cssSelector}__button`}
       >
-        <Image selector={props.selector} alt={props.name} />
+        <ToolImage selector={props.selector} alt={props.name} />
       </button>
       <ToolDescription
         name={props.name}
