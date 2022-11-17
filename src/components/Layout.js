@@ -6,7 +6,7 @@ import Introductions from "./Introductions"
 import AboutSite from "./AboutSite"
 import Experience from "./Experience/Experience"
 import Contact from "./Contact"
-import TopButton from "./elements/TopButton"
+import TopButton from "./TopButton"
 
 const Layout = () => (
   <>
