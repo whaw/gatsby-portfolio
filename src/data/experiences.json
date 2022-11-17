@@ -1,0 +1,17 @@
+ [{
+  "company": "Innocean Canada",
+  "period": "2021 - 2022 · 1 yr",
+  "copy": "<p>Member of the digital devliery team for Innocean, a global full service advertising agency, supporting marketing verticals with (but not limited to) advanced email development, dynamic banners and lead ads for the automotive industry, as well as providing guidance, solutions and best options, for fellow developers and non-technical colleagues, to clear project blockers, across teams and departments.</p>"
+},{
+  "company": "Wave Financial",
+  "period": "2016 - 2020 · 4 yrs",
+  "copy": "<p>Contributed to and maintained an in-house styles and components library, developing in HTML/CSS and a little JavaScript, for their public facing website, shared with their application framework, in Django and Python.</p><p>Later migrated the &ldquo;public site&dsquo; to Craft CMS and Bootstrap to meet the rapidly growing needs of Marketing. This developed knowledge in &ldquo;systems thinking&rdquo; and fullstack development with Craft, in addition to A/B testing, user analytics tools and modern SEO practices.</p>"
+}, {
+  "company": "Forge Media + Design",
+  "period": "2015 - 2016 · 1 yr",
+  "copy": "<p>The front-end role here was divided into fullstack Wordpress development (backend was new to me) and supporting a fortune 500 company website, implementing and debugging GEO specific content.</p><p>The later pushed the limits of working quickly and accurately, communication and required advanced abilities in debugging and creativity in code, for at times 100+ tickets, between several remote teams, for the cutting edge content, layouts and delivery methods.</p>"
+}, {
+  "company": "Splash Interactive",
+  "period": "2005 - 2015 · 10 yrs",
+  "copy": "<p>Front-end developer + project coordinator (but this came later), provided support and training for clients and supporting third party vendors.</p><p>Development consisted (mostly) of hand coding website interfaces (HTML, CSS and a little JavaScript), HTML emails, Flash, audio and video editing, epubs, estimating timelines and working closely with designers, providing technical guidance and best options.<p></p>Coordinating involved, but not limited to, tracking all project details, adhering to timelines, liasing with clients and supporting backend developers, with QA, art direction and usability, for desktop, mobile and application development.</p><p>Splash Interactive provides digital and creative solutions to Fortune 500 companies, philanthropic organizations, and some of North America's top advertising agencies.</p>"
+}]

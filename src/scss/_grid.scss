@@ -1,4 +1,4 @@
-$section-spacing: 80px;
+$section-spacing: 60px;
 $section-with-bg-spacing: $section-spacing * 2;
 
 html,
@@ -14,14 +14,17 @@ body {
 section,
 .section--with-background {
   padding-top: $section-spacing;
+
   @include media-breakpoint-up(md) {
     padding-top: $section-spacing;
     margin-top: $section-spacing;
   }
 }
+
 .section--with-background {
   margin-top: $section-spacing;
   padding-bottom: $section-spacing;
+
   @include media-breakpoint-up(md) {
     margin-top: $section-with-bg-spacing;
     padding-top: $section-with-bg-spacing;

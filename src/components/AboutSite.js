@@ -60,10 +60,16 @@ const AboutSite = () => (
             </a>
           </p>
           <p>Stay tuned. More on the way!</p>
+          {/* <div className="card">
+            <div className="card-body">
+              <h6 className="card-title">Todo:</h6>
+              <p className="card-text">Clear console error related to deprecated React feature. (Deprioritizing, non-critical)</p>
+            </div>
+          </div> */}
         </div>
       </div>
     </div>
-  </section>
+  </section >
 )
 
 export default AboutSite
