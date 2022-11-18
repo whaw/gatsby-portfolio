@@ -18,7 +18,7 @@ const Hero = () => {
         <h1 className="hero__h1 js_h1">Ready...</h1>
         <div className="hero__heading js_heading position-absolute text-center w-100 pt-2 pt-sm-4 pt-lg-6 pt-xl-5">
           <h4 className="hero__heading__h4 mx-auto mb-0 d-sm-none">
-            Ready to go!<br />
+            Ready...<br />
             <small className="text-secondary">Aiming to exceed expectations</small>
           </h4>
           <h4 className="hero__heading__h4 mx-auto mb-0 d-none d-sm-block">
