@@ -6,6 +6,7 @@ const Animation = ({ animDetails, animContainer }) => {
 
   useEffect(() => {
     if (!inView(animContainer) && hasPlayed === false) {
+      // add scroll, to check if hero is in view
       bindEvents()
       return
     }
