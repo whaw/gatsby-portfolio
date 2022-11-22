@@ -15,23 +15,21 @@ const AboutSite = () => (
         <div className="col-12 col-md-6 pr-lg-10">
           <h5>Situation</h5>
           <p>
-            Challenged and successful in the agency marketing space, pivoting
-            from a general front end developer to a JavaScript specialist, this
-            site aims to demonstrate a level of polish in delivery and an
-            ability to adopt new technologies, through the discovery of new
-            tools &mdash; that is, "A Working Copy".
+            Challenged and successful in the wide range of tooling in the agency marketing space, now focused on gaining mastery in all things JavaScript.</p>
+          <p>
+            This site serves as a sandbox ("A Working Copy"), as well as demonstrating a level of polish and an ability to adopt new technologies.
           </p>
           <h5>Task</h5>
           <p>
-            Migrate static version of this site to a Gatsby, React version, with
-            a focus on building JavaScript tooling and code quality.
+            Migrate static version of this site to Gatsby, React, with
+            an emphasis on building JavaScript tooling.
           </p>
           <h5>Approach</h5>
           <ul className="row">
             <li className="col-12 col-sm-6 px-0">SCSS, BEM</li>
             <li className="col-12 col-sm-6 px-0">Bootstrap</li>
             <li className="col-12 col-sm-6 px-0">Gatsby, React</li>
-            <li className="col-12 col-sm-6 px-0">JQuery, Typescript</li>
+            <li className="col-12 col-sm-6 px-0">JQuery</li>
             <li className="col-12 col-sm-6 px-0">GraphQL</li>
             <li className="col-12 col-sm-6 px-0">ESLint, Prettier</li>
           </ul>
@@ -44,10 +42,8 @@ const AboutSite = () => (
             dryer code.
           </p>
           <p>
-            Increased knowledge in Gatsby, React, GraphQL, JavaScript and
-            TypeScript.
+            Increased knowledge in Gatsby, React, GraphQL and JavaScript.
           </p>
-
           <p>
             <a
               href="https://github.com/whaw/whaw.github.io/tree/source"
@@ -62,8 +58,8 @@ const AboutSite = () => (
           <p>Stay tuned. More on the way!</p>
           {/* <div className="card">
             <div className="card-body">
-              <h6 className="card-title">Todo:</h6>
-              <p className="card-text">Clear console error related to deprecated React feature. (Deprioritizing, non-critical)</p>
+              <p className="card-text">
+                <strong>Next,</strong> exploring REST, unit testing, TypeScript and Express.</p>
             </div>
           </div> */}
         </div>
