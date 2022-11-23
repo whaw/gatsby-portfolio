@@ -6,7 +6,7 @@ const Animation = ({ animDetails, animContainer }) => {
 
   useEffect(() => {
     if (!inView(animContainer) && hasPlayed === false) {
-      // add scroll, to check if hero is in view
+      // add on scroll, to check if hero is in view
       bindEvents()
       return
     }
@@ -33,10 +33,8 @@ const Animation = ({ animDetails, animContainer }) => {
 
   const render = () => {
     setHasPlayed(true)
-    animDetails.forEach((animElement) => {
-      const elementArray = $(animElement.selector).toArray()
-      const delay = animElement.delay
-      const elementDelay = animElement.elementDelay
+    animDetails.forEach(({ selector, delay, elementDelay }) => {
+      const elementArray = $(selector).toArray()
 
       if (delay !== null) {
         setTimeout(() => {
@@ -48,7 +46,7 @@ const Animation = ({ animDetails, animContainer }) => {
     })
   }
 
-  const animate = (elementArray, elementDelay) => {
+  const animate = (elementArray, elementDelay = null) => {
     elementArray.forEach((el, i) => {
       if (elementDelay !== null) {
         setTimeout(function () {

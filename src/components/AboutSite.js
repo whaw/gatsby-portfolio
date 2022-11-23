@@ -22,7 +22,7 @@ const AboutSite = () => (
           <h5>Task</h5>
           <p>
             Migrate static version of this site to Gatsby, React, with
-            an emphasis on building JavaScript tooling.
+            an emphasis on building JavaScript tooling.
           </p>
           <h5>Approach</h5>
           <ul className="row">

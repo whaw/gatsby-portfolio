@@ -3,9 +3,9 @@ import ToolImage from "./ToolImage"
 import ToolDescription from "./ToolDescription"
 import $ from "jquery"
 
-const Tool = (props) => {
-  const cssSelector = props.name.toLowerCase()
-  const [asideOpen, setAsideOpen] = useState(false)
+const Tool = ({ selector, name, description, status }) => {
+  const cssSelector = name.toLowerCase()
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false)
   const toolRef = useRef(null)
 
   useEffect(() => {
@@ -16,25 +16,25 @@ const Tool = (props) => {
   })
 
   const handleOnMouseEvent = () => {
-    const newState = !asideOpen
-    setAsideOpen(newState)
+    const newState = !isDescriptionOpen
+    setIsDescriptionOpen(newState)
   }
 
   return (
     <div
-      className={`position-absolute hero__tool js_tool hero__${cssSelector} ${props.selector}`}
+      className={`position-absolute hero__tool js_tool hero__${cssSelector} ${selector}`}
     >
       <button
         ref={toolRef}
         className={`border-0 p-0 bg-transparent hero__${cssSelector}__button`}
       >
-        <ToolImage selector={props.selector} alt={props.name} />
+        <ToolImage selector={selector} alt={name} />
       </button>
       <ToolDescription
-        name={props.name}
-        description={props.description}
-        status={props.status}
-        isOpen={asideOpen}
+        name={name}
+        description={description}
+        status={status}
+        isOpen={isDescriptionOpen}
       />
     </div>
   )
