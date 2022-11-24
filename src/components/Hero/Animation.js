@@ -5,27 +5,20 @@ const Animation = ({ animDetails, animContainer }) => {
   const [hasPlayed, setHasPlayed] = useState(false)
 
   useEffect(() => {
-    if (!inView(animContainer) && hasPlayed === false) {
-      // add on scroll, to check if hero is in view
+    if (!inView(animContainer) && !hasPlayed) {
       bindEvents()
       return
     }
-    if (hasPlayed === false && inView(animContainer)) {
+    if (!hasPlayed && inView(animContainer)) {
       render()
       return
     }
-    return () => {
-      $(window).off()
-    }
+    return () => $(window).off()
   })
 
-  const bindEvents = () => {
-    $(window).on("load resize scroll", e => {
-      if (inView(animContainer)) render()
-    })
-  }
+  const bindEvents = () => $(window).on("load resize scroll", () => inView(animContainer) && render())
 
-  const inView = (el) => {
+  const inView = el => {
     const halfElementHeight = $(el).height() * .5
     const scrollPos = $(window).scrollTop()
     if (scrollPos < halfElementHeight) return true
@@ -48,7 +41,8 @@ const Animation = ({ animDetails, animContainer }) => {
 
   const animate = (elementArray, elementDelay = null) => {
     elementArray.forEach((el, i) => {
-      if (elementDelay !== null) {
+      // not "", null or undefined
+      if (!!elementDelay) {
         setTimeout(function () {
           $(el).addClass("animate")
         }, i * elementDelay)
@@ -57,7 +51,6 @@ const Animation = ({ animDetails, animContainer }) => {
       }
     })
   }
-
   return <></>
 }
 
