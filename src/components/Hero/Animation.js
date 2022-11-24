@@ -6,9 +6,13 @@ const Animation = ({ animDetails, animContainer }) => {
 
   useEffect(() => {
     !inView(animContainer) ? bindEvents() : render()
+    return () => cleanup()
+    // eslint-disable-next-line
   }, [])
 
   const bindEvents = () => $(window).on("load resize scroll", () => inView(animContainer) && render())
+
+  const cleanup = () => $(window).off()
 
   const inView = el => {
     const halfElementHeight = $(el).height() * .5
@@ -18,6 +22,7 @@ const Animation = ({ animDetails, animContainer }) => {
 
   const render = () => {
     if (!hasPlayed) {
+      cleanup()
       setHasPlayed(true)
       animDetails.forEach(({ selector, delay, elementDelay }) => {
         const elementArray = $(selector).toArray()
@@ -31,8 +36,7 @@ const Animation = ({ animDetails, animContainer }) => {
           animate(elementArray, elementDelay)
         }
       })
-      // unbind scroll event listener
-      $(window).off()
+
     }
   }
 

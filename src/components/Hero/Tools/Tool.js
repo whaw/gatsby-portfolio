@@ -9,9 +9,9 @@ const Tool = ({ selector, name, description, status }) => {
   const toolRef = useRef(null)
 
   useEffect(() => {
-    const currentTool = $(toolRef.current)
-    if (!!currentTool) currentTool.on("mouseover mouseout", handleOnMouseEvent)
-    return () => currentTool.unbind()
+    const thisTool = $(toolRef.current)
+    if (!!thisTool) thisTool.on("mouseover mouseout", handleOnMouseEvent)
+    return () => thisTool.unbind()
   })
 
   const handleOnMouseEvent = () => setIsDescriptionOpen(!isDescriptionOpen)
