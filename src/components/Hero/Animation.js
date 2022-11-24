@@ -5,16 +5,8 @@ const Animation = ({ animDetails, animContainer }) => {
   const [hasPlayed, setHasPlayed] = useState(false)
 
   useEffect(() => {
-    if (!inView(animContainer) && !hasPlayed) {
-      bindEvents()
-      return
-    }
-    if (!hasPlayed && inView(animContainer)) {
-      render()
-      return
-    }
-    return () => $(window).off()
-  })
+    !inView(animContainer) ? bindEvents() : render()
+  }, [])
 
   const bindEvents = () => $(window).on("load resize scroll", () => inView(animContainer) && render())
 
@@ -25,23 +17,27 @@ const Animation = ({ animDetails, animContainer }) => {
   }
 
   const render = () => {
-    setHasPlayed(true)
-    animDetails.forEach(({ selector, delay, elementDelay }) => {
-      const elementArray = $(selector).toArray()
+    if (!hasPlayed) {
+      setHasPlayed(true)
+      animDetails.forEach(({ selector, delay, elementDelay }) => {
+        const elementArray = $(selector).toArray()
 
-      if (delay !== null) {
-        setTimeout(() => {
+        // not "", null or undefined
+        if (!!delay) {
+          setTimeout(() => {
+            animate(elementArray, elementDelay)
+          }, delay)
+        } else {
           animate(elementArray, elementDelay)
-        }, delay)
-      } else {
-        animate(elementArray, elementDelay)
-      }
-    })
+        }
+      })
+      // unbind scroll event listener
+      $(window).off()
+    }
   }
 
   const animate = (elementArray, elementDelay = null) => {
     elementArray.forEach((el, i) => {
-      // not "", null or undefined
       if (!!elementDelay) {
         setTimeout(function () {
           $(el).addClass("animate")
