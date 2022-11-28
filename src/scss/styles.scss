@@ -3,11 +3,11 @@
 // boiler
 @import "./vendors/bootstrap";
 @import "./global-variables";
-@import "./initial";
 @import "./grid";
 @import "./headers";
 @import "./fonts";
 @import "./custom-helpers";
+@import "./print";
 
 // components
 @import "./components/Hero/Hero";

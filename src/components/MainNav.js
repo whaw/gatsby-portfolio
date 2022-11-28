@@ -5,7 +5,7 @@ const MainNav = () => {
     { label: "Introductions", to: "#introductions" },
     { label: "About this site", to: "#about-this-site" },
     { label: "Experience", to: "#experience" },
-    { label: "Contact", to: "#contact" },
+    { label: "Contact", to: "#contact" }
   ]
 
   return (
@@ -35,7 +35,7 @@ const MainNav = () => {
           id="navbarSupportedContent"
         >
           <ul className="nav navbar-nav mr-auto">
-            {navLinks.map(link => (
+            {navLinks.map((link, i) => (
               <li key={link.to} className="nav-item">
                 <a className="nav-link" href={link.to}>
                   {link.label}

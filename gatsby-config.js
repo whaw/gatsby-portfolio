@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Site`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `A Working Copy`,
+    siteUrl: `https://whaw.github.io/`,
   },
   plugins: [
     "gatsby-plugin-sass",
