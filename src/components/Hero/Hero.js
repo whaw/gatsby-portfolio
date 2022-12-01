@@ -14,7 +14,7 @@ const Hero = () => {
       <Animation animDetails={heroAnimDetails} animContainer={animContainer} />
       <Animation animDetails={toolAnimDetails} animContainer={animContainer} />
 
-      <div className="hero position-relative js_hero mt-8">
+      <section className="hero position-relative js_hero mt-8 pt-0">
         <h1 className="hero__h1 js_h1">Ready...</h1>
         <div className="hero__heading js_heading position-absolute text-center w-100 pt-2 pt-sm-4 pt-lg-6 pt-xl-5">
           <h4 className="hero__heading__h4 mx-auto mb-0 d-sm-none">
@@ -76,7 +76,7 @@ const Hero = () => {
           placeholder="tracedSVG"
           alt="riders"
         />
-      </div>
+      </section>
     </>
   )
 }
