@@ -45,3 +45,18 @@ P>a.btn.btn-primary {
   right: 30px;
   bottom: 30px;
 }
+
+// LISTS
+
+ol.custom-alpha-list {
+  counter-reset: list;
+
+  li {
+    list-style: none;
+
+    &:before {
+      content: counter(list, lower-alpha) ") ";
+      counter-increment: list;
+    }
+  }
+}

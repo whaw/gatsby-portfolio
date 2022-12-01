@@ -1,4 +1,5 @@
 import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutSite = () => (
   <section id="about-this-site">
@@ -14,14 +15,18 @@ const AboutSite = () => (
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10">
           <h5>Situation</h5>
+          <p>Challenged and successful in the agency marketing space tooling, now focused on gaining mastery in all things JavaScript, here and in future roles.</p>
           <p>
-            Challenged and successful in the wide range of tooling in the agency marketing space, now focused on gaining mastery in all things JavaScript.</p>
-          <p>
-            This site serves as a sandbox ("A Working Copy"), as well as demonstrating a level of polish and an ability to adopt new technologies.
-          </p>
+            This site serves a few purposes:</p>
+
+          <ol className="custom-alpha-list">
+            <li>to act as a sandbox, for experimentation and discovery,</li>
+            <li>to demonstrate an ability to adopt new technologies and</li>
+            <li>provide a sample of level of execution and delivery.</li>
+          </ol>
           <h5>Task</h5>
           <p>
-            Migrate static version of this site to Gatsby, React, with
+            To migrate a static version of this website to Gatsby, React, with
             an emphasis on building JavaScript tooling.
           </p>
           <h5>Approach</h5>
@@ -37,13 +42,33 @@ const AboutSite = () => (
         <div className="col-12 col-md-6">
           <h5>Result</h5>
           <p>
-            Site is fast and consistent across platforms, code and image
+            Site is fast and consistent*, code and image
             optimizations are automated and dynamic content abstracted for
             dryer code.
           </p>
           <p>
             Increased knowledge in Gatsby, React, GraphQL and JavaScript.
           </p>
+          <b>Lighthouse scores</b><br />
+          (mostly thanks to Gatsby):<br />
+          <div className="row pb-5 pt-4">
+            <div className="col-12 col-sm-5 col-md-12 col-lg-5 mr-sm-5 pb-4 pb-lg-0">
+              <div className="text-center pb-2"><small>Mobile</small></div>
+              <StaticImage
+                src="../images/lighthouse-mobile.png"
+                placeholder="tracedSVG"
+                alt="lighthouse mobile score"
+              />
+            </div>
+            <div className="col-12 col-sm-5 col-md-12 col-lg-5">
+              <div className="text-center pb-2"><small>Desktop</small></div>
+              <StaticImage
+                src="../images/lighthouse-desktop.png"
+                placeholder="tracedSVG"
+                alt="lighthouse desktop score"
+              />
+            </div>
+          </div>
           <p>
             <a
               href="https://github.com/whaw/whaw.github.io/tree/source"
@@ -55,13 +80,7 @@ const AboutSite = () => (
               To the goods (Github)
             </a>
           </p>
-          <p>Stay tuned. More on the way!</p>
-          {/* <div className="card">
-            <div className="card-body">
-              <p className="card-text">
-                <strong>Next,</strong> exploring REST, unit testing, TypeScript and Express.</p>
-            </div>
-          </div> */}
+          <p><small>*Testing was limited to Mac Safari, Chrome and Firefox, to focus on the primary purpose, to build skills and provide a sample of work.</small></p>
         </div>
       </div>
     </div>
