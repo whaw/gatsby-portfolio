@@ -59,9 +59,9 @@ const Introductions = () => (
                 <h4 className="bullet pb-2">Hard skills</h4>
                 <ul className="list-unstyled">
                   <li>HTML5, CSS3, SCSS</li>
-                  <li>Bootstrap</li>
-                  <li>React, Gatsby</li>
                   <li>JavaScript, JQuery</li>
+                  <li>React, Gatsby</li>
+                  <li>Bootstrap</li>
                   <li>Twig, Django</li>
                   <li>Gulp, Webpack</li>
                   <li>Responsive Design</li>
