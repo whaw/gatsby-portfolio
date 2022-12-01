@@ -5,15 +5,13 @@ import $ from "jquery"
 
 export const onInitialClientRender = () => {
   $(function () {
-    // links - add smooth scroll
+    // add smooth scroll to links
+    // (css option is too fast in safari)
     $("a")
       .on("click", function () {
         const id = $(this).attr("href")
-        let offsetTop = $(id).offset().top
-
-        if (id === "#home") offsetTop = 0
+        const offsetTop = $(id).offset().top
         $("html, body").animate({ scrollTop: offsetTop }, "slow")
-
       })
   })
 }

@@ -10,7 +10,7 @@ const MainNav = () => {
 
   return (
     <>
-      <nav id="main-nav" className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
+      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
         <a className="navbar-brand js_logo" href="#home">
           <span className="logo mb-2 d-block">A Working Copy</span>
           William Haw &mdash; Front-End Developer
@@ -34,7 +34,7 @@ const MainNav = () => {
           className="collapse navbar-collapse flex-grow-0 pt-2 mt-2"
           id="navbarSupportedContent"
         >
-          <ul className="nav navbar-nav mr-auto">
+          <ul id="main-nav" className="nav navbar-nav mr-auto">
             {navLinks.map((link, i) => (
               <li key={link.to} className="nav-item">
                 <a className="nav-link" href={link.to}>

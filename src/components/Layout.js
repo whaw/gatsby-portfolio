@@ -12,9 +12,7 @@ import $ from "jquery"
 const Layout = () => {
 
   useEffect(() => {
-    $('[data-spy="scroll"]').each(function () {
-      $(window).scrollspy("refresh")
-    })
+    if ($(window).scrollspy) $(window).scrollspy('refresh')
   })
 
   return (
