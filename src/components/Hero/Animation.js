@@ -27,7 +27,6 @@ const Animation = ({ animDetails, animContainer }) => {
       animDetails.forEach(({ selector, delay, elementDelay }) => {
         const elementArray = $(selector).toArray()
 
-        // not "", null or undefined
         if (!!delay) {
           setTimeout(() => {
             animate(elementArray, elementDelay)

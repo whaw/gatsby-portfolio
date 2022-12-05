@@ -22,7 +22,7 @@ const AboutSite = () => (
           <ol className="custom-alpha-list">
             <li>to act as a sandbox, for experimentation and discovery,</li>
             <li>to demonstrate an ability to adopt new technologies and</li>
-            <li>provide a sample of level of execution and delivery.</li>
+            <li>to provide a sample of execution and delivery.</li>
           </ol>
           <h5>Task</h5>
           <p>
