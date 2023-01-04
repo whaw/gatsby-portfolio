@@ -2,7 +2,11 @@
   margin: 0 auto;
   max-width: 80%;
 
-  @include media-breakpoint-up(lg) {
-    max-width: 90%;
+  @include media-breakpoint-up(sm) {
+    max-width: 100%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 80%;
   }
 }

@@ -51,7 +51,7 @@ const AboutSite = () => (
           </p>
           <b>Lighthouse scores</b><br />
           (mostly thanks to Gatsby):<br />
-          <div className="row pb-5 pt-4">
+          <div className="row pt-5 pb-7 pb-sm-5 pb-lg-7">
             <div className="col-12 col-sm-5 col-md-12 col-lg-5 mr-sm-5 pb-4 pb-lg-0 text-center ">
               <div className="pb-2"><small>Mobile</small></div>
               <StaticImage
