@@ -8,15 +8,22 @@
     left: -100%;
     transform: translate(-50%, -50%);
     font-size: 10vw;
+    font-weight: 700;
     color: #f79604;
     z-index: 100;
     text-shadow: 2px 2px 4px black;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(sm) {
       &.animate {
         transition: all .75s ease-out;
-        top: 51%;
+        top: 53%;
         left: 52%;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      &.animate {
+        top: 51%;
       }
     }
 
