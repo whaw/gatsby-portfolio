@@ -52,20 +52,22 @@ const AboutSite = () => (
           <b>Lighthouse scores</b><br />
           (mostly thanks to Gatsby):<br />
           <div className="row pb-5 pt-4">
-            <div className="col-12 col-sm-5 col-md-12 col-lg-5 mr-sm-5 pb-4 pb-lg-0">
-              <div className="text-center pb-2"><small>Mobile</small></div>
+            <div className="col-12 col-sm-5 col-md-12 col-lg-5 mr-sm-5 pb-4 pb-lg-0 text-center ">
+              <div className="pb-2"><small>Mobile</small></div>
               <StaticImage
                 src="../images/lighthouse-mobile.png"
                 placeholder="tracedSVG"
                 alt="lighthouse mobile score"
+                className="lighthouse-scores-image"
               />
             </div>
-            <div className="col-12 col-sm-5 col-md-12 col-lg-5">
-              <div className="text-center pb-2"><small>Desktop</small></div>
+            <div className="col-12 col-sm-5 col-md-12 col-lg-5 text-center">
+              <div className="pb-2"><small>Desktop</small></div>
               <StaticImage
                 src="../images/lighthouse-desktop.png"
                 placeholder="tracedSVG"
                 alt="lighthouse desktop score"
+                className="lighthouse-scores-image"
               />
             </div>
           </div>

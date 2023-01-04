@@ -1,0 +1,8 @@
+.lighthouse-scores-image {
+  margin: 0 auto;
+  max-width: 80%;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 90%;
+  }
+}
