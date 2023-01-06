@@ -21,8 +21,9 @@ const AboutSite = () => (
 
           <ol className="custom-alpha-list">
             <li>to act as a sandbox, for experimentation and discovery,</li>
-            <li>to demonstrate an ability to adopt new technologies and</li>
-            <li>to provide a sample of execution and delivery.</li>
+            <li>to demonstrate an ability to adopt new technologies,</li>
+            <li>to provide a sample of execution and delivery, and</li>
+            <li>a little about me.</li>
           </ol>
           <h5>Task</h5>
           <p>
@@ -82,7 +83,7 @@ const AboutSite = () => (
               To the goods (Github)
             </a>
           </p>
-          <p><small>*Testing was limited to Mac Safari, Chrome and Firefox, to focus on the primary purpose, to build skills and provide a sample of work.</small></p>
+          <p><small>*Testing was capped to Mac OS browsers, to focus on the priority of this site, outlined in the introduction of this section.</small></p>
         </div>
       </div>
     </div>
