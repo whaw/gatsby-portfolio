@@ -83,7 +83,7 @@ const AboutSite = () => (
               To the goods (Github)
             </a>
           </p>
-          <p><small>*Testing was capped to Mac OS browsers, to focus on the priority of this site, outlined in the introduction of this section.</small></p>
+          <p><small>*Testing was capped to Mac OS browsers, to focus on the priorities for this site, outlined in the introduction of this section.</small></p>
         </div>
       </div>
     </div>

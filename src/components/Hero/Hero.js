@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Animation from "./Animation"
+import AnimController from "./AnimController"
 import Tool from "./Tools/Tool"
 
 const toolAnimDetails = require("/src/data/toolsAnim")
@@ -11,8 +11,8 @@ const Hero = () => {
 
   return (
     <>
-      <Animation animDetails={heroAnimDetails} animContainer={animContainer} />
-      <Animation animDetails={toolAnimDetails} animContainer={animContainer} />
+      <AnimController animDetails={heroAnimDetails} animContainer={animContainer} />
+      <AnimController animDetails={toolAnimDetails} animContainer={animContainer} />
 
       <section className="hero position-relative js_hero mt-5 mt-md-8 pt-0">
         <div className="hero__h1 js_h1">Ready...</div>
