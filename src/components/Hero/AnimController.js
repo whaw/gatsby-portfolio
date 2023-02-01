@@ -14,10 +14,9 @@ const AnimController = ({ animDetails, animContainer }) => {
   const cleanupEventListeners = () => $(window).off()
 
   function inView(el) {
-    const scrollPos = $(window).scrollTop()
+    const scrollPos = $(window).scrollTop() + 97
     const elementTop = $(el).offset().top
-    const elementBottom = $(el).offset().top
-    if (el === '.js_hero' && scrollPos === 0) return true
+    const elementBottom = elementTop + $(el).height()
     if (scrollPos > elementTop && scrollPos < elementBottom) return true
     return false
   }
