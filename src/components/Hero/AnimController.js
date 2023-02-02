@@ -14,7 +14,7 @@ const AnimController = ({ animDetails, animContainer }) => {
   const cleanupEventListeners = () => $(window).off()
 
   function inView(el) {
-    const scrollPos = $(window).scrollTop() + 97
+    const scrollPos = $(window).scrollTop() + 100
     const elementTop = $(el).offset().top
     const elementBottom = elementTop + $(el).height()
     if (scrollPos > elementTop && scrollPos < elementBottom) return true
@@ -45,7 +45,6 @@ const AnimController = ({ animDetails, animContainer }) => {
     elementsToAnimate.forEach((el, i) => {
       const hasChildren = !!elementDelay ? true : false
 
-      // if subset of anims
       // handle delay
       hasChildren ?
         setTimeout(function () {

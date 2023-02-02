@@ -74,7 +74,7 @@ const AboutSite = () => (
           </div>
           <p>
             <a
-              href="https://github.com/whaw/whaw.github.io/tree/source"
+              href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=github_link"
               className="btn btn-primary border mt-0 mb-3"
               role="button"
               target="_blank"
