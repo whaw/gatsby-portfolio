@@ -8,16 +8,24 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-180963166-1",
       },
     },
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-transformer-json",
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        includeInDevelopment: false, // optional parameter to include script in development
+        id: 3351251,
+        sv: 6,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
