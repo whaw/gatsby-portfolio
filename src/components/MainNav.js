@@ -11,7 +11,7 @@ const MainNav = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
-        <a className="navbar-brand js_logo" href="#home">
+        <a className="navbar-brand js_logo pb-0" href="#home">
           <span className="logo mb-2 d-block">A Working Copy</span>
           William Haw &mdash; Front-End Developer
           <span className="d-none d-md-inline-block">
@@ -31,7 +31,7 @@ const MainNav = () => {
         </button>
 
         <div
-          className="collapse navbar-collapse flex-grow-0 pt-2 mt-2"
+          className="collapse navbar-collapse flex-grow-0"
           id="navbarSupportedContent"
         >
           <ul id="main-nav" className="nav navbar-nav mr-auto">

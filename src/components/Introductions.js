@@ -60,16 +60,16 @@ const Introductions = () => (
                 <ul className="list-unstyled">
                   <li>HTML5, CSS3, SCSS</li>
                   <li>JavaScript, JQuery</li>
+                  <li>Design patterns, REST</li>
                   <li>React, Gatsby</li>
-                  <li>Bootstrap</li>
-                  <li>Twig, Django</li>
-                  <li>Gulp, Webpack</li>
+                  <li>Bootstrap, Twig</li>
                   <li>Responsive Design</li>
                   <li>Render consistency</li>
                   <li>Accurate to creative</li>
                   <li>WordPress, Craft</li>
-                  <li>A/B testing</li>
-                  <li>HTML emails</li>
+                  <li>A/B testing, SEO</li>
+                  <li>Web accessibility</li>
+                  <li>Responsive email</li>
                   <li>and...</li>
                 </ul>
                 <div className="skills__closing-text">
@@ -88,13 +88,13 @@ const Introductions = () => (
                   <li>Entrepeneurial</li>
                   <li>Resourceful</li>
                   <li>Flexible</li>
-                  <li>Adaptible</li>
                   <li>Professional</li>
+                  <li>Organized</li>
                   <li>Curious</li>
                   <li>Creative</li>
                   <li>Detailed</li>
                   <li>Strong team values</li>
-                  <li>Fun loving</li>
+                  <li>Desire to learn and grow</li>
                   <li>and...</li>
                 </ul>
                 <div className="skills__closing-text">

@@ -25,7 +25,7 @@ const Hero = () => {
             Aiming to exceed expectations
           </h4>
           <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading">
-            ( + some tools I'm working on, now or soon )
+            ( + some tools I'm working on, now or soon )<br />
           </span>
         </div>
 
