@@ -1,13 +1,17 @@
-// HERO tools' mixins and animations
+// Controls tools' animation
+// - shows/hides text on hover,
+// - floats in place
 
 @mixin generate-tools-animation($top, $left, $name) {
   @keyframes tools-animation--#{$name} {
     0% {
       left: 0%;
     }
+
     50% {
       left: 30%;
     }
+
     100% {
       top: $top;
       left: $left;
@@ -16,7 +20,8 @@
 }
 
 @mixin tools-animation-chain($name) {
-  animation: tools-animation--#{$name} 1s ease forwards, float 6s infinite;
+  animation: tools-animation--#{$name} 1s ease forwards,
+  float 6s infinite;
 }
 
 @keyframes tools-aside-anim {
@@ -24,10 +29,12 @@
     width: 0;
     height: 0;
   }
+
   50% {
     width: 300px;
     height: 1px;
   }
+
   100% {
     width: 250px;
     height: auto;
@@ -39,10 +46,12 @@
     width: 250px;
     height: auto;
   }
+
   50% {
     width: 300px;
     height: 1px;
   }
+
   100% {
     width: 0;
     height: 0;
@@ -53,9 +62,11 @@
   0% {
     transform: translatey(0px);
   }
+
   50% {
     transform: translatey(-10px);
   }
+
   100% {
     transform: translatey(0px);
   }

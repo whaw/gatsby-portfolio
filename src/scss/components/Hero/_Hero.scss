@@ -15,7 +15,7 @@
 
     @include media-breakpoint-up(sm) {
       &.animate {
-        transition: all .75s ease-out;
+        transition: all .4s ease-out;
         top: 53%;
         left: 52%;
       }
