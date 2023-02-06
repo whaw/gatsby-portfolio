@@ -15,7 +15,6 @@ const Hero = () => {
       <AnimController animDetails={toolAnimDetails} animContainer={animContainer} />
 
       <section className="hero position-relative js_hero mt-5 mt-md-8 pt-0">
-        <div className="hero__h1 js_h1">Ready...</div>
         <div className="hero__heading js_heading position-absolute text-center w-100 pt-2 pt-sm-4 pt-lg-6 pt-xl-5">
           <h4 className="hero__heading__h4 mx-auto mb-0 d-sm-none">
             Ready...<br />
@@ -25,7 +24,7 @@ const Hero = () => {
             Aiming to exceed expectations
           </h4>
           <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading">
-            ( + some tools I'm working on, now or soon )<br />
+            ( + some tools I'm working on, now or soon )
           </span>
         </div>
 
