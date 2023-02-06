@@ -15,21 +15,24 @@ const AboutSite = () => (
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10">
           <h5>Situation</h5>
-          <p>Challenged and successful in the agency marketing space tooling, now focused on gaining mastery in all things JavaScript, here and in future roles.</p>
-          <p>
-            This site serves a few purposes:</p>
-
-          <ol className="custom-alpha-list">
-            <li>to act as a sandbox, for experimentation and discovery,</li>
-            <li>to demonstrate an ability to adopt new technologies,</li>
-            <li>to provide a sample of execution and delivery, and</li>
-            <li>a little about me.</li>
-          </ol>
+          <p className="mb-4">Challenged and successful in the agency marketing space tooling, now focused on gaining mastery in all things JavaScript, here and in future roles.</p>
+          <div className="px-3 py-2 mb-4">
+            <p className="mb-0">
+              <strong>This site serves a few purposes:</strong></p>
+            <ol className="custom-alpha-list">
+              <li>to provide a sample of execution and delivery,</li>
+              <li>to demonstrate an ability to adopt new technologies,</li>
+              <li>to act as a sandbox, for experimentation and discovery, and</li>
+              <li>to provide a little about me.</li>
+            </ol>
+          </div>
           <h5>Task</h5>
           <p>
             To migrate a static version of this website to Gatsby, React, with
             an emphasis on building JavaScript tooling.
           </p>
+        </div>
+        <div className="col-12 col-md-6">
           <h5>Approach</h5>
           <ul className="row">
             <li className="col-12 col-sm-6 px-0">SCSS, BEM</li>
@@ -39,43 +42,19 @@ const AboutSite = () => (
             <li className="col-12 col-sm-6 px-0">GraphQL</li>
             <li className="col-12 col-sm-6 px-0">ESLint, Prettier</li>
           </ul>
-        </div>
-        <div className="col-12 col-md-6">
           <h5>Result</h5>
           <p>
-            Site is fast and consistent*, code and image
+            Site is fast and consistent, code and image
             optimizations are automated and dynamic content abstracted for
             dryer code.
           </p>
           <p>
             Increased knowledge in Gatsby, React, GraphQL and JavaScript.
           </p>
-          <b>Lighthouse scores</b><br />
-          (mostly thanks to Gatsby):<br />
-          <div className="row pt-5 pb-7 pb-sm-5 pb-lg-7">
-            <div className="col-12 col-sm-5 col-md-12 col-lg-5 mr-sm-5 pb-4 pb-lg-0 text-center ">
-              <div className="pb-2"><small>Mobile</small></div>
-              <StaticImage
-                src="../images/lighthouse-mobile.png"
-                placeholder="tracedSVG"
-                alt="lighthouse mobile score"
-                className="lighthouse-scores-image"
-              />
-            </div>
-            <div className="col-12 col-sm-5 col-md-12 col-lg-5 text-center">
-              <div className="pb-2"><small>Desktop</small></div>
-              <StaticImage
-                src="../images/lighthouse-desktop.png"
-                placeholder="tracedSVG"
-                alt="lighthouse desktop score"
-                className="lighthouse-scores-image"
-              />
-            </div>
-          </div>
           <p>
             <a
               href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=github_link"
-              className="btn btn-primary border mt-0 mb-3"
+              className="btn btn-primary border mt-1"
               role="button"
               target="_blank"
               rel="noreferrer"
@@ -83,7 +62,6 @@ const AboutSite = () => (
               To the goods (Github)
             </a>
           </p>
-          <p><small>*Testing was capped to Mac OS browsers, to focus on the priorities for this site, outlined in the introduction of this section.</small></p>
         </div>
       </div>
     </div>
