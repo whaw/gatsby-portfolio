@@ -15,17 +15,15 @@ const AboutSite = () => (
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10">
           <h5>Situation</h5>
-          <p className="mb-4">Challenged and successful in the agency marketing space tooling, now focused on gaining mastery in all things JavaScript, here and in future roles.</p>
-          <div className="px-3 py-2 mb-4">
-            <p className="mb-0">
-              <strong>This site serves a few purposes:</strong></p>
-            <ol className="custom-alpha-list">
-              <li>to provide a sample of execution and delivery,</li>
-              <li>to demonstrate an ability to adopt new technologies,</li>
-              <li>to act as a sandbox, for experimentation and discovery, and</li>
-              <li>to provide a little about me.</li>
-            </ol>
-          </div>
+          <p>Challenged and successful in the agency marketing space tooling, now focused on gaining mastery in all things JavaScript, here and in future roles.</p>
+          <p className="mb-0">
+            <strong>This site serves a few purposes:</strong></p>
+          <ol className="custom-alpha-list">
+            <li>to provide a sample of execution and delivery,</li>
+            <li>to demonstrate an ability to adopt new technologies,</li>
+            <li>to act as a sandbox, for experimentation and discovery, and</li>
+            <li>to provide a little about me.</li>
+          </ol>
           <h5>Task</h5>
           <p>
             To migrate a static version of this website to Gatsby, React, with
@@ -54,12 +52,12 @@ const AboutSite = () => (
           <p>
             <a
               href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=github_link"
-              className="btn btn-primary border mt-1"
+              className="btn btn-primary border"
               role="button"
               target="_blank"
               rel="noreferrer"
             >
-              To the goods (Github)
+              To Github
             </a>
           </p>
         </div>

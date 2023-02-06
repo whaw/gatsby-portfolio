@@ -64,16 +64,10 @@ const Hero = () => {
           alt="sketch of a road less traveled"
         />
         <StaticImage
-          src="../../images/hero-main2b.png"
+          src="../../images/hero-main2.png"
           className="hero__main mt-8 mt-md-8"
           placeholder="tracedSVG"
           alt="media scene"
-        />
-        <StaticImage
-          src="../../images/riders.png"
-          className="hero__riders position-absolute"
-          placeholder="tracedSVG"
-          alt="riders"
         />
       </section>
     </>
