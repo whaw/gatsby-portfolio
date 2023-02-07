@@ -7,14 +7,14 @@ $tools-aside-left: -230px;
   // tool anim elements
   &__tool {
     left: 0;
-    z-index: 250;
+    z-index: 3000;
     top: 1.5%;
     left: -100px;
     display: none;
 
     &.animate {
       &:hover {
-        z-index: 260;
+        z-index: 3100;
         animation-play-state: paused;
       }
     }

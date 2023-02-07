@@ -15,7 +15,7 @@ const Hero = () => {
       <AnimController animDetails={toolAnimDetails} animContainer={animContainer} />
 
       <section className="hero position-relative js_hero mt-5 mt-md-8 pt-0">
-        <div className="hero__heading js_heading position-absolute text-center w-100 pt-2 pt-sm-4 pt-lg-6 pt-xl-5">
+        <div className="hero__heading js_heading position-absolute text-center w-100 pt-2 pt-sm-4 pt-lg-6 pt-xl-6">
           <h4 className="hero__heading__h4 mx-auto mb-0 d-sm-none">
             Ready...<br />
             <small className="text-secondary">Aiming to exceed expectations</small>
@@ -23,8 +23,19 @@ const Hero = () => {
           <h4 className="hero__heading__h4 mx-auto mb-0 d-none d-sm-block">
             Aiming to exceed expectations
           </h4>
-          <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading">
+          <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading pb-2">
             ( + some tools I'm working on, now or soon )
+          </span>
+          <span className="hero__heading__buttons js_hero_buttons">
+            <a href="#introductions" className="btn btn-primary btn-sm text-white mr-2"
+              role="button">Tell me more</a>
+            <a
+              href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=hero__to_code_link"
+              className="btn btn-primary btn-sm text-white"
+              role="button"
+              target="_blank"
+              rel="noreferrer"
+            >To the code</a>
           </span>
         </div>
 

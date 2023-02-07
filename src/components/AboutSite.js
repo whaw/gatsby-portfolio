@@ -1,5 +1,4 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 
 const AboutSite = () => (
   <section id="about-this-site">
@@ -51,19 +50,17 @@ const AboutSite = () => (
           </p>
           <p>
             <a
-              href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=github_link"
-              className="btn btn-primary border"
+              href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link"
+              className="btn btn-primary"
               role="button"
               target="_blank"
               rel="noreferrer"
-            >
-              To Github
-            </a>
+            >To the code</a>
           </p>
         </div>
       </div>
     </div>
-  </section >
+  </section>
 )
 
 export default AboutSite
