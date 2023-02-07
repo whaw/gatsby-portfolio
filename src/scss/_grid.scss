@@ -3,6 +3,7 @@ $section-with-bg-spacing: $section-spacing * 2;
 
 html,
 body {
+  scroll-behavior: smooth;
   max-width: $body-max-width;
   height: 100%;
   margin: 0 auto;
