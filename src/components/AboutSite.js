@@ -31,13 +31,13 @@ const AboutSite = () => (
         </div>
         <div className="col-12 col-md-6">
           <h5>Approach</h5>
+          <p>Move fast and iterate.</p>
           <ul className="row">
-            <li className="col-12 col-sm-6 px-0">SCSS, BEM</li>
-            <li className="col-12 col-sm-6 px-0">Bootstrap</li>
-            <li className="col-12 col-sm-6 px-0">Gatsby, React</li>
-            <li className="col-12 col-sm-6 px-0">JQuery</li>
-            <li className="col-12 col-sm-6 px-0">GraphQL</li>
-            <li className="col-12 col-sm-6 px-0">ESLint, Prettier</li>
+            <li className="col-12 px-0">Gatsby, React, to take it for a spin - for a fast, secure and performant site.</li>
+            <li className="col-12 px-0">Bootstrap for development speed. No need to reinvent the wheel.</li>
+            <li className="col-12 px-0">Animation is with JQuery, CSS for transitions and JSON.</li>
+            <li className="col-12 px-0">GraphQL (Gatsby's perferred method) to declaratively query data.</li>
+            <li className="col-12 px-0">ESLint and Prettier to keep everything clean and error free.</li>
           </ul>
           <h5>Result</h5>
           <p>
@@ -47,15 +47,6 @@ const AboutSite = () => (
           </p>
           <p>
             Increased knowledge in Gatsby, React, GraphQL and JavaScript.
-          </p>
-          <p>
-            <a
-              href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link"
-              className="btn btn-primary"
-              role="button"
-              target="_blank"
-              rel="noreferrer"
-            >To the code</a>
           </p>
         </div>
       </div>
