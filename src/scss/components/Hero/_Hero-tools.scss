@@ -7,14 +7,14 @@ $tools-aside-left: -230px;
   // tool anim elements
   &__tool {
     left: 0;
-    z-index: 3000;
+    z-index: 800;
     top: 1.5%;
     left: -100px;
     display: none;
 
     &.animate {
       &:hover {
-        z-index: 3100;
+        z-index: 810;
         animation-play-state: paused;
       }
     }
@@ -41,7 +41,7 @@ $tools-aside-left: -230px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 25px;
+        width: 20px;
       }
     }
 
@@ -65,19 +65,23 @@ $tools-aside-left: -230px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 27px;
+        width: 30px;
       }
     }
 
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(6%, 24%, webpack);
+        @include generate-tools-animation(4%, 24%, webpack);
         @include tools-animation-chain(webpack);
       }
 
       @include media-breakpoint-up(lg) {
-        @include generate-tools-animation(5%, 27%, webpack);
+        @include generate-tools-animation(3%, 27%, webpack);
+      }
+
+      @include media-breakpoint-up(xl) {
+        @include generate-tools-animation(1.2%, 27%, webpack);
       }
     }
   }
@@ -89,7 +93,7 @@ $tools-aside-left: -230px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 30px;
+        width: 35px;
       }
     }
 
@@ -101,7 +105,7 @@ $tools-aside-left: -230px;
       }
 
       @include media-breakpoint-up(lg) {
-        @include generate-tools-animation(16%, 26%, javascript);
+        @include generate-tools-animation(13%, 26%, javascript);
       }
     }
   }
@@ -113,7 +117,7 @@ $tools-aside-left: -230px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 27px;
+        width: 25px;
       }
     }
 
@@ -143,7 +147,7 @@ $tools-aside-left: -230px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 39px;
+        width: 25px;
       }
     }
 
@@ -173,19 +177,19 @@ $tools-aside-left: -230px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 30px;
+        width: 37px;
       }
     }
 
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(17%, 79%, redux);
+        @include generate-tools-animation(15%, 79%, redux);
         @include tools-animation-chain(redux);
       }
 
       @include media-breakpoint-up(lg) {
-        @include generate-tools-animation(17%, 68%, redux);
+        @include generate-tools-animation(13%, 68%, redux);
       }
 
       aside {
@@ -203,19 +207,23 @@ $tools-aside-left: -230px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 26px;
+        width: 22px;
       }
     }
 
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(6%, 75%, typescript);
+        @include generate-tools-animation(4%, 75%, typescript);
         @include tools-animation-chain(typescript);
       }
 
       @include media-breakpoint-up(lg) {
-        @include generate-tools-animation(6%, 71%, typescript);
+        @include generate-tools-animation(3%, 71%, typescript);
+      }
+
+      @include media-breakpoint-up(lg) {
+        @include generate-tools-animation(2%, 71%, typescript);
       }
     }
 

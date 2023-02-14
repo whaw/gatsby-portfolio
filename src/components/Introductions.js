@@ -8,7 +8,7 @@ const Introductions = () => (
         <div className="row">
           <div className="col text-center">
             <h2>Introductions</h2>
-            <h4 className="text-secondary">What I bring</h4>
+            <h5 className="text-secondary">What I bring</h5>
           </div>
         </div>
       </div>
