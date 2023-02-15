@@ -3,7 +3,7 @@ import Timeline2 from "./Timeline2"
 
 const Experience = () => (
   <section id="experience" className="bg-light section--with-background">
-    <div className="container section__header">
+    <div className="container section__header gs_reveal">
       <div className="row">
         <div className="col text-center">
           <h2>Experience</h2>

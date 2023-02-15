@@ -9,11 +9,38 @@ import Contact from "./Contact"
 import TopButton from "./TopButton"
 import $ from "jquery"
 
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { hide, animateFrom } from "./gsap_animations"
+
 const Layout = () => {
 
   useEffect(() => {
     if ($(window).scrollspy) $(window).scrollspy('refresh')
   })
+
+  useEffect(() => {
+    // add a delay to allow loading
+    setTimeout(() => {
+      if (typeof window !== `undefined`) {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.core.globals("ScrollTrigger", ScrollTrigger)
+
+        gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
+          hide(elem); // assure that the element is hidden when scrolled into view
+
+          ScrollTrigger.create({
+            trigger: elem,
+            markers: false,
+            lazy: false,
+            onEnter: function () { animateFrom(elem) },
+            onEnterBack: function () { animateFrom(elem, -1) },
+            onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
+          });
+        });
+      }
+    }, 100)
+  }, [])
 
   return (
     <>

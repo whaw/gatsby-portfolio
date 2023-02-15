@@ -2,7 +2,7 @@ import React from "react"
 
 const AboutSite = () => (
   <section id="about-this-site">
-    <div className="container section__header">
+    <div className="container section__header gs_reveal">
       <div className="row">
         <div className="col text-center">
           <h2>About this site</h2>
@@ -12,7 +12,7 @@ const AboutSite = () => (
     </div>
     <div className="container">
       <div className="row">
-        <div className="col-12 col-md-6 pr-lg-10">
+        <div className="col-12 col-md-6 pr-lg-10 gs_reveal">
           <h5>Situation</h5>
           <p>Challenged and successful in the agency marketing space and tooling, now focused on gaining mastery of all things JavaScript, here and in future roles.</p>
           <p className="mb-0">
@@ -29,7 +29,7 @@ const AboutSite = () => (
             an emphasis on building JavaScript tooling.
           </p>
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 gs_reveal">
           <h5>Approach</h5>
           <p>Move fast and iterate.</p>
           <ul className="row">

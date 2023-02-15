@@ -2,7 +2,7 @@ import React from "react"
 
 const Contact = () => (
   <section id="contact">
-    <div className="container section__header">
+    <div className="container section__header gs_reveal">
       <div className="row">
         <div className="col text-center">
           <h2>Give me a&nbsp;shout</h2>

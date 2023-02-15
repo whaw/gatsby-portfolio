@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
 
+  // vertical line
   &::after {
     content: '';
     position: absolute;
@@ -12,6 +13,7 @@
     bottom: 0;
     left: 50%;
     margin-left: -3px;
+    z-index: 1;
   }
 
   .container {
@@ -19,7 +21,9 @@
     padding: 10px 40px;
     background-color: inherit;
     width: 50%;
+    z-index: 10;
 
+    // circles
     &::after {
       content: '';
       position: absolute;

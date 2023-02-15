@@ -7,7 +7,7 @@ const Timeline2 = () => {
       {experiences.map((experience, i) => {
         const colPosClass = i % 2 === 0 ? 'left' : 'right'
         return (
-          <div key={i} className={`container position-relative ${colPosClass}`}>
+          <div key={i} className={`container position-relative gs_reveal ${colPosClass}`}>
             <div className="content">
               <h5>{experience.company}</h5>
               <p className="text-secondary">{experience.period}</p>
