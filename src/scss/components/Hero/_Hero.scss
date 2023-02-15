@@ -33,10 +33,7 @@
     }
 
     @include media-breakpoint-up(sm) {
-      opacity: 0;
-
       &.animate {
-        opacity: 1;
         transition: opacity 2s ease;
         animation-name: slide-up;
         animation-duration: 1s;
