@@ -33,9 +33,10 @@ const AboutSite = () => (
           <h5>Approach</h5>
           <p>Move fast and iterate.</p>
           <ul className="row">
-            <li className="col-12 px-0">Gatsby, React, to take it for a spin - for a fast, secure and performant site.</li>
+            <li className="col-12 px-0">Gatsby, React, to take it for a spin &mdash; evidently fast, secure and performant.</li>
             <li className="col-12 px-0">Bootstrap for speed, to shorten development and free up time to learn something new!</li>
             <li className="col-12 px-0">Animation is with JQuery, CSS for transitions and JSON.</li>
+            <li className="col-12 px-0">Sections animation with GSAP (trying it out!).</li>
             <li className="col-12 px-0">GraphQL (Gatsby's perferred method) to declaratively query data.</li>
             <li className="col-12 px-0">Prettier and ESLint to keep everything clean and error free.</li>
           </ul>
