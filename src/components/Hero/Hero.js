@@ -29,6 +29,13 @@ const Hero = () => {
           <span className="hero__heading__buttons js_hero_buttons">
             <a href="#introductions" className="btn btn-primary btn-sm text-white mr-2"
               role="button">Tell me more</a>
+            <a
+              href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=hero__to_code_link"
+              className="btn btn-primary btn-sm text-white"
+              role="button"
+              target="_blank"
+              rel="noreferrer"
+            >To the code</a>
           </span>
         </div>
 

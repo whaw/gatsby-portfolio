@@ -14,10 +14,10 @@ const AboutSite = () => (
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10">
           <h5>Situation</h5>
-          <p>Challenged and successful in the agency marketing space tooling, now focused on gaining mastery in all things JavaScript, here and in future roles.</p>
+          <p>Challenged and successful in the agency marketing space and tooling, now focused on gaining mastery of all things JavaScript, here and in future roles.</p>
           <p className="mb-0">
             <strong>This site serves a few purposes:</strong></p>
-          <ol className="custom-alpha-list">
+          <ol>
             <li>to provide a sample of execution and delivery,</li>
             <li>to demonstrate an ability to adopt new technologies,</li>
             <li>to act as a sandbox, for experimentation and discovery, and</li>
@@ -34,10 +34,10 @@ const AboutSite = () => (
           <p>Move fast and iterate.</p>
           <ul className="row">
             <li className="col-12 px-0">Gatsby, React, to take it for a spin - for a fast, secure and performant site.</li>
-            <li className="col-12 px-0">Bootstrap for development speed. No need to reinvent the wheel.</li>
+            <li className="col-12 px-0">Bootstrap for speed, to shorten development and free up time to learn something new!</li>
             <li className="col-12 px-0">Animation is with JQuery, CSS for transitions and JSON.</li>
             <li className="col-12 px-0">GraphQL (Gatsby's perferred method) to declaratively query data.</li>
-            <li className="col-12 px-0">ESLint and Prettier to keep everything clean and error free.</li>
+            <li className="col-12 px-0">Prettier and ESLint to keep everything clean and error free.</li>
           </ul>
           <h5>Result</h5>
           <p>
@@ -48,10 +48,19 @@ const AboutSite = () => (
           <p>
             Increased knowledge in Gatsby, React, GraphQL and JavaScript.
           </p>
+          <p>
+            <a
+              href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link"
+              className="btn btn-primary mt-2"
+              role="button"
+              target="_blank"
+              rel="noreferrer"
+            >To the code</a>
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </section >
 )
 
 export default AboutSite
