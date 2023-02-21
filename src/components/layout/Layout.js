@@ -1,43 +1,36 @@
 import React, { useEffect } from "react"
 import Helmet from "react-helmet"
-import MainNav from "./MainNav"
-import Hero from "./Hero/Hero"
-import Introductions from "./Introductions"
-import AboutSite from "./AboutSite"
-import Experience from "./Experience/Experience"
-import Contact from "./Contact"
-import TopButton from "./TopButton"
 import $ from "jquery"
+import { initiateGsap } from "./gsapAnimations"
+import { animateWithClassSelectors } from "../layout/animateWithClassSelectors"
 
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { hide, animateFrom } from "./gsap_animations"
+import MainNav from "../MainNav"
+import Hero from "../Hero/Hero"
+import Introductions from "../Introductions"
+import AboutSite from "../AboutSite"
+import Experience from "../Experience/Experience"
+import Contact from "../Contact"
+import TopButton from "../TopButton"
 
 const Layout = () => {
+
+  function inView(section) {
+    const scrollPos = $(window).scrollTop() + 100
+    const elementTop = $(section).offset().top
+    const elementBottom = elementTop + $(section).height()
+    if (scrollPos > elementTop && scrollPos < elementBottom) return true
+    return false
+  }
 
   useEffect(() => {
     if ($(window).scrollspy) $(window).scrollspy('refresh')
   })
 
   useEffect(() => {
-    // add a delay to allow loading
+    // add a delay to allow gsap to load
     setTimeout(() => {
       if (typeof window !== `undefined`) {
-        gsap.registerPlugin(ScrollTrigger)
-        gsap.core.globals("ScrollTrigger", ScrollTrigger)
-
-        gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
-          hide(elem); // assure that the element is hidden when scrolled into view
-
-          ScrollTrigger.create({
-            trigger: elem,
-            markers: false,
-            lazy: false,
-            onEnter: function () { animateFrom(elem) },
-            onEnterBack: function () { animateFrom(elem, -1) },
-            onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
-          });
-        });
+        initiateGsap()
       }
     }, 100)
   }, [])
@@ -56,13 +49,12 @@ const Layout = () => {
           data-spy="scroll"
           data-target="#main-nav"
           data-offset="50"
-          id="home"
           className="px-md-3"
         />
       </Helmet>
       <header className="header">
         <MainNav />
-        <Hero />
+        <Hero inView={inView} animateWithClassSelectors={animateWithClassSelectors} />
       </header>
       <main>
         <Introductions />

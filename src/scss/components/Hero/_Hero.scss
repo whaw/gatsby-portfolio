@@ -9,12 +9,7 @@
     &__h1 {
       color: #000;
       font-weight: 700;
-      font-size: 2rem;
-
-      small {
-        font-size: 1rem;
-        display: block;
-      }
+      font-size: 1.25rem;
     }
 
     &__h1 {
@@ -24,20 +19,21 @@
 
       @include media-breakpoint-up(md) {
         font-size: 1.5rem;
-        margin-bottom: 0.5rem;
       }
 
-      @include media-breakpoint-up(lg) {
-        font-size: 1.75rem;
+      @include media-breakpoint-up(xl) {
+        font-size: 2.2vw;
       }
     }
 
     @include media-breakpoint-up(sm) {
+      opacity: 0;
+
+      // header animation
       &.animate {
-        transition: opacity 2s ease;
+        opacity: 1;
         animation-name: slide-up;
-        animation-duration: 1s;
-        animation-delay: 5s;
+        animation-duration: 750ms;
         animation-fill-mode: forwards;
       }
 
@@ -47,45 +43,74 @@
         }
 
         to {
-          margin-top: -1.9vw;
-        }
-      }
-    }
-
-    &__buttons {
-      opacity: 0;
-
-      @include media-breakpoint-up(sm) {
-        &.animate {
-          opacity: 1;
-          transition: opacity 2s ease;
+          margin-top: -3vw;
         }
       }
     }
   }
 
-  &__hashTag {
-    z-index: 250;
-    left: 0;
-    right: 0;
-    font-weight: 700;
-    font-size: .8rem;
-    bottom: 2%;
-
-    @include media-breakpoint-up(sm) {
-      font-size: 1rem;
-      bottom: 5%;
-    }
+  &__aside {
+    position: absolute;
+    z-index: 10;
+    right: 6%;
+    font-size: .6rem;
+    bottom: 0;
+    color: #fff;
 
     @include media-breakpoint-up(md) {
-      font-size: 1.2rem;
-      bottom: 7%;
+      bottom: 5%;
+      font-size: 1rem;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      position: absolute;
+      left: 50%;
+      z-index: 2000;
+      color: $white;
+      bottom: 5%;
+      font-size: 4rem;
+      margin-left: -2rem;
+
+      &:hover {
+        color: #ccc;
+        text-decoration: none;
+      }
+
+      // down button animation
+      &.animate {
+        animation: bounce 1s ease;
+
+        @keyframes bounce {
+
+          0% {
+            transform: translateY(0);
+          }
+
+          30% {
+            transform: translateY(-10px);
+          }
+
+          50% {
+            transform: translateY(5px);
+          }
+
+          80% {
+            transform: translateY(-3px);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
+        }
+      }
     }
 
-    @include media-breakpoint-up(xl) {
-      font-size: 1.75rem;
-      bottom: 7.5%;
-    }
+    @include media-breakpoint-up(xl) {}
   }
 
   // hero main anim elements
@@ -102,7 +127,6 @@
 
   &__truck {
     left: 0;
-    z-index: 50;
 
     @include media-breakpoint-up(sm) {
       left: -40%;
@@ -146,11 +170,5 @@
   &__main {
     z-index: 5;
     margin-top: -60px;
-  }
-
-  &__riders {
-    left: 0;
-    bottom: 0;
-    z-index: 150;
   }
 }

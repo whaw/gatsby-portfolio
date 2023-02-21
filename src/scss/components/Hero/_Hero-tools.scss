@@ -65,6 +65,10 @@ $tools-aside-left: -230px;
       }
 
       @include media-breakpoint-up(lg) {
+        width: 20px;
+      }
+
+      @include media-breakpoint-up(xl) {
         width: 30px;
       }
     }

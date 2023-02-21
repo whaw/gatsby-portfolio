@@ -1,43 +1,47 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import AnimController from "./AnimController"
 import Tool from "./Tools/Tool"
+import $ from "jquery"
 
 const toolAnimDetails = require("/src/data/toolsAnim")
 const heroAnimDetails = require("/src/data/heroAnim")
 const animContainer = ".js_hero"
 
-const Hero = () => {
+const Hero = ({ inView, animateWithClassSelectors }) => {
+  const [hasPlayed, setHasPlayed] = useState(false)
+
+  useEffect(() => {
+    !inView(animContainer) ? bindEvents() : initiateHeroAnimations()
+    return () => cleanupEventListeners()
+    // eslint-disable-next-line
+  }, [])
+
+  const bindEvents = () => $(window).on("load resize scroll", () => inView(animContainer) && initiateHeroAnimations())
+  const cleanupEventListeners = () => $(window).off()
+
+  function initiateHeroAnimations() {
+    if (!hasPlayed) {
+      animateWithClassSelectors(heroAnimDetails)
+      animateWithClassSelectors(toolAnimDetails)
+      setHasPlayed(true)
+    }
+  }
 
   return (
     <>
-      <AnimController animDetails={heroAnimDetails} animContainer={animContainer} />
-      <AnimController animDetails={toolAnimDetails} animContainer={animContainer} />
-
-      <section className="hero position-relative js_hero mt-5 mt-md-8 pt-0">
-        <div className="hero__heading gs_reveal js_heading position-absolute text-center w-100 pt-2 pt-sm-4 pt-lg-6 pt-xl-6">
-          <h1 className="hero__heading__h1 mx-auto mb-0 d-sm-none">
-            Ready...<br />
-            <small className="text-secondary">Aiming to exceed expectations</small>
+      <section className="hero position-relative js_hero mt-5 pt-0">
+        <div className="hero__heading js_heading position-absolute text-center w-100 pt-2 pt-sm-6 pt-md-7 pt-xl-11">
+          <h1 className="hero__heading__h1 mx-auto mb-0 d-sm-none gs_reveal">
+            Aiming to surprise<br /> &amp; delight
           </h1>
           <h1 className="hero__heading__h1 mx-auto mb-0 d-none d-sm-block">
-            Aiming to exceed expectations
+            Aiming to surprise &amp; delight
           </h1>
           <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading pb-2">
             ( + some tools I'm working on, now or soon )
           </span>
-          <span className="hero__heading__buttons js_hero_buttons">
-            <a href="#introductions" className="btn btn-primary btn-sm text-white mr-2"
-              role="button">Tell me more</a>
-            <a
-              href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=hero__to_code_link"
-              className="btn btn-primary btn-sm text-white"
-              role="button"
-              target="_blank"
-              rel="noreferrer"
-            >To the code</a>
-          </span>
         </div>
+        <a href="#introductions" className="hero__button js_hero_button">&#x2304;</a>
 
         {/* Tool images */}
         {toolAnimDetails[0].images.map((tool) => {
@@ -65,9 +69,6 @@ const Hero = () => {
           placeholder="tracedSVG"
           alt="the media, trees and benches"
         />
-        <div className="mx-auto position-absolute hero__hashTag text-white text-center">
-          #Team
-        </div>
         <StaticImage
           src="../../images/hero-sketch.png"
           className="position-absolute hero__sketch js_sketch"
@@ -80,6 +81,7 @@ const Hero = () => {
           placeholder="tracedSVG"
           alt="media scene"
         />
+        <aside className="hero__aside border-0"><small>Team, outdoors, bikes &#127856; &#127881;</small></aside>
       </section>
     </>
   )

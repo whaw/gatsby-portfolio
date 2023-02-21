@@ -20,12 +20,12 @@ const TopButton = () => {
   }
 
   return (
-    <a
-      href="#home"
+    <button
+      onClick={() => $(window).scrollTop(0)}
       className={`btn btn-secondary top-button ${isVisibleClass}`}
     >
       Top
-    </a>
+    </button>
   )
 }
 

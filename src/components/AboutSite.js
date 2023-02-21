@@ -14,31 +14,28 @@ const AboutSite = () => (
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10 gs_reveal">
           <h5>Situation</h5>
-          <p>Challenged and successful in the agency marketing space and tooling, now focused on gaining mastery of all things JavaScript, here and in future roles.</p>
+          <p>To provide a real world example of work, balancing speed, objectives and best practices, while adopting new technologies.</p>
           <p className="mb-0">
             <strong>This site serves a few purposes:</strong></p>
           <ol>
             <li>to provide a sample of execution and delivery,</li>
-            <li>to demonstrate an ability to adopt new technologies,</li>
-            <li>to act as a sandbox, for experimentation and discovery, and</li>
-            <li>to provide a little about me.</li>
+            <li>to act as a sandbox for experimentation and discovery, and</li>
+            <li>to provide a little about me (fit being important).</li>
           </ol>
           <h5>Task</h5>
           <p>
-            To migrate a static version of this website to Gatsby, React, with
-            an emphasis on building JavaScript tooling.
+            To develop a Gatsby, React, website with an emphasis on building JavaScript tooling.
           </p>
         </div>
         <div className="col-12 col-md-6 gs_reveal">
           <h5>Approach</h5>
           <p>Move fast and iterate.</p>
-          <ul className="row">
-            <li className="col-12 px-0">Gatsby, React, to take it for a spin &mdash; evidently fast, secure and performant.</li>
-            <li className="col-12 px-0">Bootstrap for speed, to shorten development and free up time to learn something new!</li>
-            <li className="col-12 px-0">Animation is with JQuery, CSS for transitions and JSON.</li>
-            <li className="col-12 px-0">Sections animation with GSAP (trying it out!).</li>
-            <li className="col-12 px-0">GraphQL (Gatsby's perferred method) to declaratively query data.</li>
-            <li className="col-12 px-0">Prettier and ESLint to keep everything clean and error free.</li>
+          <ul>
+            <li>Gatsby, for a fast, secure and performant site.</li>
+            <li>Bootstrap to shorten development time (to focus on higher value areas).</li>
+            <li>Animations are with JQuery, CSS, JSON and later added GSAP.</li>
+            <li>GraphQL (Gatsby's perferred method) to declaratively query data.</li>
+            <li>Prettier and ESLint to keep everything clean and error free.</li>
           </ul>
           <h5>Result</h5>
           <p>
