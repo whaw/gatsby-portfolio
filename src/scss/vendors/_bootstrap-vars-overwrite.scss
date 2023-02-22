@@ -38,7 +38,7 @@ $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
 $red: #e6263d !default;
 $brown: #7a4c01 !default;
-$kakhi: #73643e !default;
+$kakhi: #376a4d !default;
 $yellow: #ffc107 !default;
 // $orange: #fa9907 !default;
 $orange: #f79604 !default;
@@ -66,7 +66,7 @@ $colors: map-merge(("blue": $blue,
     $colors
 );
 
-$primary: $brown !default;
+$primary: $kakhi !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -114,7 +114,7 @@ $escaped-characters: (
 $enable-caret: true !default;
 $enable-rounded: true !default;
 $enable-shadows: false !default;
-$enable-gradients: false !default;
+$enable-gradients: true !default;
 $enable-transitions: true !default;
 $enable-prefers-reduced-motion-media-query: true !default;
 $enable-hover-media-query: false !default; // Deprecated, no longer affects any compiled CSS

@@ -3,44 +3,51 @@
 
   h2,
   .h2 {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.8rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      @include text-gradient--primary;
+      font-size: $h1-font-size;
+    }
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: $h3-font-size;
+    }
+  }
+
+  h4 {
+    font-size: 1.2rem;
   }
 
   h5 {
     font-size: 1rem;
-  }
 
-  @include media-breakpoint-up(sm) {
-    h3 {
-      font-size: 2rem;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-
-    h2,
-    .h2 {
-      font-size: 3.5rem;
-    }
-
-    h5 {
+    @include media-breakpoint-up(md) {
       font-size: 1.25rem;
-    }
-  }
-
-  @include media-breakpoint-up(xl) {
-
-    h2,
-    .h2 {
-      font-size: $h1-font-size;
-    }
-
-    h3 {
-      font-size: $h3-font-size;
     }
   }
 }

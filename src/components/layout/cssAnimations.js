@@ -1,7 +1,7 @@
 
 import $ from "jquery"
 
-export function animateWithClassSelectors(animDetails) {
+export function cssAnimations(animDetails) {
 
   // initiate main set of animations
   for (const { selector, delay, elementDelay = null } of animDetails) {
@@ -18,10 +18,10 @@ export function animateWithClassSelectors(animDetails) {
 
   function animate(elementsToAnimate, elementDelay) {
     elementsToAnimate.forEach((el, i) => {
-      const hasChildren = !!elementDelay ? true : false
+      const isGroup = !!elementDelay ? true : false
 
-      // handle delay
-      hasChildren ?
+      // handle delay if group of elements
+      isGroup ?
         setTimeout(function () {
           $(el).addClass("animate")
         }, i * elementDelay)

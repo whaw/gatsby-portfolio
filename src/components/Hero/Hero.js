@@ -7,41 +7,39 @@ const toolAnimDetails = require("/src/data/toolsAnim")
 const heroAnimDetails = require("/src/data/heroAnim")
 const animContainer = ".js_hero"
 
-const Hero = ({ inView, animateWithClassSelectors }) => {
+const Hero = ({ inView, cssAnimations }) => {
   const [hasPlayed, setHasPlayed] = useState(false)
 
+  // bind events or initiate hero animations
+  // and cleanup
   useEffect(() => {
     !inView(animContainer) ? bindEvents() : initiateHeroAnimations()
-    return () => cleanupEventListeners()
+    return () => $(window).off() // cleanup event binding
     // eslint-disable-next-line
   }, [])
 
   const bindEvents = () => $(window).on("load resize scroll", () => inView(animContainer) && initiateHeroAnimations())
-  const cleanupEventListeners = () => $(window).off()
 
   function initiateHeroAnimations() {
     if (!hasPlayed) {
-      animateWithClassSelectors(heroAnimDetails)
-      animateWithClassSelectors(toolAnimDetails)
+      cssAnimations(heroAnimDetails)
+      cssAnimations(toolAnimDetails)
       setHasPlayed(true)
     }
   }
 
   return (
     <>
-      <section className="hero position-relative js_hero mt-5 pt-0">
-        <div className="hero__heading js_heading position-absolute text-center w-100 pt-2 pt-sm-6 pt-md-7 pt-xl-11">
-          <h1 className="hero__heading__h1 mx-auto mb-0 d-sm-none gs_reveal">
-            Aiming to surprise<br /> &amp; delight
-          </h1>
-          <h1 className="hero__heading__h1 mx-auto mb-0 d-none d-sm-block">
-            Aiming to surprise &amp; delight
+      <section className="hero position-relative js_hero mt-4 mt-sm-7 mt-md-8 pt-0">
+        <div className="hero__heading js_heading position-absolute text-center w-100 pt-3 pt-sm-4 pt-md-3 pt-lg-4 pt-xl-6">
+          <h1 className="hero__heading__h1 mx-auto mb-0">
+            Be <span>responsive</span>
           </h1>
           <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading pb-2">
             ( + some tools I'm working on, now or soon )
           </span>
         </div>
-        <a href="#introductions" className="hero__button js_hero_button">&#x2304;</a>
+        <a href="#introductions" className="hero__down-button js_hero_button">&#x2304;</a>
 
         {/* Tool images */}
         {toolAnimDetails[0].images.map((tool) => {
@@ -55,6 +53,10 @@ const Hero = ({ inView, animateWithClassSelectors }) => {
             />
           )
         })}
+
+        <div className="mx-auto position-absolute hero__hashTag text-white text-center">
+          #Team
+        </div>
 
         {/* Main images */}
         <StaticImage
@@ -81,7 +83,6 @@ const Hero = ({ inView, animateWithClassSelectors }) => {
           placeholder="tracedSVG"
           alt="media scene"
         />
-        <aside className="hero__aside border-0"><small>Team, outdoors, bikes &#127856; &#127881;</small></aside>
       </section>
     </>
   )

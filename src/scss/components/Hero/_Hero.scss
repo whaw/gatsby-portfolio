@@ -7,44 +7,50 @@
     z-index: 800;
 
     &__h1 {
-      color: #000;
       font-weight: 700;
-      font-size: 1.25rem;
+      font-size: 2rem;
+
+      span {
+        @include text-gradient--primary;
+      }
     }
 
     &__h1 {
       @include media-breakpoint-up(sm) {
-        font-size: 1.25rem;
+        font-size: 2.2rem;
       }
 
       @include media-breakpoint-up(md) {
-        font-size: 1.5rem;
+        font-size: 2.9rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 3.7rem;
       }
 
       @include media-breakpoint-up(xl) {
-        font-size: 2.2vw;
+        // font-size: 4.5rem;
+        font-size: 4.8vw;
       }
     }
 
-    @include media-breakpoint-up(sm) {
-      opacity: 0;
+    opacity: 0;
 
-      // header animation
-      &.animate {
-        opacity: 1;
-        animation-name: slide-up;
-        animation-duration: 750ms;
-        animation-fill-mode: forwards;
+    // header animation
+    &.animate {
+      opacity: 1;
+      animation-name: slide-up;
+      animation-duration: 750ms;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slide-up {
+      from {
+        margin: 0;
       }
 
-      @keyframes slide-up {
-        from {
-          margin: 0;
-        }
-
-        to {
-          margin-top: -3vw;
-        }
+      to {
+        margin-top: -3vw;
       }
     }
   }
@@ -63,18 +69,18 @@
     }
   }
 
-  &__button {
+  &__down-button {
     display: none;
 
     @include media-breakpoint-up(lg) {
-      display: block;
       position: absolute;
-      left: 50%;
+      left: 0;
+      right: 0;
       z-index: 2000;
       color: $white;
-      bottom: 5%;
+      bottom: 75%;
       font-size: 4rem;
-      margin-left: -2rem;
+      text-align: center;
 
       &:hover {
         color: #ccc;
@@ -83,6 +89,7 @@
 
       // down button animation
       &.animate {
+        display: block;
         animation: bounce 1s ease;
 
         @keyframes bounce {
@@ -110,8 +117,36 @@
       }
     }
 
-    @include media-breakpoint-up(xl) {}
+    @include media-breakpoint-up(xl) {
+      bottom: 75%;
+    }
   }
+
+  &__hashTag {
+    z-index: 250;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+    bottom: 2%;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1rem;
+      bottom: 5%;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.2rem;
+      bottom: 7%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 1.25rem;
+      bottom: 7.5%;
+    }
+  }
+
 
   // hero main anim elements
   &__truck,
@@ -126,45 +161,36 @@
   }
 
   &__truck {
-    left: 0;
+    left: -40%;
 
-    @include media-breakpoint-up(sm) {
-      left: -40%;
-
-      &.animate {
-        left: 0;
-      }
+    &.animate {
+      left: 0;
     }
   }
 
   &__tree {
     right: 0;
+    right: -16%;
 
-    @include media-breakpoint-up(sm) {
-      right: -16%;
-
-      &.animate {
-        right: 0;
-      }
+    &.animate {
+      right: 0;
     }
   }
 
   &__sketch {
     display: none;
     bottom: -30%;
+    display: block;
+    z-index: 1;
+    width: 98%;
+    left: 0.5%;
+    opacity: 0.9;
 
-    @include media-breakpoint-up(sm) {
-      display: block;
-      z-index: 1;
-      width: 98%;
-      left: 0.5%;
-      opacity: 0.9;
-
-      &.animate {
-        bottom: 2%;
-        transition: all 1.5s ease;
-      }
+    &.animate {
+      bottom: 2%;
+      transition: all 1.5s ease;
     }
+
   }
 
   &__main {

@@ -1,5 +1,5 @@
 import React from "react"
-import $ from "jquery"
+import { scrollHome } from "./Layout/jsUtils"
 
 const MainNav = () => {
   const navLinks = [
@@ -12,11 +12,10 @@ const MainNav = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
-        <button className="navbar-brand js_logo pb-2 border-0 bg-white text-left p-0" onClick={() => $(window).scrollTop(0)}>
+        <button className="navbar-brand js_logo pb-2 border-0 bg-white text-left p-0" onClick={() => scrollHome()}>
           <span className="logo mb-2 d-block">A Working Copy</span>
-          William Haw &mdash; Front-End Developer
-          <span className="d-none d-md-inline-block">
-            , Outdoor Enthusiast
+          <span className="d-none d-md-inline-block">William Haw &mdash; Front-End Developer
+            <span className="d-none d-xl-inline-block">, Outdoor Enthusiast</span>
           </span>
         </button>
         <button

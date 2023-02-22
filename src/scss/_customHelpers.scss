@@ -1,8 +1,13 @@
 // HELPERS
+@mixin text-gradient--primary {
+  background: -webkit-linear-gradient(90deg, #376a4d, #f5c503 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 // GRID HELPERS
 .section__header {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   @include media-breakpoint-up(md) {
     padding-bottom: 70px;

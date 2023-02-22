@@ -70,18 +70,18 @@
       height: 8.5px;
     }
 
-    background-color: #f79604;
+    background-color: #f5c503;
     display: inline-block;
     content: ".";
-    margin: 0 8px 3px 0;
+    margin: 0 8px 0 0;
     text-indent: -8.5px;
     overflow: hidden;
     border-radius: 8.5px;
   }
 
   &__closing-text {
-    line-height: 2rem;
-    font-size: 1.75rem;
+    line-height: 1.7rem;
+    font-size: 1.5rem;
 
     @include media-breakpoint-up(md) {
       line-height: 2.25rem;
@@ -89,8 +89,7 @@
     }
 
     &--em {
-      font-size: 2.5rem;
-      color: #f79604;
+      font-size: 1.7rem;
 
       @include media-breakpoint-up(md) {
         font-size: 3rem;

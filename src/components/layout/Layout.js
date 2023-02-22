@@ -1,8 +1,10 @@
 import React, { useEffect } from "react"
 import Helmet from "react-helmet"
 import $ from "jquery"
+
 import { initiateGsap } from "./gsapAnimations"
-import { animateWithClassSelectors } from "../layout/animateWithClassSelectors"
+import { cssAnimations } from "./cssAnimations"
+import { inView, scrollHome } from "./jsUtils"
 
 import MainNav from "../MainNav"
 import Hero from "../Hero/Hero"
@@ -14,16 +16,11 @@ import TopButton from "../TopButton"
 
 const Layout = () => {
 
-  function inView(section) {
-    const scrollPos = $(window).scrollTop() + 100
-    const elementTop = $(section).offset().top
-    const elementBottom = elementTop + $(section).height()
-    if (scrollPos > elementTop && scrollPos < elementBottom) return true
-    return false
-  }
-
   useEffect(() => {
     if ($(window).scrollspy) $(window).scrollspy('refresh')
+
+    $(window).on('load', () => scrollHome())
+    return $(window).off() // clean up event binding
   })
 
   useEffect(() => {
@@ -54,7 +51,7 @@ const Layout = () => {
       </Helmet>
       <header className="header">
         <MainNav />
-        <Hero inView={inView} animateWithClassSelectors={animateWithClassSelectors} />
+        <Hero inView={inView} cssAnimations={cssAnimations} />
       </header>
       <main>
         <Introductions />
