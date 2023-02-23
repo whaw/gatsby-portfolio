@@ -20,7 +20,7 @@ const Layout = () => {
     if ($(window).scrollspy) $(window).scrollspy('refresh')
 
     $(window).on('load', () => scrollHome())
-    return $(window).off() // clean up event binding
+    return () => $(window).off() // clean up event binding
   })
 
   useEffect(() => {
