@@ -8,7 +8,7 @@
 
     &__h1 {
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 10vw;
 
       span {
         @include text-gradient--primary;
@@ -71,25 +71,20 @@
 
   &__down-button {
     display: none;
+    color: $white;
+    font-size: 4rem;
+    line-height: 0;
+
+    &:hover {
+      color: #ccc;
+      text-decoration: none;
+    }
 
     @include media-breakpoint-up(lg) {
-      position: absolute;
-      left: 0;
-      right: 0;
-      z-index: 2000;
-      color: $white;
-      bottom: 75%;
-      font-size: 4rem;
-      text-align: center;
-
-      &:hover {
-        color: #ccc;
-        text-decoration: none;
-      }
 
       // down button animation
       &.animate {
-        display: block;
+        display: inline-block;
         animation: bounce 1s ease;
 
         @keyframes bounce {
@@ -115,10 +110,6 @@
           }
         }
       }
-    }
-
-    @include media-breakpoint-up(xl) {
-      bottom: 75%;
     }
   }
 
@@ -186,15 +177,23 @@
     left: 0.5%;
     opacity: 0.9;
 
+    &--mobile {
+      bottom: 5%;
+    }
+
     &.animate {
       bottom: 2%;
       transition: all 1.5s ease;
     }
-
   }
 
   &__main {
     z-index: 5;
     margin-top: -60px;
+  }
+
+  &__rider--mobile {
+    z-index: 5;
+    margin-bottom: -50px;
   }
 }
