@@ -4,7 +4,7 @@ import { scrollHome } from "./Layout/jsUtils"
 
 const TopButton = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const isVisibleClass = isVisible ? "show" : null
+  const isVisibleClass = isVisible && "show"
 
   useEffect(() => {
     $(window).on("scroll", function () {

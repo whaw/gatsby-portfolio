@@ -67,7 +67,7 @@ export function animateFrom(elem, direction) {
   }
   elem.style.transform = "translate(" + x + "px, " + y + "px)";
   elem.style.opacity = "0";
-  gsap.fromTo(elem, { x: x, y: y, autoAlpha: 0 }, {
+  gsap.fromTo(elem, { x: x, y: y, autoAlpha: 1 }, { // autoAlpha: 0
     stagger: 1,
     duration: 1.25,
     x: 0,

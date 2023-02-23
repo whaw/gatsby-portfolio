@@ -30,16 +30,16 @@ const Hero = ({ inView, cssAnimations }) => {
 
   return (
     <>
-      <section className="hero position-relative js_hero mt-4 mt-sm-7 mt-md-8 pt-0">
-        <div className="hero__heading js_heading position-absolute text-center w-100 pt-3 pt-sm-4 pt-md-3 pt-lg-4 pt-xl-6">
-          <h1 className="hero__heading__h1 mx-auto mb-0">
+      <section className="hero position-relative js_hero mt-7 mt-sm-4 mt-md-8 pt-0">
+        <div className="hero__heading js_heading position-absolute text-center w-100 pt-1 pt-sm-4 pt-md-3 pt-lg-4 pt-xl-6">
+          <h1 className="hero__heading__h1 mb-0">
             Be <span>responsive</span>
           </h1>
-          <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading pb-2">
+          <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading pb-4">
             ( + some tools I'm working on, now or soon )
           </span>
+          <a href="#introductions" className="hero__down-button js_hero_button">&#x2304;</a>
         </div>
-        <a href="#introductions" className="hero__down-button js_hero_button">&#x2304;</a>
 
         {/* Tool images */}
         {toolAnimDetails[0].images.map((tool) => {
@@ -54,32 +54,45 @@ const Hero = ({ inView, cssAnimations }) => {
           )
         })}
 
-        <div className="mx-auto position-absolute hero__hashTag text-white text-center">
+        <div className="mx-auto position-absolute hero__hashTag text-white text-center d-none d-sm-block">
           #Team
         </div>
 
         {/* Main images */}
         <StaticImage
           src="../../images/hero-truck.png"
-          className="position-absolute hero__truck js_truck"
+          className="position-absolute hero__truck js_truck d-none d-sm-block"
           placeholder="tracedSVG"
           alt="truck and tree"
         />
         <StaticImage
           src="../../images/hero-tree.png"
-          className="position-absolute hero__tree js_tree"
+          className="position-absolute hero__tree js_tree d-none d-sm-block"
           placeholder="tracedSVG"
           alt="the media, trees and benches"
         />
         <StaticImage
           src="../../images/hero-sketch.png"
-          className="position-absolute hero__sketch js_sketch"
+          className="position-absolute hero__sketch js_sketch d-none d-sm-block"
           placeholder="tracedSVG"
           alt="sketch of a road less traveled"
         />
         <StaticImage
           src="../../images/hero-main2.png"
-          className="hero__main mt-8 mt-md-8"
+          className="hero__main mt-8 mt-md-8 d-none d-sm-block"
+          placeholder="tracedSVG"
+          alt="media scene"
+        />
+        {/* mobile ------------- */}
+        <StaticImage
+          src="../../images/hero-mobile-sketch.png"
+          className="position-absolute hero__sketch--mobile js_sketch-mobile mt-8 mt-md-8 d-sm-none gs_reveal gs_reveal_fromRight"
+          placeholder="tracedSVG"
+          alt="media scene"
+        />
+        <StaticImage
+          src="../../images/hero-mobile-rider.png"
+          className="hero__rider--mobile mt-8 mt-md-8 d-sm-none gs_reveal gs_reveal_fromLeft"
           placeholder="tracedSVG"
           alt="media scene"
         />
