@@ -6,6 +6,7 @@ export function initiateGsap() {
   gsap.core.globals("ScrollTrigger", ScrollTrigger)
 
   // give sections motion on scroll
+  // ----------------------------
   gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
     hide(elem); // assure that the element is hidden when scrolled into view
 
@@ -17,6 +18,35 @@ export function initiateGsap() {
       onEnterBack: function () { animateFrom(elem, -1) },
       onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
     });
+
+
+    // scrollspy
+    // ----------------------------
+    let sections = document.getElementsByTagName("section")
+    sections = gsap.utils.toArray(sections).splice(1)
+
+    let navLinks = document.getElementsByClassName("nav-link")
+    navLinks = gsap.utils.toArray(navLinks)
+
+    function toggleActiveClass(id, i) {
+      navLinks.forEach(link => link.classList.remove("active"))
+      !!id && navLinks[i].classList.add("active")
+    }
+
+    sections.forEach((section, i) => {
+      gsap.from(section, {
+        scrollTrigger: {
+          trigger: section,
+          markers: false,
+          start: "top +=15%",
+          end: "bottom +=10%",
+          onEnter: () => toggleActiveClass(section.id, i),
+          onEnterBack: () => toggleActiveClass(section.id, i),
+          onLeave: () => toggleActiveClass(null, i),
+          onLeaveBack: () => toggleActiveClass(null, i),
+        },
+      });
+    })
   });
 
   // give hero images motion on scroll
@@ -81,3 +111,10 @@ export function animateFrom(elem, direction) {
 export function hide(elem) {
   gsap.set(elem, { autoAlpha: 0 });
 }
+
+
+
+
+// https://greensock.com/forums/topic/28326-scrolltrigger-scrollto-active-class-on-nav/
+// https://greensock.com/forums/topic/24527-active-nav-item-styling-using-both-scrolltrigger-and-click/
+// https://greensock.com/forums/topic/33041-scrollspy/

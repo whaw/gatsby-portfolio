@@ -17,14 +17,12 @@ import TopButton from "../TopButton"
 const Layout = () => {
 
   useEffect(() => {
-    if ($(window).scrollspy) $(window).scrollspy('refresh')
-
     $(window).on('load', () => scrollHome())
     return () => $(window).off() // clean up event binding
   })
 
   useEffect(() => {
-    // add a delay to allow gsap to load
+    // add delay to allow gsap to load
     setTimeout(() => {
       if (typeof window !== `undefined`) {
         initiateGsap()
@@ -42,12 +40,7 @@ const Layout = () => {
         <title>A Working Copy</title>
         <meta name="googlebot" content="noindex" />
         {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
-        <body
-          data-spy="scroll"
-          data-target="#main-nav"
-          data-offset="50"
-          className="px-md-3"
-        />
+        <body className="px-md-3" />
       </Helmet>
       <header className="header">
         <MainNav />
