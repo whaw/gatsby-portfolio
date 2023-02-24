@@ -39,7 +39,7 @@ export function initiateGsap() {
           trigger: section,
           markers: false,
           start: "top +=15%",
-          end: "bottom +=10%",
+          end: "bottom +=15%",
           onEnter: () => toggleActiveClass(section.id, i),
           onEnterBack: () => toggleActiveClass(section.id, i),
           onLeave: () => toggleActiveClass(null, i),
@@ -111,10 +111,3 @@ export function animateFrom(elem, direction) {
 export function hide(elem) {
   gsap.set(elem, { autoAlpha: 0 });
 }
-
-
-
-
-// https://greensock.com/forums/topic/28326-scrolltrigger-scrollto-active-class-on-nav/
-// https://greensock.com/forums/topic/24527-active-nav-item-styling-using-both-scrolltrigger-and-click/
-// https://greensock.com/forums/topic/33041-scrollspy/
