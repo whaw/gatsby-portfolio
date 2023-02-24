@@ -1,6 +1,5 @@
 import React from "react"
 import { scrollHome } from "./Layout/jsUtils"
-import "bootstrap"
 
 const MainNav = () => {
   const navLinks = [
