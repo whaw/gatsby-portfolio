@@ -14,7 +14,7 @@ const AboutSite = () => (
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10 gs_reveal">
           <h5>Situation</h5>
-          <p>This site aims to provide a real world example of work, where learning and delivering on new technology is the norm, and movinging fast and iterating are the drivers.</p>
+          <p>This site aims to provide a real world example of work, where learning and delivering on new technology is the norm, and movinging fast and iterating are the drivers – to achieve something greater...</p>
           <p className="mb-0">
             <strong>This site serves a few purposes:</strong></p>
           <ol>

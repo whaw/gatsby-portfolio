@@ -27,7 +27,7 @@ const Layout = () => {
       if (typeof window !== `undefined`) {
         initiateGsap()
       }
-    }, 100)
+    }, 1000)
   }, [])
 
   return (

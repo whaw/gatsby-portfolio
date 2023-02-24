@@ -32,13 +32,13 @@ const Hero = ({ inView, cssAnimations }) => {
     <>
       <section className="hero position-relative js_hero mt-7 mt-sm-4 mt-md-8 pt-0">
         <div className="hero__heading js_heading position-absolute text-center w-100 pt-1 pt-sm-4 pt-md-3 pt-lg-4 pt-xl-6">
-          <h1 className="hero__heading__h1 mb-0">
+          <h1 className="hero__heading__h1 mb-0 gs_reveal">
             Be <span>responsive</span>
           </h1>
-          <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading pb-4">
+          <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading pb-4  gs_reveal">
             ( + some tools I'm working on, now or soon )
           </span>
-          <a href="#introductions" className="hero__down-button js_hero_button">&#x2304;</a>
+          <a href="#introductions" className="hero__down-button js_hero_button gs_reveal">&#x2304;</a>
         </div>
 
         {/* Tool images */}
