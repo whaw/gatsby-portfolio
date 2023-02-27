@@ -31,7 +31,7 @@ const AboutSite = () => (
           <h5>Approach</h5>
           <ul>
             <li>Gatsby, for a fast, secure and performant site.</li>
-            <li>Bootstrap to shorten development time (to focus on higher value areas).</li>
+            <li>Bootstrap to shorten development time (to focus on areas of higher returns).</li>
             <li>Animations are with JQuery, CSS, JSON and later added GSAP.</li>
             <li>GraphQL (Gatsby's perferred method) to declaratively query data.</li>
             <li>Prettier and ESLint to keep everything clean and error free.</li>

@@ -1,6 +1,6 @@
-// Controls tools' animation
-// - shows/hides text on hover,
-// - floats in place
+// Tool icon animations
+// 1) shows/hides text on hover
+// 2) floats in place
 
 @mixin generate-tools-animation($top, $left, $name) {
   @keyframes tools-animation--#{$name} {

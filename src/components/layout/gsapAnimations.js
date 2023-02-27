@@ -19,8 +19,7 @@ export function initiateGsap() {
       onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
     });
 
-
-    // scrollspy
+    // scrollspy for main nav (highlight current link)
     // ----------------------------
     let sections = document.getElementsByTagName("section")
     sections = gsap.utils.toArray(sections).splice(1)
@@ -50,6 +49,7 @@ export function initiateGsap() {
   });
 
   // give hero images motion on scroll
+  // -------------------------
   const HERO_SCROLLTRIGGER_CONFIG = {
     trigger: ".hero",
     start: "top top",
@@ -83,7 +83,8 @@ export function initiateGsap() {
     })
 }
 
-// left and right animation helpers for sections
+// section helpers: motion left, motion right and hide
+// ----------------------
 export function animateFrom(elem, direction) {
   direction = direction || 1;
   var x = 0,

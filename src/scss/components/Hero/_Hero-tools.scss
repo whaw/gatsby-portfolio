@@ -1,10 +1,11 @@
-@import "./Hero-tools-partial";
+@import "./Hero-tools-partial"; // icon floating and text aside (on hover) animations
 
-$tools-aside-left: -230px;
+$tools-aside-left: -200px;
 
 .hero {
 
-  // tool anim elements
+  // tool icon elements
+  // positioning eg.: @include generate-tools-animation(4%, 12%, gatsby);
   &__tool {
     left: 0;
     z-index: 800;
@@ -116,7 +117,8 @@ $tools-aside-left: -230px;
       }
 
       aside {
-        @include media-breakpoint-between(sm, lg) {
+        @include media-breakpoint-between(sm, xl) {
+          // position aside text to tht left of the tool icon
           margin-left: $tools-aside-left;
         }
       }
@@ -142,7 +144,7 @@ $tools-aside-left: -230px;
       }
 
       aside {
-        @include media-breakpoint-between(sm, lg) {
+        @include media-breakpoint-between(sm, xl) {
           margin-left: $tools-aside-left;
         }
       }
