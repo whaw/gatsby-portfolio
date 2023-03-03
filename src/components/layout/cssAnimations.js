@@ -13,18 +13,18 @@ export function cssAnimations(animDetails) {
       :
       animate(elementsToAnimate, elementDelay)
   }
+}
 
-  function animate(elementsToAnimate, elementDelay) {
-    elementsToAnimate.forEach((el, i) => {
-      const isGroup = !!elementDelay ? true : false
+function animate(elementsToAnimate, elementDelay) {
+  elementsToAnimate.forEach((el, i) => {
+    const isGroup = !!elementDelay ? true : false
 
-      // add delay for group animations, between elements
-      isGroup ?
-        setTimeout(function () {
-          $(el).addClass("animate")
-        }, i * elementDelay)
-        :
+    // add delay for group animations, between elements
+    isGroup ?
+      setTimeout(function () {
         $(el).addClass("animate")
-    })
-  }
+      }, i * elementDelay)
+      :
+      $(el).addClass("animate")
+  })
 }

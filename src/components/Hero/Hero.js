@@ -8,7 +8,7 @@ const heroAnimDetails = require("/src/data/heroAnim")
 const animContainer = ".js_hero"
 
 const Hero = ({ inView, cssAnimations }) => {
-  const [hasPlayed, setHasPlayed] = useState(false)
+  const [hasAnimPlayed, setAnimPlayed] = useState(false)
 
   // bind events or initiate hero animations
   // and cleanup
@@ -21,10 +21,10 @@ const Hero = ({ inView, cssAnimations }) => {
   const bindEvents = () => $(window).on("load resize scroll", () => inView(animContainer) && initiateHeroAnimations())
 
   function initiateHeroAnimations() {
-    if (!hasPlayed) {
+    if (!hasAnimPlayed) {
       cssAnimations(heroAnimDetails)
       cssAnimations(toolAnimDetails)
-      setHasPlayed(true)
+      setAnimPlayed(true)
     }
   }
 
@@ -42,14 +42,14 @@ const Hero = ({ inView, cssAnimations }) => {
         </div>
 
         {/* Tool images */}
-        {toolAnimDetails[0].images.map((tool) => {
+        {toolAnimDetails[0].images.map(({ selector, name, description, status, image }) => {
           return (
             <Tool
-              selector={tool.selector}
-              name={tool.name}
-              description={tool.description}
-              status={tool.status}
-              key={tool.image}
+              selector={selector}
+              name={name}
+              description={description}
+              status={status}
+              key={image}
             />
           )
         })}

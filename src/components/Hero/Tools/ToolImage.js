@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import GatsbyImage from "gatsby-image"
 
-const Image = (props) => {
+const Image = ({ selector, alt }) => {
   const data = useStaticQuery(graphql`
     query getToolImages {
       allToolsAnimJson {
@@ -26,14 +26,14 @@ const Image = (props) => {
 
   /* find matching image in collection to props.selector  */
   const imageNode = data.allToolsAnimJson.edges[0].node.images.find((n) => {
-    return n.selector.includes(props.selector)
+    return n.selector.includes(selector)
   }
   )
   if (!imageNode) {
     return null
   }
   return (
-    <><GatsbyImage key={props.selector} alt={props.alt} fluid={imageNode.image.childImageSharp.fluid} /></>
+    <><GatsbyImage key={selector} alt={alt} fluid={imageNode.image.childImageSharp.fluid} /></>
   )
 }
 
