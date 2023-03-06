@@ -33,7 +33,6 @@ const AboutSite = () => (
             <li>Gatsby, for a fast, secure and performant site.</li>
             <li>Bootstrap to shorten development time (to focus on areas of higher returns).</li>
             <li>Animations are with JQuery, CSS, JSON and later added GSAP.</li>
-            <li>GraphQL (Gatsby's perferred method) to declaratively query data.</li>
             <li>Prettier and ESLint to keep everything clean and error free.</li>
           </ul>
           <h5>Result</h5>
@@ -43,7 +42,7 @@ const AboutSite = () => (
             dryer code.
           </p>
           <p>
-            Increased knowledge in Gatsby, React, GraphQL, GSAP and JavaScript.
+            Increased knowledge in Gatsby, React, GSAP and JavaScript.
           </p>
           <p>
             <a

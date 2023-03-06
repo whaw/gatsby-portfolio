@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Tool from "./Tools/Tool"
 import $ from "jquery"
 
-const toolAnimDetails = require("/src/data/toolsAnim")
+import Tools from "./Tools/Tools"
 const heroAnimDetails = require("/src/data/heroAnim")
+const toolAnimDetails = require("/src/data/toolsAnim")
 const animContainer = ".js_hero"
 
 const Hero = ({ inView, cssAnimations }) => {
   const [hasAnimPlayed, setAnimPlayed] = useState(false)
 
-  // bind events or initiate hero animations
-  // and cleanup
   useEffect(() => {
+    // bind events or initiate hero animations
     !inView(animContainer) ? bindEvents() : initiateHeroAnimations()
     return () => $(window).off() // cleanup event binding
     // eslint-disable-next-line
@@ -41,18 +40,7 @@ const Hero = ({ inView, cssAnimations }) => {
           <a href="#introductions" className="hero__down-button js_hero_button gs_reveal">&#x2304;</a>
         </div>
 
-        {/* Tool images */}
-        {toolAnimDetails[0].images.map(({ selector, name, description, status, image }) => {
-          return (
-            <Tool
-              selector={selector}
-              name={name}
-              description={description}
-              status={status}
-              key={image}
-            />
-          )
-        })}
+        <Tools toolAnimDetails={toolAnimDetails} />
 
         <div className="mx-auto position-absolute hero__hashTag text-white text-center d-none d-sm-block">
           #Team

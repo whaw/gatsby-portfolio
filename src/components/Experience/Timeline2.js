@@ -1,21 +1,24 @@
 import React from 'react'
-import experiences from '../../data/experiences'
+import experienceData from '../../data/experience'
 
 const Timeline2 = () => {
+  const experience =
+    experienceData.map(({ company, period, copy }, i) => {
+      const colPosClass = i % 2 === 0 ? 'left' : 'right'
+      return (
+        <div key={company} className={`container position-relative gs_reveal ${colPosClass}`}>
+          <div className="content">
+            <h5>{company}</h5>
+            <p className="text-secondary">{period}</p>
+            <span dangerouslySetInnerHTML={{ __html: copy }} />
+          </div>
+        </div>
+      )
+    })
+
   return (
     <div className="timeline position-relative">
-      {experiences.map((experience, i) => {
-        const colPosClass = i % 2 === 0 ? 'left' : 'right'
-        return (
-          <div key={i} className={`container position-relative gs_reveal ${colPosClass}`}>
-            <div className="content">
-              <h5>{experience.company}</h5>
-              <p className="text-secondary">{experience.period}</p>
-              <span dangerouslySetInnerHTML={{ __html: experience.copy }} />
-            </div>
-          </div>
-        )
-      })}
+      {experience}
     </div>
   )
 }
