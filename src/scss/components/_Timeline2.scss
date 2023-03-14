@@ -16,7 +16,7 @@
     z-index: 1;
   }
 
-  .container {
+  &__container {
     margin: 0;
     padding: 10px 40px;
     background-color: inherit;
@@ -92,7 +92,7 @@
       left: 31px;
     }
 
-    .container {
+    &__container {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
