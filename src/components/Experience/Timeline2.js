@@ -1,9 +1,9 @@
 import React from 'react'
-import experienceData from '../../data/experience'
+import experienceJson from '../../data/experience'
 
 const Timeline2 = () => {
   const experience =
-    experienceData.map(({ company, period, copy }, i) => {
+    experienceJson.map(({ company, period, copy }, i) => {
       const colPosClass = i % 2 === 0 ? 'left' : 'right'
       return (
         <div key={company} className={`container position-relative gs_reveal ${colPosClass}`}>

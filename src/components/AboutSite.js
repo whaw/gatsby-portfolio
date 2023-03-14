@@ -1,15 +1,8 @@
 import React from "react"
+import Section from "./Section"
 
 const AboutSite = () => (
-  <section id="about-this-site">
-    <div className="container section__header gs_reveal">
-      <div className="row">
-        <div className="col text-center">
-          <h2>About this site</h2>
-          <h3 className="text-secondary">A closer look</h3>
-        </div>
-      </div>
-    </div>
+  <Section sectionId="about-this-site" header="About this site" subHeader="A closer look">
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10 gs_reveal">
@@ -57,7 +50,7 @@ const AboutSite = () => (
         </div>
       </div>
     </div>
-  </section >
+  </Section >
 )
 
 export default AboutSite

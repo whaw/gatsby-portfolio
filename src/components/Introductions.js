@@ -1,18 +1,11 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import Section from "./Section"
 
 const Introductions = () => {
   return (
     <>
-      <section id="introductions">
-        <div className="container section__header gs_reveal">
-          <div className="row">
-            <div className="col text-center">
-              <h2>Introductions</h2>
-              <h3 className="text-secondary">What I bring</h3>
-            </div>
-          </div>
-        </div>
+      <Section sectionId="introductions" header="Introductions" subHeader="What I bring">
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5 pb-10 pb-lg-0 gs_reveal">
@@ -115,7 +108,7 @@ const Introductions = () => {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     </>
   )
 }

@@ -32,9 +32,7 @@ const Image = ({ selector, alt }) => {
   if (!imageNode) {
     return null
   }
-  return (
-    <><GatsbyImage key={selector} alt={alt} fluid={imageNode.image.childImageSharp.fluid} /></>
-  )
+  return <GatsbyImage key={selector} alt={alt} fluid={imageNode.image.childImageSharp.fluid} />
 }
 
 export default Image

@@ -1,14 +1,11 @@
 import React from "react"
+import Section from "./Section"
 
 const Contact = () => (
-  <section id="contact">
-    <div className="container section__header gs_reveal">
+  <Section sectionId="contact" header="Give me a&nbsp;shout" subHeader="Looking for great teams">
+    <div className="container">
       <div className="row">
-        <div className="col text-center">
-          <h2>Give me a&nbsp;shout</h2>
-          <h3 className="text-secondary pb-10 pb-md-15">
-            Looking for great teams
-          </h3>
+        <div className="col-12 pt-md-10 pb-5 pb-md-10 text-center gs_reveal">
           <p className="small text-secondary">
             Contact information has been provided as part of
             application&nbsp;submissions.
@@ -18,7 +15,7 @@ const Contact = () => (
         </div>
       </div>
     </div>
-  </section>
+  </Section>
 )
 
 export default Contact
