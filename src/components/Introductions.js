@@ -16,7 +16,7 @@ const Introductions = () => {
                 alt="author"
                 style={{ width: "25%", float: "left" }}
               />
-              <div className="h5" role="heading" aria-level="5">William has a wide view on the web development process.</div>
+              <div className="h5">William has a wide view on the web development process.</div>
               <p>
                 As a young lad he left Vancouver, with a Diploma in Advanced Web
                 Content Development in hand, for the bright lights of Toronto.

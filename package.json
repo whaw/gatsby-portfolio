@@ -14,7 +14,6 @@
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
     "bootstrap": "4.6.2",
     "gatsby": "^5.0.0",
     "gatsby-image": "^3.11.0",
