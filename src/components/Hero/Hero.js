@@ -37,7 +37,7 @@ const Hero = ({ inView, cssAnimations }) => {
           <span className="small d-none d-sm-block text-secondary js_heading hero__sub-heading pb-4  gs_reveal">
             ( + some tools I'm working on, now or soon )
           </span>
-          <a href="#introductions" className="hero__down-button js_hero_button gs_reveal">&#x2304;</a>
+          <a href="#introductions" role="button" aria-label="down button" className="hero__down-button js_hero_button gs_reveal">&#x2304;</a>
         </div>
 
         <Tools toolAnimDetails={toolAnimDetails} />

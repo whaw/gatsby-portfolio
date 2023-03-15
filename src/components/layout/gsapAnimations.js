@@ -28,8 +28,14 @@ export function initiateGsap() {
     navLinks = gsap.utils.toArray(navLinks)
 
     function toggleActiveClass(id, i) {
-      navLinks.forEach(link => link.classList.remove("active"))
-      !!id && navLinks[i].classList.add("active")
+      navLinks.forEach(link => {
+        link.classList.remove("active")
+        link.removeAttribute("aria-current")
+      })
+      if (!!id) {
+        navLinks[i].classList.add("active")
+        navLinks[i].setAttribute("aria-current", "section")
+      }
     }
 
     sections.forEach((section, i) => {

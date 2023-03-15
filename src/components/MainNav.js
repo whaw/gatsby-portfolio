@@ -11,7 +11,7 @@ const MainNav = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
+      <nav role="navigation" aria-label="Main" className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
         <button className="navbar-brand js_logo pb-2 border-0 bg-white text-left p-0" onClick={() => scrollHome()}>
           <span className="logo mb-2 d-block">A Working Copy</span>
           <span className="d-none d-md-inline-block">William Haw &mdash; Front-End Developer
