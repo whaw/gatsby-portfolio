@@ -8,7 +8,7 @@ const Timeline2 = () => {
       return (
         <div key={company} className={`timeline__container position-relative gs_reveal ${colPosClass}`}>
           <div className="content">
-            <h5>{company}</h5>
+            <div role="heading" aria-level="5" className="h5">{company}</div>
             <p className="text-secondary">{period}</p>
             <span dangerouslySetInnerHTML={{ __html: copy }} />
           </div>
