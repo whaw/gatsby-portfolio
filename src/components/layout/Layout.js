@@ -37,7 +37,7 @@ const Layout = () => {
           lang: "en",
         }}
       >
-        <title>A Working Copy</title>
+        <title>A Working Copy – a portfolio site and sandbox for experimentation and discovery</title>
         <meta name="googlebot" content="noindex" />
         {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
         <body className="px-md-3" />
