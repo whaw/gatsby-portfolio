@@ -10,7 +10,7 @@ const Tool = ({ selector, name, description, status }) => {
 
   useEffect(() => {
     const thisTool = $(toolRef.current)
-    if (!!thisTool) thisTool.on("mouseover mouseout", handleOnMouseEvent)
+    if (!!thisTool) thisTool.on("mouseover mouseout focus focusout", handleOnMouseEvent)
     return () => thisTool.unbind()
   })
 

@@ -24,7 +24,6 @@ const TopButton = () => {
     <button
       onClick={() => scrollHome()}
       className={`btn btn-secondary top-button ${isVisibleClass}`}
-      role="button"
     >
       Top
     </button>

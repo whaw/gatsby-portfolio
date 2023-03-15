@@ -17,6 +17,7 @@ $tools-aside-left: -200px;
     display: none;
 
     &.animate {
+
       &:hover {
         z-index: 810;
         animation-play-state: paused;
