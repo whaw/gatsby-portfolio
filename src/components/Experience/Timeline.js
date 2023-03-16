@@ -17,8 +17,14 @@ const Timeline2 = () => {
     })
 
   return (
-    <div className="timeline position-relative">
-      {experience}
+    <div className="container">
+      <div className="row">
+        <div className="col-12">
+          <div className="timeline position-relative">
+            {experience}
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

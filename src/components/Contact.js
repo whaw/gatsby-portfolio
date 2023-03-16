@@ -1,5 +1,5 @@
 import React from "react"
-import Section from "./Section"
+import Section from "./layout/Section"
 
 const Contact = () => (
   <Section sectionId="contact" header="Give me a&nbsp;shout" subHeader="Looking for great teams">
