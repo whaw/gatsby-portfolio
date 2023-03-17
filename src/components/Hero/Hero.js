@@ -30,7 +30,7 @@ const Hero = ({ inView, cssAnimations }) => {
   return (
     <>
       <section className="hero position-relative js_hero mt-7 mt-sm-4 mt-md-8 pt-0">
-        <div className="hero__heading js_heading position-absolute text-center w-100 pt-1 pt-sm-4 pt-md-3 pt-lg-4 pt-xl-6">
+        <div className="hero__heading js_heading position-absolute text-center w-100 pt-2 pt-sm-4 pt-md-3 pt-lg-4 pt-xl-6">
           <h1 className="hero__heading__h1 mb-0 gs_reveal">
             Be <span>responsive</span>
           </h1>
