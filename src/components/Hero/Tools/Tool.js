@@ -17,13 +17,8 @@ const Tool = ({ selector, name, description, status }) => {
   const handleOnMouseEvent = () => setIsDescriptionOpen(!isDescriptionOpen)
 
   return (
-    <div
-      className={`position-absolute hero__tool js_tool hero__${toolClassName} ${selector}`}
-    >
-      <button
-        ref={toolRef}
-        className={`border-0 p-0 bg-transparent hero__${toolClassName}__button`}
-      >
+    <div className={`position-absolute hero__tool js_tool hero__${toolClassName} ${selector}`} >
+      <button ref={toolRef} className={`border-0 p-0 bg-transparent hero__${toolClassName}__button`}>
         <ToolImage selector={selector} alt={name} />
       </button>
       <ToolDescription

@@ -24,19 +24,13 @@ const Layout = () => {
   useEffect(() => {
     // add delay to allow gsap to load
     setTimeout(() => {
-      if (typeof window !== `undefined`) {
-        initiateGsap()
-      }
+      if (typeof window !== `undefined`) initiateGsap()
     }, 1000)
   }, [])
 
   return (
     <>
-      <Helmet
-        htmlAttributes={{
-          lang: "en",
-        }}
-      >
+      <Helmet htmlAttributes={{ lang: "en" }}>
         <title>A Working Copy – a portfolio site and sandbox for experimentation and discovery</title>
         <meta name="googlebot" content="noindex" />
         {/* Structured Data is omitted for SEO, given the temporary nature of the site */}

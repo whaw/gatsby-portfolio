@@ -23,15 +23,10 @@ const Image = ({ selector, alt }) => {
         }
       }
     `)
-
   /* find matching image in collection to props.selector  */
-  const imageNode = data.allToolsAnimJson.edges[0].node.images.find((n) => {
-    return n.selector.includes(selector)
-  }
+  const imageNode = data.allToolsAnimJson.edges[0].node.images.find((n) => n.selector.includes(selector)
   )
-  if (!imageNode) {
-    return null
-  }
+  if (!imageNode) return null
   return <GatsbyImage key={selector} alt={alt} fluid={imageNode.image.childImageSharp.fluid} />
 }
 
