@@ -36,7 +36,7 @@ const MainNav = () => {
         >
           <ul id="main-nav" className="nav navbar-nav mr-auto">
             {navLinks.map((link, i) => (
-              <li key={link.to} className="nav-item">
+              <li key={link.label} className="nav-item">
                 <a className="nav-link" href={link.to}>
                   {link.label}
                 </a>
