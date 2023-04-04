@@ -18,11 +18,11 @@ const Layout = () => {
 
   useEffect(() => {
     $(window).on('load', () => scrollHome())
-    return () => $(window).off() // clean up event binding
+    return () => $(window).off()
   })
 
   useEffect(() => {
-    // add delay to allow gsap to load
+    /* add delay to allow gsap to load */
     setTimeout(() => {
       if (typeof window !== `undefined`) initiateGsap()
     }, 1000)

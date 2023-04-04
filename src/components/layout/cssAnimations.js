@@ -1,11 +1,11 @@
 import $ from "jquery"
 
 export function cssAnimations(animDetails) {
-  // initiate animations
+  /* initiate animations */
   for (const { selector, delay, elementDelay = null } of animDetails) {
     const elementsToAnimate = $(selector).toArray()
 
-    // add delay before animation
+    /* if there is a delay, add it before the animation */
     !!delay ?
       setTimeout(() => {
         animate(elementsToAnimate, elementDelay)
@@ -17,9 +17,9 @@ export function cssAnimations(animDetails) {
 
 function animate(elementsToAnimate, elementDelay) {
   elementsToAnimate.forEach((el, i) => {
-    const isGroup = !!elementDelay ? true : false
+    const isGroup = elementDelay !== null ? true : false
 
-    // add delay for group animations, between elements
+    /* if this is a group of eleemnts, add the delay between element animations */
     isGroup ?
       setTimeout(function () {
         $(el).addClass("animate")

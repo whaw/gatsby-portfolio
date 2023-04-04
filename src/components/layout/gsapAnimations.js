@@ -5,8 +5,8 @@ export function initiateGsap() {
   gsap.registerPlugin(ScrollTrigger)
   gsap.core.globals("ScrollTrigger", ScrollTrigger)
 
-  // give sections motion on scroll
-  // ----------------------------
+  /* give sections motion on scroll
+     ---------------------------- */
   gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
     hide(elem); // assure that the element is hidden when scrolled into view
 
@@ -19,8 +19,8 @@ export function initiateGsap() {
       onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
     });
 
-    // scrollspy for main nav (highlight current link)
-    // ----------------------------
+    /* scrollspy for main nav (highlight current link)
+       ---------------------------- */
     let sections = document.getElementsByTagName("section")
     sections = gsap.utils.toArray(sections).splice(1)
 
@@ -54,8 +54,8 @@ export function initiateGsap() {
     })
   });
 
-  // give hero images motion on scroll
-  // -------------------------
+  /* give hero images motion on scroll
+     ------------------------- */
   const HERO_SCROLLTRIGGER_CONFIG = {
     trigger: ".hero",
     start: "top top",
@@ -89,8 +89,8 @@ export function initiateGsap() {
     })
 }
 
-// section helpers: motion left, motion right and hide
-// ----------------------
+/* section helpers: motion left, motion right and hide
+   ---------------------- */
 export function animateFrom(elem, direction) {
   direction = direction || 1;
   var x = 0,

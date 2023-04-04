@@ -1,14 +1,14 @@
 import $ from "jquery"
 
 export function scrollHome() {
-  // go to top of page
-  window.scrollTo(0, 0)
+  /* go to top of page */
+  $(window).scrollTop(0, 0)
 
-  // cleanup url from previous requests
-  var uri = window.location.toString();
+  /* cleanup url from previous requests */
+  var uri = $(window).attr("location").toString();
 
   if (uri.indexOf("#") > 0) {
-    var clean_uri = uri.substring(0, uri.indexOf("#"));
+    var clean_uri = uri.slice(0, uri.indexOf("#"));
     window.history.replaceState({}, document.title, clean_uri);
   }
 }

@@ -11,10 +11,10 @@ const Hero = ({ inView, cssAnimations }) => {
   const [hasAnimPlayed, setAnimPlayed] = useState(false)
 
   useEffect(() => {
-    // bind events or initiate hero animations
+    /* bind events or initiate hero animations */
     !inView(animContainer) ? bindEvents() : initiateHeroAnimations()
     return () => $(window).off() // cleanup event binding
-    // eslint-disable-next-line
+    /* eslint-disable-next-line */
   }, [])
 
   const bindEvents = () => $(window).on("load resize scroll", () => inView(animContainer) && initiateHeroAnimations())
