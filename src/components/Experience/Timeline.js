@@ -1,5 +1,6 @@
-import React from 'react'
-import experienceJson from '../../data/experience'
+import React from "react"
+import experienceJson from "../../data/experience"
+import DOMPurify from "dompurify"
 
 const Timeline2 = () => {
   const experience =
@@ -10,7 +11,7 @@ const Timeline2 = () => {
           <div className="content">
             <div role="heading" aria-level="5" className="h5">{company}</div>
             <p className="text-secondary">{period}</p>
-            <span dangerouslySetInnerHTML={{ __html: copy }} />
+            <span dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(copy) }} />
           </div>
         </div>
       )
