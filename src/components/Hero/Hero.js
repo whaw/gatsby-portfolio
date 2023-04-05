@@ -11,9 +11,8 @@ const Hero = ({ inView, cssAnimations }) => {
   const [hasAnimPlayed, setAnimPlayed] = useState(false)
 
   useEffect(() => {
-    /* bind events or initiate hero animations */
     !inView(animContainer) ? bindEvents() : initiateHeroAnimations()
-    return () => $(window).off() // cleanup event binding
+    return () => $(window).off()
     /* eslint-disable-next-line */
   }, [])
 

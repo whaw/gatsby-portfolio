@@ -1,30 +1,32 @@
 import $ from "jquery"
 
-export function cssAnimations(animDetails) {
-  /* initiate animations */
-  for (const { selector, delay, elementDelay = null } of animDetails) {
-    const elementsToAnimate = $(selector).toArray()
+export const cssAnimations = animDetails => {
+  function handleDelay(animDetails) {
+    for (const { selector, delay = null, groupElementDelay = null } of animDetails) {
+      /* Grab all the elments that match the selector –
+      could be one or a group. */
+      const elements = $(selector).toArray()
 
-    /* if there is a delay, add it before the animation */
-    !!delay ?
-      setTimeout(() => {
-        animate(elementsToAnimate, elementDelay)
-      }, delay)
-      :
-      animate(elementsToAnimate, elementDelay)
+      delay !== null ?
+        setTimeout(() => {
+          handleGroupDelay(elements, groupElementDelay)
+        }, delay) /* add delay before animation */
+        :
+        handleGroupDelay(elements, groupElementDelay)
+    }
   }
-}
+  function handleGroupDelay(elements, groupElementDelay) {
+    elements.forEach((el, i) => {
+      const isGroup = groupElementDelay !== null ? true : false
 
-function animate(elementsToAnimate, elementDelay) {
-  elementsToAnimate.forEach((el, i) => {
-    const isGroup = elementDelay !== null ? true : false
-
-    /* if this is a group of eleemnts, add the delay between element animations */
-    isGroup ?
-      setTimeout(function () {
-        $(el).addClass("animate")
-      }, i * elementDelay)
-      :
-      $(el).addClass("animate")
-  })
+      isGroup ?
+        setTimeout(function () {
+          animate(el)
+        }, i * groupElementDelay) /* add delay between elements */
+        :
+        animate(el)
+    })
+  }
+  const animate = (el) => $(el).addClass("animate")
+  handleDelay(animDetails)
 }

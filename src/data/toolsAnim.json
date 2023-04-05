@@ -2,7 +2,7 @@
   {
     "selector": ".js_tool",
     "delay": 4000,
-    "elementDelay": 200,
+    "groupElementDelay": 200,
     "images": [
       {
         "selector": "hero__javascript js_javascript",
