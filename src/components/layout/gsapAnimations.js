@@ -6,9 +6,9 @@ export function initiateGsap() {
   gsap.core.globals("ScrollTrigger", ScrollTrigger)
 
   /* give sections motion on scroll
-     ---------------------------- */
+  ---------------------------- */
   gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
-    hide(elem); // assure that the element is hidden when scrolled into view
+    hide(elem);
 
     ScrollTrigger.create({
       trigger: elem,
@@ -16,15 +16,15 @@ export function initiateGsap() {
       lazy: false,
       onEnter: function () { animateFrom(elem) },
       onEnterBack: function () { animateFrom(elem, -1) },
-      onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
+      onLeave: function () { hide(elem) }
     });
 
-    /* scrollspy for main nav (highlight current link)
-       ---------------------------- */
+    /* main nav > add active class to link when in section
+    ---------------------------- */
     let sections = document.getElementsByTagName("section")
     sections = gsap.utils.toArray(sections).splice(1)
 
-    let navLinks = document.getElementsByClassName("nav-link")
+    let navLinks = document.getElementById("main-nav-links").getElementsByClassName("nav-link")
     navLinks = gsap.utils.toArray(navLinks)
 
     function toggleActiveClass(id, i) {
@@ -32,7 +32,7 @@ export function initiateGsap() {
         link.classList.remove("active")
         link.removeAttribute("aria-current")
       })
-      if (!!id) {
+      if (id !== null) {
         navLinks[i].classList.add("active")
         navLinks[i].setAttribute("aria-current", "section")
       }
@@ -55,7 +55,7 @@ export function initiateGsap() {
   });
 
   /* give hero images motion on scroll
-     ------------------------- */
+  ------------------------- */
   const HERO_SCROLLTRIGGER_CONFIG = {
     trigger: ".hero",
     start: "top top",

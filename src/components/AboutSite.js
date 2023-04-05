@@ -1,5 +1,5 @@
 import React from "react"
-import Section from "./layout/Section"
+import Section from "./Layout/Section"
 
 const AboutSite = () => (
   <Section sectionId="about-this-site" header="About this site" subHeader="A closer look">

@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Section from "./layout/Section"
+import Section from "./Layout/Section"
 
 const Introductions = () => {
   return (

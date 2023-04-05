@@ -19,7 +19,7 @@ const Layout = () => {
   useEffect(() => {
     $(window).on('load', () => scrollHome())
     return () => $(window).off()
-  })
+  }, [])
 
   useEffect(() => {
     /* add delay to allow gsap to load */
