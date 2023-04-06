@@ -29,7 +29,7 @@ const AboutSite = () => (
           <div role="heading" aria-level="5" className="h5">Result</div>
           <p>Site is fast and consistent, code and image optimizations are automated and dynamic content abstracted for dryer code.</p>
           <p>Increased knowledge in Gatsby, React, GraphQL, GSAP and JavaScript.</p>
-          <p><a
+          <p className="text-center text-md-left"><a
             href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link"
             className="btn btn-primary mt-2"
             role="button"
