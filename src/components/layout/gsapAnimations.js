@@ -8,7 +8,7 @@ export function initiateGsap() {
   /* give sections motion on scroll
   ---------------------------- */
   gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
-    hide(elem);
+    hide(elem)
 
     ScrollTrigger.create({
       trigger: elem,
@@ -17,7 +17,7 @@ export function initiateGsap() {
       onEnter: function () { animateFrom(elem) },
       onEnterBack: function () { animateFrom(elem, -1) },
       onLeave: function () { hide(elem) }
-    });
+    })
 
     /* main nav > add active class to link when in section
     ---------------------------- */
@@ -50,11 +50,42 @@ export function initiateGsap() {
           onLeave: () => toggleActiveClass(null, i),
           onLeaveBack: () => toggleActiveClass(null, i),
         },
-      });
+      })
     })
-  });
 
-  /* give hero images motion on scroll
+    /* scroll animation helpers when entering and leaving sections –
+    motion left, motion right and hide
+    ---------------------- */
+    function animateFrom(elem, direction) {
+      direction = direction || 1
+      var x = 0,
+        y = direction * 100
+      if (elem.classList.contains("gs_reveal_fromLeft")) {
+        x = -100
+        y = 0
+      } else if (elem.classList.contains("gs_reveal_fromRight")) {
+        x = 100
+        y = 0
+      }
+      elem.style.transform = "translate(" + x + "px, " + y + "px)";
+      elem.style.opacity = "0"
+      gsap.fromTo(elem, { x: x, y: y, autoAlpha: 1 }, { // autoAlpha: 0
+        stagger: 1,
+        duration: 1.25,
+        x: 0,
+        y: 0,
+        autoAlpha: 1,
+        ease: "expo",
+        overwrite: "auto"
+      })
+    }
+
+    function hide(elem) {
+      gsap.set(elem, { autoAlpha: 0 })
+    }
+  })
+
+  /* animate hero images when entering and leaving section
   ------------------------- */
   const HERO_SCROLLTRIGGER_CONFIG = {
     trigger: ".hero",
@@ -87,34 +118,4 @@ export function initiateGsap() {
       ease: "none",
       scrollTrigger: HERO_SCROLLTRIGGER_CONFIG
     })
-}
-
-/* section helpers: motion left, motion right and hide
-   ---------------------- */
-export function animateFrom(elem, direction) {
-  direction = direction || 1;
-  var x = 0,
-    y = direction * 100;
-  if (elem.classList.contains("gs_reveal_fromLeft")) {
-    x = -100;
-    y = 0;
-  } else if (elem.classList.contains("gs_reveal_fromRight")) {
-    x = 100;
-    y = 0;
-  }
-  elem.style.transform = "translate(" + x + "px, " + y + "px)";
-  elem.style.opacity = "0";
-  gsap.fromTo(elem, { x: x, y: y, autoAlpha: 1 }, { // autoAlpha: 0
-    stagger: 1,
-    duration: 1.25,
-    x: 0,
-    y: 0,
-    autoAlpha: 1,
-    ease: "expo",
-    overwrite: "auto"
-  });
-}
-
-export function hide(elem) {
-  gsap.set(elem, { autoAlpha: 0 });
 }
