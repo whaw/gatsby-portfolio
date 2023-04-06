@@ -1,7 +1,6 @@
 import $ from "jquery"
 
 export function scrollHome() {
-  /* go to top of page */
   $(window).scrollTop(0, 0)
 
   /* cleanup url from previous requests */

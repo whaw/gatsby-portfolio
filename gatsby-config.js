@@ -59,4 +59,4 @@ module.exports = {
       __key: "data",
     },
   ],
-};
+}

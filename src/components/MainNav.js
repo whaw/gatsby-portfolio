@@ -1,5 +1,5 @@
 import React from "react"
-import { scrollHome } from "./Layout/jsUtils"
+import { scrollHome } from "./jsUtils"
 
 const MainNav = () => {
   const navLinks = [
