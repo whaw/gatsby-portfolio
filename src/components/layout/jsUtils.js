@@ -3,13 +3,15 @@ import $ from "jquery"
 export const jsUtils = (function () {
   const scrollHome = function () {
     $(window).scrollTop(0, 0)
+    cleanUrl()
+  }
+  const cleanUrl = function () {
+    /* Remove everything after root url */
+    const url = $(window).attr("location").toString();
 
-    // cleanup url of previous requests
-    var uri = $(window).attr("location").toString();
-
-    if (uri.indexOf("#") > 0) {
-      var clean_uri = uri.slice(0, uri.indexOf("#"));
-      window.history.replaceState({}, document.title, clean_uri);
+    if (url.indexOf("#") > 0) {
+      const newUrl = url.slice(0, url.indexOf("#"));
+      window.history.replaceState({}, document.title, newUrl);
     }
   }
   const inView = function (section) {
@@ -20,8 +22,8 @@ export const jsUtils = (function () {
     return false
   }
   return {
-    scrollHome: scrollHome,
-    inView: inView
+    scrollHome,
+    inView
   }
 })()
 
