@@ -4,30 +4,18 @@ import { siteJsUtils } from "./Layout/siteJsUtils"
 
 const TopButton = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const isVisibleClass = isVisible && "show"
 
   useEffect(() => {
     $(window).on("scroll", function () {
-      isVisibleCheck()
+      siteJsUtils.inView(".js_hero") ? setIsVisible(false) : setIsVisible(true)
     })
-  })
+    return () => window.Off()
+  }, [])
 
-  const isVisibleCheck = () => {
-    const screenTop = $(window).scrollTop()
-    const headerHeight = $(".header").outerHeight()
-    if (screenTop && headerHeight) {
-      screenTop > headerHeight ? setIsVisible(true) : setIsVisible(false)
-    }
-  }
-
-  return (
-    <button
-      onClick={() => siteJsUtils.scrollHome()}
-      className={`btn btn-secondary top-button ${isVisibleClass}`}
-    >
-      Top
-    </button>
-  )
+  return <button
+    onClick={() => siteJsUtils.scrollHome()}
+    className={`btn btn-secondary top-button ${isVisible && "show"}`}
+  > Top</button>
 }
 
 export default TopButton
