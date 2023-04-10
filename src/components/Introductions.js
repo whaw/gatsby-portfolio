@@ -1,11 +1,12 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Section from "./layout/Section"
+import SectionHeader from "./layout/SectionHeader"
 
 const Introductions = () => {
   return (
     <>
-      <Section sectionId="introductions" header="Introductions" subHeader="What I bring">
+      <section id="introductions">
+        <SectionHeader header="Introductions" subHeader="What I bring" />
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5 pb-10 pb-lg-0 gs_reveal">
@@ -107,7 +108,7 @@ const Introductions = () => {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
     </>
   )
 }

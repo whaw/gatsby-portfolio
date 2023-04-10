@@ -1,11 +1,12 @@
 import React from "react"
 import Timeline from "./Timeline"
-import Section from "../layout/Section"
+import SectionHeader from "../layout/SectionHeader"
 
 const Experience = () => (
-  <Section sectionId="experience" header="Experience" subHeader="At a glance" sectionClass="bg-light section--with-background">
+  <section id="experience" className="bg-light section--with-background">
+    <SectionHeader header="Experience" subHeader="At a glance" />
     <Timeline />
-  </Section>
+  </section>
 )
 
 export default Experience

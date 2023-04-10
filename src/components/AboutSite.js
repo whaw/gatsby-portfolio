@@ -1,8 +1,9 @@
 import React from "react"
-import Section from "./layout/Section"
+import SectionHeader from "./layout/SectionHeader"
 
 const AboutSite = () => (
-  <Section sectionId="about-this-site" header="About this site" subHeader="A closer look">
+  <section id="about-this-site">
+    <SectionHeader header="About this site" subHeader="A closer look" />
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10 gs_reveal">
@@ -40,7 +41,7 @@ const AboutSite = () => (
         </div>
       </div>
     </div>
-  </Section>
+  </section>
 )
 
 export default AboutSite
