@@ -4,7 +4,7 @@ import $ from "jquery"
 
 import { initiateGsap } from "./gsapAnimations"
 import { cssAnimations } from "./cssAnimations"
-import { inView, scrollHome } from "./jsUtils"
+import { jsUtils } from "./jsUtils"
 
 import MainNav from "../MainNav"
 import Hero from "../Hero/Hero"
@@ -17,7 +17,7 @@ import TopButton from "../TopButton"
 const Layout = () => {
 
   useEffect(() => {
-    $(window).on('load', () => scrollHome())
+    $(window).on('load', () => jsUtils.scrollHome())
     return () => $(window).off()
   }, [])
 
@@ -38,7 +38,7 @@ const Layout = () => {
       </Helmet>
       <header className="header">
         <MainNav />
-        <Hero inView={inView} cssAnimations={cssAnimations} />
+        <Hero inView={jsUtils.inView} cssAnimations={cssAnimations} />
       </header>
       <main>
         <Introductions />

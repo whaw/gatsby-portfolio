@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import $ from "jquery"
-import { scrollHome } from "./Layout/jsUtils"
+import { jsUtils } from "./Layout/jsUtils"
 
 const TopButton = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -22,7 +22,7 @@ const TopButton = () => {
 
   return (
     <button
-      onClick={() => scrollHome()}
+      onClick={() => jsUtils.scrollHome()}
       className={`btn btn-secondary top-button ${isVisibleClass}`}
     >
       Top
