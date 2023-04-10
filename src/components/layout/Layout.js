@@ -22,10 +22,7 @@ const Layout = () => {
   }, [])
 
   useEffect(() => {
-    /* add delay to allow gsap to load */
-    setTimeout(() => {
-      if (typeof window !== `undefined`) initiateGsap()
-    }, 1000)
+    typeof window !== `undefined` && initiateGsap()
   }, [])
 
   return (
