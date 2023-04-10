@@ -1,6 +1,6 @@
 import $ from "jquery"
 
-export const jsUtils = (function () {
+export const siteJsUtils = (function () {
   const scrollHome = function () {
     $(window).scrollTop(0, 0)
     cleanUrl()

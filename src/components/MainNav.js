@@ -1,5 +1,5 @@
 import React from "react"
-import { jsUtils } from "./layout/jsUtils"
+import { siteJsUtils } from "./Layout/siteJsUtils"
 
 const MainNav = () => {
   const navLinks = [
@@ -11,7 +11,7 @@ const MainNav = () => {
 
   return (
     <nav role="navigation" aria-label="Main" className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
-      <button className="navbar-brand js_logo pb-2 border-0 bg-white text-left p-0" onClick={() => jsUtils.scrollHome()}>
+      <button className="navbar-brand js_logo pb-2 border-0 bg-white text-left p-0" onClick={() => siteJsUtils.scrollHome()}>
         <span className="logo mb-2 d-block">A Working Copy</span>
         <span className="d-none d-md-inline-block">William Haw &mdash; Front-End Developer
           <span className="d-none d-xl-inline-block">, Outdoor Enthusiast</span>
