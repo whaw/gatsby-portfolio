@@ -2,12 +2,12 @@ import $ from "jquery"
 
 export const siteJsUtils = (function () {
   const scrollHome = function () {
-    $(window).scrollTop(0, 0)
+    window.location.href = "#home"
     cleanUrl()
   }
   const cleanUrl = function () {
     /* Remove everything after root url */
-    const url = $(window).attr("location").toString();
+    const url = window.location.href.toString();
 
     if (url.indexOf("#") > 0) {
       const newUrl = url.slice(0, url.indexOf("#"));

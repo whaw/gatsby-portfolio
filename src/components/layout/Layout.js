@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import Helmet from "react-helmet"
+import $ from "jquery"
 
 import { initiateGsap } from "./gsapAnimations"
 import { cssAnimations } from "./cssAnimations"
@@ -16,7 +17,11 @@ import TopButton from "../TopButton"
 const Layout = () => {
 
   useEffect(() => {
-    typeof window !== `undefined` && initiateGsap()
+    if (typeof window !== `undefined`) {
+      initiateGsap()
+      $(window).on("load", () => siteJsUtils.scrollHome())
+    }
+    return () => $(window).off()
   }, [])
 
   return (
@@ -25,7 +30,7 @@ const Layout = () => {
         <title>A Working Copy – a portfolio site and sandbox for experimentation and discovery</title>
         <meta name="googlebot" content="noindex" />
         {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
-        <body className="px-md-3" />
+        <body id="home" className="px-md-3" />
       </Helmet>
       <header className="header">
         <MainNav />
