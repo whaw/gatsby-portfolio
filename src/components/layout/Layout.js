@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import Helmet from "react-helmet"
-import $ from "jquery"
 
 import { initiateGsap } from "./gsapAnimations"
 import { cssAnimations } from "./cssAnimations"
@@ -15,11 +14,6 @@ import Contact from "../Contact"
 import TopButton from "../TopButton"
 
 const Layout = () => {
-
-  useEffect(() => {
-    $(window).on('load', () => siteJsUtils.scrollHome())
-    return () => $(window).off()
-  }, [])
 
   useEffect(() => {
     typeof window !== `undefined` && initiateGsap()

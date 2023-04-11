@@ -1,6 +1,6 @@
 import React from "react"
-import MainNavLinks from "./MainNavLinks"
 import BrandButton from "./BrandButton"
+import MainNavLinks from "./MainNavLinks"
 
 const MainNav = () => {
 
