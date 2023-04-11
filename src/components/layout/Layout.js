@@ -6,7 +6,7 @@ import { initiateGsap } from "./gsapAnimations"
 import { cssAnimations } from "./cssAnimations"
 import { siteJsUtils } from "./siteJsUtils"
 
-import MainNav from "../MainNav"
+import MainNav from "../MainNav/MainNav"
 import Hero from "../Hero/Hero"
 import Introductions from "../Introductions"
 import AboutSite from "../AboutSite"

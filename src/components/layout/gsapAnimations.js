@@ -22,17 +22,17 @@ export function initiateGsap() {
     /* main nav > add active class to link when in section
     ---------------------------- */
     let sections = document.getElementsByTagName("section")
-    sections = gsap.utils.toArray(sections).splice(1)
+    sections = gsap.utils.toArray(sections).splice(1) /* ommit hero section */
 
     let navLinks = document.getElementById("main-nav-links").getElementsByClassName("nav-link")
     navLinks = gsap.utils.toArray(navLinks)
 
-    function toggleActiveClass(id, i) {
+    function toggleActiveClass(sectionId = null, i) {
       navLinks.forEach(link => {
         link.classList.remove("active")
         link.removeAttribute("aria-current")
       })
-      if (id !== null) {
+      if (sectionId !== null) {
         navLinks[i].classList.add("active")
         navLinks[i].setAttribute("aria-current", "section")
       }

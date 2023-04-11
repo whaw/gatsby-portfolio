@@ -6,7 +6,7 @@ const TopButton = () => {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    $(window).on("scroll", function () {
+    $(window).on("scroll resize", function () {
       siteJsUtils.inView(".js_hero") ? setIsVisible(false) : setIsVisible(true)
     })
     return () => window.Off()
