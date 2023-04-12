@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Helmet from "react-helmet"
 import $ from "jquery"
 
@@ -12,17 +12,20 @@ import Introductions from "../Introductions"
 import AboutSite from "../AboutSite"
 import Experience from "../Experience/Experience"
 import Contact from "../Contact"
-import TopButton from "../TopButton"
+import Button from "../Button"
 
 const Layout = () => {
+  const [showTopButton, setShowTopButton] = useState(false)
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
       initiateGsap()
-      $(window).on("load beforeunload", () => siteJsUtils.scrollHome())
+      $(window).on("load", () => siteJsUtils.scrollHome())
+      $(window).on("load scroll resize", () => siteJsUtils.inView(".js_hero") ? setShowTopButton(false) : setShowTopButton(true))
     }
     return () => $(window).off()
   }, [])
+
 
   return (
     <>
@@ -41,9 +44,9 @@ const Layout = () => {
         <AboutSite />
         <Experience />
         <Contact />
-        <TopButton />
+        <Button label="Top" classes={`btn-secondary top-button ${showTopButton && "show"}`} method={siteJsUtils.scrollHome} />
       </main>
-      <footer className="border-top pt-2 pb-5 mb-5 pl-3 text-secondary small">
+      <footer x="border-top pt-2 pb-5 mb-5 pl-3 text-secondary small">
         &copy; {new Date().getFullYear()}
       </footer>
     </>
