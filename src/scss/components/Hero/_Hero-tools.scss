@@ -76,7 +76,7 @@ $tools-aside-left: -200px;
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(2%, 24%, webpack);
+        @include generate-tools-animation(3%, 24%, webpack);
         @include tools-animation-chain(webpack);
       }
     }
@@ -168,7 +168,7 @@ $tools-aside-left: -200px;
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(13%, 70%, redux);
+        @include generate-tools-animation(14%, 72%, redux);
         @include tools-animation-chain(redux);
       }
 

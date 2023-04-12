@@ -3,7 +3,6 @@ import BrandButton from "./BrandButton"
 import MainNavLinks from "./MainNavLinks"
 
 const MainNav = () => {
-
   return (
     <nav role="navigation" aria-label="Main" className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
       <BrandButton />

@@ -9,7 +9,7 @@ const TopButton = () => {
     $(window).on("scroll resize", function () {
       siteJsUtils.inView(".js_hero") ? setIsVisible(false) : setIsVisible(true)
     })
-    return () => window.Off()
+    return () => window.off()
   }, [])
 
   return <button

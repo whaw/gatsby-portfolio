@@ -15,7 +15,6 @@ const MainNavLinks = () => {
       <ul id="main-nav-links" className="nav navbar-nav mr-auto">
         {links.map(({ label, to }) => (
           <li key={to} className="nav-item">
-            {/* handle nav link active state in gsapAnimations.js */}
             <HashLink className="nav-link" to={to} smooth>{label}</HashLink>
           </li>
         ))}

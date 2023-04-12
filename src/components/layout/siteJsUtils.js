@@ -2,11 +2,11 @@ import $ from "jquery"
 
 export const siteJsUtils = (function () {
   const scrollHome = function () {
-    window.location.href = "#home"
+    window.location.hash = "#home"
     cleanUrl()
   }
   const cleanUrl = function () {
-    /* Remove everything after root url */
+    /* Remove the # and everything after in the url */
     const url = window.location.href.toString();
 
     if (url.indexOf("#") > 0) {

@@ -19,7 +19,7 @@ const Layout = () => {
   useEffect(() => {
     if (typeof window !== `undefined`) {
       initiateGsap()
-      $(window).on("load", () => siteJsUtils.scrollHome())
+      $(window).on("load beforeunload", () => siteJsUtils.scrollHome())
     }
     return () => $(window).off()
   }, [])

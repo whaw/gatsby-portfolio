@@ -4,7 +4,8 @@
   overflow: hidden;
 
   &__heading {
-    z-index: 1000;
+    z-index: 700;
+    overflow: visible;
 
     &__h1 {
       font-weight: 700;
