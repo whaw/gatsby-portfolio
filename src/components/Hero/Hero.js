@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, memo } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import $ from "jquery"
 
@@ -7,7 +7,7 @@ const heroAnimDetails = require("/src/data/heroAnim")
 const toolAnimDetails = require("/src/data/toolsAnim")
 const animContainer = ".js_hero"
 
-const Hero = ({ inView, cssAnimations }) => {
+const Hero = memo(({ inView, cssAnimations }) => {
   const [hasAnimPlayed, setAnimPlayed] = useState(false)
 
   useEffect(() => {
@@ -74,6 +74,6 @@ const Hero = ({ inView, cssAnimations }) => {
       />
     </section>
   )
-}
+})
 
 export default Hero
