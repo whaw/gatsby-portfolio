@@ -20,9 +20,7 @@ const Layout = () => {
   useEffect(() => {
     if (typeof window !== `undefined`) {
       initiateGsap()
-      $(window).on("load", () => siteJsUtils.scrollHome())
     }
-    return () => $(window).off()
   }, [])
 
   return (
@@ -46,8 +44,14 @@ const Layout = () => {
           <Button label="Top" classes="btn-secondary" method={siteJsUtils.scrollHome} />
         </TopButton>
       </main>
-      <footer x="border-top pt-2 pb-5 mb-5 pl-3 text-secondary small">
-        &copy; {new Date().getFullYear()}
+      <footer className="border-top pt-2 pb-5 mb-5 pl-3 text-secondary small">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              &copy; {new Date().getFullYear()}
+            </div>
+          </div>
+        </div>
       </footer>
     </>
   )

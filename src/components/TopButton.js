@@ -11,8 +11,11 @@ const TopButton = ({ children }) => {
     }
     return () => $(window).off()
   }, [])
+
   return (
-    <div className={`top-button ${showTopButton && "show"}`}> {children}</div>
+    <div className={`top-button ${showTopButton && "show"}`}>
+      {children}
+    </div>
   )
 }
 
