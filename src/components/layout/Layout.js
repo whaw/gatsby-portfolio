@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import Helmet from "react-helmet"
-import $ from "jquery"
 
 import { initiateGsap } from "./gsapAnimations"
 import { cssAnimations } from "./cssAnimations"
@@ -45,13 +44,7 @@ const Layout = () => {
         </TopButton>
       </main>
       <footer className="border-top pt-2 pb-5 mb-5 pl-3 text-secondary small">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              &copy; {new Date().getFullYear()}
-            </div>
-          </div>
-        </div>
+        &copy; {new Date().getFullYear()}
       </footer>
     </>
   )
