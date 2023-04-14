@@ -8,7 +8,7 @@ const AboutSite = () => (
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10 gs_reveal">
           <div role="heading" aria-level="5" className="h5">Situation</div>
-          <p>This site aims to provide a real world example of work, where learning and delivering on new technology is the norm, and movinging fast and iterating are the drivers – to achieve something greater...</p>
+          <p>This site aims to provide a real world example of work, where learning and delivering on new technology is the norm, and movinging fast, breaking things, fixing them and doing it again, to bring more value and achieve something greater are the drivers.</p>
           <p className="mb-0"><strong>This site serves a few purposes:</strong></p>
           <ol>
             <li>to provide a sample of execution and delivery,</li>
@@ -21,15 +21,15 @@ const AboutSite = () => (
         <div className="col-12 col-md-6 gs_reveal">
           <div role="heading" aria-level="5" className="h5">Approach</div>
           <ul>
-            <li>Gatsby, for a fast, secure and performant site.</li>
-            <li>Bootstrap to shorten development time (to focus on areas of higher returns).</li>
+            <li>Gatsby, React's platform for a static site.</li>
+            <li>Bootstrap for faster development and a cleaner, leaner code base.</li>
             <li>Animations are with JQuery, CSS, JSON and later added GSAP.</li>
-            <li>GraphQL (Gatsby's perferred method) to declaratively query data.</li>
+            <li>With JS best practices, ES6 and React performance optimizations</li>
             <li>Prettier and ESLint to keep everything clean and error free.</li>
           </ul>
           <div role="heading" aria-level="5" className="h5">Result</div>
-          <p>Site is fast and consistent, code and image optimizations are automated and dynamic content abstracted for dryer code.</p>
-          <p>Increased knowledge in Gatsby, React, GraphQL, GSAP and JavaScript.</p>
+          <p>Site is fast, consistent, accessible and performant.</p>
+          <p>Increased knowledge in Gatsby, React and JavaScript.</p>
           <p className="text-center text-md-left"><a
             href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link"
             className="btn btn-primary mt-2"
