@@ -1,14 +1,7 @@
 .stats {
   .stat {
     line-height: .8em;
-
-    @include media-breakpoint-up(lg) {
-      font-size: 6rem;
-    }
-
-    @include media-breakpoint-up(xl) {
-      font-size: 8rem;
-    }
+    font-weight: 400;
 
     &_unit {
       font-size: 15px;
