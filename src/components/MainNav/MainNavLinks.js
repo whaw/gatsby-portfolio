@@ -5,7 +5,6 @@ import { HashLink } from "react-router-hash-link"
 const MainNavLinks = () => {
   const links = [
     { label: "Introductions", to: "#introductions" },
-    { label: "About this site", to: "#about-this-site" },
     { label: "Experience", to: "#experience" },
     { label: "Contact", to: "#contact" }
   ]

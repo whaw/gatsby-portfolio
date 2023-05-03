@@ -8,7 +8,6 @@ import { siteJsUtils } from "./siteJsUtils"
 import MainNav from "../MainNav/MainNav"
 import Hero from "../Hero/Hero"
 import Introductions from "../Introductions"
-import AboutSite from "../AboutSite"
 import Experience from "../Experience/Experience"
 import Contact from "../Contact"
 import TopButton from "../TopButton"
@@ -24,7 +23,7 @@ const Layout = () => {
 
   return (
     <>
-      <Helmet htmlAttributes={{ lang: "en" }}>
+      <Helmet htmlAttributes={{ lang: "en-GB" }}>
         <title>A Working Copy – a portfolio site and sandbox for experimentation and discovery</title>
         <meta name="googlebot" content="noindex" />
         {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
@@ -36,7 +35,6 @@ const Layout = () => {
       </header>
       <main>
         <Introductions />
-        <AboutSite />
         <Experience />
         <Contact />
         <TopButton>
