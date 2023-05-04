@@ -23,20 +23,20 @@
         "image": "./images/tools/bootstrap.png",
         "name": "Bootstrap",
         "description": "Bootstrap is a feature-packed frontend toolkit, that allows you to build and customize with Sass, utilize a prebuilt grid system and components to quickly build, prototype.",
-        "experience": "Senior, 10 yrs"
+        "experience": "Intermediate, 4 yrs"
       },
       {
         "selector": "hero__react js_react",
         "image": "./images/tools/react.png",
         "name": "React",
         "description": "React allows developers to create small to large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple.",
-        "experience": "Junior, 1 yr"
+        "experience": "Junior, 1 yr<br /> and working to be greater!"
       },
       {
         "selector": "hero__sass js_sass",
         "image": "./images/tools/sass.png",
-        "name": "Sass",
-        "description": "Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.",
+        "name": "SASS",
+        "description": "SASS lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.",
         "experience": "Intermediate, 5 yrs"
       },
       {

@@ -9,6 +9,7 @@ import MainNav from "../MainNav/MainNav"
 import Hero from "../Hero/Hero"
 import Introductions from "../Introductions"
 import Experience from "../Experience/Experience"
+import AboutSite from "../AboutSite"
 import Contact from "../Contact"
 import TopButton from "../TopButton"
 import Button from "../Button"
@@ -24,7 +25,7 @@ const Layout = () => {
   return (
     <>
       <Helmet htmlAttributes={{ lang: "en-GB" }}>
-        <title>A Working Copy – a portfolio site and sandbox for experimentation and discovery</title>
+        <title>A working copy – for experimentation and discovery</title>
         <meta name="googlebot" content="noindex" />
         {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
         <body id="home" className="px-md-3" />
@@ -36,6 +37,7 @@ const Layout = () => {
       <main>
         <Introductions />
         <Experience />
+        <AboutSite />
         <Contact />
         <TopButton>
           <Button label="Top" classes="btn-secondary" method={siteJsUtils.scrollHome} />

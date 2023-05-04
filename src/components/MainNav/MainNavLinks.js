@@ -6,6 +6,7 @@ const MainNavLinks = () => {
   const links = [
     { label: "Introductions", to: "#introductions" },
     { label: "Experience", to: "#experience" },
+    { label: "About this site", to: "#about-this-site" },
     { label: "Contact", to: "#contact" }
   ]
 

@@ -53,7 +53,7 @@ const Introductions = () => {
                 <ul className="list-unstyled">
                   <li>HTML5, CSS3, SCSS</li>
                   <li>JavaScript, JQuery</li>
-                  <li>Design patterns, REST</li>
+                  <li>Design patterns</li>
                   <li>React, Gatsby</li>
                   <li>Bootstrap, Twig</li>
                   <li>Responsive Design</li>
