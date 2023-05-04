@@ -62,7 +62,7 @@ const Introductions = () => {
                   <li>WordPress, Craft</li>
                   <li>A/B testing, SEO</li>
                   <li>Web accessibility</li>
-                  <li>HTML Email</li>
+                  <li>HTML email</li>
                   <li>and...</li>
                 </ul>
                 <div className="skills__closing-text">

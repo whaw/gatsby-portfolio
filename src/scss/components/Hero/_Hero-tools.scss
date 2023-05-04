@@ -7,7 +7,7 @@ $tools-aside-left: -200px;
 
   // tool icon elements
   // positioning is in pecentages, for example:
-  // @include generate-tools-animation(4%, 12%, gatsby);
+  // @include generate-tools-animation(4%, 12%, bootstrap);
 
   &__tool {
     left: 0;
@@ -15,6 +15,8 @@ $tools-aside-left: -200px;
     top: 1.5%;
     left: -100px;
     display: none;
+
+    transform: skewX(20deg);
 
     &.animate {
 
@@ -39,7 +41,7 @@ $tools-aside-left: -200px;
     }
   }
 
-  &__gatsby {
+  &__bootstrap {
     &__button {
       @include media-breakpoint-up(sm) {
         width: 14px;
@@ -53,22 +55,22 @@ $tools-aside-left: -200px;
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(4%, 12%, gatsby);
-        @include tools-animation-chain(gatsby);
+        @include generate-tools-animation(5%, 15%, bootstrap);
+        @include tools-animation-chain(bootstrap);
       }
 
 
     }
   }
 
-  &__webpack {
+  &__css {
     &__button {
       @include media-breakpoint-up(sm) {
         width: 17px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 20px;
+        width: 30px;
       }
 
     }
@@ -76,8 +78,8 @@ $tools-aside-left: -200px;
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(3%, 24%, webpack);
-        @include tools-animation-chain(webpack);
+        @include generate-tools-animation(3%, 26%, css);
+        @include tools-animation-chain(css);
       }
     }
   }
@@ -89,41 +91,15 @@ $tools-aside-left: -200px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 20px;
+        width: 30px;
       }
     }
 
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(14%, 19%, javascript);
+        @include generate-tools-animation(13%, 20%, javascript);
         @include tools-animation-chain(javascript);
-      }
-    }
-  }
-
-  &__graphql {
-    &__button {
-      @include media-breakpoint-up(sm) {
-        width: 15px;
-      }
-
-      @include media-breakpoint-up(lg) {
-        width: 22px;
-      }
-    }
-
-    &.animate {
-      @include media-breakpoint-up(sm) {
-        display: block;
-        @include generate-tools-animation(3%, 86%, graphql);
-        @include tools-animation-chain(graphql);
-      }
-
-      aside {
-        @include media-breakpoint-between(sm, xl) {
-          margin-left: $tools-aside-left;
-        }
       }
     }
   }
@@ -154,22 +130,22 @@ $tools-aside-left: -200px;
     }
   }
 
-  &__redux {
+  &__sass {
     &__button {
       @include media-breakpoint-up(sm) {
         width: 17px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 22px;
+        width: 25px;
       }
     }
 
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(14%, 72%, redux);
-        @include tools-animation-chain(redux);
+        @include generate-tools-animation(14%, 72%, sass);
+        @include tools-animation-chain(sass);
       }
 
       aside {
@@ -180,22 +156,22 @@ $tools-aside-left: -200px;
     }
   }
 
-  &__typescript {
+  &__html {
     &__button {
       @include media-breakpoint-up(sm) {
         width: 15px;
       }
 
       @include media-breakpoint-up(lg) {
-        width: 20px;
+        width: 25px;
       }
     }
 
     &.animate {
       @include media-breakpoint-up(sm) {
         display: block;
-        @include generate-tools-animation(3%, 75%, typescript);
-        @include tools-animation-chain(typescript);
+        @include generate-tools-animation(4%, 77%, html);
+        @include tools-animation-chain(html);
       }
     }
 

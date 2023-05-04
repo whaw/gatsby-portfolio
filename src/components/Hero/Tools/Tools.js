@@ -2,13 +2,13 @@ import React from "react"
 import Tool from "./Tool"
 
 const Tools = ({ toolAnimDetails }) => {
-  return toolAnimDetails[0].images.map((props) =>
+  return toolAnimDetails[0].images.map(({ selector, name, description, experience, image }) =>
     <Tool
-      selector={props.selector}
-      name={props.name}
-      description={props.description}
-      status={props.status}
-      key={props.image}
+      selector={selector}
+      name={name}
+      description={description}
+      experience={experience}
+      key={image}
     />)
 }
 
