@@ -3,7 +3,7 @@ import ToolImage from "./ToolImage"
 import ToolDescription from "./ToolDescription"
 import $ from "jquery"
 
-const Tool = ({ selector, name, description, experience }) => {
+const Tool = ({ selector, name, description }) => {
   const toolClassName = name.toLowerCase()
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false)
   const toolRef = useRef(null)
@@ -24,7 +24,6 @@ const Tool = ({ selector, name, description, experience }) => {
       <ToolDescription
         name={name}
         description={description}
-        experience={experience}
         isOpen={isDescriptionOpen}
       />
     </div>

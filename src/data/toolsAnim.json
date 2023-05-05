@@ -8,43 +8,37 @@
         "selector": "hero__javascript js_javascript",
         "image": "./images/tools/javascript.png",
         "name": "JavaScript",
-        "description": "JavaScript is one of the core technologies of the World Wide Web. It enables interactive web pages and is an essential part of web applications.",
-        "experience": "Intermediate, 3 yrs"
+        "description": "JavaScript is one of the core technologies of the World Wide Web. It enables interactive web pages and is an essential part of web applications."
       },
       {
         "selector": "hero__css js_css",
         "image": "./images/tools/css.png",
         "name": "CSS",
-        "description": "CSS stands for Cascading Style Sheets. It describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once.",
-        "experience": "Senior, 15 yrs"
+        "description": "CSS stands for Cascading Style Sheets. It describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once."
       },
       {
         "selector": "hero__bootstrap js_bootstrap",
         "image": "./images/tools/bootstrap.png",
         "name": "Bootstrap",
-        "description": "Bootstrap is a feature-packed frontend toolkit, that allows you to build and customize with Sass, utilize a prebuilt grid system and components to quickly build, prototype.",
-        "experience": "Intermediate, 4 yrs"
+        "description": "Bootstrap is a feature-packed frontend toolkit, that allows you to build and customize with Sass, utilize a prebuilt grid system and components to quickly build, prototype."
       },
       {
         "selector": "hero__react js_react",
         "image": "./images/tools/react.png",
         "name": "React",
-        "description": "React allows developers to create small to large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple.",
-        "experience": "Junior, 1 yr<br /> and working to be greater!"
+        "description": "React allows developers to create small to large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple."
       },
       {
         "selector": "hero__sass js_sass",
         "image": "./images/tools/sass.png",
         "name": "SASS",
-        "description": "SASS lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.",
-        "experience": "Intermediate, 5 yrs"
+        "description": "SASS lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff."
       },
       {
         "selector": "hero__html js_html",
         "image": "./images/tools/html.png",
         "name": "HTML",
-        "description": "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.",
-        "experience": "Senior, 15 yrs"
+        "description": "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript."
       }
     ]
   }

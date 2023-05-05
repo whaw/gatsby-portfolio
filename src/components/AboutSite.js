@@ -2,7 +2,7 @@ import React from "react"
 import SectionHeader from "./layout/SectionHeader"
 
 const AboutSite = () => (
-  <section id="about-this-site" className="border border-top-0 border-left-0 border-right-0 pb-10 pb-sm-15">
+  <section id="about-this-site">
     <SectionHeader header="About this site" subHeader="A closer look" />
     <div className="container">
       <div className="row">
