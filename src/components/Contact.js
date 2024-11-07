@@ -1,5 +1,5 @@
 import React from "react"
-import SectionHeader from "./layout/SectionHeader"
+import SectionHeader from "./SectionHeader"
 
 const Contact = () => (
   <section id="contact">

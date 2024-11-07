@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Layout from '../components/Layout/Layout'
-import '../scss/styles.scss'
+import Layout from 'components/Layout'
+import 'scss/styles.scss'
 
 const IndexPage = () => {
 
@@ -15,17 +15,9 @@ const IndexPage = () => {
 
   return (
     <>
-      {domLoaded && <Layout></Layout>}
+      {domLoaded && <Layout />}
     </>
   )
 }
 
 export default IndexPage
-
-// export const Head = () => {
-//   return (
-//     <>
-//       <title>Home Page</title>
-//     </>
-//   )
-// }

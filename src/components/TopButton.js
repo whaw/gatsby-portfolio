@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import $ from "jquery"
-import { siteJsUtils } from "./Layout/siteJsUtils"
+import { siteJsUtils } from "js/siteJsUtils"
 
 const TopButton = ({ children }) => {
   const [showTopButton, setShowTopButton] = useState(false)

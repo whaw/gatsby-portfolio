@@ -1,5 +1,5 @@
 import React from 'react'
-import { siteJsUtils } from "../Layout/siteJsUtils"
+import { siteJsUtils } from "js/siteJsUtils"
 
 const BrandButton = () => {
   return (

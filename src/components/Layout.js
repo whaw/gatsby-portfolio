@@ -1,18 +1,18 @@
 import React, { useEffect } from "react"
 import Helmet from "react-helmet"
 
-import { initiateGsap } from "./gsapAnimations"
-import { cssAnimations } from "./cssAnimations"
-import { siteJsUtils } from "./siteJsUtils"
+import { initiateGsap } from "js/gsapAnimations"
+import { cssAnimations } from "js/cssAnimations"
+import { siteJsUtils } from "js/siteJsUtils"
 
-import MainNav from "../MainNav/MainNav"
-import Hero from "../Hero/Hero"
-import Introductions from "../Introductions"
-import Experience from "../Experience/Experience"
-import AboutSite from "../AboutSite"
-import Contact from "../Contact"
-import TopButton from "../TopButton"
-import Button from "../Button"
+import MainNav from "./MainNav"
+import Hero from "./Hero"
+import Introductions from "./Introductions"
+import Experience from "./Experience"
+import AboutSite from "./AboutSite"
+import Contact from "./Contact"
+import TopButton from "./TopButton"
+import Button from "./Button"
 
 const Layout = () => {
 

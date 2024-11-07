@@ -1,7 +1,7 @@
 import React, { memo } from "react"
-import Timeline from "./Timeline"
-import SectionHeader from "../layout/SectionHeader"
-import Stats from "../Stats"
+import Timeline from "./TimelineSection"
+import SectionHeader from "./SectionHeader"
+import Stats from "./Stats"
 
 const Experience = memo(() => (
   <section id="experience" className="bg-light section--with-background">

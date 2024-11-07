@@ -2,14 +2,14 @@ import React, { useState, useEffect, memo } from "react"
 import $ from "jquery"
 
 import HeroHeaders from "./HeroHeaders"
-import Tools from "./Tools/Tools"
+import Tools from "./Tools"
 import HeroImages from "./HeroImages"
 
 const Hero = memo(({ inView, cssAnimations }) => {
   const [hasAnimPlayed, setAnimPlayed] = useState(false)
   const ANIM_CONTAINER = ".js_hero"
-  const HERO_ANIM_DETAILS = require("/src/data/heroAnim")
-  const TOOL_ANIM_DETAILS = require("/src/data/toolsAnim")
+  const HERO_ANIM_DETAILS = require("data/heroAnim")
+  const TOOL_ANIM_DETAILS = require("data/toolsAnim")
 
   useEffect(() => {
     !inView(ANIM_CONTAINER) ? bindEvents() : initiateHeroAnimations()
