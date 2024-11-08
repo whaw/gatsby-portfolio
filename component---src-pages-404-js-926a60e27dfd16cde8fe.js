@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_port_site=self.webpackChunkgatsby_port_site||[]).push([[125],{3331:function(e,t,n){n.r(t),n.d(t,{Head:function(){return r}});var l=n(6540),o=n(4810);t.default=()=>l.createElement("main",null,l.createElement("h1",null,"Page not found"),l.createElement("p",null,"Sorry 😔, we couldn’t find what you were looking for.",l.createElement("br",null),l.createElement(o.N_,{to:"/"},"Go home"),"."));const r=()=>l.createElement("title",null,"Not found")}}]);
+//# sourceMappingURL=component---src-pages-404-js-926a60e27dfd16cde8fe.js.map
