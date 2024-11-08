@@ -1,6 +1,6 @@
 import $ from "jquery"
 
-export const siteJsUtils = (function () {
+export const jsSiteUtils = (function () {
   const scrollHome = function () {
     window.location.hash = "#home"
     cleanUrl()

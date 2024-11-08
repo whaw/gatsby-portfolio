@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 import Helmet from "react-helmet"
 
-import { initiateGsap } from "js/gsapAnimations"
-import { cssAnimations } from "js/cssAnimations"
-import { siteJsUtils } from "js/siteJsUtils"
+import { initiateGsap } from "../assets/js/gsapAnimations"
+import { cssAnimations } from "../assets/js/cssAnimations"
+import { jsSiteUtils } from "../assets/js/jsSiteUtils"
 
 import MainNav from "./MainNav"
 import Hero from "./Hero"
@@ -32,7 +32,7 @@ const Layout = () => {
       </Helmet>
       <header className="header">
         <MainNav />
-        <Hero inView={siteJsUtils.inView} cssAnimations={cssAnimations} />
+        <Hero inView={jsSiteUtils.inView} cssAnimations={cssAnimations} />
       </header>
       <main>
         <Introductions />
@@ -40,7 +40,7 @@ const Layout = () => {
         <AboutSite />
         <Contact />
         <TopButton>
-          <Button label="Top" classes="btn-secondary" method={siteJsUtils.scrollHome} />
+          <Button label="Top" classes="btn-secondary" method={jsSiteUtils.scrollHome} />
         </TopButton>
       </main>
       <footer className="border-top pt-2 pb-5 mb-5 pl-3 text-secondary small">

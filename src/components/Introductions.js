@@ -10,7 +10,7 @@ const Introductions = () => {
         <div className="row">
           <div className="col-12 col-lg-5 pb-10 pb-lg-0 gs_reveal">
             <StaticImage
-              src="../images/me.png"
+              src="../assets/images/me.png"
               className="introductions__me mb-1 mr-3 mb-md-2 mr-md-4 mt-0"
               alt="author"
               style={{ width: "25%", float: "left" }}

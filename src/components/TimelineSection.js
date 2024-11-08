@@ -1,5 +1,5 @@
 import React from "react"
-import experienceJson from "data/experience"
+import experienceJson from "assets/data/timeline"
 import DOMPurify from "dompurify"
 
 const Timeline2 = () => {

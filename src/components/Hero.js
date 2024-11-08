@@ -8,8 +8,8 @@ import HeroImages from "./HeroImages"
 const Hero = memo(({ inView, cssAnimations }) => {
   const [hasAnimPlayed, setAnimPlayed] = useState(false)
   const ANIM_CONTAINER = ".js_hero"
-  const HERO_ANIM_DETAILS = require("data/heroAnim")
-  const TOOL_ANIM_DETAILS = require("data/toolsAnim")
+  const HERO_ANIM_DETAILS = require("assets/data/heroAnim")
+  const TOOL_ANIM_DETAILS = require("assets/data/toolsAnim")
 
   useEffect(() => {
     !inView(ANIM_CONTAINER) ? bindEvents() : initiateHeroAnimations()

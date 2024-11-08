@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react"
 import $ from "jquery"
-import { siteJsUtils } from "js/siteJsUtils"
+import { jsSiteUtils } from "../assets/js/jsSiteUtils"
 
 const TopButton = ({ children }) => {
   const [showTopButton, setShowTopButton] = useState(false)
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
-      $(window).on("load scroll resize", () => siteJsUtils.inView(".js_hero") ? setShowTopButton(false) : setShowTopButton(true))
+      $(window).on("load scroll resize", () => jsSiteUtils.inView(".js_hero") ? setShowTopButton(false) : setShowTopButton(true))
     }
     return () => $(window).off()
   }, [])

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Layout from 'components/Layout'
-import 'scss/styles.scss'
+import 'assets/scss/styles.scss'
 
 const IndexPage = () => {
 
