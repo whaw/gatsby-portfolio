@@ -23,7 +23,7 @@ const Image = ({ selector, alt }) => {
         }
       }
     `)
-  /* find matching image in collection to props.selector  */
+  /* Find matching image in collection for props.selector  */
   const imageNode = data.allToolsAnimJson.edges[0].node.images.find((n) => n.selector.includes(selector)
   )
   if (!imageNode) return null

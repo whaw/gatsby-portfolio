@@ -11,15 +11,14 @@
     font-size: 0.9rem;
 
     .logo {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 0.4em;
+      display: inline-block;
 
       @include media-breakpoint-up(sm) {
-        font-size: 1.3rem;
+        font-size: 2rem;
       }
-
-      font-weight: 600;
-      line-height: 1rem;
-      display: inline-block;
     }
 
     &.animate {

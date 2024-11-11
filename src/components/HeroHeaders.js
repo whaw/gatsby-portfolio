@@ -9,4 +9,4 @@ const HeroHeaders = () => {
   )
 }
 
-export default HeroHeaders
+export default HeroHeaders  
