@@ -7,7 +7,7 @@ const Contact = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 pt-md-10 pb-5 pb-md-10 text-center gs_reveal">
-          <p className="small text-secondary">No contact info, sorry spammers!</p>
+          <p className="small text-secondary">No contact info here, sorry spammers!</p>
         </div>
       </div>
     </div>
