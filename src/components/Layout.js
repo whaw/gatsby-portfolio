@@ -39,9 +39,7 @@ const Layout = () => {
         <Experience />
         <AboutSite />
         <Contact />
-        <TopButton>
-          <Button label="Top" classes="btn-secondary" method={jsSiteUtils.scrollHome} />
-        </TopButton>
+        <TopButton />
       </main>
       <footer className="border-top pt-2 pb-5 mb-5 pl-3 text-secondary small">
         &copy; {new Date().getFullYear()}

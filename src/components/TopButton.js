@@ -2,20 +2,27 @@ import React, { useEffect, useState } from "react";
 import $ from "jquery";
 import { jsSiteUtils } from "../assets/js/jsSiteUtils";
 
-const TopButton = ({ children }) => {
+const TopButton = () => {
   const [showTopButton, setShowTopButton] = useState(false);
 
+  const handleClick = () => {
+    jsSiteUtils.scrollHome();
+  }
+
   useEffect(() => {
-    if (typeof window !== `undefined`) {
-      $(window).on("load scroll resize", () => jsSiteUtils.inView(".js_hero") ? setShowTopButton(false) : setShowTopButton(true));
+    const onScroll = () => {
+      // check if hero is in view and show/hide button
+      jsSiteUtils.inView(".js_hero") ? setShowTopButton(false) : setShowTopButton(true);
     }
-    return () => $(window).off();
+
+    if (typeof window !== `undefined`) {
+      $(window).on("load scroll resize", onScroll);
+    }
+    return () => $(window).off("load scroll resize", onScroll);
   }, [])
 
   return (
-    <a className={`top-button ${showTopButton && "show"}`} aria-label="Go to top">
-      {children}
-    </a>
+    <button onClick={handleClick} className={`top-button btn-secondary ${showTopButton && "show"}`} >Top</button>
   )
 }
 
