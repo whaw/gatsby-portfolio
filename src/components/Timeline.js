@@ -7,7 +7,7 @@ const Timeline2 = () => {
     experienceJson.map(({ company, period, copy }, i) => {
       const colPosClass = i % 2 === 0 ? 'left' : 'right'
       return (
-        <div key={company} className={`timeline__container position-relative gs_reveal mt-lg-10 ${colPosClass}`}>
+        <div key={company} className={`timeline__container position-relative gs_reveal mt-lg-2 ${colPosClass}`}>
           <div className="content">
             <div role="heading" aria-level="5" className="h5">{company}</div>
             <p className="text-secondary">{period}</p>

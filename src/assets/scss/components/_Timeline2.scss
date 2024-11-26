@@ -1,4 +1,4 @@
-$kakhi: rgb(120, 136, 64);
+$timeline-color: #b6b9b9;
 
 .timeline {
   font-size: .8rem;
@@ -10,7 +10,7 @@ $kakhi: rgb(120, 136, 64);
     content: '';
     position: absolute;
     width: 6px;
-    background-color: $kakhi;
+    background-color: $timeline-color;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -33,7 +33,7 @@ $kakhi: rgb(120, 136, 64);
       height: 25px;
       right: -13px;
       background-color: white;
-      border: 4px solid $kakhi;
+      border: 4px solid $timeline-color;
       top: 15px;
       border-radius: 50%;
       z-index: 1;
@@ -80,7 +80,7 @@ $kakhi: rgb(120, 136, 64);
     }
 
     .content {
-      padding: 10px 0;
+      padding: 10px 30px;
       background-color: white;
       position: relative;
       border-radius: 6px;

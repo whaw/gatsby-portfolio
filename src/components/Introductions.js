@@ -34,7 +34,7 @@ const Introductions = () => {
             <p>
               And when he's not in digital space, he can be found in the great
               outdoors. He loves the outdoors. Like, loves loves the outdoors,
-              and MEC.
+              and MEC.
             </p>
             <p className="text-center">
               <a
