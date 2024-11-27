@@ -1,5 +1,5 @@
-import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
+import React from 'react';
+import { StaticImage } from "gatsby-plugin-image";
 
 const HeroImages = () => {
   return (
@@ -40,4 +40,4 @@ const HeroImages = () => {
   )
 }
 
-export default HeroImages
+export default HeroImages;

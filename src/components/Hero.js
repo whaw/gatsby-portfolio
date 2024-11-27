@@ -1,36 +1,54 @@
-import React, { useState, useEffect, memo } from "react"
-import $ from "jquery"
+import React, { useState, useEffect, memo } from "react";
 
-import HeroHeaders from "./HeroHeaders"
-import Tools from "./Tools"
-import HeroImages from "./HeroImages"
+import { cssAnimations } from "../assets/js/cssAnimations";
+import { jsSiteUtils } from "../assets/js/jsSiteUtils";
 
-const Hero = memo(({ inView, cssAnimations }) => {
-  const [hasAnimPlayed, setAnimPlayed] = useState(false)
-  const ANIM_CONTAINER = ".js_hero"
-  const HERO_ANIM_DETAILS = require("assets/data/heroAnim")
-  const TOOL_ANIM_DETAILS = require("assets/data/toolsAnim")
+import HeroHeaders from "./HeroHeaders";
+import Tools from "./Tools";
+import HeroImages from "./HeroImages";
+
+const Hero = memo(({heroAnimDetails, toolAnimDetails}) => {
+  const [animPlayed, setAnimPlayed] = useState(false);
+  const animContainer = ".js_hero";
 
   useEffect(() => {
-    !inView(ANIM_CONTAINER) ? bindEvents() : initiateHeroAnimations()
-    return () => $(window).off()
-    /* eslint-disable-next-line */
-  }, [])
+    const events = [ "load", "resize", "scroll" ];
 
-  const bindEvents = () => $(window).on("load resize scroll", () => inView(ANIM_CONTAINER) && initiateHeroAnimations())
+    const handleScrollResize = jsSiteUtils.debounce(() => {
+      if(jsSiteUtils.inView(animContainer)){
+        initiateHeroAnimations();
+      }
+    }, 100);
+    
+    if (!jsSiteUtils.inView(animContainer)) {
+      events.forEach(event => {
+        window.addEventListener(event, handleScrollResize);
+      })
+     } else {
+      initiateHeroAnimations();
+     }
+
+    return () => {
+      events.forEach(event => {
+        window.removeEventListener(event, handleScrollResize);
+      })
+    }
+
+  }, []);
+
 
   function initiateHeroAnimations() {
-    if (!hasAnimPlayed) {
-      cssAnimations(HERO_ANIM_DETAILS)
-      cssAnimations(TOOL_ANIM_DETAILS)
-      setAnimPlayed(true)
+    if (!animPlayed) {
+      cssAnimations(heroAnimDetails);
+      cssAnimations(toolAnimDetails);
+      setAnimPlayed(true);
     }
   }
 
   return (
     <section className="hero position-relative js_hero mt-5 mt-md-7 pt-0">
       <HeroHeaders />
-      <Tools toolAnimDetails={TOOL_ANIM_DETAILS} />
+      <Tools toolAnimDetails={toolAnimDetails} />
       <div className="mx-auto position-absolute hero__hashTag text-white text-center d-none d-sm-block">
         #Team
       </div>

@@ -1,20 +1,20 @@
-import React, { useState, useRef, useEffect } from "react"
-import ToolImage from "./ToolImage"
-import ToolDescription from "./ToolDescription"
-import $ from "jquery"
+import React, { useState, useRef, useEffect } from "react";
+import ToolImage from "./ToolImage";
+import ToolDescription from "./ToolDescription";
+import $ from "jquery";
 
 const Tool = ({ selector, name, description }) => {
-  const toolClassName = name.toLowerCase()
-  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false)
-  const toolRef = useRef(null)
+  const toolClassName = name.toLowerCase();
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+  const toolRef = useRef(null);
 
   useEffect(() => {
-    const thisTool = $(toolRef.current)
+    const thisTool = $(toolRef.current);
     if (!!thisTool) thisTool.on("mouseover mouseout focus focusout", handleOnMouseEvent)
-    return () => thisTool.unbind()
+    return () => thisTool.unbind();
   })
 
-  const handleOnMouseEvent = () => setIsDescriptionOpen(!isDescriptionOpen)
+  const handleOnMouseEvent = () => setIsDescriptionOpen(!isDescriptionOpen);
 
   return (
     <div className={`position-absolute hero__tool js_tool hero__${toolClassName} ${selector}`} >

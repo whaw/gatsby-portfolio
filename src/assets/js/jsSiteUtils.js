@@ -1,25 +1,32 @@
-import $ from "jquery";
 
-// Direct export of the utility functions
 export const jsSiteUtils = {
-  scrollHome: () => {
-    window.location.hash = "#home";
-    this.cleanUrl();
+  scrollToID: (target) => {
+    window.location.hash = `#${target}`;
+    jsSiteUtils.cleanUrl();
   },
-
   cleanUrl: () => {
-    /* Remove the # and everything after in the url */
+    // Remove the # and everything after
     const url = window.location.href.toString();
     if (url.indexOf("#") > 0) {
       const newUrl = url.slice(0, url.indexOf("#"));
       window.history.replaceState({}, document.title, newUrl);
     }
   },
-
   inView: (section) => {
-    const scrollPos = $(window).scrollTop() + 100;
-    const elementTop = $(section).offset().top;
-    const elementBottom = elementTop + $(section).height();
+    // check if section is in view
+    const element = document.querySelector(section);
+    if (!element) return false;
+
+    const scrollPos = window.scrollY + 100;
+    const elementTop = element.offsetTop;
+    const elementBottom = elementTop + element.offsetHeight;
     return scrollPos > elementTop && scrollPos < elementBottom;
-  }
+  },
+  debounce: (func, delay) => {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => func(...args), delay)
+    }
+  },
 };

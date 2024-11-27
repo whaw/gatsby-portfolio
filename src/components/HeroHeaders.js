@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const HeroHeaders = () => {
   return (
@@ -9,4 +9,4 @@ const HeroHeaders = () => {
   )
 }
 
-export default HeroHeaders  
+export default HeroHeaders;

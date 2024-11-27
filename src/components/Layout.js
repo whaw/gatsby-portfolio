@@ -1,9 +1,9 @@
-import React, { useEffect } from "react"
-import Helmet from "react-helmet"
+import React, { useEffect } from "react";
+import Helmet from "react-helmet";
 
-import { initiateGsap } from "../assets/js/gsapAnimations"
-import { cssAnimations } from "../assets/js/cssAnimations"
-import { jsSiteUtils } from "../assets/js/jsSiteUtils"
+import { initiateGsap } from "../assets/js/gsapAnimations";
+import heroAnimDetails from "../assets/data/heroAnim";
+import toolAnimDetails from "../assets/data/toolsAnim";
 
 import MainNav from "./MainNav"
 import Hero from "./Hero"
@@ -12,14 +12,12 @@ import Experience from "./Experience"
 import AboutSite from "./AboutSite"
 import Contact from "./Contact"
 import TopButton from "./TopButton"
-import Button from "./Button"
 
 const Layout = () => {
+  const year = new Date().getFullYear();
 
   useEffect(() => {
-    if (typeof window !== `undefined`) {
-      initiateGsap()
-    }
+    initiateGsap()
   }, [])
 
   return (
@@ -32,7 +30,7 @@ const Layout = () => {
       </Helmet>
       <header className="header">
         <MainNav />
-        <Hero inView={jsSiteUtils.inView} cssAnimations={cssAnimations} />
+        <Hero heroAnimDetails={heroAnimDetails} toolAnimDetails={toolAnimDetails} />
       </header>
       <main>
         <Introductions />
@@ -42,7 +40,7 @@ const Layout = () => {
         <TopButton />
       </main>
       <footer className="border-top pt-2 pb-5 mb-5 pl-3 text-secondary small">
-        &copy; {new Date().getFullYear()}
+        &copy; {year}
       </footer>
     </>
   )

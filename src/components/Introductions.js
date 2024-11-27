@@ -37,13 +37,9 @@ const Introductions = () => {
               and MEC.
             </p>
             <p className="text-center">
-              <a
-                href="#experience"
-                className="btn btn-primary border d-lg-none"
-                role="button"
-              >
+              <button href="#experience" className="btn btn-primary border d-lg-none">
                 To Experience
-              </a>
+              </button>
             </p>
           </div>
           <div className="col-12 col-lg-7 pl-lg-5 pl-xl-8 skills position-relative gs_reveal">

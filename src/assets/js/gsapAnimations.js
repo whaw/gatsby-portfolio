@@ -5,7 +5,7 @@ export function initiateGsap() {
   gsap.registerPlugin(ScrollTrigger)
   gsap.core.globals("ScrollTrigger", ScrollTrigger)
 
-  /* give sections motion on scroll
+  /* give sections a slight motion animation on scroll
   ---------------------------- */
   gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
     hide(elem)

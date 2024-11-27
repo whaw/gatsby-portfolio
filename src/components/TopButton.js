@@ -5,24 +5,22 @@ import { jsSiteUtils } from "../assets/js/jsSiteUtils";
 const TopButton = () => {
   const [showTopButton, setShowTopButton] = useState(false);
 
-  const handleClick = () => {
-    jsSiteUtils.scrollHome();
-  }
-
   useEffect(() => {
-    const onScroll = () => {
+    const onScrollResize = jsSiteUtils.debounce(() => {
       // check if hero is in view and show/hide button
       jsSiteUtils.inView(".js_hero") ? setShowTopButton(false) : setShowTopButton(true);
-    }
+    }, 100);
 
-    if (typeof window !== `undefined`) {
-      $(window).on("load scroll resize", onScroll);
-    }
-    return () => $(window).off("load scroll resize", onScroll);
+    const events = ["scroll", "resize"];
+    events.forEach(event => window.addEventListener(event, onScrollResize));
+
+    onScrollResize();
+
+    return () => events.forEach(event => window.removeEventListener("scroll resize", onScrollResize));
   }, [])
 
   return (
-    <button onClick={handleClick} className={`top-button btn-secondary ${showTopButton && "show"}`} >Top</button>
+    <button onClick={() => jsSiteUtils.scrollToID("home")} className={`btn top-button btn-secondary ${showTopButton && "show"}`}>Top</button>
   )
 }
 
