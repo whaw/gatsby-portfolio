@@ -7,37 +7,38 @@ import HeroHeaders from "./HeroHeaders";
 import Tools from "./Tools";
 import HeroImages from "./HeroImages";
 
-const Hero = memo(({heroAnimDetails, toolAnimDetails}) => {
+const Hero = memo(({ heroAnimDetails, toolAnimDetails }) => {
   const [animPlayed, setAnimPlayed] = useState(false);
-  const animContainer = ".js_hero";
+  const heroSection = ".js_hero";
 
   useEffect(() => {
-    const events = [ "load", "resize", "scroll" ];
+    const events = ["resize", "scroll"];
 
     const handleScrollResize = jsSiteUtils.debounce(() => {
-      if(jsSiteUtils.inView(animContainer)){
-        initiateHeroAnimations();
+      if (jsSiteUtils.inView(heroSection)) {
+        playHeroAnimation();
       }
     }, 100);
-    
-    if (!jsSiteUtils.inView(animContainer)) {
+
+    if (!jsSiteUtils.inView(heroSection)) {
+      // if hero is not in view, add event listeners
       events.forEach(event => {
         window.addEventListener(event, handleScrollResize);
       })
-     } else {
-      initiateHeroAnimations();
-     }
+    } else {
+      // play hero animation
+      playHeroAnimation();
+    }
 
     return () => {
       events.forEach(event => {
         window.removeEventListener(event, handleScrollResize);
       })
     }
-
   }, []);
 
 
-  function initiateHeroAnimations() {
+  function playHeroAnimation() {
     if (!animPlayed) {
       cssAnimations(heroAnimDetails);
       cssAnimations(toolAnimDetails);
