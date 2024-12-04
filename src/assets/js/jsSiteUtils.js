@@ -1,5 +1,5 @@
 
-export const jsSiteUtils = {
+const jsSiteUtils = {
   scrollToID: (target) => {
     window.location.hash = `#${target}`;
     jsSiteUtils.cleanUrl();
@@ -30,3 +30,5 @@ export const jsSiteUtils = {
     }
   },
 };
+
+export default jsSiteUtils;

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Helmet from "react-helmet";
 
-import { initiateGsap } from "../assets/js/gsapAnimations";
-import heroAnimDetails from "../assets/data/heroAnim";
-import toolAnimDetails from "../assets/data/toolsAnim";
+import { initiateGsap } from "assets/js/gsapAnimations";
+import heroAnimDetails from "assets/data/heroAnim";
+import toolAnimDetails from "assets/data/toolsAnim";
 
 import MainNav from "./MainNav"
 import Hero from "./Hero"

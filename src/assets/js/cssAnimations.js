@@ -1,32 +1,33 @@
-import $ from "jquery"
+const cssAnimations = animDetails => {
 
-export const cssAnimations = animDetails => {
-  function handleDelay(animDetails) {
-    for (const { selector, delay = null, groupElementDelay = null } of animDetails) {
-      /* Grab all the elments that match the selector –
-      could be one or a group. */
-      const elements = $(selector).toArray()
+  const animate = (el) => el.classList.add("animate");
 
-      delay !== null ?
-        setTimeout(() => {
-          handleGroupDelay(elements, groupElementDelay)
-        }, delay) /* add delay before animation */
-        :
-        handleGroupDelay(elements, groupElementDelay)
-    }
+   /* add delay before animation */
+   function delayBeforeAnimation(animDetails) {
+    animDetails.forEach(({ selector, delay = null, groupElementDelay = null }) => {
+
+      /* Grab all the elments that match the selector – could be one or a group. */
+      const elements = document.querySelectorAll(selector);
+
+      if (elements.length) {
+        const animationAction = delayBetweenGroupElements(elements, groupElementDelay);
+        delay ? setTimeout(animationAction, delay) : animationAction();
+      }
+    });
   }
-  function handleGroupDelay(elements, groupElementDelay) {
+
+  // add delay between elements in a group
+  function delayBetweenGroupElements(elements, groupElementDelay) {
     elements.forEach((el, i) => {
-      const isGroup = groupElementDelay !== null ? true : false
-
-      isGroup ?
-        setTimeout(function () {
-          animate(el)
-        }, i * groupElementDelay) /* add delay between elements */
-        :
-        animate(el)
-    })
+      if (groupElementDelay) {
+        setTimeout(() => animate(el), i * groupElementDelay); // delay between elements
+      } else {
+        animate(el); // no delay
+      }
+    });
   }
-  const animate = (el) => $(el).addClass("animate")
-  handleDelay(animDetails)
+
+  delayBeforeAnimation(animDetails);
 }
+
+export default cssAnimations;

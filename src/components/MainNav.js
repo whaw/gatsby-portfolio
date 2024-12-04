@@ -1,6 +1,6 @@
 import React from "react";
 import MainNavLinks from "./MainNavLinks";
-import { jsSiteUtils } from "../assets/js/jsSiteUtils";
+import jsSiteUtils from "../assets/js/jsSiteUtils";
 
 const MainNav = () => {
   return (
