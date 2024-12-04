@@ -16,7 +16,7 @@ const TopButton = () => {
     events.forEach(event => window.addEventListener(event, onScrollResize));
     onScrollResize();
 
-    return () => events.forEach(eventType => window.removeEventListener(eventType, onScrollResize));
+    return () => events.forEach(event => window.removeEventListener(event, onScrollResize));
   }, [])
 
   return (

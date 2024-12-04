@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const HeroImages = () => {
   return (
     <>
-      {/* Main images */}
+      {/* main images */}
       <StaticImage
         src="../../assets/images/hero-truck.png"
         className="position-absolute hero__truck js_truck d-none d-sm-block"
@@ -25,7 +25,8 @@ const HeroImages = () => {
         className="hero__main mt-8 mt-md-8 d-none d-sm-block"
         alt="media around group on motorcycles"
       />
-      {/* mobile ------------- */}
+
+      {/* mobile images */}
       <StaticImage
         src="../../assets/images/hero-mobile-sketch.png"
         className="position-absolute hero__sketch--mobile js_sketch-mobile mt-8 mt-md-8 d-sm-none gs_reveal gs_reveal_fromRight"
