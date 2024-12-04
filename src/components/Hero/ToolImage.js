@@ -2,32 +2,39 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import GatsbyImage from "gatsby-image"
 
-const Image = ({ selector, alt }) => {
+const Image = ({ name }) => {
+  // get all images in images/tools/ directory and
+  // optimize them with gatsby plugins
   const data = useStaticQuery(graphql`
     query getToolImages {
-      allToolsAnimJson {
+      allFile(
+        filter: {
+          sourceInstanceName: { eq: "images" },
+          relativeDirectory: { eq: "tools" }
+        }
+      ) {
         edges {
           node {
-            images {
-              selector
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 75) {
-                    ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
+            name
+            childImageSharp {
+              fluid(maxWidth: 75) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
         }
       }
-    `)
-  /* Find matching image in collection for props.selector  */
-  const imageNode = data.allToolsAnimJson.edges[0].node.images.find((n) => n.selector.includes(selector)
-  )
-  if (!imageNode) return null
-  return <GatsbyImage key={selector} alt={alt} fluid={imageNode.image.childImageSharp.fluid} />
+    }
+  `)
+
+// find tool image from query === passed prop
+const imageNode = data.allFile.edges.find(
+  (file) => file.node.name === name.toLowerCase()
+)
+
+if (!imageNode) return null
+
+return <GatsbyImage alt={name} fluid={imageNode.node.childImageSharp.fluid} />
 }
 
-export default Image
+export default Image;

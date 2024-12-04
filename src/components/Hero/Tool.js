@@ -16,7 +16,7 @@ const Tool = ({ selector, name, description }) => {
         onMouseEnter={handleOnMouseEvent}
         onMouseLeave={handleOnMouseEvent}
         className={`border-0 p-0 bg-transparent hero__${toolClassName}__button`}>
-        <ToolImage selector={selector} alt={name} />
+        <ToolImage selector={selector} name={name} />
       </button>
       <ToolDescription
         name={name}
