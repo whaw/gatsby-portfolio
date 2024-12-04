@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import jsSiteUtils from "assets/js/jsSiteUtils";
+import Button from "components/Button"
 
 const TopButton = () => {
   const [showTopButton, setShowTopButton] = useState(false);
@@ -19,7 +20,7 @@ const TopButton = () => {
   }, [])
 
   return (
-    <button onClick={() => jsSiteUtils.scrollToID("home")} className={`btn top-button btn-secondary ${showTopButton && "show"}`}>Top</button>
+    <Button onClick={() => jsSiteUtils.scrollToID("home")} classes={`top-button btn-secondary ${showTopButton && "show"}`}>Top</Button>
   )
 }
 

@@ -1,7 +1,7 @@
 
 const jsSiteUtils = {
-  scrollToID: (target) => {
-    window.location.hash = `#${target}`;
+  scrollToID: (id) => {
+    window.location.hash = `#${id}`;
     jsSiteUtils.cleanUrl();
   },
   cleanUrl: () => {
@@ -13,7 +13,6 @@ const jsSiteUtils = {
     }
   },
   inView: (section) => {
-    // check if section is in view
     const element = document.querySelector(section);
     if (!element) return false;
 

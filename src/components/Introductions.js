@@ -1,6 +1,8 @@
-import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import SectionHeader from "./SectionHeader"
+import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import jsSiteUtils from "assets/js/jsSiteUtils";
+import SectionHeader from "./SectionHeader";
+import Button from "components/Button";
 
 const Introductions = () => {
   return (
@@ -37,9 +39,7 @@ const Introductions = () => {
               and MEC.
             </p>
             <p className="text-center">
-              <button href="#experience" className="btn btn-primary border d-lg-none">
-                To Experience
-              </button>
+              <Button onClick={() => jsSiteUtils.scrollToID("experience")} classes={`btn-primary border d-lg-none`}>To Experience</Button>
             </p>
           </div>
           <div className="col-12 col-lg-7 pl-lg-5 pl-xl-8 skills position-relative gs_reveal">
@@ -107,4 +107,4 @@ const Introductions = () => {
   )
 }
 
-export default Introductions
+export default Introductions;
