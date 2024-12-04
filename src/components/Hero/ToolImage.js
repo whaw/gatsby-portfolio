@@ -1,10 +1,11 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import GatsbyImage from "gatsby-image"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import GatsbyImage from "gatsby-image";
 
 const Image = ({ name }) => {
+
   // get all images in images/tools/ directory and
-  // optimize them with gatsby plugins
+  // optimize them with gatsby plugin
   const data = useStaticQuery(graphql`
     query getToolImages {
       allFile(
@@ -27,14 +28,14 @@ const Image = ({ name }) => {
     }
   `)
 
-// find tool image from query === passed prop
-const imageNode = data.allFile.edges.find(
-  (file) => file.node.name === name.toLowerCase()
-)
+  // find tool image from query === passed name prop
+  const imageNode = data.allFile.edges.find(
+    (file) => file.node.name === name.toLowerCase()
+  );
 
-if (!imageNode) return null
+  if (!imageNode) return null;
 
-return <GatsbyImage alt={name} fluid={imageNode.node.childImageSharp.fluid} />
+  return <GatsbyImage alt={name} fluid={imageNode.node.childImageSharp.fluid} />
 }
 
 export default Image;

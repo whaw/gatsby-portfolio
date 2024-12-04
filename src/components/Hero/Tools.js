@@ -1,5 +1,5 @@
-import React from "react"
-import Tool from "./Tool"
+import React from "react";
+import Tool from "./Tool";
 
 const Tools = ({ toolAnimDetails }) => {
   return toolAnimDetails[0].images.map(({ selector, name, description, image }) =>
@@ -11,5 +11,5 @@ const Tools = ({ toolAnimDetails }) => {
     />)
 }
 
-export default Tools
+export default Tools;
 
