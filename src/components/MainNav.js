@@ -30,6 +30,6 @@ const MainNav = () => {
       </div>
     </nav>
   )
-}
+};
 
-export default MainNav
+export default MainNav;

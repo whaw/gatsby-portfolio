@@ -105,6 +105,6 @@ const Introductions = () => {
       </div>
     </section>
   )
-}
+};
 
 export default Introductions;

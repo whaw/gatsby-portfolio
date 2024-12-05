@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const SectionHeader = ({ header, subHeader }) => {
   return (
@@ -11,6 +11,6 @@ const SectionHeader = ({ header, subHeader }) => {
       </div>
     </div>
   )
-}
+};
 
-export default SectionHeader
+export default SectionHeader;

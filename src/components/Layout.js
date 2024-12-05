@@ -5,20 +5,20 @@ import { initiateGsap } from "assets/js/gsapAnimations";
 import heroAnimDetails from "assets/data/heroAnim";
 import toolAnimDetails from "assets/data/toolsAnim";
 
-import MainNav from "./MainNav"
-import Hero from "./Hero"
-import Introductions from "./Introductions"
-import Experience from "./Experience"
-import AboutSite from "./AboutSite"
-import Contact from "./Contact"
-import TopButton from "./TopButton"
+import MainNav from "./MainNav";
+import Hero from "./Hero";
+import Introductions from "./Introductions";
+import Experience from "./Experience";
+import AboutSite from "./AboutSite";
+import Contact from "./Contact";
+import TopButton from "./TopButton";
 
 const Layout = () => {
   const year = new Date().getFullYear();
 
   useEffect(() => {
     initiateGsap()
-  }, [])
+  }, []);
 
   return (
     <>
@@ -46,6 +46,6 @@ const Layout = () => {
   )
 }
 
-export default Layout
+export default Layout;
 
 

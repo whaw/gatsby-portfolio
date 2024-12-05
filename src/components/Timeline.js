@@ -1,11 +1,11 @@
-import React from "react"
-import experienceJson from "assets/data/timeline"
-import DOMPurify from "dompurify"
+import React from "react";
+import experienceJson from "assets/data/timeline";
+import DOMPurify from "dompurify";
 
 const Timeline2 = () => {
   const experience =
     experienceJson.map(({ company, period, copy }, i) => {
-      const colPosClass = i % 2 === 0 ? 'left' : 'right'
+      const colPosClass = i % 2 === 0 ? 'left' : 'right';
       return (
         <div key={company} className={`timeline__container position-relative gs_reveal mt-lg-2 ${colPosClass}`}>
           <div className="content">
@@ -15,7 +15,7 @@ const Timeline2 = () => {
           </div>
         </div>
       )
-    })
+    });
 
   return (
     <div className="container">
@@ -30,4 +30,4 @@ const Timeline2 = () => {
   )
 }
 
-export default Timeline2
+export default Timeline2;

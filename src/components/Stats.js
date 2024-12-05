@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const Stats = () => {
   const statsJson = [
     { id: 1, value: 15, unit: "YRS", text: "Front-end development" },
     { id: 2, value: 11, unit: "YRS", text: "Agency experience" },
     { id: 4, value: 8, unit: "YRS", text: "CMS development" },
-    { id: 3, value: 7, unit: "YRS", text: "Email development" }
-  ]
+    { id: 3, value: 7, unit: "YRS", text: "Email development" },
+  ];
+
   return (
     <div className="stats container d-none d-lg-block gs_reveal">
       <div className="row">
@@ -18,10 +19,10 @@ const Stats = () => {
               <small className="pl-1">{text}</small>
             </div>
           </div>
-        )}
+        )};
       </div>
     </div>
   )
-}
+};
 
-export default Stats
+export default Stats;
