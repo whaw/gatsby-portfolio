@@ -1,17 +1,17 @@
-const cssAnimations = animDetails => {
-
+const cssAnimations = (animDetails) => {
   const animate = (el) => el.classList.add("animate");
 
-   /* add delay before animation */
-   function handleDelay(animDetails) {
-    animDetails.forEach(({ selector, delay = null, groupElementDelay = null }) => {
-
-      /* Grab all the elments that match the selector – could be one or a group. */
+  // add delay before animation
+  function handleDelay(animDetails) {
+    animDetails.forEach(({ selector, delay = 0, groupElementDelay = 0 }) => {
       const elements = document.querySelectorAll(selector);
 
       if (elements.length) {
-        const animationAction = handleGroupDelay(elements, groupElementDelay);
-        delay ? setTimeout(animationAction, delay) : animationAction();
+        if (delay) {
+          setTimeout(() => handleGroupDelay(elements, groupElementDelay), delay);
+        } else {
+          handleGroupDelay(elements, groupElementDelay);
+        }
       }
     });
   }
@@ -20,14 +20,14 @@ const cssAnimations = animDetails => {
   function handleGroupDelay(elements, groupElementDelay) {
     elements.forEach((el, i) => {
       if (groupElementDelay) {
-        setTimeout(() => animate(el), i * groupElementDelay); // delay between elements
+        setTimeout(() => animate(el), i * groupElementDelay);
       } else {
-        animate(el); // no delay, not a group
+        animate(el);
       }
     });
   }
 
   handleDelay(animDetails);
-}
+};
 
 export default cssAnimations;

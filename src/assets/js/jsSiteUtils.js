@@ -12,22 +12,6 @@ const jsSiteUtils = {
       window.history.replaceState({}, document.title, newUrl);
     }
   },
-  inView: (section) => {
-    const element = document.querySelector(section);
-    if (!element) return false;
-
-    const scrollPos = window.scrollY + 100;
-    const elementTop = element.offsetTop;
-    const elementBottom = elementTop + element.offsetHeight;
-    return scrollPos > elementTop && scrollPos < elementBottom;
-  },
-  debounce: (func, delay) => {
-    let timer;
-    return (...args) => {
-      clearTimeout(timer);
-      timer = setTimeout(() => func(...args), delay)
-    }
-  },
 };
 
 export default jsSiteUtils;

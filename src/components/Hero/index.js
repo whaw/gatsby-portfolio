@@ -1,49 +1,23 @@
 // Hero
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 
 import cssAnimations from "assets/js/cssAnimations";
-import jsSiteUtils from "assets/js/jsSiteUtils";
+import useInView from "hooks/useInView";
 
 import Tools from "./Tools";
 import HeroImages from "./HeroImages";
 
 const Hero = ({ heroAnimDetails, toolAnimDetails }) => {
   const [animPlayed, setAnimPlayed] = useState(false);
-  const heroSection = ".js_hero";
+  const inView = useInView(".js_hero");
 
-  const playHeroAnimation = useCallback(() => {
-    if (!animPlayed) {
+  useEffect(() => {
+    if (inView && !animPlayed) {
       cssAnimations(heroAnimDetails);
       cssAnimations(toolAnimDetails);
       setAnimPlayed(true);
     }
-  }, [animPlayed, heroAnimDetails, toolAnimDetails]);
-
-  useEffect(() => {
-    const events = ["resize", "scroll"];
-
-    const handleScrollResize = jsSiteUtils.debounce(() => {
-      if (jsSiteUtils.inView(heroSection)) {
-        playHeroAnimation();
-      }
-    }, 100);
-
-    if (!jsSiteUtils.inView(heroSection)) {
-      // if hero is not in view, add event listeners
-      events.forEach(event => {
-        window.addEventListener(event, handleScrollResize);
-      });
-    } else {
-      // else play hero animation
-      playHeroAnimation();
-    }
-
-    return () => {
-      events.forEach(event => {
-        window.removeEventListener(event, handleScrollResize);
-      });
-    };
-  }, [playHeroAnimation]);
+  }, [inView, animPlayed, heroAnimDetails, toolAnimDetails]);
 
   return (
     <section className="hero position-relative js_hero mt-5 mt-md-7 pt-0">

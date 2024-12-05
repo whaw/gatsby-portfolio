@@ -1,23 +1,15 @@
 import React, { useEffect, useState } from "react";
 import jsSiteUtils from "assets/js/jsSiteUtils";
+import useInView from "hooks/useInView";
 import Button from "components/Button"
 
 const TopButton = () => {
   const [showTopButton, setShowTopButton] = useState(false);
+  const inView = useInView(".js_hero");
 
   useEffect(() => {
-    const events = ["scroll", "resize"];
-
-    // if hero is in view show button, else hide
-    const onScrollResize = jsSiteUtils.debounce(() => {
-      jsSiteUtils.inView(".js_hero") ? setShowTopButton(false) : setShowTopButton(true);
-    }, 100);
-
-    events.forEach(event => window.addEventListener(event, onScrollResize));
-    onScrollResize();
-
-    return () => events.forEach(event => window.removeEventListener(event, onScrollResize));
-  }, [])
+    setShowTopButton(!inView);
+  }, [inView])
 
   return (
     <Button onClick={() => jsSiteUtils.scrollToID("home")} classes={`top-button btn-secondary ${showTopButton && "show"}`}>Top</Button>

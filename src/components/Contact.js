@@ -1,5 +1,5 @@
-import React from "react"
-import SectionHeader from "./SectionHeader"
+import React from "react";
+import SectionHeader from "./SectionHeader";
 
 const Contact = () => (
   <section id="contact">
@@ -14,4 +14,4 @@ const Contact = () => (
   </section>
 )
 
-export default Contact
+export default Contact;
