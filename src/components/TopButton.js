@@ -12,7 +12,7 @@ const TopButton = () => {
   }, [inView])
 
   return (
-    <Button onClick={() => jsSiteUtils.scrollToID("home")} classes={`top-button btn-secondary ${showTopButton && "show"}`}>Top</Button>
+    <Button onClick={() => jsSiteUtils.scrollToID("home")} className={`top-button btn-secondary ${showTopButton && "show"}`}>Top</Button>
   )
 }
 

@@ -39,7 +39,7 @@ const Introductions = () => {
               and MEC.
             </p>
             <p className="text-center">
-              <Button onClick={() => jsSiteUtils.scrollToID("experience")} classes={`btn-primary border d-lg-none`}>To Experience</Button>
+              <Button onClick={() => jsSiteUtils.scrollToID("experience")} className={`btn-primary border d-lg-none`}>To Experience</Button>
             </p>
           </div>
           <div className="col-12 col-lg-7 pl-lg-5 pl-xl-8 skills position-relative gs_reveal">
