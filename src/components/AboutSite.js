@@ -1,5 +1,6 @@
-import React from "react"
-import SectionHeader from "./SectionHeader"
+import React from "react";
+import SectionHeader from "components/SectionHeader";
+import Button from "components/Button";
 
 const AboutSite = () => (
   <section id="about-this-site">
@@ -20,21 +21,22 @@ const AboutSite = () => (
         <div className="col-12 col-md-6 gs_reveal">
           <div role="heading" aria-level="5" className="h5">Approach</div>
           <ul>
-            <li>Gatsby, React's choice for static sites.</li>
-            <li>Bootstrap for faster development and a cleaner, more maintainable code base.</li>
-            <li>Animations are with JQuery, CSS, JSON and later added GSAP.</li>
-            <li>Other considerations: JS best practices, ES6, accessibility, performance.</li>
+            <li>Gatsby, optimized for performance out of the box (thanks to static rendering)</li>
+            <li>Bootstrap for faster development, with a cleaner, more maintainable code base</li>
+            <li>Animations are with CSS, JavaScript and GSAP</li>
+            <li>Other areas of focus: React best practices and design patterns</li>
             <li>Prettier and ESLint to keep everything clean and error free.</li>
           </ul>
           <div role="heading" aria-level="5" className="h5">Result</div>
           <p>Site is fast, consistent, accessible and performant.</p>
           <p>Increased knowledge in Gatsby, React, JavaScript, GraphQL and GSAP.</p>
-          <p className="text-center text-md-left"><button
-            href="https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link"
-            className="btn btn-primary mt-2"
+          <p className="text-center text-md-left">
+            <Button
+            onClick={() => window.open('https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link')}
+            classes="btn btn-primary mt-2"
             target="_blank"
-            rel="noreferrer"
-          >To the code</button>
+            rel="noopener noreferrer"
+          >To the code</Button>
           </p>
         </div>
       </div>
@@ -42,4 +44,4 @@ const AboutSite = () => (
   </section>
 )
 
-export default AboutSite
+export default AboutSite;
