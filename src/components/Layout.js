@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Helmet from "react-helmet";
-import { initiateGsap } from "assets/js/gsapAnimations";
+import { initiateGsap } from "scripts/gsapAnimations";
 
 import MainNav from "./MainNav";
 import Hero from "./Hero";

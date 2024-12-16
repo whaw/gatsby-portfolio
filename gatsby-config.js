@@ -59,13 +59,5 @@ module.exports = {
       },
       __key: "images",
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "data",
-        path: "./src/assets/data/",
-      },
-      __key: "data",
-    },
   ],
 }

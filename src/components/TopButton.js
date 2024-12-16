@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import jsSiteUtils from "assets/js/jsSiteUtils";
 import useInView from "hooks/useInView";
+import scrollToID from "utils/scrollToID";
 import Button from "components/Button"
 
 const TopButton = () => {
@@ -12,7 +12,7 @@ const TopButton = () => {
   }, [inView])
 
   return (
-    <Button onClick={() => jsSiteUtils.scrollToID("home")} className={`top-button btn-secondary ${showTopButton && "show"}`}>Top</Button>
+    <Button onClick={() => scrollToID("home")} className={`top-button btn-secondary ${showTopButton && "show"}`}>Top</Button>
   )
 }
 

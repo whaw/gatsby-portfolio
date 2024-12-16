@@ -1,7 +1,7 @@
 // Hero
 
 import React, { useState, useEffect } from "react";
-import cssAnimations from "assets/js/cssAnimations";
+import cssAnimations from "./js/cssAnimations";
 import useInView from "hooks/useInView";
 
 import heroAnimDetails from "./data/heroAnim";
