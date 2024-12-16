@@ -2,6 +2,6 @@
   { "selector": ".js_heading", "delay": 1000 },
   { "selector": ".js_truck", "delay": 2000 },
   { "selector": ".js_tree", "delay": 2000 },
-  { "selector": ".js_sketch", "delay": 3000 },
-  { "selector": ".js_hero_button", "delay": 8000 }
+  { "selector": ".js_sketch", "delay": 2800 },
+  { "selector": ".js_hero_button", "delay": 6000 }
 ]

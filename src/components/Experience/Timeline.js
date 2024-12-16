@@ -1,8 +1,8 @@
 import React from "react";
-import experienceJson from "assets/data/timeline";
+import experienceJson from "./timeline.json";
 import DOMPurify from "dompurify";
 
-const Timeline2 = () => {
+const Timeline = () => {
   const experience =
     experienceJson.map(({ company, period, copy }, i) => {
       const colPosClass = i % 2 === 0 ? 'left' : 'right';
@@ -30,4 +30,4 @@ const Timeline2 = () => {
   )
 }
 
-export default Timeline2;
+export default Timeline;

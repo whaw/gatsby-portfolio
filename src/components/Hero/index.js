@@ -1,13 +1,16 @@
 // Hero
-import React, { useState, useEffect } from "react";
 
+import React, { useState, useEffect } from "react";
 import cssAnimations from "assets/js/cssAnimations";
 import useInView from "hooks/useInView";
+
+import heroAnimDetails from "./data/heroAnim";
+import toolAnimDetails from "./data/toolsAnim";
 
 import Tools from "./Tools";
 import HeroImages from "./HeroImages";
 
-const Hero = ({ heroAnimDetails, toolAnimDetails }) => {
+const Hero = () => {
   const [animPlayed, setAnimPlayed] = useState(false);
   const inView = useInView(".js_hero");
 
@@ -17,7 +20,7 @@ const Hero = ({ heroAnimDetails, toolAnimDetails }) => {
       cssAnimations(toolAnimDetails);
       setAnimPlayed(true);
     }
-  }, [inView, animPlayed, heroAnimDetails, toolAnimDetails]);
+  }, [inView, animPlayed]);
 
   return (
     <section className="hero position-relative js_hero mt-5 mt-md-7 pt-0">

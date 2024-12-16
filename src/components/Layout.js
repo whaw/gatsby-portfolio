@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import Helmet from "react-helmet";
-
 import { initiateGsap } from "assets/js/gsapAnimations";
-import heroAnimDetails from "assets/data/heroAnim";
-import toolAnimDetails from "assets/data/toolsAnim";
 
 import MainNav from "./MainNav";
 import Hero from "./Hero";
@@ -30,7 +27,7 @@ const Layout = () => {
       </Helmet>
       <header className="header">
         <MainNav />
-        <Hero heroAnimDetails={heroAnimDetails} toolAnimDetails={toolAnimDetails} />
+        <Hero />
       </header>
       <main>
         <Introductions />

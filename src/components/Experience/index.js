@@ -1,12 +1,12 @@
-import React, { memo } from "react";
+// Experience
+
+import React from "react";
 import Timeline from "./Timeline";
-import SectionHeader from "./SectionHeader";
-// import Stats from "./Stats";
+import SectionHeader from "../SectionHeader";
 
 const Experience = () => (
   <section id="experience" className="bg-light section--with-background">
     <SectionHeader header="Experience" subHeader="At a glance" />
-    {/* <Stats /> */}
     <Timeline />
   </section>
 );

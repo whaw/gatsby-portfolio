@@ -29,9 +29,18 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "UA-180963166-1",
+        trackingIds: [
+          "G-LB94LRX1DD",
+        ],
+        gtagConfig: {
+          anonymize_ip: true, // Optional: anonymize IP for GDPR compliance
+        },
+        pluginConfig: {
+          head: true, // Places the script in the <head> tag
+          respectDNT: true, // Respects "Do Not Track" browser settings
+        },
       },
     },
     {
