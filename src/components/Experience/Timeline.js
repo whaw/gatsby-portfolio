@@ -1,13 +1,15 @@
 import React from "react";
 import experienceJson from "./timeline.json";
 import DOMPurify from "dompurify";
+import * as styles from "./Timeline.module.scss";
 
 const Timeline = () => {
   const experience =
     experienceJson.map(({ company, period, copy }, i) => {
-      const colPosClass = i % 2 === 0 ? 'left' : 'right';
+      const colPosClass = i % 2 !== 0 && styles.right;
+
       return (
-        <div key={company} className={`timeline__container position-relative gs_reveal mt-lg-2 ${colPosClass}`}>
+        <div key={company} className={`${styles.timeline__container} position-relative gs_reveal mt-lg-2 ${colPosClass}`}>
           <div className="content">
             <div role="heading" aria-level="5" className="h5">{company}</div>
             <p className="text-secondary">{period}</p>
@@ -21,7 +23,7 @@ const Timeline = () => {
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <div className="timeline position-relative">
+          <div className={`${styles.timeline} position-relative`}>
             {experience}
           </div>
         </div>

@@ -14,28 +14,6 @@
     }
     margin-top: -100px;
   }
-  &__dog {
-    z-index: 2;
-    width: 40%;
-    max-width: 135px;
-    bottom: -10%;
-    right: 0%;
-    @include media-breakpoint-up(sm) {
-      right: 10%;
-    }
-    @include media-breakpoint-up(md) {
-      right: 22%;
-      bottom: 0;
-    }
-    @include media-breakpoint-up(lg) {
-      right: -5%;
-      bottom: 38%;
-      max-width: none;
-    }
-    @include media-breakpoint-up(xl) {
-      bottom: 20%;
-    }
-  }
   .section__header {
     padding-bottom: 110px;
     @include media-breakpoint-up(md) {
