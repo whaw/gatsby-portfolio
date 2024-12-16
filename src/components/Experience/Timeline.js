@@ -1,11 +1,11 @@
 import React from "react";
-import experienceJson from "./timeline.json";
+import timeline from "./timeline.json";
 import DOMPurify from "dompurify";
 import * as styles from "./Timeline.module.scss";
 
 const Timeline = () => {
-  const experience =
-    experienceJson.map(({ company, period, copy }, i) => {
+  const position =
+    timeline.map(({ company, period, copy }, i) => {
       const colPosClass = i % 2 !== 0 && styles.right;
 
       return (
@@ -24,7 +24,7 @@ const Timeline = () => {
       <div className="row">
         <div className="col-12">
           <div className={`${styles.timeline} position-relative`}>
-            {experience}
+            {position}
           </div>
         </div>
       </div>
