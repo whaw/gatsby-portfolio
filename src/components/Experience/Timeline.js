@@ -6,7 +6,7 @@ import * as styles from "./Timeline.module.scss";
 const Timeline = () => {
   const position =
     timeline.map(({ company, period, copy }, i) => {
-      const colPosClass = i % 2 !== 0 && styles.right;
+      const colPosClass = i % 2 === 0 ? styles.left : styles.right;
 
       return (
         <div key={company} className={`${styles.timeline__container} position-relative gs_reveal mt-lg-2 ${colPosClass}`}>

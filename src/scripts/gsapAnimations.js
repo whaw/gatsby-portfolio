@@ -1,121 +1,105 @@
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function initiateGsap() {
-  gsap.registerPlugin(ScrollTrigger)
-  gsap.core.globals("ScrollTrigger", ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger);
 
-  /* give sections a slight motion animation on scroll
-  ---------------------------- */
-  gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
-    hide(elem)
+  // SECTION - SCROLL ANIMATION
+  // helpers
+  const hide = (elem) => gsap.set(elem, { autoAlpha: 0 });
+  const animateFrom = (elem, direction = 1) => {
+    let x = 0,
+      y = direction * 100;
+    if (elem.classList.contains("gs_reveal_fromBottom")) {
+      x = -100;
+      y = 0;
+    } else if (elem.classList.contains("gs_reveal_fromTop")) {
+      x = 100;
+      y = 0;
+    }
+    elem.style.transform = `translate(${x}px, ${y}px)`;
+    elem.style.opacity = "0";
+    gsap.fromTo(elem, { x, y, autoAlpha: 1 }, {
+      duration: 1.25,
+      x: 0,
+      y: 0,
+      autoAlpha: 1,
+      ease: "expo",
+      overwrite: "auto"
+    });
+  };
 
+  // give sections a slight motion animation on scroll
+  gsap.utils.toArray(".gs_reveal").forEach((elem) => {
+    hide(elem);
     ScrollTrigger.create({
       trigger: elem,
       markers: false,
       lazy: false,
-      onEnter: function () { animateFrom(elem) },
-      onEnterBack: function () { animateFrom(elem, -1) },
-      onLeave: function () { hide(elem) }
-    })
+      onEnter: () => animateFrom(elem),
+      onEnterBack: () => animateFrom(elem, -1),
+      onLeave: () => hide(elem),
+    });
+  });
 
-    /* main nav > add active class to link when in section
-    ---------------------------- */
-    let sections = document.getElementsByTagName("section")
-    sections = gsap.utils.toArray(sections).splice(1) /* ommit hero section */
+  // MAIN NAV - TOGGLE ACTIVE CLASS
+  const sections = gsap.utils.toArray(document.getElementsByTagName("section")).slice(1); // omit hero section
+  const navLinks = gsap.utils.toArray(document.getElementById("main-nav-links").getElementsByClassName("nav-link"));
 
-    let navLinks = document.getElementById("main-nav-links").getElementsByClassName("nav-link")
-    navLinks = gsap.utils.toArray(navLinks)
-
-    function toggleActiveClass(sectionId = null, i) {
-      navLinks.forEach(link => {
-        link.classList.remove("active")
-        link.removeAttribute("aria-current")
-      })
-      if (sectionId !== null) {
-        navLinks[i].classList.add("active")
-        navLinks[i].setAttribute("aria-current", "section")
-      }
+  function toggleActiveClass(i) {
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      link.removeAttribute("aria-current");
+    });
+    if (i !== null) {
+      navLinks[i].classList.add("active");
+      navLinks[i].setAttribute("aria-current", "section");
     }
+  }
 
-    sections.forEach((section, i) => {
-      gsap.from(section, {
-        scrollTrigger: {
-          trigger: section,
-          markers: false,
-          start: "top +=15%",
-          end: "bottom +=15%",
-          onEnter: () => toggleActiveClass(section.id, i),
-          onEnterBack: () => toggleActiveClass(section.id, i),
-          onLeave: () => toggleActiveClass(null, i),
-          onLeaveBack: () => toggleActiveClass(null, i),
-        },
-      })
-    })
+  sections.forEach((section, i) => {
+    gsap.from(section, {
+      scrollTrigger: {
+        trigger: section,
+        markers: false,
+        start: "top +=15%",
+        end: "bottom +=15%",
+        onEnter: () => toggleActiveClass(i),
+        onEnterBack: () => toggleActiveClass(i),
+        onLeave: () => toggleActiveClass(null),
+        onLeaveBack: () => toggleActiveClass(null),
+      },
+    });
+  });
 
-    /* scroll animation helpers when entering and leaving sections –
-    motion left, motion right and hide
-    ---------------------- */
-    function animateFrom(elem, direction) {
-      direction = direction || 1
-      var x = 0,
-        y = direction * 100
-      if (elem.classList.contains("gs_reveal_fromLeft")) {
-        x = -100
-        y = 0
-      } else if (elem.classList.contains("gs_reveal_fromRight")) {
-        x = 100
-        y = 0
-      }
-      elem.style.transform = "translate(" + x + "px, " + y + "px)"
-      elem.style.opacity = "0"
-      gsap.fromTo(elem, { x: x, y: y, autoAlpha: 1 }, {
-        stagger: 1,
-        duration: 1.25,
-        x: 0,
-        y: 0,
-        autoAlpha: 1,
-        ease: "expo",
-        overwrite: "auto"
-      })
-    }
-
-    function hide(elem) {
-      gsap.set(elem, { autoAlpha: 0 })
-    }
-  })
-
-  /* animate hero images when entering and leaving section
-  ------------------------- */
-  const HERO_SCROLLTRIGGER_CONFIG = {
+  // HERO - ANIMATION
+  // animate hero images when entering and leaving hero section
+  const heroScrollTriggerConfig = {
     trigger: ".hero",
     start: "top top",
     end: "bottom bottom",
     scrub: true,
-  }
+  };
 
-  gsap
-    .to(".hero__truck", {
-      rotation: -50,
-      x: 0,
-      y: 0,
-      ease: "none",
-      scrollTrigger: HERO_SCROLLTRIGGER_CONFIG
-    })
+  gsap.to(".hero__truck", {
+    rotation: -50,
+    x: 0,
+    y: 0,
+    ease: "none",
+    scrollTrigger: heroScrollTriggerConfig,
+  });
 
-  gsap
-    .to(".hero__sketch", {
-      y: 200,
-      ease: "none",
-      scrollTrigger: HERO_SCROLLTRIGGER_CONFIG
-    })
+  gsap.to(".hero__sketch", {
+    y: 200,
+    ease: "none",
+    scrollTrigger: heroScrollTriggerConfig,
+  });
 
-  gsap
-    .to(".hero__tree", {
-      rotation: 50,
-      x: 0,
-      y: 0,
-      ease: "none",
-      scrollTrigger: HERO_SCROLLTRIGGER_CONFIG
-    })
+  gsap.to(".hero__tree", {
+    rotation: 50,
+    x: 0,
+    y: 0,
+    ease: "none",
+    scrollTrigger: heroScrollTriggerConfig,
+  });
 }

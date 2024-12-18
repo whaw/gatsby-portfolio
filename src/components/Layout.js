@@ -14,9 +14,21 @@ const Layout = () => {
   const year = new Date().getFullYear();
 
   useEffect(() => {
-    initiateGsap()
+    const handleLoad = () => {
+      initiateGsap();
+    };
+  
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+  
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
-
+  
   return (
     <>
       <Helmet htmlAttributes={{ lang: "en-GB" }}>
