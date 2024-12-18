@@ -32,7 +32,7 @@ const Layout = () => {
   return (
     <>
       <Helmet htmlAttributes={{ lang: "en-GB" }}>
-        <title>A Working Copy – for experimentation and discovery</title>
+        <title>For experimentation and discovery</title>
         <meta name="googlebot" content="noindex" />
         {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
         <body id="home" className="px-md-3" />
