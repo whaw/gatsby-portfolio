@@ -2,7 +2,7 @@ const cssAnimations = (animDetails) => {
   const animate = (el) => el.classList.add("animate");
 
   // add delay before animation
-  function handleDelay(animDetails) {
+  const handleDelay = (animDetails) => {
     animDetails.forEach(({ selector, delay = 0, groupElementDelay = 0 }) => {
       const elements = document.querySelectorAll(selector);
 
@@ -17,7 +17,7 @@ const cssAnimations = (animDetails) => {
   }
 
   // add delay between elements in a group
-  function handleGroupDelay(elements, groupElementDelay) {
+  const handleGroupDelay = (elements, groupElementDelay) => {
     elements.forEach((el, i) => {
       if (groupElementDelay) {
         setTimeout(() => animate(el), i * groupElementDelay);
