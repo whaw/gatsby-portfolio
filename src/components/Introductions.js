@@ -1,9 +1,8 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import scrollToID from "utils/scrollToID";
-import SectionHeader from "../SectionHeader";
+import SectionHeader from "./SectionHeader";
 import Button from "components/Button";
-import * as styles from "./Introductions.module.scss"
 
 const Introductions = () => {
   return (
@@ -13,8 +12,8 @@ const Introductions = () => {
         <div className="row">
           <div className="col-12 col-lg-5 pb-10 pb-lg-0 gs_reveal">
             <StaticImage
-              src="../../assets/images/me.png"
-              className={`${styles.introductions__me} mb-1 mr-3 mb-md-2 mr-md-4 mt-0`}
+              src="../assets/images/me.png"
+              className="introductions__me mb-1 mr-3 mb-md-2 mr-md-4 mt-0"
               alt="author"
               style={{ width: "25%", float: "left" }}
             />

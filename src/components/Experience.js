@@ -2,7 +2,7 @@
 
 import React from "react";
 import Timeline from "./Timeline";
-import SectionHeader from "../SectionHeader";
+import SectionHeader from "./SectionHeader";
 
 const Experience = () => (
   <section id="experience" className="bg-light section--with-background">
