@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `For experimentation and discovery`,
+    title: `A working copy, for experimentation and discovery`,
     siteUrl: `https://whaw.github.io/`,
   },
   plugins: [

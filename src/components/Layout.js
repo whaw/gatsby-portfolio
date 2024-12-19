@@ -15,7 +15,7 @@ const Layout = () => {
 
   useEffect(() => {
     const handleLoad = () => {
-      initiateGsap();
+        initiateGsap();
     };
   
     if (document.readyState === "complete") {
@@ -29,10 +29,11 @@ const Layout = () => {
     };
   }, []);
   
+  
   return (
     <>
       <Helmet htmlAttributes={{ lang: "en-GB" }}>
-        <title>For experimentation and discovery</title>
+        <title>A working copy, for experimentation and discovery</title>
         <meta name="googlebot" content="noindex" />
         {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
         <body id="home" className="px-md-3" />

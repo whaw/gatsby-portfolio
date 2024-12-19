@@ -4,9 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export function initiateGsap() {
   gsap.registerPlugin(ScrollTrigger);
 
-  // SECTION - SCROLL ANIMATION
-  // helpers
-  const hide = (elem) => gsap.set(elem, { autoAlpha: 0 });
+  // GS_REVEAL class elements - SCROLL ANIMATION
+  // handle trigger
   const animateFrom = (elem, direction = 1) => {
     let x = 0,
       y = direction * 100;
@@ -29,16 +28,14 @@ export function initiateGsap() {
     });
   };
 
-  // give sections a slight motion animation on scroll
+  // set trigger
   gsap.utils.toArray(".gs_reveal").forEach((elem) => {
-    hide(elem);
     ScrollTrigger.create({
       trigger: elem,
       markers: false,
       lazy: false,
       onEnter: () => animateFrom(elem),
       onEnterBack: () => animateFrom(elem, -1),
-      onLeave: () => hide(elem),
     });
   });
 
@@ -46,7 +43,8 @@ export function initiateGsap() {
   const sections = gsap.utils.toArray(document.getElementsByTagName("section")).slice(1); // omit hero section
   const navLinks = gsap.utils.toArray(document.getElementById("main-nav-links").getElementsByClassName("nav-link"));
 
-  function toggleActiveClass(i) {
+  // handle trigger
+  const toggleActiveClass = (i) => {
     navLinks.forEach((link) => {
       link.classList.remove("active");
       link.removeAttribute("aria-current");
@@ -57,6 +55,7 @@ export function initiateGsap() {
     }
   }
 
+  // set trigger
   sections.forEach((section, i) => {
     gsap.from(section, {
       scrollTrigger: {
@@ -78,28 +77,24 @@ export function initiateGsap() {
     trigger: ".hero",
     start: "top top",
     end: "bottom bottom",
+    x: 0,
+    y: 0,
+    ease: "none",
     scrub: true,
   };
 
   gsap.to(".hero__truck", {
     rotation: -50,
-    x: 0,
-    y: 0,
-    ease: "none",
     scrollTrigger: heroScrollTriggerConfig,
   });
 
   gsap.to(".hero__sketch", {
     y: 200,
-    ease: "none",
     scrollTrigger: heroScrollTriggerConfig,
   });
 
   gsap.to(".hero__tree", {
     rotation: 50,
-    x: 0,
-    y: 0,
-    ease: "none",
     scrollTrigger: heroScrollTriggerConfig,
   });
 }
