@@ -9,10 +9,10 @@ export function initiateGsap() {
   const animateFrom = (elem, direction = 1) => {
     let x = 0,
       y = direction * 100;
-    if (elem.classList.contains("gs_reveal_fromBottom")) {
+    if (elem.classList.contains("gs_reveal_fromLeft")) {
       x = -100;
       y = 0;
-    } else if (elem.classList.contains("gs_reveal_fromTop")) {
+    } else if (elem.classList.contains("gs_reveal_fromRight")) {
       x = 100;
       y = 0;
     }
