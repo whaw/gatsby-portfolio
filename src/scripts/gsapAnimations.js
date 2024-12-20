@@ -4,7 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export function initiateGsap() {
   gsap.registerPlugin(ScrollTrigger);
 
-  // GS_REVEAL class elements - SCROLL ANIMATION
+  /* GS_REVEAL CLASS ELEMENTS
+  give slight motion entering and leaving
+  ----------------------------------------- */
   // handle trigger
   const animateFrom = (elem, direction = 1) => {
     let x = 0,
@@ -18,7 +20,7 @@ export function initiateGsap() {
     }
     elem.style.transform = `translate(${x}px, ${y}px)`;
     elem.style.opacity = "0";
-    gsap.fromTo(elem, { x, y, autoAlpha: 1 }, {
+    gsap.fromTo(elem, { x, y}, {
       duration: 1.25,
       x: 0,
       y: 0,
@@ -39,7 +41,8 @@ export function initiateGsap() {
     });
   });
 
-  // MAIN NAV - TOGGLE ACTIVE CLASS
+  /* MAIN NAV - TOGGLE ACTIVE CLASS
+  ----------------------------------------- */
   const sections = gsap.utils.toArray(document.getElementsByTagName("section")).slice(1); // omit hero section
   const navLinks = gsap.utils.toArray(document.getElementById("main-nav-links").getElementsByClassName("nav-link"));
 
@@ -73,7 +76,7 @@ export function initiateGsap() {
 
   // HERO - ANIMATION
   // animate hero images when entering and leaving hero section
-  const heroScrollTriggerConfig = {
+  const heroTriggerConfig = {
     trigger: ".hero",
     start: "top top",
     end: "bottom bottom",
@@ -84,17 +87,17 @@ export function initiateGsap() {
   };
 
   gsap.to(".hero__truck", {
+    scrollTrigger: heroTriggerConfig,
     rotation: -50,
-    scrollTrigger: heroScrollTriggerConfig,
   });
 
   gsap.to(".hero__sketch", {
+    scrollTrigger: heroTriggerConfig,
     y: 200,
-    scrollTrigger: heroScrollTriggerConfig,
   });
 
   gsap.to(".hero__tree", {
+    scrollTrigger: heroTriggerConfig,
     rotation: 50,
-    scrollTrigger: heroScrollTriggerConfig,
   });
 }
