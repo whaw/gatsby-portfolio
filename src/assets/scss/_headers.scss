@@ -49,16 +49,12 @@
 
   h5,
   .h5 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
-
-    @include media-breakpoint-up(md) {
-      font-size: 1.25rem;
-    }
   }
 
   .h6 {
-    font-size: .95rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 }
