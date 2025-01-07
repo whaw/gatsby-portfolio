@@ -9,7 +9,7 @@ const AboutSite = () => (
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10 gs_reveal">
           <h5>Situation</h5>
-          <p>Being able to learn and deliver on new tech is essential in any role in my experience, so I thought it beneficial to show how that looks, that is mainly React here – best viewed through that lens.</p>
+          <p>Being able to learn and deliver on new tech is essential in any role in my experience, so I thought it beneficial to show how that looks here, that is mainly with React – best viewed through that lens.</p>
           <p className="mb-0"><strong>So this site serves a few purposes:</strong></p>
           <ol>
             <li>to provide an example of work when adopting new technology</li>
@@ -25,7 +25,7 @@ const AboutSite = () => (
           <ul>
             <li>Gatsby for performance, and for being built on React</li>
             <li>Bootstrap for faster development, less custom code and (some) future-proofing</li>
-            <li>Animations are with CSS, JavaScript and GSAP</li>
+            <li>Animations are with CSS (again for performance), JavaScript and GSAP</li>
             <li>Other areas of focus: React best practices and design patterns</li>
             <li>Prettier and ESLint to keep everything clean and error-free</li>
           </ul>
