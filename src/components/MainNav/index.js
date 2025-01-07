@@ -8,8 +8,8 @@ const MainNav = () => {
   return (
     <nav role="navigation" aria-label="Main nav" className="navbar navbar-expand-lg container navbar__container navbar-light bg-white justify-content-between fixed-top pt-lg-3">
       <button className="navbar-brand js_logo pb-2 border-0 bg-white text-left p-0" onClick={() => scrollToID("home")}>
-        <span className="logo d-block">William Haw</span>
-        <span>Front-End Developer
+        <span className="logo d-block">A Working Copy</span>
+        <span><strong>William Haw</strong> ~ Front-End Developer
           <span className="d-none d-xl-inline-block">, Outdoor Enthusiast</span>
         </span>
       </button>
