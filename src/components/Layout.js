@@ -18,6 +18,8 @@ const Layout = () => {
         initiateGsap();
     };
   
+    // consider adding loading... screen for slower connections
+    // opting out for now for higher priorities
     if (document.readyState === "complete") {
       handleLoad();
     } else {
