@@ -57,7 +57,7 @@ const Introductions = () => {
                   <li>Accurate to creative</li>
                   <li>WordPress, Craft</li>
                   <li>A/B testing, SEO</li>
-                  <li>Web accessibility</li>
+                  <li>Web Accessibility</li>
                   <li>HTML email</li>
                   <li>and...</li>
                 </ul>
@@ -72,9 +72,9 @@ const Introductions = () => {
               <div className="col-12 col-sm-6 px-0 py-5 pt-sm-0 skills__col text-center text-sm-right">
                 <h4 className="bullet pb-2">Soft skills</h4>
                 <ul className="list-unstyled">
-                  <li>Problem solving</li>
+                  <li>Problem-solving</li>
                   <li>Taking ownership</li>
-                  <li>Entrepeneurial</li>
+                  <li>Entrepreneurial</li>
                   <li>Resourceful</li>
                   <li>Flexible</li>
                   <li>Professional</li>
