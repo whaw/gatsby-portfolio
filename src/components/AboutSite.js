@@ -8,8 +8,8 @@ const AboutSite = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10 gs_reveal">
-          <div role="heading" aria-level="5" className="h5">Situation</div>
-          <p>Being able to learn and deliver on new tech is essential in any role in my experience, so I thought it beneficial to show how that looks – best viewed through that lens.</p>
+          <h5>Situation</h5>
+          <p>Being able to learn and deliver on new tech is essential in any role in my experience, so I thought it beneficial to show how that looks, that is mainly React here – best viewed through that lens.</p>
           <p className="mb-0"><strong>So this site serves a few purposes:</strong></p>
           <ol>
             <li>to provide an example of work when adopting new technology</li>
@@ -17,11 +17,11 @@ const AboutSite = () => (
             <li>to act as a sandbox for experimentation and discovery to learn and grow, and</li>
             <li>to provide a little about me (fit being important).</li>
           </ol>
-          <div role="heading" aria-level="5" className="h5">Task</div>
+          <h5>Task</h5>
           <p>To develop a React website with an emphasis on growing proficiency in JavaScript tooling.</p>
         </div>
         <div className="col-12 col-md-6 gs_reveal">
-          <div role="heading" aria-level="5" className="h5">Approach</div>
+          <h5>Approach</h5>
           <ul>
             <li>Gatsby for performance, and for being built on React</li>
             <li>Bootstrap for faster development, less custom code and (some) future-proofing</li>
@@ -29,20 +29,26 @@ const AboutSite = () => (
             <li>Other areas of focus: React best practices and design patterns</li>
             <li>Prettier and ESLint to keep everything clean and error-free</li>
           </ul>
-          <div role="heading" aria-level="5" className="h5">Results</div>
+          <h5>Results</h5>
           <ul>
             <li>Site is fast, consistent, accessible and performant</li>
             <li>Increased knowledge in Gatsby, React, JavaScript, GraphQL and GSAP</li>
           </ul>
 
-          <p><strong>Next:</strong> TypeScript, Jest, React Testing library and Next.js</p>
+          <aside>Latest – obtained <a href="https://www.coursera.org/account/accomplishments/verify/P0D5ANW5L1N2" target="_blank" rel="noopener noreferrer">React Certification by Meta</a>, Coursera, November 2024</aside>
+
+          <h5>Next</h5>
+          <ul>
+            <li>TypeScript, Jest, React Testing library and Next.js</li>
+          </ul>
+
           <p className="text-center text-md-left">
             <Button
-            onClick={() => window.open('https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link')}
-            className="btn btn-primary mt-2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >To the code</Button>
+              onClick={() => window.open('https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link')}
+              className="btn btn-primary mt-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >To the code</Button>
           </p>
         </div>
       </div>
