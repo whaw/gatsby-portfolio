@@ -2,7 +2,7 @@ $timeline-color: #b6b9b9;
 
 .timeline {
   font-size: .8rem;
-  max-width: 1200px;
+  max-width: $body-max-width;
   margin: 0 auto;
 
   // vertical line
