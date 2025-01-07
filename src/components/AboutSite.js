@@ -14,7 +14,7 @@ const AboutSite = () => (
           <ol>
             <li>to provide an example of work when adopting new technology</li>
             <li>to demonstrate a level of polish in delivery,</li>
-            <li>to act as a sandbox for experimentation and discovery to learn and grow,</li>
+            <li>to act as a sandbox for experimentation and discovery to learn and grow, and</li>
             <li>to provide a little about me (fit being important).</li>
           </ol>
           <div role="heading" aria-level="5" className="h5">Task</div>
