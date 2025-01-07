@@ -1,3 +1,5 @@
+import cleanURL from "./cleanURL";
+
 const scrollToID = (id) => {
   const target = document.getElementById(id);
 
@@ -7,16 +9,8 @@ const scrollToID = (id) => {
   }
 
   window.location.hash = `#${id}`;
-  if (id === "home") cleanUrl();
-}
-
-// Remove the # and everything after in the url
-const cleanUrl = () => {
-  const url = window.location.href.toString();
-
-  if (url.indexOf("#") > 0) {
-    const newUrl = url.slice(0, url.indexOf("#"));
-    window.history.replaceState({}, document.title, newUrl);
+  if (id === "home") {
+    setTimeout(() => cleanURL(), 10);
   }
 }
 
