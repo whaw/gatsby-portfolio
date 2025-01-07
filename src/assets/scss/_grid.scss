@@ -7,11 +7,15 @@ body {
   max-width: $body-max-width;
   height: 100%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 30px;
+  scroll-padding-top: 50px;
+
+  @include media-breakpoint-up(md){
+    scroll-padding-top: 80px;
+  }
   position: relative;
 }
 
-// adjust for nav link targeting
 section,
 .section--with-background {
   padding-top: $section-spacing;
