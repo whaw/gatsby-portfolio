@@ -7,12 +7,9 @@ export function initiateGsap() {
   /* GS_REVEAL CLASS ELEMENTS
   give slight motion entering and leaving
   ----------------------------------------- */
-  // handle trigger - helpers
-  function hide(elem) {
-    gsap.set(elem, { autoAlpha: 0 })
-  }
-
+  // handle trigger
   const animateFrom = (elem, direction = 1) => {
+    console.log('direction', direction);
     let x = 0,
       y = direction * 100;
     if (elem.classList.contains("gs_reveal_fromLeft")) {
@@ -22,20 +19,18 @@ export function initiateGsap() {
       x = 100;
       y = 0;
     }
-    elem.style.transform = `translate(${x}px, ${y}px)`;
-    gsap.fromTo(elem, { x: x, y: y, autoAlpha: 1 }, {
+    
+    gsap.fromTo(elem, { x: x, y: y }, {
       duration: 1.25,
       x: 0,
       y: 0,
-      autoAlpha: 1,
       ease: "expo",
-      overwrite: "auto"
+      overwrite: "true"
     });
   };
 
   // set trigger
   gsap.utils.toArray(".gs_reveal").forEach((elem) => {
-    hide(elem);
     
     ScrollTrigger.create({
       trigger: elem,
@@ -43,7 +38,6 @@ export function initiateGsap() {
       lazy: false,
       onEnter: () => animateFrom(elem),
       onEnterBack: () => animateFrom(elem, -1),
-      onLeave: function () { hide(elem) },
     });
   });
 
