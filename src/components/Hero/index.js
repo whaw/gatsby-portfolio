@@ -33,7 +33,6 @@ const Hero = () => {
         <h1 className="hero__heading__h1 mb-0 pt-sm-3 pt-md-0 gs_reveal">Be <span>responsive</span></h1>
         <a href="#introductions" role="button" aria-label="down button" className="hero__down-button js_hero_button mt-5 gs_reveal">&#x2304;</a>
       </div>
-      {/* Considered Context API here, but opted for passing props for simplicity - easy to understand and maintain */}
       <Tools toolAnimDetails={toolAnimDetails} />
       <div className="mx-auto position-absolute hero__hashTag text-white text-center d-none d-sm-block">
         #Team
