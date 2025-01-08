@@ -37,7 +37,7 @@ const Layout = () => {
     <>
       <Helmet htmlAttributes={{ lang: "en-CA" }} bodyAttributes={{ id: "home", class: "px-md-3" }}>
         <title>A Working Copy – for experimentation and discovery</title>
-        {/* Omitting SEO (and structured Data), given the temporary nature of the site */}
+        {/* Opting out of search engine indexing given the temporary nature of the site */}
         <meta name="googlebot" content="noindex" />
       </Helmet>
       <header className="header">
