@@ -9,13 +9,13 @@ const AboutSite = () => (
       <div className="row">
         <div className="col-12 col-md-6 pr-lg-10 gs_reveal">
           <h5 className="h5">Situation</h5>
-          <p>Being able to learn and deliver on new tech is essential in any role in my experience, so I thought it beneficial to show how that looks here, that is mainly with React – best viewed through that lens.</p>
+          <p>Being able to learn and deliver on new tech is essential in any role in my experience, so I thought it beneficial to show how that looks for me here, mainly with React – best viewed through that lens.</p>
           <p className="mb-0"><strong>So this site serves a few purposes:</strong></p>
           <ol>
             <li>to provide an example of work when adopting new technology</li>
-            <li>to demonstrate a level of polish in delivery,</li>
-            <li>to act as a sandbox for experimentation and discovery to learn and grow, and</li>
-            <li>to provide a little about me (fit being important).</li>
+            <li>to demonstrate a level of polish in delivery</li>
+            <li>to act as a sandbox for experimentation and discovery to learn and grow</li>
+            <li>to provide a little about me (fit being important)</li>
           </ol>
           <h5 className="h5">Task</h5>
           <p>To develop a React website with an emphasis on growing proficiency in JavaScript tooling.</p>
