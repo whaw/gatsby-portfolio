@@ -37,8 +37,21 @@ const Layout = () => {
     <>
       <Helmet htmlAttributes={{ lang: "en-CA" }} bodyAttributes={{ id: "home", class: "px-md-3" }}>
         <title>A Working Copy – for experimentation and discovery</title>
-        {/* Opting out of search engine indexing given the temporary nature of the site */}
+        {/* Opting out of search engine indexing given the temporary (semi-private) nature of the site */}
         <meta name="googlebot" content="noindex" />
+        
+        {/* Strutured data for voice assist */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "William Haw",
+              "jobTitle": "Front-End Developer",
+              "url": "https://whaw.github.io/"
+            }
+          `}
+        </script>
       </Helmet>
       <header className="header">
         <MainNav />
