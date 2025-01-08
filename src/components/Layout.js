@@ -15,44 +15,44 @@ const Layout = () => {
 
   useEffect(() => {
     const handleLoad = () => {
-        initiateGsap();
+      initiateGsap();
     };
-  
+
     // consider adding loading... screen for slower connections
-    // opting out for now for higher priorities
+    // deproritizing for now
     if (document.readyState === "complete") {
       handleLoad();
     } else {
       window.addEventListener("load", handleLoad);
     }
-  
+
+    // clean up
     return () => {
       window.removeEventListener("load", handleLoad);
     };
   }, []);
-  
-  
+
+
   return (
     <>
-      <Helmet htmlAttributes={{ lang: "en-GB" }}>
+      <Helmet htmlAttributes={{ lang: "en-CA" }} bodyAttributes={{ id: "home", class: "px-md-3" }}>
         <title>A Working Copy – for experimentation and discovery</title>
+        {/* Omitting SEO (and structured Data), given the temporary nature of the site */}
         <meta name="googlebot" content="noindex" />
-        {/* Structured Data is omitted for SEO, given the temporary nature of the site */}
-        <body id="home" className="px-md-3" />
       </Helmet>
       <header className="header">
         <MainNav />
-        <Hero />
       </header>
       <main>
+        <Hero />
         <Introductions />
         <Experience />
         <AboutSite />
         <Contact />
         <TopButton />
       </main>
-      <footer className="border-top pt-2 pb-5 mb-5 pl-3 text-secondary small">
-        &copy; {year}
+      <footer className="border-top pt-2 pb-5 mb-5 pl-3 text-secondary">
+        <small>&copy; {year}</small>
       </footer>
     </>
   )
