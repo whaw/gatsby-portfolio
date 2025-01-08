@@ -1,6 +1,6 @@
 
 // Remove the # and everything after in the url
-// Setup this way so it would work locally. Can be built out to clean up after domain name as need arises
+// Consider adding cleanup after domain name (keep below for local testing)
 
 const cleanURL = () => {
   const url = window.location.href.toString();
