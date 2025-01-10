@@ -1,7 +1,5 @@
 
-// Remove the # and everything after in the url
-// Consider adding cleanup after domain name (keep below for local testing)
-
+// Remove # and everything after in the URL
 const cleanURL = () => {
   const url = window.location.href.toString();
 

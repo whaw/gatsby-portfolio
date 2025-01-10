@@ -35,7 +35,7 @@ const AboutSite = () => (
             <li>Increased knowledge in Gatsby, React, JavaScript, GraphQL and GSAP</li>
           </ul>
 
-          <aside>Latest – obtained <a href="https://www.coursera.org/account/accomplishments/verify/P0D5ANW5L1N2" target="_blank" rel="noopener noreferrer">React Certification by Meta</a>, Coursera, November 2024</aside>
+          {/* <aside>Latest – <a href="https://www.coursera.org/account/accomplishments/verify/P0D5ANW5L1N2" target="_blank" rel="noopener noreferrer">Meta React Certification</a>, Coursera, 11/2024</aside> */}
 
           <h5 className="h5">Next</h5>
           <ul>

@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 
 const Contact = () => (
   <section id="contact" className="min-vh-80">
-    <SectionHeader header="Give me a&nbsp;shout" subHeader="What can I do?" />
+    <SectionHeader header="Like a chat?" subHeader="How can I help?" />
     <div className="container">
       <div className="row">
         <div className="col-12 pt-md-10 pb-5 pb-md-10 text-center gs_reveal">
