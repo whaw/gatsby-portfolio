@@ -9,10 +9,6 @@ body {
   margin: 0 auto;
   padding-top: 30px;
   scroll-padding-top: 50px;
-
-  @include media-breakpoint-up(md){
-    scroll-padding-top: 80px;
-  }
   position: relative;
 }
 
