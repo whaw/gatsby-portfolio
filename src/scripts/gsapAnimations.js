@@ -7,9 +7,9 @@ export function initiateGsap() {
   /* GS_REVEAL CLASS ELEMENTS
   give slight motion entering and leaving
   ----------------------------------------- */
-  // handle trigger
+  // Animate elements
   const animateFrom = (elem, direction = 1) => {
-    console.log('direction', direction);
+    // console.log('direction', direction);
     let x = 0,
       y = direction * 100;
     if (elem.classList.contains("gs_reveal_fromLeft")) {
@@ -19,7 +19,7 @@ export function initiateGsap() {
       x = 100;
       y = 0;
     }
-    
+
     gsap.fromTo(elem, { x: x, y: y }, {
       duration: 1.25,
       x: 0,
@@ -29,9 +29,9 @@ export function initiateGsap() {
     });
   };
 
-  // set trigger
+  // Track gs_reveal classed elements
   gsap.utils.toArray(".gs_reveal").forEach((elem) => {
-    
+
     ScrollTrigger.create({
       trigger: elem,
       markers: false,
@@ -43,10 +43,10 @@ export function initiateGsap() {
 
   /* MAIN NAV - TOGGLE ACTIVE CLASS
   ----------------------------------------- */
-  const sections = gsap.utils.toArray(document.getElementsByTagName("section")).slice(1); // omit hero section
-  const navLinks = gsap.utils.toArray(document.getElementById("main-nav-links").getElementsByClassName("nav-link"));
+  const sections = Array.from(document.getElementsByTagName("section")).slice(1); // omit hero section
+  const navLinks = Array.from(document.getElementById("main-nav-links").getElementsByClassName("nav-link"));
 
-  // handle trigger
+  // Toggle active class
   const toggleActiveClass = (i) => {
     navLinks.forEach((link) => {
       link.classList.remove("active");
@@ -56,9 +56,9 @@ export function initiateGsap() {
       navLinks[i].classList.add("active");
       navLinks[i].setAttribute("aria-current", "section");
     }
-  }
+  };
 
-  // set trigger
+  // Track entering and leaving sections
   sections.forEach((section, i) => {
     gsap.from(section, {
       scrollTrigger: {
