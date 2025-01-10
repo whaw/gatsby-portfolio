@@ -2,7 +2,7 @@ import React from "react";
 import SectionHeader from "./SectionHeader";
 
 const Contact = () => (
-  <section id="contact">
+  <section id="contact" className="min-vh-80">
     <SectionHeader header="Give me a&nbsp;shout" subHeader="What can I do?" />
     <div className="container">
       <div className="row">
