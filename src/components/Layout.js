@@ -18,8 +18,8 @@ const Layout = () => {
       initiateGsap();
     };
 
-    // consider adding loading... screen for slower connections
-    // deproritizing for now
+    /* Consider adding loading... screen for slower connections,
+       deproritizing for now */
     if (document.readyState === "complete") {
       handleLoad();
     } else {
@@ -37,10 +37,11 @@ const Layout = () => {
     <>
       <Helmet htmlAttributes={{ lang: "en-CA" }} bodyAttributes={{ id: "home", class: "px-md-3" }}>
         <title>A Working Copy – for experimentation and discovery</title>
+  
         {/* Opting out of search engine indexing given the temporary (semi-private) nature of the site */}
         <meta name="googlebot" content="noindex" />
         
-        {/* Strutured data for voice assist */}
+        {/* Strutured data for voice assist (more accessiblity updates to come, deprioritizing for now) */}
         <script type="application/ld+json">
           {`
             {
@@ -72,5 +73,3 @@ const Layout = () => {
 }
 
 export default Layout;
-
-
