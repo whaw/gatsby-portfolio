@@ -13,7 +13,7 @@ const MainNavLinks = ({ navID, navClasses, smoothScroll = true }) => {
     <ul id={navID} className={navClasses}>
       {links.map(({ label, to }) => (
         <li key={to} className="nav-item">
-          <HashLink className="nav-link" to={to} smooth={smoothScroll}>{label}</HashLink>
+          <HashLink className="nav-link" to={to} smooth={smoothScroll} data-toggle="collapse" data-target=".navbar-collapse">{label}</HashLink>
         </li>
       ))}
     </ul>
