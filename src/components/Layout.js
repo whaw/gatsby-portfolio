@@ -18,8 +18,8 @@ const Layout = () => {
       initiateGsap();
     };
 
-    /* Consider adding loading... screen for slower connections,
-       deproritizing for now */
+    // Ensure images are loaded
+    // Deprioritzing loading screen for higher value tasks, as target audience is very likely on faster connection
     if (document.readyState === "complete") {
       handleLoad();
     } else {
