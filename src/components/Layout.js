@@ -19,7 +19,7 @@ const Layout = () => {
     };
 
     // Ensure images are loaded
-    // Deprioritzing loading screen for higher value tasks, as target audience is very likely on faster connection
+    // Deprioritzing loading screen for higher value tasks, as target audience are HR professionals and on good connections
     if (document.readyState === "complete") {
       handleLoad();
     } else {
