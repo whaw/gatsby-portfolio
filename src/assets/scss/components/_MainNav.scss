@@ -68,13 +68,10 @@
   box-shadow: none;
 }
 
-/* Main Nav > overwrite bootstrap behaviour on desktop
-Added data attributes to links to close nav on mobile when clicked
-Collapsing causing issue on desktop
-Opted for this over React hooks and event listeners, cleaner */
+/* Overwrite Bootstrap behaviour on desktop
+Data attributes added to main nav links to close mobile menu when link is clicked, causing visual issue on desktop. */
 @include media-breakpoint-up(lg) {
   .navbar-collapse.collapsing {
-    height: auto !important; /* Could not avoid using !important here */
+    height: auto !important;
   }
 }
-
