@@ -15,7 +15,7 @@ const TimelineItem = ({ company, period, copy, colPos }: TimelineItemProps) => {
       <div className="content">
         <h5>{company}</h5>
         <p className="text-secondary">{period}</p>
-        <span dangerouslySetInnerHTML={sanitizeCopy(copy)} />
+        <span dangerouslySetInnerHTML={{__html: sanitizeCopy(copy)}} />
       </div>
     </div>
   );
