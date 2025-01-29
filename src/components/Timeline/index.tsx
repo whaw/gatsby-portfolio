@@ -6,7 +6,7 @@ type TimelineItemProps = {
   company: string,
   period: string,
   copy: string,
-  colPos: string,
+  colPos: "left" | "right",
 }
 
 const TimelineItem = ({ company, period, copy, colPos }: TimelineItemProps) => {
@@ -22,20 +22,21 @@ const TimelineItem = ({ company, period, copy, colPos }: TimelineItemProps) => {
 };
 
 const Timeline = () => {
+  const getColPos = (i: number) => i % 2 === 0 ? "left" : "right";
+
   return (
     <div className="container">
       <div className="row">
         <div className="col-12">
           <div className="timeline position-relative">
             {timelineData.map(({ company, period, copy }, i) => {
-              const colPos = i % 2 === 0 ? "left" : "right";
               return (
                 <TimelineItem
                   key={company}
                   company={company}
                   period={period}
                   copy={copy}
-                  colPos={colPos}
+                  colPos={getColPos(i)}
                 />
               );
             })}
