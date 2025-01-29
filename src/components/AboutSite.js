@@ -24,8 +24,8 @@ const AboutSite = () => (
         <div className="col-12 col-md-6 gs_reveal">
           <h5 className="h5">Approach</h5>
           <ul>
-            <li>Gatsby for performance, the React SSG of choice (at the time of launch)</li>
-            <li>Bootstrap for faster development, cleaner codebase and (some) future-proofing</li>
+            <li>Gatsby, static site generator (SSG), best fit for static landing page</li>
+            <li>Bootstrap for faster development, cleaner codebase and some future-proofing</li>
             <li>Animations are with CSS (again for performance), JavaScript and GSAP</li>
             <li>Other areas of focus: React best practices and design patterns</li>
             <li>Prettier and ESLint to keep everything clean and error-free</li>

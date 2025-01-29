@@ -1,5 +1,4 @@
 .navbar {
-  // position 'fixed-top' navbar in body
   padding-bottom: 0;
 
   &__container {
@@ -68,8 +67,7 @@
   box-shadow: none;
 }
 
-/* Overwrite Bootstrap behaviour on desktop
-Data attributes added to main nav links to close mobile menu when link is clicked, causing visual issue on desktop. */
+// Adding fix for Bootstrap > main nav > link collapse on click on desktop
 @include media-breakpoint-up(lg) {
   .navbar-collapse.collapsing {
     height: auto !important;
