@@ -1,6 +1,6 @@
 import cleanURL from "./cleanURL";
 
-const scrollToID = (id) => {
+const scrollToID = (id: string) => {
   const target = document.getElementById(id);
 
   if (!target) {

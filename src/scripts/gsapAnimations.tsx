@@ -8,7 +8,7 @@ export function initiateGsap() {
   give slight motion entering and leaving
   ----------------------------------------- */
   // Animate elements
-  const animateFrom = (elem, direction = 1) => {
+  const animateFrom = (elem: HTMLElement, direction = 1) => {
     // console.log('direction', direction);
     let x = 0,
       y = direction * 100;
@@ -25,17 +25,18 @@ export function initiateGsap() {
       x: 0,
       y: 0,
       ease: "expo",
-      overwrite: "true"
+      overwrite: true
     });
   };
 
   // Track gs_reveal classed elements
-  gsap.utils.toArray(".gs_reveal").forEach((elem) => {
-
+  const elements = gsap.utils.toArray(".gs_reveal") as HTMLElement[];
+  
+  elements.forEach((elem) => {
     ScrollTrigger.create({
       trigger: elem,
       markers: false,
-      lazy: false,
+      once: true, // Ensure animates once
       onEnter: () => animateFrom(elem),
       onEnterBack: () => animateFrom(elem, -1),
     });
@@ -44,7 +45,14 @@ export function initiateGsap() {
   /* MAIN NAV - TOGGLE ACTIVE CLASS
   ----------------------------------------- */
   const sections = Array.from(document.getElementsByTagName("section")).slice(1); // omit hero section
-  const navLinks = Array.from(document.getElementById("main-nav-links").getElementsByClassName("nav-link"));
+
+  // Get nav links
+  const navContainer = document.getElementById("header__main-nav-links");
+  if (!navContainer) return;
+
+  const navLinks = Array.from(navContainer.getElementsByClassName("nav-link"))
+  .filter((el): el is HTMLElement => el instanceof HTMLElement);
+
 
   // Toggle active class
   const toggleActiveClass = (i) => {

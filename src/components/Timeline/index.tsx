@@ -1,3 +1,5 @@
+// Timeline
+
 import React from "react";
 import timelineData from "./timeline.json";
 import sanitizeCopy from "../../utils/sanitizeCopy";

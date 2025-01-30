@@ -2,7 +2,7 @@ import React from "react";
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode,
-  className: string,
+  className?: string,
 }
 
 const Button = ({ children, className = "", ...props } : ButtonProps ) => {

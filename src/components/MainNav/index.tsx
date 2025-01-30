@@ -28,7 +28,7 @@ const MainNav = () => {
         className="collapse navbar-collapse flex-grow-0 pb-4 pb-sm-2"
         id="navbarSupportedContent"
       >
-        <MainNavLinks navID="main-nav-links" navClasses="nav navbar-nav mr-auto" />
+        <MainNavLinks navID="header__main-nav-links" navClasses="nav navbar-nav mr-auto" />
       </div>
     </nav>
   )

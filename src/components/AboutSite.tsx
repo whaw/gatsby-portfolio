@@ -45,15 +45,13 @@ const AboutSite = () => (
 
           <p className="text-center text-md-left">
             <Button
-              onClick={() => window.open('https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link')}
+              onClick={() => window.open('https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link', '_blank', 'noopener,noreferrer')}
               className="btn btn-primary mt-2"
-              target="_blank"
-              rel="noopener noreferrer"
             >To the code</Button>
           </p>
         </div>
       </div>
-    </div>
+    </div>å
   </section>
 )
 

@@ -1,5 +1,5 @@
 
-// Remove # and everything after in the URL
+// Remove # from URL and everything after
 const cleanURL = () => {
   const url = window.location.href.toString();
 

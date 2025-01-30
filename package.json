@@ -43,6 +43,8 @@
     "sass": "1.56.1"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.11",
+    "@types/react-router-hash-link": "^2.4.9",
     "gh-pages": "^4.0.0"
   }
 }

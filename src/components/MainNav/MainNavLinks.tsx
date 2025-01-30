@@ -1,7 +1,12 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 
-const MainNavLinks = ({ navID, navClasses, smoothScroll = true }) => {
+type LinkProps = {
+  navID: string,
+  navClasses?: string,
+}
+
+const MainNavLinks = ({ navID, navClasses = "" }: LinkProps) => {
   const links = [
     { label: "Introductions", to: "#introductions" },
     { label: "Experience", to: "#experience" },
@@ -13,7 +18,7 @@ const MainNavLinks = ({ navID, navClasses, smoothScroll = true }) => {
     <ul id={navID} className={navClasses}>
       {links.map(({ label, to }) => (
         <li key={to} className="nav-item">
-          <HashLink className="nav-link" to={to} smooth={smoothScroll} data-toggle="collapse" data-target=".navbar-collapse">{label}</HashLink>
+          <HashLink className="nav-link" to={to} smooth={true} data-toggle="collapse" data-target=".navbar-collapse">{label}</HashLink>
         </li>
       ))}
     </ul>
