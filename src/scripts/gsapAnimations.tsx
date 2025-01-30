@@ -51,8 +51,7 @@ export function initiateGsap() {
   if (!navContainer) return;
 
   const navLinks = Array.from(navContainer.getElementsByClassName("nav-link"))
-  .filter((el): el is HTMLElement => el instanceof HTMLElement);
-
+  .filter((el): el is HTMLElement => el instanceof HTMLElement);  // Ensure navlinks are HTML elements
 
   // Toggle active class
   const toggleActiveClass = (i) => {
