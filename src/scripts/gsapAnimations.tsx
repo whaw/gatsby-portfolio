@@ -13,9 +13,11 @@ export function initiateGsap() {
     let x = 0,
       y = direction * 100;
     if (elem.classList.contains("gs_reveal_fromLeft")) {
+      console.log("up")
       x = -100;
       y = 0;
     } else if (elem.classList.contains("gs_reveal_fromRight")) {
+      console.log("down")
       x = 100;
       y = 0;
     }
@@ -36,7 +38,6 @@ export function initiateGsap() {
     ScrollTrigger.create({
       trigger: elem,
       markers: false,
-      once: true, // Ensure animates once
       onEnter: () => animateFrom(elem),
       onEnterBack: () => animateFrom(elem, -1),
     });

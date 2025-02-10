@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import ToolImage from "./ToolImage";
 import ToolDescription from "./ToolDescription";
 
-const Tool = ({ selector, name, description }) => {
+interface ToolProps {
+  selector: string,
+  name: string,
+  description: string,
+}
+
+const Tool = ({ selector, name, description }: ToolProps) => {
   const toolClassName = name.toLowerCase();
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
 
@@ -16,7 +22,7 @@ const Tool = ({ selector, name, description }) => {
         onMouseEnter={handleOnMouseEvent}
         onMouseLeave={handleOnMouseEvent}
         className={`border-0 p-0 bg-transparent hero__${toolClassName}__button`}>
-        <ToolImage selector={selector} name={name} />
+        <ToolImage name={name} />
       </button>
       <ToolDescription
         name={name}

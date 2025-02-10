@@ -6,7 +6,7 @@ import useInView from "hooks/useInView";
 import Tools from "./Tools";
 import HeroImages from "./HeroImages";
 
-import toolAnimDetails from "./data/toolsAnim";
+import toolAnimDetails from "./data/toolsAnim.json";
 const heroAnimDetails = [
     { "selector": ".js_heading", "delay": 1000 },
     { "selector": ".js_truck", "delay": 2000 },

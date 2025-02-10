@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import useDebounce from "./useDebounce";
 
-const useInView = (selector: string, offset = 100, debounceDelay = 1000) => {
+const useInView = (selector: string, offset = 100, debounceDelay = 100) => {
   const [inView, setInView] = useState(false);
 
   const handleScrollResize = useDebounce(() => {

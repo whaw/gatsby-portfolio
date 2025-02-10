@@ -51,7 +51,7 @@ const AboutSite = () => (
           </p>
         </div>
       </div>
-    </div>å
+    </div>
   </section>
 )
 
