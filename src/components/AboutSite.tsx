@@ -11,7 +11,7 @@ const AboutSite = () => (
           <h5 className="h5">Situation</h5>
           <p>Being able to deliver on new tech has been essential in my experience, so I thought it beneficial to show how that looks for me here, mostly in code&mdash;and best viewed through that lens of learning, an appreciation for code quality, maintainability and best practices.</p>
 
-          <p>Keen interest in learning and growing, this site acts as "A Working Copy" for experimentation and discovery, in addition to the objectives mentioned below.</p>
+          <p>Keen interest in learning and growing, this site acts as "A Working Copy" for experimentation and discovery, in addition to the objectives mentioned below:</p>
 
           <h5 className="h5">Tasks</h5>
           <ol>
@@ -47,7 +47,7 @@ const AboutSite = () => (
             <Button
               onClick={() => window.open('https://github.com/whaw/whaw.github.io/tree/source?utm_source=portsite&utm_medium=about__to_code_link', '_blank', 'noopener,noreferrer')}
               className="btn btn-primary mt-2"
-            >To the code</Button>
+            >To the goods (github)</Button>
           </p>
         </div>
       </div>
