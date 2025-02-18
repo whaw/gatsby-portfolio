@@ -6,17 +6,17 @@ const Image = ({ name }: { name: string }) => {
 
   interface ImageNode {
     node: {
-      name: string,
+      name: string;
       childImageSharp?: {
-        fluid: any,
-      }
-    }
+        fluid: any;
+      };
+    };
   }
 
   interface ImageQueryResult {
     allFile: {
-      edges: ImageNode[],
-    }
+      edges: ImageNode[];
+    };
   }
 
   // get all images in images/tools/ directory and

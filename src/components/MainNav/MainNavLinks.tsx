@@ -2,8 +2,8 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 
 type LinkProps = {
-  navID: string,
-  navClasses?: string,
+  navID: string;
+  navClasses?: string;
 }
 
 const MainNavLinks = ({ navID, navClasses = "" }: LinkProps) => {

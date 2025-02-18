@@ -1,8 +1,8 @@
 import React from 'react';
 
 type HeaderProps = {
-  header: String,
-  subHeader: String,
+  header: String;
+  subHeader: String;
 }
 
 const SectionHeader = ({ header, subHeader }: HeaderProps ) => {

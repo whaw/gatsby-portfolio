@@ -5,10 +5,10 @@ import timelineData from "./timeline.json";
 import sanitizeCopy from "../../utils/sanitizeCopy";
 
 type TimelineItemProps = {
-  company: string,
-  period: string,
-  copy: string,
-  colPos: "left" | "right",
+  company: string;
+  period: string;
+  copy: string;
+  colPos: "left" | "right";
 }
 
 const TimelineItem = ({ company, period, copy, colPos }: TimelineItemProps) => {

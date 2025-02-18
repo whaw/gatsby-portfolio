@@ -3,9 +3,9 @@ import ToolImage from "./ToolImage";
 import ToolDescription from "./ToolDescription";
 
 interface ToolProps {
-  selector: string,
-  name: string,
-  description: string,
+  selector: string;
+  name: string;
+  description: string;
 }
 
 const Tool = ({ selector, name, description }: ToolProps) => {
